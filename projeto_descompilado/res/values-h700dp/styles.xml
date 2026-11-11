@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YbSdk.Qr.Error.View.Description" parent="@style/Widget.YB.Text.Body2" />
+    <style name="YbSdk.Qr.Error.View.Title" parent="@style/Widget.YB.Text.Headline2" />
+    <style name="YbSdk.TransfersDashboard.Error.View.Description" parent="@style/Widget.YB.Text.Body2" />
+    <style name="YbSdk.TransfersDashboard.Error.View.LinkText" parent="@style/Widget.YB.Text.Headline4" />
+    <style name="YbSdk.TransfersDashboard.Error.View.Title" parent="@style/Widget.YB.Text.Headline2" />
+</resources>

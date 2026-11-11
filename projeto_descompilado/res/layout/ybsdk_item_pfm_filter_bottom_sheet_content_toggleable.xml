@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="@dimen/ybsdk_pfm_filter_bottom_sheet_items_padding_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="@style/Widget.YB.Text.Body2" android:textColor="?ybColor_textIcon_primary" android:ellipsize="end" android:id="@id/settingTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/settingToggle" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center" android:id="@id/settingToggle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="false" android:paddingStart="@dimen/ybsdk_pfm_bottom_sheet_switch_padding_start" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:thumbTint="?ybColor_internal_transparent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

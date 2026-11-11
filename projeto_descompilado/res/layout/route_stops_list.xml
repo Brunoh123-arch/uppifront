@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.design.BackButtonIconComponent android:layout_gravity="start|center|top" android:id="@id/ic_route_stops_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-12.0dip" android:scaleType="center" android:layout_marginStart="-12.0dip" android:layout_marginEnd="-12.0dip" />
+    <ImageView android:id="@id/route_stops_shadow" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-12.0dip" android:scaleType="fitXY" />
+    <androidx.core.widget.NestedScrollView android:id="@id/route_stops_scroll_view" android:paddingTop="20.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/route_stops" android:scrollbars="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

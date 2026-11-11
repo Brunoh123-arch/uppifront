@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?controlPressed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/oval_shape" />
+    <item android:gravity="center" android:id="@id/icon" android:height="40.0dip" android:width="40.0dip" android:drawable="@drawable/map_icon_default" />
+</ripple>

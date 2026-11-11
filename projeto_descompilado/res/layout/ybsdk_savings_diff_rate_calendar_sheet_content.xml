@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:id="@id/diff_rate_calendar_skeleton" android:background="?ybColor_background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+        <com.ybsdk.feature.savings.internal.views.diffrate.DiffRateCalendarView android:orientation="vertical" android:id="@id/diff_rate_calendar_skeleton_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>
+    <com.ybsdk.feature.savings.internal.views.diffrate.DiffRateCalendarView android:orientation="vertical" android:id="@id/diff_rate_calendar_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/diff_rate_calendar_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

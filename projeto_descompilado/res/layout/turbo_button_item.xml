@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingHorizontal="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/turbo_button_extended_icon" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="-12.0dip" android:scaleType="fitCenter" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/turbo_button_icon_container" android:layout_width="48.0dip" android:layout_height="48.0dip" android:foreground="@drawable/shortcut_foreground">
+        <ru.yandex.taxi.widget.RoundedCornersImageView android:id="@id/turbo_button_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" app:cornerRadius="@dimen/shortcuts_corners_round" app:rounded_corners_mode="with_scale_fix" />
+    </FrameLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/turbo_button_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:lines="1" app:autoSizeMinTextSize="12.0dip" app:autoSizeTextType="uniform" />
+    <ru.yandex.taxi.design.BadgeView android:layout_gravity="end|center|top" android:id="@id/turbo_button_label" android:background="@drawable/bg_shortcut_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="-4.0dip" android:layout_marginEnd="4.0dip" android:elevation="@dimen/go_design_s_space" app:badge_color="@color/component_white" app:badge_horizontal_padding="6.0dip" app:badge_text_color="@color/component_black" />
+</ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginHorizontal="@dimen/go_design_m_space" android:layout_marginVertical="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:id="@id/search_organization_no_items_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:gravity="center_horizontal" android:id="@id/search_organization_no_items_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:accessibilityHeading="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:gravity="center_horizontal" android:id="@id/search_organization_no_items_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ButtonComponent android:gravity="center_horizontal" android:id="@id/search_organization_no_items_button" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

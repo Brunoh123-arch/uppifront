@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="?textMain" android:layout_gravity="center" android:id="@id/account_action_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="-1.0sp" android:letterSpacing="0.01" android:fontFeatureSettings="pnum, lnum" />
+</FrameLayout>

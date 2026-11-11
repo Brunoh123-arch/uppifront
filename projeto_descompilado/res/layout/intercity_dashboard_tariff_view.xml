@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="180.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoFrameLayout android:background="@drawable/bg_minor_rounded_20dp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="30.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/tariff_icon_holder" android:layout_width="fill_parent" android:layout_height="76.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/unselected_tariff_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+            <ImageView android:layout_gravity="center" android:id="@id/selected_tariff_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:textColor="?textMinor" android:ellipsize="end" android:id="@id/tariff_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:fontFamily="@font/ys_text_regular" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+        <TextView android:textSize="11.0sp" android:textColor="?textMinor" android:id="@id/tariff_subtitle_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="@font/ys_text_regular" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <include android:id="@id/tariff_price_binding" layout="@layout/intercity_dashboard_tariff_price_view" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.CheckBoxComponent android:id="@id/tariff_checkbox" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+                <ImageView android:layout_gravity="center" android:id="@id/tariff_lock_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_intercity_dashboard_tariff_lock" android:scaleType="centerInside" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

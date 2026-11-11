@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RoundedCornersImageView android:layout_gravity="center_vertical" android:layout_width="@dimen/loading_title_width" android:layout_height="fill_parent" android:src="@color/component_gray_125" android:layout_marginStart="2.0dip" app:cornerRadius="20.0dip" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:background="?bgMain" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="bottom|center" android:id="@id/keyboard_skeleton" android:layout_width="fill_parent" android:layout_height="97.0dip" android:layout_marginBottom="32.0dip" android:layout_marginHorizontal="@dimen/go_design_s_space" app:barCornerRadius="24.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="bottom|center" android:id="@id/keyboard_hint_skeleton" android:layout_width="271.0dip" android:layout_height="8.0dip" android:layout_marginBottom="12.0dip" app:barCornerRadius="4.0dip" />
+</com.yandex.go.design.view.GoFrameLayout>

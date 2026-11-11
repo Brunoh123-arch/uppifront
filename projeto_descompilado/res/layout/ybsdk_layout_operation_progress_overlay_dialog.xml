@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/containerProgress" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline_progress_top" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintGuide_percent="0.27" />
+        <include android:id="@id/progressInfoView" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/guideline_progress_top" app:layout_constraintVertical_bias="0.0" layout="@layout/ybsdk_layout_operation_progress_info_view" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.ybsdk.widgets.common.YbButtonView android:id="@id/actionButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="24.0dip" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Primary.L" />
+    <com.ybsdk.widgets.common.YbButtonView android:id="@id/subActionButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="24.0dip" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Secondary.L" />
+</LinearLayout>

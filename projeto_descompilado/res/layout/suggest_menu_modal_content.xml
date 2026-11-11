@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_text_color="?textMinor" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_text_color="?textMain" app:component_title_typeface="medium" />
+    <com.yandex.go.design.divider.CardDivider android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/menuActions" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/shortcut_shape" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/base_shortcut_list_item" />
+        <include layout="@layout/right_bottom_badge_anchor" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/shortcut_labels_anchor" />
+</ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout>

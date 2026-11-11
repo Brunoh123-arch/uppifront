@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/info_content_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" android:layout_marginBottom="@dimen/go_design_m_space" android:text="@string/new_promocode_on_multiorder" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" app:layout_constraintBottom_toTopOf="@id/info_done" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/info_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_got_it" app:layout_constraintBottom_toBottomOf="parent" style="@style/BottomEdgeButtonMarginStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

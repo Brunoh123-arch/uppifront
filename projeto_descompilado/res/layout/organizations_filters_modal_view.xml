@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/filters_list" android:paddingTop="@dimen/go_design_s_space" android:paddingBottom="72.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="horizontal" android:id="@id/button_container" android:background="@drawable/organizations_filters_button_container_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/first_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/second_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center|right|top" android:id="@id/permissionClose" android:background="@drawable/vec_close" android:layout_width="@dimen/сloseDim" android:layout_height="@dimen/сloseDim" android:layout_marginTop="@dimen/closeTop" android:alpha="0.8" android:layout_marginEnd="@dimen/spacing_edge" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="35.0dip" android:textColor="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/permission_camera_title" android:layout_marginStart="@dimen/spacing_edge" android:layout_marginEnd="@dimen/spacing_edge" app:fontFamily="@font/ya_bold" />
+        <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/permissionMessage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginStart="@dimen/spacing_edge" android:layout_marginEnd="@dimen/spacing_edge" app:fontFamily="@font/ya_regular" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:background="@drawable/bg_button_transparent_stroke_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="14.0dip" android:layout_marginStart="@dimen/spacing_edge" android:layout_marginEnd="@dimen/spacing_edge" style="@style/Text.Emphasized" />
+        <FrameLayout android:id="@id/settings" android:background="@drawable/bg_button_dark_blue" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="30.0dip" android:layout_marginStart="@dimen/spacing_edge" android:layout_marginEnd="@dimen/spacing_edge">
+            <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/go_to_settings" android:drawablePadding="12.0dip" app:drawableStartCompat="@drawable/ic_settings_white" style="@style/Text.Emphasized" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

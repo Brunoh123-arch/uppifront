@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="@dimen/ybsdk_toolbar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.feature.qr.payments.internal.screens.presentation.view.ImageToolbarView android:id="@id/paymentServiceSwitcherImageToolbar" android:layout_width="0.0dip" android:layout_height="@dimen/ybsdk_toolbar_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/paymentServiceSwitcherDiv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

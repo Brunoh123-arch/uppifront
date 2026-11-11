@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_logistics_postcard_editor_choose_dialog_camera_24" android:id="@id/action_photo" android:title="@string/logistics_postcard_editor_image_sources_take_photo" />
+    <item android:icon="@drawable/ic_logistics_postcard_editor_choose_dialog_folder_24" android:id="@id/action_files" android:title="@string/logistics_postcard_editor_image_sources_from_files" />
+</menu>

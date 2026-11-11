@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="left" android:id="@id/surge_icon" android:background="@drawable/oval_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/go_design_s_space" />
+        <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/payed_option_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" app:component_auto_min_height="true" app:component_title_ellipsize_mode="end" app:component_title_max_lines="2" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" app:component_vertical_padding="0.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/payed_option_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/go_design_m_space" android:layout_marginRight="@dimen/go_design_m_space" android:layout_marginBottom="12.0dip" />
+    </LinearLayout>
+</ScrollView>

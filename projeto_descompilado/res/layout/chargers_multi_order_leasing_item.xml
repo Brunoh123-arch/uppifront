@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MultiOrderItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MultiOrderItemLayoutStyle">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/primary_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:textFontWeight="700" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/secondary_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" android:textFontWeight="500" app:robotoFontStyle="medium" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/powerbank_type" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/chevron" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/chevron_next" android:scaleType="center" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <View android:id="@id/separator" android:background="?line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginHorizontal="16.0dip" />
+</com.yandex.go.design.view.GoFrameLayout>

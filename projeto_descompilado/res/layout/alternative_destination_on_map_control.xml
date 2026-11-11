@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:background="@drawable/address_on_map_trail_background" android:layout_width="@dimen/destination_bubble_icon_size" android:layout_height="@dimen/destination_bubble_icon_size" android:scaleType="fitCenter" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_s_space" />
+    <ru.yandex.taxi.widget.ShimmeringRobotoTextView android:textSize="13.0dip" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:maxLines="2" android:lineSpacingExtra="-1.0dip" android:layout_marginStart="2.0dip" android:fontFeatureSettings="@string/go_default_font_settings" app:robotoFontStyle="medium" app:useMinimumWidth="true" />
+</merge>

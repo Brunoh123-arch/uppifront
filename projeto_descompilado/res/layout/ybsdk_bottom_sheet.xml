@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/shimmer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ybsdk_bottom_sheet_loading" />
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/divView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/error" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ybsdk_bottom_sheet_error" />
+    <com.ybsdk.feature.divkit.api.ui.skeletons.DivSkeletonsView android:id="@id/divkitShimmerView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

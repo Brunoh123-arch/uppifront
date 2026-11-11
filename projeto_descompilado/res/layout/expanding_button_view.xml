@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/shadow_frame_delegate" android:layout_width="48.0dip" android:layout_height="60.0dip" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/additionalSection" android:layout_width="wrap_content" android:layout_height="48.0dip" app:component_subtitle_ellipsize_mode="end" app:component_subtitle_max_lines="1" app:component_subtitle_typeface="regular" app:component_title_ellipsize_mode="end" app:component_title_max_lines="1" app:component_title_typeface="medium" app:component_title_with_navigation="true" app:component_vertical_padding="0.0dip" />
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progressIndicator" android:background="@drawable/oval_shape" android:layout_width="48.0dip" android:layout_height="48.0dip" android:progress="50" android:progressBackgroundTint="@color/white" app:indicatorColor="?controlMain" app:indicatorDirectionCircular="clockwise" app:indicatorInset="4.0dip" app:trackColor="?controlMinor" app:trackCornerRadius="4.0dip" app:trackThickness="4.0dip" />
+    <ru.yandex.taxi.widget.buttons.CircleButtonImageView android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="12.0dip" />
+</merge>

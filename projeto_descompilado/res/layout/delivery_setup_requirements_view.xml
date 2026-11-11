@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/requirements_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_show_navigation_button="false" />
+    <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/requirements_group" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" app:component_rounded_background="?bgMinor" app:component_subtitle_gravity="center_horizontal" app:component_title_gravity="center_horizontal" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

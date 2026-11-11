@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/titles_holder" android:tag="@string/bottom_sheet_peek_tag" android:paddingTop="12.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/order_screens_card_title_offset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.accessibility.AccessibilityLiveRegionTextView android:textSize="20.0sp" android:id="@id/order_screens_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFeatureSettings="pnum, lnum" style="@style/OrderScreensTitle" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="14.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/order_screens_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="3" android:fontFeatureSettings="pnum, lnum" style="@style/OrderScreensSubtitle" />
+    <ViewStub android:gravity="center" android:id="@id/car_description_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/shared_payment_save_account_scroll_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListTitleComponent android:ellipsize="end" android:id="@id/shared_payment_save_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ru.yandex.taxi.design.AutoDividerComponentList android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="normal" app:component_top_divider_type="normal">
+                        <ru.yandex.taxi.design.ListItemComponent android:id="@id/shared_payment_save_account_members" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/shared_payments_members" app:component_title_text_color="?textMain" app:component_trail_mode="navigation" />
+                        <ru.yandex.taxi.design.ListItemComponent android:id="@id/shared_payment_save_account_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title="@string/summary_payment_method_title" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" app:component_trail_mode="navigation" />
+                    </ru.yandex.taxi.design.AutoDividerComponentList>
+                    <ru.yandex.taxi.design.ListGroupHeaderComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ru.yandex.taxi.design.ListItemSwitchComponent android:id="@id/shared_payment_save_account_set_default_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/shared_payments_make_default_payment_method" />
+                    <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_save_account_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_save" style="@style/BottomEdgeButtonMarginStyle" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

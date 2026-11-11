@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avanzar %d segundos</item>
+        <item quantity="one">Avanzar %d segundo</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Retroceder %d segundos</item>
+        <item quantity="one">Retroceder %d segundo</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">días</item>
+        <item quantity="one">día</item>
+        <item quantity="few">días</item>
+        <item quantity="many">días</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">horas</item>
+        <item quantity="one">hora</item>
+        <item quantity="few">horas</item>
+        <item quantity="many">horas</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d notificaciones nuevas</item>
+        <item quantity="one">%d notificación nueva</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Últimos %1$d dígitos</item>
+        <item quantity="zero">Últimos %1$d dígitos</item>
+        <item quantity="one">Último %1$d dígito</item>
+        <item quantity="few">Últimos %1$d dígitos</item>
+        <item quantity="many">Últimos %1$d dígitos</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Ahora recibirá una llamada de
+%1$s. Introduzca los últimos %2$d dígitos de este número."</item>
+        <item quantity="zero">"Ahora recibirá una llamada de
+%1$s. Introduzca los últimos %2$d dígitos de este número."</item>
+        <item quantity="one">"Ahora recibirá una llamada de
+%1$s. Introduzca el último %2$d dígito de este número."</item>
+        <item quantity="few">"Ahora recibirá una llamada de
+%1$s. Introduzca los últimos %2$d dígitos de este número."</item>
+        <item quantity="many">"Ahora recibirá una llamada de
+%1$s. Introduzca los últimos %2$d dígitos de este número."</item>
+    </plurals>
+</resources>

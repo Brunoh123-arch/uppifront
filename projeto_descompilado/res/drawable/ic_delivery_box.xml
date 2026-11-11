@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="40.0dip" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h40v40h-40z" />
+        <group>
+            <clip-path android:pathData="M0.0412,9.5577C0.0173,7.4654 1.5102,5.6474 3.6084,5.2137L13.7917,3.109C16.8613,2.4746 20.0185,2.348 23.1312,2.7347L35.7412,4.3011C37.9391,4.5741 39.6062,6.3674 39.6709,8.5281L40.0002,19.5329V30.6007C40.0002,32.7339 38.4286,34.5583 36.2747,34.9255L26.8512,36.5318C24.5843,36.9181 22.2772,37.0304 19.9821,36.8661L4.4622,35.7546C2.1303,35.5876 0.318,33.7062 0.2919,31.4253L0.0412,9.5577Z" />
+            <path android:fillColor="@drawable/$ic_delivery_box__0" android:pathData="M23.2774,8.6221L39.5921,5.893L40.0002,21.7479V37.6004H23.2656L23.2774,8.6221Z" />
+            <path android:fillColor="@drawable/$ic_delivery_box__1" android:pathData="M-3.7012,5.3809L23.3718,8.7131L46.4359,5.3809L18.817,1.7314L-3.7012,5.3809Z" />
+            <path android:fillColor="@drawable/$ic_delivery_box__2" android:pathData="M-0.1543,5.6262L23.3083,8.6137V37.5572L0.4143,37.7089L-0.1543,5.6262Z" />
+            <path android:fillColor="@drawable/$ic_delivery_box__3" android:pathData="M7.0098,3.8994L12.3664,2.9204L31.3634,5.557C33.3351,5.8307 34.8001,7.4777 34.8001,9.4207L34.7994,32.966C34.7993,34.2147 34.338,35.4217 33.5,36.3656L27,37.829C28.7812,36.6056 29.841,34.6133 29.8411,32.4881L29.8414,21.866L29.842,10.4325C29.8421,8.4878 28.3745,6.8398 26.4007,6.5681L7.0098,3.8994Z" />
+        </group>
+    </group>
+</vector>

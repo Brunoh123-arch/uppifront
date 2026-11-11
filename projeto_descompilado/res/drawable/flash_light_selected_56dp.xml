@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:color="?rippleColor"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+            <size android:height="56.0dip" android:width="56.0dip" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/ic_flashlight_dark" />
+</layer-list>

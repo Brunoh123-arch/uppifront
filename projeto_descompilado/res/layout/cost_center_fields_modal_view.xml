@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/cost_center_fields_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_12dp_bottom_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ToolbarComponent android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_show_navigation_button="false" app:component_subtitle_gravity="center_horizontal" app:component_title="@string/summary_cost_center_item_title" app:component_title_gravity="center_horizontal" app:component_title_size="@dimen/component_text_size_body" app:component_title_typeface="bold" />
+                <LinearLayout android:orientation="vertical" android:id="@id/cost_center_fields_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/requirements_shadow_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/cost_center_fields_scroll_view" />
+    </FrameLayout>
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/cost_center_fields_done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_component_min_height" android:text="@string/common_done" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

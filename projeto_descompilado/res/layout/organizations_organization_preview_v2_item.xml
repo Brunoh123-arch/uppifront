@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/organization_item_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/image_slider_recycler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/image_slider_pager_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginHorizontal="@dimen/go_design_m_space" app:layout_constraintTop_toTopOf="parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/image_slider_pager" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom|center" android:id="@id/dots_bg" android:background="@color/black_alpha50" android:visibility="gone" android:layout_width="@dimen/organization_snippet_dots_bg_width" android:layout_height="@dimen/organization_snippet_dots_bg_height" android:layout_marginBottom="5.0dip" />
+        <com.yandex.go.places.common.ui.indicator.DotsIndicatorComponent android:layout_gravity="bottom|center" android:id="@id/dots_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_subtitle" android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:importantForAccessibility="yes" android:layout_marginHorizontal="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginHorizontal="@dimen/go_design_m_space">
+        <LinearLayout android:id="@id/review_rating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="@color/component_amber_dark" android:id="@id/review_rating_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="2.0dip" app:robotoFontStyle="bold" />
+            <ru.yandex.taxi.design.RatingBarComponent android:layout_gravity="center_vertical" android:id="@id/review_rating" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="16.0dip" android:minHeight="16.0dip" android:importantForAccessibility="noHideDescendants" android:layout_marginEnd="2.0dip" app:contentDescriptions="@array/rating_view_titles" app:maxValue="5" app:starHeight="16.0dip" app:starWeight="1" app:starWidth="16.0dip" />
+        </LinearLayout>
+        <View android:id="@id/empty_review_rating" android:background="@drawable/ic_rating_star" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginEnd="2.0dip" android:backgroundTint="?line" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/review_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:importantForAccessibility="yes" app:robotoFontStyle="regular" />
+    </LinearLayout>
+    <com.yandex.go.places.impl.ui.common.compression_resistant.CompressionResistantListComponent android:gravity="start" android:orientation="horizontal" android:id="@id/subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+    <HorizontalScrollView android:id="@id/tags_container_host" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/tags_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <HorizontalScrollView android:id="@id/buttons_container_host" android:visibility="gone" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/buttons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <include layout="@layout/organizations_shimmering_layout_v2" />
+</com.yandex.go.design.view.GoLinearLayout>

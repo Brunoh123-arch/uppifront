@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="16.0sp" android:textColor="?textMain" android:gravity="center_vertical" android:id="@id/ya_eats_retail_search_categories_list_category_title" android:layout_width="fill_parent" android:layout_height="48.0dip" android:fontFamily="@font/ya_regular" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

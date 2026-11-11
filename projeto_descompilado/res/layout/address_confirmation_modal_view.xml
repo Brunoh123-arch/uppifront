@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/address_confirmation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" app:component_auto_min_height="true" app:component_title_size="@dimen/component_text_size_title" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/address_confirmation_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" app:component_auto_min_height="true" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/address_confirmation_source_address" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_source_pin_24" app:component_lead_image_tint="?textMain" app:component_title_ellipsize_mode="middle" app:component_title_with_navigation="true" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/favorite_addresses_entry_point" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="top" app:component_divider_type="icon_margin" app:component_trail_image="@drawable/chevron_next" app:component_trail_image_tint="?textMain" />
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/BottomEdgeButtonMarginStyle">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm_address_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMinor" app:component_button_size="L" />
+        <Space android:layout_width="4.0dip" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/change_address_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMain" app:component_button_size="L" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/done_buttons_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BottomEdgeButtonMarginStyle">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_done" android:layout_weight="1.0" app:component_background_color="?controlMain" app:component_button_accent="true" app:component_button_size="L" />
+        <com.yandex.go.design.view.GoImageButton android:id="@id/save_address_button" android:background="@drawable/bg_round_16dp_minor" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_bookmark_fill" android:tint="?textOnControlMinor" android:layout_marginStart="4.0dip" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:id="@id/bottom_container_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/bottom_container" />
+    <ru.yandex.taxi.widget.ButtonsView android:orientation="horizontal" android:id="@id/bottom_container" android:background="@drawable/footer_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.yandex.go.design.view.GoConstraintLayout>

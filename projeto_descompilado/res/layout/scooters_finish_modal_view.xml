@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <com.yandex.go.design.view.GoConstraintLayout android:id="@id/content_constraint_layout" android:background="?cardDivider" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yandex.go.scooters.finish_info.statistics.ScootersFinishInfoStatisticsCard android:id="@id/statistics_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.yandex.go.scooters.feedback.ScootersFeedbackCard android:id="@id/feedback_card" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/shortcuts_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.yandex.go.scooters.finish_info.info.ScootersFinishInfoCard android:orientation="vertical" android:id="@id/info_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:nestedScrollingEnabled="false" />
+            <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/info_message_layout" android:paddingTop="16.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip">
+                <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:gravity="center_vertical" android:id="@id/info_message" android:background="@drawable/bg_round_16dp_minor" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="8.0dip" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/newbie_help_item_component" android:background="@drawable/bg_transparent_ripple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:component_trail_mode="navigation" />
+            </com.yandex.go.design.view.GoLinearLayout>
+            <com.yandex.go.design.view.GoView android:id="@id/bottom_fill_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:importantForAccessibility="no" />
+        </com.yandex.go.design.view.GoConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.yandex.go.design.view.GoConstraintLayout android:layout_gravity="bottom" android:id="@id/button_container" android:background="@drawable/scooters_top_rounded_floating_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yandex.go.design.view.GoFrameLayout android:id="@id/sharing_personal_goals_promo_plate_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/promo_plate" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/promo_plate" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:component_no_background="true" app:component_trail_mode="navigation" app:layout_constraintBottom_toTopOf="@id/bottom_edge_button_layout" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/sharing_personal_goals_promo_plate_container" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:id="@id/bottom_edge_button_layout" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scooters_done" android:layout_weight="1.0" app:component_background_color="?controlMain" />
+        </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    </com.yandex.go.design.view.GoConstraintLayout>
+</com.yandex.go.design.view.GoFrameLayout>

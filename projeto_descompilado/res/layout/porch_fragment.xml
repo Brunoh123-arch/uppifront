@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.InsetsAwareLinearLayout android:orientation="vertical" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.RobotoTextView android:id="@id/porch_hint" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_porch_hint" android:layout_alignBaseline="@id/porch" android:paddingEnd="8.0sp" app:robotoFontStyle="light" style="@style/text_input.left" />
+            <ru.yandex.taxi.widget.RobotoEditText android:id="@id/porch" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="number" android:layout_toEndOf="@id/porch_hint" app:robotoFontStyle="light" style="@style/text_input.left" />
+            <View android:id="@id/porch_line" android:background="@drawable/edittext_underlined" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/porch" />
+            <ru.yandex.taxi.widget.RobotoEditText android:textColorHint="?textMinor" android:id="@id/comment" android:paddingTop="40.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/summary_comment_hint" android:layout_below="@id/porch_line" app:robotoFontStyle="light" style="@style/text_input.left" />
+            <View android:id="@id/comment_line" android:background="@drawable/edittext_underlined" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="-4.0dip" android:layout_below="@id/comment" />
+        </RelativeLayout>
+    </ScrollView>
+    <ru.yandex.taxi.widget.RobotoTextView android:id="@id/done" android:text="@string/promocode_confirm" style="@style/settings_modal_view_confirm_button" />
+</ru.yandex.taxi.widget.InsetsAwareLinearLayout>

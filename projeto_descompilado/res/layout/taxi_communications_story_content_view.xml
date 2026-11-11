@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/story_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/story_text_media_scroll" android:paddingTop="60.0dip" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:importantForAccessibility="no" app:layout_constraintBottom_toTopOf="@id/story_buttons_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/story_text_media_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ru.yandex.taxi.design.BadgeView android:id="@id/story_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" />
+            <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/story_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:component_no_background="true" app:component_title_gravity="text_start" style="@style/ListHeaderComponent" />
+            <ru.yandex.taxi.design.ListTextComponent android:id="@id/story_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:component_text_background="@color/transparent" app:component_text_gravity="text_start" />
+            <Space android:id="@id/story_space" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <FrameLayout android:id="@id/story_media_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="bottom|center" android:id="@id/story_content_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" />
+                <com.airbnb.lottie.LottieAnimationView android:layout_gravity="bottom|center" android:id="@id/story_content_animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/story_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/TaxiCommunicationsBottomEdgeButtonMarginStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

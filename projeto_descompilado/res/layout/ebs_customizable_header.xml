@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/view_btn_action" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ebssdk_margin_16" />
+    <View android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:layout_weight="1.0" />
+    <ru.rt.ebs.cryptosdk.presentation.customView.CustomizableTextView android:textAppearance="@style/Ebssdk.TextButton" android:textSize="@dimen/ebssdk_text_14" android:layout_gravity="center_vertical" android:id="@id/view_btn_cancel" android:layout_width="wrap_content" android:layout_height="?actionBarSize" android:text="@string/ebssdk_close_btn_text" android:layout_marginEnd="@dimen/ebssdk_margin_16" />
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/ybsdk_tsar_button_redesign_corner_radius" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/ybsdk_background_yb_button" />
+</layer-list>

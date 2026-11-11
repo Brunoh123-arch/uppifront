@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/bg_categories_favorites_bubble_item" android:layout_width="wrap_content" android:layout_height="@dimen/height_notification"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="@dimen/bubble_image_view_size" android:layout_height="@dimen/bubble_image_view_size" android:layout_marginLeft="@dimen/bubble_margin_horizontal" android:layout_marginRight="@dimen/bubble_margin_image_between_text" android:adjustViewBounds="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:layout_gravity="center_vertical" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/bubble_margin_horizontal" />
+</LinearLayout>

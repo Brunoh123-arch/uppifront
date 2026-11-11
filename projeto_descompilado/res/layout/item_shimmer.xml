@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:id="@id/shimmering_bar_1" android:layout_width="fill_parent" android:layout_height="108.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip" app:ya_eats_corner_radius="24.0dip" app:ya_eats_shimmering_background_color="?bgMinor" />
+</LinearLayout>

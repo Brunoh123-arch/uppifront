@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?textOnControl" android:ellipsize="end" android:id="@id/ya_eats_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/ya_bold" style="@style/TextAppearance.UIKit.Caption2.Tight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

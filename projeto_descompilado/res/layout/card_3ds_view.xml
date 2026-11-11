@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.BackButton android:layout_marginBottom="12.0dip" style="@style/back_button" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="18.0sp" android:textColor="?textMinor" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/add_credit_card_random_amt_title" android:lines="1" android:singleLine="true" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:robotoFontStyle="bold" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include layout="@layout/webview_progress_error_layout" />
+    </FrameLayout>
+</merge>

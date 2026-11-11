@@ -1,0 +1,74 @@
+[
+  {
+    "vendor": "Google",
+    "api": "36-",
+    "libwebrtc": "137.1.0-",
+    "sdk": "3.10.0-",
+    "allowedCodecs": [
+      {
+        "codec": "vp9",
+        "allowHardwareEncoder": true,
+        "modes": [
+          {
+            "scalabilityMode": "L3T3_KEY",
+            "allowHardwareEncoder": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Samsung",
+    "api": "36-",
+    "libwebrtc": "137.1.0-",
+    "sdk": "3.10.0-",
+    "allowedCodecs": [
+      {
+        "codec": "vp9",
+        "allowHardwareEncoder": true,
+        "modes": [
+          {
+            "scalabilityMode": "L3T3_KEY",
+            "allowHardwareEncoder": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "OnePlus",
+    "api": "36-",
+    "libwebrtc": "137.1.0-",
+    "sdk": "3.10.0-",
+    "allowedCodecs": [
+      {
+        "codec": "vp9",
+        "allowHardwareEncoder": true,
+        "modes": [
+          {
+            "scalabilityMode": "L3T3_KEY",
+            "allowHardwareEncoder": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "vendor": "Xiaomi",
+    "api": "36-",
+    "libwebrtc": "137.1.0-",
+    "sdk": "3.10.0-",
+    "allowedCodecs": [
+      {
+        "codec": "vp9",
+        "allowHardwareEncoder": true,
+        "modes": [
+          {
+            "scalabilityMode": "L3T3_KEY",
+            "allowHardwareEncoder": false
+          }
+        ]
+      }
+    ]
+  }
+]

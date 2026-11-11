@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.bubble.BubbleComponent android:id="@id/bubble_component" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/content_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListItemComponent android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" app:component_no_background="true" app:component_title_size="@dimen/component_text_size_caption" />
+        <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_caption" android:layout_gravity="center_vertical" android:id="@id/yes_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginEnd="4.0dip" app:component_background_color="?controlMinor" app:component_button_size="S" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_caption" android:layout_gravity="center_vertical" android:id="@id/no_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginEnd="8.0dip" app:component_background_color="?controlMinor" app:component_button_size="S" app:component_title_color="?textOnControlMinor" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</ru.yandex.taxi.design.bubble.BubbleComponent>

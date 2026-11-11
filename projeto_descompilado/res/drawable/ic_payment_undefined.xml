@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M4,0L32,0A4,4 0,0 1,36 4L36,20A4,4 0,0 1,32 24L4,24A4,4 0,0 1,0 20L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ffffffff" android:pathData="M4,0L32,0A4,4 0,0 1,36 4L36,20A4,4 0,0 1,32 24L4,24A4,4 0,0 1,0 20L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ffffffff" android:pathData="M4,0L32,0A4,4 0,0 1,36 4L36,20A4,4 0,0 1,32 24L4,24A4,4 0,0 1,0 20L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ff000000" android:pathData="M0.5,3h35l0.5,6H0l0.5,-6Z" />
+        <path android:fillColor="#fff1f0ed" android:pathData="M4.282,12h21.436c0.446,0 0.608,0.046 0.77,0.134 0.163,0.087 0.291,0.215 0.378,0.378 0.088,0.162 0.134,0.324 0.134,0.77v3.436c0,0.446 -0.046,0.608 -0.134,0.77a0.908,0.908 0,0 1,-0.378 0.378c-0.162,0.088 -0.324,0.134 -0.77,0.134H4.282c-0.446,0 -0.607,-0.046 -0.77,-0.134a0.908,0.908 0,0 1,-0.378 -0.378c-0.088,-0.162 -0.134,-0.324 -0.134,-0.77v-3.436c0,-0.446 0.046,-0.607 0.134,-0.77a0.908,0.908 0,0 1,0.378 -0.378c0.163,-0.088 0.324,-0.134 0.77,-0.134Z" android:fillType="evenOdd" />
+        <path android:fillColor="#fffce45e" android:pathData="M6.162,12h2.78l-2.74,2.838a1,1 0,0 1,-1.439 -1.39L6.162,12ZM14.024,12h2.78l-3.153,3.266a1,1 0,0 1,-1.44 -1.39L14.025,12ZM21.472,12h2.78L21.1,15.266a1,1 0,0 1,-1.44 -1.39L21.473,12Z" android:fillType="evenOdd" />
+        <path android:fillColor="#ffffba8f" android:pathData="m6.162,18 l2.74,-2.837a1,1 0,0 1,1.438 1.389L8.942,18h-2.78ZM13.61,18 L16.35,15.163a1,1 0,0 1,1.438 1.389L16.39,18h-2.78ZM23.798,15.163L21.058,18h2.78l1.399,-1.448a1,1 0,0 0,-1.44 -1.39Z" android:fillType="evenOdd" />
+        <path android:fillColor="#ff000000" android:pathData="M32,0.5H4A3.5,3.5 0,0 0,0.5 4v16A3.5,3.5 0,0 0,4 23.5h28a3.5,3.5 0,0 0,3.5 -3.5V4A3.5,3.5 0,0 0,32 0.5ZM4,0a4,4 0,0 0,-4 4v16a4,4 0,0 0,4 4h28a4,4 0,0 0,4 -4V4a4,4 0,0 0,-4 -4H4Z" android:fillType="evenOdd" />
+    </group>
+</vector>

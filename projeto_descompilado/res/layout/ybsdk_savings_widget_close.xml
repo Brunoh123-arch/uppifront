@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.YbButtonView android:orientation="horizontal" android:background="@drawable/ybsdk_savings_widget_close_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ybsdk_savings_account_widget_margin_horizontal" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Secondary.L"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

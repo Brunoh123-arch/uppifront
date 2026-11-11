@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/shared_payments_members_list_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/shared_payments_members_list_common_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="number" app:imeOptions="actionDone" />
+            <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/shared_payments_members_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/shared_payments_members_empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/shared_payments_members_empty_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/shared_payments_members_empty_view_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_text_color="?textMinor" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/shared_payments_members_list_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="bottom" android:id="@id/shared_payments_members_list_shadow" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:id="@id/shared_payments_members_list_bottom_button_container" android:background="?bgMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payments_members_list_bottom_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    <FrameLayout android:id="@id/shared_payment_controls_blocker" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

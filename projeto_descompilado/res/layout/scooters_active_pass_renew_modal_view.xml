@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_typeface="bold" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/points_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:importantForAccessibility="no" android:nestedScrollingEnabled="false" android:layout_marginHorizontal="@dimen/go_design_s_space" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:text="@string/common_close" android:layout_marginHorizontal="8.0dip" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/disable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scooters_pass_renew_disable_button" android:layout_marginHorizontal="8.0dip" app:component_button_accent="true" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/backdropShimmer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="@dimen/ybsdk_product_card_backdrop_height" android:layout_marginHorizontal="@dimen/ybsdk_product_card_horizontal_margin" app:layout_constraintDimensionRatio="@dimen/ybsdk_product_card_view_ratio" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:ybsdk_backgroundColor="?ybColor_fill_default_50" app:ybsdk_cornerRadius="@dimen/ybsdk_product_card_corner_radius" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/card" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginHorizontal="@dimen/ybsdk_product_card_horizontal_margin" app:layout_constraintDimensionRatio="@dimen/ybsdk_product_card_view_ratio" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:ybsdk_cornerRadius="@dimen/ybsdk_product_card_corner_radius" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

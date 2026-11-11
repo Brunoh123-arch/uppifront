@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@drawable/ybsdk_drag_and_drop_onboarding_dialog_background" android:padding="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="3.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="18.0sp" android:textColor="?ybColor_textIcon_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ybsdk_savings_drag_and_drop_onboarding_dialog_title" style="@style/Widget.YB.Text.Title1" />
+    <TextView android:textSize="14.0sp" android:textColor="?ybColor_textIcon_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ybsdk_savings_drag_and_drop_onboarding_dialog_description" style="@style/Widget.YB.Text.Body3" />
+    <com.ybsdk.widgets.common.YbButtonView android:id="@id/primaryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:ybsdk_buttonTitle="@string/ybsdk_savings_drag_and_drop_onboarding_dialog_button_text" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.InvertedStatic.S" />
+</LinearLayout>

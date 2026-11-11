@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="bold" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/change_address" android:background="@drawable/bg_main_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_pin_24dp" app:component_title="@string/address_another" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/delete_address" android:background="@drawable/bg_main_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_trash_can_darkest" app:component_title="@string/favorites_remove_address" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.OperationProgressView android:id="@id/progressBar" android:layout_width="80.0dip" android:layout_height="80.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:ybsdk_initialSpinnerWidth="4.0dip" app:ybsdk_spinnerRadiusPercent="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

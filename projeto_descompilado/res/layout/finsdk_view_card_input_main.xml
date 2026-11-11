@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:id="@id/finsdkCardBindingLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.fintechsdk.features.bdui.internal.presentation.customview.cardinput.views.CardPanInputView android:id="@id/finsdkCardNumberInput" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_chainStyle="spread_inside" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.yandex.fintechsdk.features.bdui.internal.presentation.customview.cardinput.views.DateExpiredInputView android:id="@id/finsdkCardExpirationDateInput" android:layout_width="110.0dip" android:layout_height="fill_parent" android:layout_marginStart="16.0dip" app:layout_constraintStart_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.yandex.fintechsdk.features.bdui.internal.presentation.customview.cardinput.views.SecretCodeInputView android:id="@id/finsdkCardCvvInput" android:layout_width="70.0dip" android:layout_height="fill_parent" app:layout_constraintStart_toEndOf="@id/finsdkCardExpirationDateInput" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

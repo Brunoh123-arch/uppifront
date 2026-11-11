@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:id="@id/ya_eats_chip_container" android:layout_width="wrap_content" android:layout_height="20.0dip" android:paddingHorizontal="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.eda_design.quarantine.image.EatsImageView android:layout_gravity="center_vertical" android:id="@id/ya_eats_chip_image" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginEnd="2.0dip" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="11.0sp" android:layout_gravity="center_vertical" android:id="@id/ya_eats_chip_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.YSText.Caption2.Tight.Medium" />
+</androidx.appcompat.widget.LinearLayoutCompat>

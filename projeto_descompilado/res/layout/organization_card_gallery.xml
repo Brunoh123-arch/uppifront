@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/images_slider" android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.places.common.ui.indicator.DotsIndicatorComponent android:layout_gravity="bottom|center" android:id="@id/banner_dots_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" />
+    <ru.yandex.taxi.design.StoryProgressComponent android:layout_gravity="bottom|center" android:id="@id/banner_story_progress_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/discovery_organizations_card_story_progress_component_bottom_margin" android:layout_marginHorizontal="@dimen/go_design_m_space" app:color="@color/shimmering_edge_point_2_light" app:fill_color="@color/shimmering_center_light" />
+    <ru.yandex.taxi.design.badge.DiscountBadgeView android:layout_gravity="bottom" android:id="@id/images_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:rotation="-4.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip" app:discount_background_color="@color/component_green_normal" app:discount_corner_radius="6.0dip" app:edge_clip_radius="3.0dip" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/ya_eats_item_cart_promo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ya_eats_cart_screen_promo_margin_vertical" android:layout_marginBottom="@dimen/ya_eats_cart_screen_promo_margin_vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/ya_eats_cart_screen_margin_start" app:layout_constraintEnd_toStartOf="@id/price" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/MainText" />
+    <androidx.appcompat.widget.AppCompatTextView android:textColor="?error" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ya_eats_cart_screen_margin_end" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/name" app:layout_constraintTop_toTopOf="parent" style="@style/MainText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

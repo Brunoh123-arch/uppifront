@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/skeletonSetting" layout="@layout/ybsdk_skeleton_card_settings" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layout_constraintTop_toBottomOf="@id/skeletonSetting" layout="@layout/ybsdk_skeleton_card_settings" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layout_constraintTop_toBottomOf="@id/skeletonSetting" layout="@layout/ybsdk_skeleton_card_settings" />
+</LinearLayout>

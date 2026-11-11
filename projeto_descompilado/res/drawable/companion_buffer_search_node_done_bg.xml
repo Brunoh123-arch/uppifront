@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?controlMain" />
+            <corners android:radius="@dimen/companion_buffer_search_node_corner_radius" />
+            <size android:height="@dimen/companion_buffer_search_node_size" android:width="@dimen/companion_buffer_search_node_size" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:drawable="@drawable/companion_buffer_search_node_done_ic" />
+</layer-list>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.navigator.alt_select.traffic.TrafficJamView android:layout_gravity="end" android:id="@id/traffic_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:component_circle_image_tint_enable="false" app:component_frame_height="@dimen/map_controls_height" app:component_frame_width="@dimen/map_controls_height" />
+    <com.yandex.go.navigator.map_interactions.parkings.CarParsToggle android:layout_gravity="end" android:id="@id/car_parks" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="4.0dip" app:component_circle_image_tint_enable="false" app:component_frame_height="@dimen/map_controls_height" app:component_frame_width="@dimen/map_controls_height" />
+    <Space android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <Space android:id="@id/location_spacer" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ru.yandex.taxi.widget.floatbuttonholder.FloatButtonHolderLayout android:layout_gravity="end|bottom|center" android:id="@id/float_button_holder_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

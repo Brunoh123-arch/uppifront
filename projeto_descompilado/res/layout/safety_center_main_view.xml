@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ToolbarComponent android:id="@id/safety_center_toolbar" android:layout_width="fill_parent" android:layout_height="60.0dip" app:component_divider_position="none" app:component_subtitle_gravity="center_horizontal" app:component_title_gravity="center_horizontal" app:component_title_size="@dimen/component_text_size_body" app:component_title_typeface="medium" />
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/safety_center_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/safety_center_content" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListTitleComponent android:id="@id/safety_center_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_gravity="center_horizontal" app:component_title_size="@dimen/component_text_size_header" />
+            <ru.yandex.taxi.widget.FlowLayout android:gravity="fill_horizontal" android:id="@id/safety_center_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" app:itemSpacing="@dimen/go_design_s_space" app:maxColumns="2" />
+            <LinearLayout android:orientation="vertical" android:id="@id/shake_content_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListItemSwitchComponent android:gravity="fill_horizontal" android:id="@id/safety_center_shake_toggle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="both" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/stories_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/stories_loading" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+                    <ru.yandex.taxi.widget.ShimmeringFrameLayout android:id="@id/stories_loading_left" android:background="@drawable/icon_bubble" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:layout_constraintDimensionRatio="16:10" app:layout_constraintEnd_toStartOf="@id/stories_loading_right" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                    <ru.yandex.taxi.widget.ShimmeringFrameLayout android:id="@id/stories_loading_right" android:background="@drawable/icon_bubble" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:layout_constraintDimensionRatio="16:10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_weight="1.0" app:layout_constraintStart_toEndOf="@id/stories_loading_left" app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/tooltip_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="noHideDescendants" />
+</FrameLayout>

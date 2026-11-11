@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:minHeight="24.0dip" android:maxLines="1" app:robotoFontStyle="regular" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:ellipsize="end" android:gravity="center" android:id="@id/subtitle" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:maxLines="2" app:robotoFontStyle="regular" />
+</LinearLayout>

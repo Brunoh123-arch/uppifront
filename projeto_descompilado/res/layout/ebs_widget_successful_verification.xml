@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.rt.ebs.cryptosdk.presentation.customView.CustomizableConstraintLayout android:id="@id/ebs_widget_successful_verification_darkening" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="0.0dip" app:constraintLayoutType="successfulVerificationWidgetDarkening" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ebs_widget_successful_verification_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Ebssdk.Widget">
+            <ru.rt.ebs.cryptosdk.presentation.customView.CustomizableImageView android:layout_gravity="center_horizontal" android:id="@id/ebs_widget_successful_verification_icon" android:layout_width="@dimen/ebssdk_common_icon_size" android:layout_height="@dimen/ebssdk_common_icon_size" android:src="@drawable/ebssdk_icon_check" app:imageViewType="successfulVerificationWidget" />
+            <ru.rt.ebs.cryptosdk.presentation.customView.CustomizableTextView android:textAppearance="@style/Ebssdk.Text.Weight400" android:textSize="@dimen/ebssdk_text_14" android:gravity="center_horizontal" android:id="@id/ebs_widget_successful_verification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebssdk_margin_16" android:text="@string/ebssdk_successful_verification_tv_text" app:textViewType="successfulVerificationWidget" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_subtitle" android:id="@id/onboarding_title" android:paddingTop="12.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:accessibilityHeading="true" app:robotoFontStyle="bold" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/onboarding_subtitle" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/filters_view" android:background="?bgFloating" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

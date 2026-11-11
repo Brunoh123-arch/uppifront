@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:background="@drawable/light_rounded_booking_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/go_design_m_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/booking_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineHeight="@dimen/discovery_booking_template_title_line_height" android:textFontWeight="500" app:robotoFontStyle="medium" />
+        <com.yandex.go.places.impl.ui.common.compression_resistant.CompressionResistantListComponent android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:id="@id/booking_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/go_design_s_space" android:lineHeight="@dimen/discovery_booking_template_subtitle_line_height" android:textFontWeight="400" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="end|center" android:id="@id/booking_icons_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

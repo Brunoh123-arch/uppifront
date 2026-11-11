@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/theme_default_day_bg_minor"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="?bgInvert" />
+            <corners android:topLeftRadius="@dimen/ya_eats_restaurant_menu_item_corners" android:topRightRadius="@dimen/ya_eats_restaurant_menu_item_corners" android:bottomLeftRadius="@dimen/ya_eats_restaurant_menu_item_corners" android:bottomRightRadius="@dimen/ya_eats_restaurant_menu_item_corners" />
+        </shape>
+    </item>
+</ripple>

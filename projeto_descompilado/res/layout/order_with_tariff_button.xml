@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoView android:id="@id/footer_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/go_design_l_space" android:importantForAccessibility="no" app:layout_constraintBottom_toTopOf="@id/button_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/button_container" android:background="@drawable/top_corners_floating" android:padding="@dimen/go_design_s_space" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/footer_shadow" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="top" android:id="@id/button_expand_collapse" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="10.0dip" android:importantForAccessibility="yes" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/button_tariff_action" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoFrameLayout>
+</merge>

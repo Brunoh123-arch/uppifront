@@ -1,0 +1,2177 @@
+{
+  "ui": {
+    "sections": [
+      {
+        "id": "menu_notifications",
+        "origType": "MenuRenderData",
+        "reloadable": false,
+        "content": [
+          {
+            "id": "menu_notifications",
+            "divDataTag": null,
+            "type": null,
+            "differ": {
+              "considerItemIds": true,
+              "animateOnChange": true,
+              "skipModelCheck": false
+            },
+            "actions": {
+              "throttled_analytics_menu_item_tapped_vklyuchite_uvedomleniyafallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-0"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_vklyuchite_uvedomleniyafallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_vklyuchite_uvedomleniya-1": {
+                "action": {
+                  "link": "yandextaxi://app_settings/?category=notifications",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_vklyuchite_uvedomleniya",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_vklyuchite_uvedomleniyafallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-0"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              }
+            },
+            "divData": {
+              "log_id": "menu_notifications",
+              "states": [
+                {
+                  "state_id": 0,
+                  "div": {
+                    "type": "MenuDivFactory:menu",
+                    "visibility": "@{(((superapp.profile.notifications_available !: false) == false)) ? 'visible' : 'gone'}",
+                    "items": [
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=@{theme == 'dark' || theme == 'ultimaDark' ? 'app_ic_bell_alert_fill_gray' : 'app_ic_bell_alert_fill'}&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_vklyuchite_uvedomleniyafallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_vklyuchite_uvedomleniyafallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Enable notifications, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Enable notifications"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_vklyuchite_uvedomleniyafallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_vklyuchite_uvedomleniyafallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_vklyuchite_uvedomleniya-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_vklyuchite_uvedomleniya-1"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "type": "DivkitSection"
+      },
+      {
+        "id": "menu_pay",
+        "origType": "MenuRenderData",
+        "reloadable": false,
+        "content": [
+          {
+            "id": "menu_pay",
+            "divDataTag": null,
+            "type": null,
+            "differ": {
+              "considerItemIds": true,
+              "animateOnChange": true,
+              "skipModelCheck": false
+            },
+            "actions": {
+              "throttled_analytics_menu_item_tapped_payment_methodfallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-2"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_payment_methodfallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_payment_method-1": {
+                "action": {
+                  "link": "yandextaxi://paymentmethods",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_payment_method",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_payment_methodfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-2"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "analytics_badge_shown_badge_payfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItemBadge.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-1"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "throttled_analytics_menu_item_tapped_skidki_i_podarkifallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-3"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_skidki_i_podarkifallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_skidki_i_podarki-1": {
+                "action": {
+                  "link": "yandextaxi://promocode",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_skidki_i_podarki",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_skidki_i_podarkifallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-3"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              }
+            },
+            "divData": {
+              "log_id": "menu_pay",
+              "states": [
+                {
+                  "state_id": 0,
+                  "div": {
+                    "type": "MenuDivFactory:menu",
+                    "visibility": "@{'visible'}",
+                    "items": [
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_card_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "icon_url": "empty://",
+                            "visibility_actions": [
+                              {
+                                "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                                "log_id": "analytics_badge_shown_badge_payfallback-1",
+                                "log_limit": 1,
+                                "url": "flex-action://dispatch/analytics_badge_shown_badge_payfallback-1",
+                                "visibility_duration": 500,
+                                "visibility_percentage": 50
+                              }
+                            ],
+                            "type": "BadgeDivFactory:icon",
+                            "icon_preview": "@{superapp.profile.payment_icon_preview}",
+                            "visibility": "@{'visible'}"
+                          },
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_payment_methodfallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_payment_methodfallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Payment methods, @{superapp.profile.payment}, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Payment methods"
+                          },
+                          {
+                            "text_color": "@{theme == 'ultimaLight' || theme == 'ultimaDark' ? '#999588' : '#9E9B98'}",
+                            "text": "@{superapp.profile.payment}",
+                            "type": "MenuItemDivFactory:item:subtitle",
+                            "text_visibility": "@{((trim(superapp.profile.payment) != '') !: false) ? 'visible' : 'gone'}"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_payment_methodfallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_payment_methodfallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_payment_method-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_payment_method-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      },
+                      {
+                        "type": "MenuDividerDivFactory:item:divider",
+                        "visibility": "@{'visible'}"
+                      },
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_percent_round_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_skidki_i_podarkifallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_skidki_i_podarkifallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Discounts and gifts, Enter promo code, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Discounts and gifts"
+                          },
+                          {
+                            "text_color": "@{theme == 'ultimaLight' || theme == 'ultimaDark' ? '#999588' : '#9E9B98'}",
+                            "text": "Enter promo code",
+                            "type": "MenuItemDivFactory:item:subtitle",
+                            "text_visibility": "visible"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_skidki_i_podarkifallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_skidki_i_podarkifallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_skidki_i_podarki-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_skidki_i_podarki-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "type": "DivkitSection"
+      },
+      {
+        "id": "menu_offers",
+        "origType": "MenuRenderData",
+        "reloadable": false,
+        "content": [
+          {
+            "id": "menu_offers",
+            "divDataTag": null,
+            "type": null,
+            "differ": {
+              "considerItemIds": true,
+              "animateOnChange": true,
+              "skipModelCheck": false
+            },
+            "actions": {
+              "throttled_analytics_menu_item_tapped_order_historyfallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-4"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_order_historyfallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_order_history-1": {
+                "action": {
+                  "link": "yandextaxi://order_history",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_order_history",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_order_historyfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-4"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "throttled_analytics_menu_item_tapped_my_addressesfallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-5"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_my_addressesfallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_my_addresses-1": {
+                "action": {
+                  "link": "yandextaxi://favorites?isFromProfile=true",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_my_addresses",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_my_addressesfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-5"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "throttled_analytics_menu_item_tapped_supportfallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-6"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_supportfallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_support-1": {
+                "action": {
+                  "link": "yandextaxi://chat",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_support",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_supportfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-6"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "throttled_analytics_menu_item_tapped_safety_centerfallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-7"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_safety_centerfallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_safety_center-1": {
+                "action": {
+                  "link": "yandextaxi://safetycenter",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_safety_center",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_safety_centerfallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-7"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              }
+            },
+            "divData": {
+              "log_id": "menu_offers",
+              "states": [
+                {
+                  "state_id": 0,
+                  "div": {
+                    "type": "MenuDivFactory:menu",
+                    "visibility": "@{'visible'}",
+                    "items": [
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_doc_text_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_order_historyfallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_order_historyfallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "History, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "History"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_order_historyfallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_order_historyfallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_order_history-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_order_history-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      },
+                      {
+                        "type": "MenuDividerDivFactory:item:divider",
+                        "visibility": "@{'visible'}"
+                      },
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_poi_pin_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_my_addressesfallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_my_addressesfallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "My addresses, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "My addresses"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_my_addressesfallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_my_addressesfallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_my_addresses-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_my_addresses-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      },
+                      {
+                        "type": "MenuDividerDivFactory:item:divider",
+                        "visibility": "@{'visible'}"
+                      },
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_headphones&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "NotificationDivFactory:bullet",
+                            "visibility": "@{(superapp.profile.internal_notifications.containsKey('support_message') !: false) ? 'visible' : 'gone'}",
+                            "text": "@{((superapp.profile.internal_notifications.containsKey('support_message') !: false) && ((len(superapp.profile.internal_notifications.getString('support_message')) < 2) !: false)) ? superapp.profile.internal_notifications.getString('support_message') : ''}"
+                          },
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_supportfallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_supportfallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Support, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Support"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_supportfallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_supportfallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_support-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_support-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      },
+                      {
+                        "type": "MenuDividerDivFactory:item:divider",
+                        "visibility": "@{'visible'}"
+                      },
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_safety&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_safety_centerfallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_safety_centerfallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Safety, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Safety"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_safety_centerfallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_safety_centerfallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_safety_center-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_safety_center-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "type": "DivkitSection"
+      },
+      {
+        "id": "menu_settings",
+        "origType": "MenuRenderData",
+        "reloadable": false,
+        "content": [
+          {
+            "id": "menu_settings",
+            "divDataTag": null,
+            "type": null,
+            "differ": {
+              "considerItemIds": true,
+              "animateOnChange": true,
+              "skipModelCheck": false
+            },
+            "actions": {
+              "throttled_analytics_menu_item_tapped_nastrojkifallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-8"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_nastrojkifallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_nastrojki-1": {
+                "action": {
+                  "link": "yandextaxi://settings",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_nastrojki",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_nastrojkifallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-8"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              },
+              "throttled_analytics_menu_item_tapped_informaciyafallback-1": {
+                "action": {
+                  "events": [
+                    {
+                      "name": "ProfileMenu.MenuItem.Tapped",
+                      "type": "EvGen",
+                      "params": [
+                        "019a89-9"
+                      ]
+                    }
+                  ],
+                  "type": "SendAnalyticsAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_analytics_menu_item_tapped_informaciyafallback",
+                "type": "ThrottleAction"
+              },
+              "throttled_click_action_item_informaciya-1": {
+                "action": {
+                  "link": "yandextaxi://information",
+                  "type": "DeeplinkNavigationAction"
+                },
+                "throttleMillis": 2000,
+                "actionId": "throttled_click_action_item_informaciya",
+                "type": "ThrottleAction"
+              },
+              "analytics_menu_item_shown_informaciyafallback-1": {
+                "events": [
+                  {
+                    "name": "ProfileMenu.MenuItem.Shown",
+                    "type": "EvGen",
+                    "params": [
+                      "019a89-9"
+                    ]
+                  }
+                ],
+                "type": "SendAnalyticsAction"
+              }
+            },
+            "divData": {
+              "log_id": "menu_settings",
+              "states": [
+                {
+                  "state_id": 0,
+                  "div": {
+                    "type": "MenuDivFactory:menu",
+                    "visibility": "@{'visible'}",
+                    "items": [
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_settings2_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_nastrojkifallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_nastrojkifallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Settings, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Settings"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_nastrojkifallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_nastrojkifallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_nastrojki-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_nastrojki-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      },
+                      {
+                        "type": "MenuDividerDivFactory:item:divider",
+                        "visibility": "@{'visible'}"
+                      },
+                      {
+                        "icon_url": "div-load-image://load_by_tag?tag=app_ic_info_fill&cache_type=disk&theme=@{theme}",
+                        "badges": [
+                          {
+                            "type": "MenuItemDivFactory:item:chevron",
+                            "chevron_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                          }
+                        ],
+                        "visibility_actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "analytics_menu_item_shown_informaciyafallback-1",
+                            "log_limit": 1,
+                            "url": "flex-action://dispatch/analytics_menu_item_shown_informaciyafallback-1",
+                            "visibility_duration": 500,
+                            "visibility_percentage": 50
+                          }
+                        ],
+                        "visibility": "@{'visible'}",
+                        "accessibility": {
+                          "description": "Information, Button",
+                          "mode": "merge",
+                          "type": "none"
+                        },
+                        "background": [
+                          {
+                            "type": "solid",
+                            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+                          }
+                        ],
+                        "text": [
+                          {
+                            "type": "MenuItemDivFactory:item:title",
+                            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+                            "text": "Information"
+                          }
+                        ],
+                        "type": "MenuItemDivFactory:item",
+                        "actions": [
+                          {
+                            "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                            "log_id": "throttled_analytics_menu_item_tapped_informaciyafallback-1",
+                            "url": "flex-action://dispatch/throttled_analytics_menu_item_tapped_informaciyafallback-1"
+                          },
+                          {
+                            "log_id": "throttled_click_action_item_informaciya-1",
+                            "url": "flex-action://dispatch/throttled_click_action_item_informaciya-1"
+                          }
+                        ],
+                        "icon_tint": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "type": "DivkitSection"
+      }
+    ],
+    "settings": {
+      "refreshable": false,
+      "pagination": {
+        "triggerFactor": 0.3,
+        "minPagingThreshold": 100.0
+      }
+    },
+    "type": "section"
+  },
+  "scaffold": {
+    "fillColor": {
+      "light": "#FFFFFF",
+      "dark": "#42413E",
+      "ultimaLight": "#FFFFFF",
+      "ultimaDark": "#3F4042"
+    },
+    "toolbarView": {
+      "id": "toolbar",
+      "divDataTag": null,
+      "type": null,
+      "differ": {
+        "considerItemIds": true,
+        "animateOnChange": true,
+        "skipModelCheck": false
+      },
+      "actions": {
+        "throttled_click_profile_arrow-1": {
+          "action": {
+            "animated": true,
+            "type": "BackwardAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_click_profile_arrow",
+          "type": "ThrottleAction"
+        }
+      },
+      "divData": {
+        "log_id": "toolbar",
+        "states": [
+          {
+            "state_id": 0,
+            "div": {
+              "badge_items": [],
+              "badge_items_visibility": "@{(false) ? 'visible' : 'invisible'}",
+              "navigation_icon_visibility": "visible",
+              "body_items": [],
+              "navigation_icon_click": [
+                {
+                  "log_id": "throttled_click_profile_arrow-1",
+                  "url": "flex-action://dispatch/throttled_click_profile_arrow-1"
+                }
+              ],
+              "type": "ToolbarDivFactory:toolbar",
+              "navigation_icon_accessibility": {
+                "description": "Back",
+                "mode": "merge",
+                "type": "button"
+              },
+              "navigation_icon_preview": "",
+              "navigation_icon_resource": "div-load-image://load_by_res?res=Icon_24_ArrowLeft",
+              "body_items_visibility": "@{(false) ? 'visible' : 'invisible'}"
+            }
+          }
+        ]
+      }
+    },
+    "topView": {
+      "id": "profile_header",
+      "divDataTag": null,
+      "type": null,
+      "differ": {
+        "considerItemIds": true,
+        "animateOnChange": true,
+        "skipModelCheck": false
+      },
+      "actions": {
+        "throttled_analytics_auth_tappedfallback-1": {
+          "action": {
+            "events": [
+              {
+                "name": "ProfileMenu.AuthorizationButton.Tapped",
+                "type": "EvGen",
+                "params": [
+                  "d3d651-0"
+                ]
+              }
+            ],
+            "type": "SendAnalyticsAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_analytics_auth_tappedfallback",
+          "type": "ThrottleAction"
+        },
+        "throttled_click_login-1": {
+          "action": {
+            "link": "yandextaxi://auth",
+            "type": "DeeplinkNavigationAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_click_login",
+          "type": "ThrottleAction"
+        },
+        "analytics_auth_shownfallback-1": {
+          "events": [
+            {
+              "name": "ProfileMenu.AuthorizationButton.Shown",
+              "type": "EvGen",
+              "params": [
+                "d3d651-0"
+              ]
+            }
+          ],
+          "type": "SendAnalyticsAction"
+        },
+        "throttled_analytics_card_tapped_photofallback-1": {
+          "action": {
+            "events": [
+              {
+                "name": "ProfileMenu.ProfileCard.Tapped",
+                "type": "EvGen",
+                "params": [
+                  "019a89-10"
+                ]
+              }
+            ],
+            "type": "SendAnalyticsAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_analytics_card_tapped_photofallback",
+          "type": "ThrottleAction"
+        },
+        "throttled_click_avatar-1": {
+          "action": {
+            "link": "yandextaxi://user_profile",
+            "type": "DeeplinkNavigationAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_click_avatar",
+          "type": "ThrottleAction"
+        },
+        "throttled_analytics_card_tapped_namefallback-1": {
+          "action": {
+            "events": [
+              {
+                "name": "ProfileMenu.ProfileCard.Tapped",
+                "type": "EvGen",
+                "params": [
+                  "019a89-11"
+                ]
+              }
+            ],
+            "type": "SendAnalyticsAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_analytics_card_tapped_namefallback",
+          "type": "ThrottleAction"
+        },
+        "throttled_click_name-1": {
+          "action": {
+            "link": "yandextaxi://user_profile",
+            "type": "DeeplinkNavigationAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_click_name",
+          "type": "ThrottleAction"
+        },
+        "throttled_analytics_card_tapped_emailfallback-1": {
+          "action": {
+            "events": [
+              {
+                "name": "ProfileMenu.ProfileCard.Tapped",
+                "type": "EvGen",
+                "params": [
+                  "019a89-12"
+                ]
+              }
+            ],
+            "type": "SendAnalyticsAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_analytics_card_tapped_emailfallback",
+          "type": "ThrottleAction"
+        },
+        "throttled_click_email-1": {
+          "action": {
+            "link": "yandextaxi://user_profile",
+            "type": "DeeplinkNavigationAction"
+          },
+          "throttleMillis": 2000,
+          "actionId": "throttled_click_email",
+          "type": "ThrottleAction"
+        },
+        "analytics_card_shownfallback-1": {
+          "events": [
+            {
+              "name": "ProfileMenu.ProfileCard.Shown",
+              "type": "EvGen",
+              "params": [
+                "019a89-13"
+              ]
+            }
+          ],
+          "type": "SendAnalyticsAction"
+        }
+      },
+      "divData": {
+        "log_id": "profile_header",
+        "states": [
+          {
+            "state_id": 0,
+            "div": {
+              "type": "container",
+              "orientation": "vertical",
+              "height": {
+                "type": "wrap_content",
+                "min_size": {
+                  "value": 66
+                }
+              },
+              "items": [
+                {
+                  "visibility": "@{(superapp.profile.is_authorized !: false) ? 'visible' : 'gone'}",
+                  "content_padding_bottom": 8,
+                  "content_padding_top": 16,
+                  "type": "ProfileDivFactory:profile",
+                  "content_items": [
+                    {
+                      "type": "AvatarDivFactory:avatar",
+                      "avatar_preview": "@{superapp.profile.avatar_preview}",
+                      "avatar_actions": [
+                        {
+                          "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                          "log_id": "throttled_analytics_card_tapped_photofallback-1",
+                          "url": "flex-action://dispatch/throttled_analytics_card_tapped_photofallback-1"
+                        },
+                        {
+                          "log_id": "throttled_click_avatar-1",
+                          "url": "flex-action://dispatch/throttled_click_avatar-1"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "@{superapp.profile.name}",
+                      "name_actions": [
+                        {
+                          "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                          "log_id": "throttled_analytics_card_tapped_namefallback-1",
+                          "url": "flex-action://dispatch/throttled_analytics_card_tapped_namefallback-1"
+                        },
+                        {
+                          "log_id": "throttled_click_name-1",
+                          "url": "flex-action://dispatch/throttled_click_name-1"
+                        }
+                      ],
+                      "name_accessibility": {
+                        "mode": "merge",
+                        "type": "button"
+                      },
+                      "type": "ProfileDivFactory:name"
+                    },
+                    {
+                      "subtitle_accessibility": {
+                        "mode": "merge",
+                        "type": "text"
+                      },
+                      "subtitle_actions": [
+                        {
+                          "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                          "log_id": "throttled_analytics_card_tapped_emailfallback-1",
+                          "url": "flex-action://dispatch/throttled_analytics_card_tapped_emailfallback-1"
+                        },
+                        {
+                          "log_id": "throttled_click_email-1",
+                          "url": "flex-action://dispatch/throttled_click_email-1"
+                        }
+                      ],
+                      "type": "ProfileDivFactory:subtitle",
+                      "subtitle": "@{superapp.profile.contact}"
+                    }
+                  ],
+                  "content_visibility_actions": [
+                    {
+                      "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                      "log_id": "analytics_card_shownfallback-1",
+                      "log_limit": 1,
+                      "url": "flex-action://dispatch/analytics_card_shownfallback-1",
+                      "visibility_duration": 500,
+                      "visibility_percentage": 50
+                    }
+                  ]
+                },
+                {
+                  "visibility": "@{(superapp.profile.is_authorized !: false) ? 'gone' : 'visible'}",
+                  "content_padding_bottom": 8,
+                  "content_padding_top": 16,
+                  "type": "ProfileDivFactory:profile",
+                  "content_items": [
+                    {
+                      "type": "AvatarDivFactory:avatar",
+                      "avatar_preview": "@{superapp.profile.avatar_preview}"
+                    },
+                    {
+                      "login_visibility_actions": [
+                        {
+                          "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                          "log_id": "analytics_auth_shownfallback-1",
+                          "log_limit": 1,
+                          "url": "flex-action://dispatch/analytics_auth_shownfallback-1",
+                          "visibility_duration": 500,
+                          "visibility_percentage": 50
+                        }
+                      ],
+                      "type": "ProfileDivFactory:login",
+                      "login": "Log in or register",
+                      "login_actions": [
+                        {
+                          "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                          "log_id": "throttled_analytics_auth_tappedfallback-1",
+                          "url": "flex-action://dispatch/throttled_analytics_auth_tappedfallback-1"
+                        },
+                        {
+                          "log_id": "throttled_click_login-1",
+                          "url": "flex-action://dispatch/throttled_click_login-1"
+                        }
+                      ],
+                      "login_accessibility": {
+                        "mode": "merge",
+                        "type": "button"
+                      }
+                    },
+                    {
+                      "type": "ProfileDivFactory:subtitle",
+                      "subtitle_accessibility": {
+                        "mode": "merge",
+                        "type": "text"
+                      },
+                      "subtitle": "To access rides, services, and your favorites"
+                    }
+                  ],
+                  "content_visibility_actions": [
+                    {
+                      "is_enabled": "@{(superapp.profile.document_source == 'fallback') !: false}",
+                      "log_id": "analytics_card_shownfallback-1",
+                      "log_limit": 1,
+                      "url": "flex-action://dispatch/analytics_card_shownfallback-1",
+                      "visibility_duration": 500,
+                      "visibility_percentage": 50
+                    }
+                  ]
+                }
+              ],
+              "width": {
+                "type": "match_parent"
+              },
+              "paddings": {
+                "top": "@{ignoreFitSystemWindows ? flex.statusbar_height : 0}"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "bottomPadding": {
+      "value": 32.5,
+      "respectNavigationInset": true
+    },
+    "backgroundColor": {
+      "light": "#FFFFFF",
+      "dark": "#191918",
+      "ultimaLight": "#FFFFFF",
+      "ultimaDark": "#1F2021"
+    },
+    "collapsedToolbarCornerRadius": 24.0,
+    "type": "AppBarScaffold"
+  },
+  "shared": {
+    "divkitTemplates": {
+      "MenuItemDivFactory:item:title": {
+        "type": "text",
+        "$text": "text",
+        "alignment_horizontal": "left",
+        "font_feature_settings": "pnum, lnum",
+        "font_size": 16,
+        "height": {
+          "type": "wrap_content"
+        },
+        "max_lines": 1,
+        "$text_color": "text_color",
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "MenuItemDivFactory:item:chevron": {
+        "type": "image",
+        "image_url": "div-load-image://load_by_res?res=Icon_24_ChevronRight",
+        "filters": [
+          {
+            "type": "rtl_mirror"
+          }
+        ],
+        "height": {
+          "type": "fixed",
+          "value": 24
+        },
+        "margins": {
+          "end": 8
+        },
+        "preview": "@{}",
+        "$tint_color": "chevron_tint",
+        "width": {
+          "type": "fixed",
+          "value": 24
+        }
+      },
+      "MenuItemDivFactory:item": {
+        "type": "container",
+        "orientation": "horizontal",
+        "$accessibility": "accessibility",
+        "action_animation": {
+          "duration": 200,
+          "end_value": 0.5,
+          "interpolator": "linear",
+          "name": "fade",
+          "start_value": 1.0
+        },
+        "$actions": "actions",
+        "$background": "background",
+        "content_alignment_vertical": "center",
+        "height": {
+          "type": "fixed",
+          "value": 56
+        },
+        "items": [
+          {
+            "type": "image",
+            "$image_url": "icon_url",
+            "accessibility": {
+              "mode": "exclude"
+            },
+            "height": {
+              "type": "fixed",
+              "value": 24
+            },
+            "margins": {
+              "left": 16,
+              "right": 16
+            },
+            "placeholder_color": "#00000000",
+            "$tint_color": "icon_tint",
+            "width": {
+              "type": "fixed",
+              "value": 24
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "vertical",
+            "accessibility": {
+              "mode": "exclude"
+            },
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "match_parent"
+            },
+            "$items": "text",
+            "width": {
+              "type": "match_parent"
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "horizontal",
+            "accessibility": {
+              "mode": "exclude"
+            },
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "match_parent"
+            },
+            "$items": "badges",
+            "width": {
+              "type": "wrap_content"
+            }
+          }
+        ],
+        "$visibility": "visibility",
+        "$visibility_actions": "visibility_actions",
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "MenuDivFactory:menu": {
+        "type": "container",
+        "orientation": "vertical",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corner_radius": 20
+        },
+        "height": {
+          "type": "wrap_content"
+        },
+        "$items": "items",
+        "margins": {
+          "left": 16,
+          "right": 16,
+          "top": 16
+        },
+        "$visibility": "visibility",
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "MenuItemDivFactory:item:subtitle": {
+        "type": "text",
+        "$text": "text",
+        "alignment_horizontal": "left",
+        "font_feature_settings": "pnum, lnum",
+        "font_size": 13,
+        "height": {
+          "type": "wrap_content"
+        },
+        "max_lines": 1,
+        "$text_color": "text_color",
+        "$visibility": "text_visibility",
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "BadgeDivFactory:icon": {
+        "type": "image",
+        "$image_url": "icon_url",
+        "$accessibility": "accessibility",
+        "action_animation": {
+          "duration": 200,
+          "end_value": 0.5,
+          "interpolator": "linear",
+          "name": "fade",
+          "start_value": 1.0
+        },
+        "$actions": "actions",
+        "height": {
+          "type": "fixed",
+          "value": 24
+        },
+        "paddings": {
+          "start": 8,
+          "unit": "dp"
+        },
+        "placeholder_color": "#00000000",
+        "$preview": "icon_preview",
+        "$tint_color": "icon_tint",
+        "$visibility": "visibility",
+        "$visibility_actions": "visibility_actions",
+        "width": {
+          "type": "fixed",
+          "value": 44
+        }
+      },
+      "MenuDividerDivFactory:item:divider": {
+        "type": "separator",
+        "alpha": 0.5,
+        "delimiter_style": {
+          "color": "@{theme == 'dark' ? '#33F5F4F2' : (theme == 'ultimaLight' ? '#331F2021' : (theme == 'ultimaDark' ? '#33F2F4F5' : '#668A8784'))}",
+          "orientation": "horizontal"
+        },
+        "height": {
+          "type": "fixed",
+          "value": "@{ceil(flex.density * 0.5)}",
+          "unit": "px"
+        },
+        "paddings": {
+          "left": 56,
+          "right": 16
+        },
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "NotificationDivFactory:bullet": {
+        "type": "text",
+        "$text": "text",
+        "background": [
+          {
+            "type": "solid",
+            "color": "#FC5230"
+          }
+        ],
+        "border": {
+          "corner_radius": 100
+        },
+        "font_feature_settings": "pnum, lnum",
+        "font_size": 13,
+        "font_weight_value": 500,
+        "height": {
+          "type": "fixed",
+          "value": 19,
+          "unit": "dp"
+        },
+        "line_height": 14,
+        "text_alignment_horizontal": "center",
+        "text_alignment_vertical": "center",
+        "text_color": "#FFFFFF",
+        "$visibility": "visibility",
+        "width": {
+          "type": "fixed",
+          "value": 19,
+          "unit": "dp"
+        }
+      },
+      "ToolbarDivFactory:toolbar": {
+        "type": "container",
+        "orientation": "horizontal",
+        "height": {
+          "type": "fixed",
+          "value": "@{ignoreFitSystemWindows ? max(flex.statusbar_height + 64, 64) : 64}"
+        },
+        "items": [
+          {
+            "type": "image",
+            "$image_url": "navigation_icon_resource",
+            "$accessibility": "navigation_icon_accessibility",
+            "action_animation": {
+              "duration": 200,
+              "end_value": 0.5,
+              "interpolator": "linear",
+              "name": "fade",
+              "start_value": 1.0
+            },
+            "$actions": "navigation_icon_click",
+            "filters": [
+              {
+                "type": "rtl_mirror"
+              }
+            ],
+            "height": {
+              "type": "fixed",
+              "value": 64
+            },
+            "paddings": {
+              "bottom": 20,
+              "left": 20,
+              "right": 20,
+              "top": 20
+            },
+            "$preview": "navigation_icon_preview",
+            "tint_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+            "$visibility": "navigation_icon_visibility",
+            "width": {
+              "type": "fixed",
+              "value": 64
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "vertical",
+            "content_alignment_horizontal": "center",
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "match_parent"
+            },
+            "$items": "body_items",
+            "$visibility": "body_items_visibility",
+            "width": {
+              "type": "match_parent"
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "horizontal",
+            "content_alignment_horizontal": "center",
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "fixed",
+              "value": 64
+            },
+            "$items": "badge_items",
+            "$visibility": "badge_items_visibility",
+            "width": {
+              "type": "wrap_content",
+              "min_size": {
+                "value": 64
+              }
+            }
+          }
+        ],
+        "paddings": {
+          "end": 16,
+          "top": "@{ignoreFitSystemWindows ? flex.statusbar_height : 0}"
+        },
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "AvatarDivFactory:avatar": {
+        "type": "container",
+        "orientation": "overlap",
+        "accessibility": {
+          "mode": "exclude"
+        },
+        "alignment_horizontal": "center",
+        "content_alignment_horizontal": "right",
+        "content_alignment_vertical": "bottom",
+        "height": {
+          "type": "fixed",
+          "value": 88
+        },
+        "items": [
+          {
+            "type": "container",
+            "background": [
+              {
+                "type": "gradient",
+                "angle": 225,
+                "colors": [
+                  "#E4E0D2",
+                  "#F3F0E7",
+                  "#F3F0E7",
+                  "#C0BCAC"
+                ]
+              }
+            ],
+            "border": {
+              "corner_radius": 44
+            },
+            "height": {
+              "type": "fixed",
+              "value": 88
+            },
+            "visibility": "@{(superapp.profile.is_ultima_badge_available !: false) ? 'visible' : 'gone'}",
+            "width": {
+              "type": "fixed",
+              "value": 88
+            }
+          },
+          {
+            "type": "container",
+            "border": {
+              "corner_radius": 44,
+              "stroke": {
+                "color": "@{theme == 'dark' ? '#191918' : (theme == 'ultimaDark' ? '#1F2021' : '#FFFFFF')}",
+                "width": "@{(superapp.profile.is_ultima_badge_available !: false) ? 2 : 0}"
+              }
+            },
+            "height": {
+              "type": "match_parent"
+            },
+            "items": [
+              {
+                "type": "image",
+                "image_url": "empty://",
+                "$actions": "avatar_actions",
+                "alignment_horizontal": "center",
+                "background": [
+                  {
+                    "type": "solid",
+                    "color": "@{theme == 'dark' ? '#191918' : (theme == 'ultimaDark' ? '#1F2021' : '#FFFFFF')}"
+                  }
+                ],
+                "height": {
+                  "type": "match_parent"
+                },
+                "$preview": "avatar_preview",
+                "width": {
+                  "type": "match_parent"
+                }
+              }
+            ],
+            "margins": {
+              "bottom": "@{(superapp.profile.is_ultima_badge_available !: false) ? 2 : 0}",
+              "left": "@{(superapp.profile.is_ultima_badge_available !: false) ? 2 : 0}",
+              "right": "@{(superapp.profile.is_ultima_badge_available !: false) ? 2 : 0}",
+              "top": "@{(superapp.profile.is_ultima_badge_available !: false) ? 2 : 0}"
+            },
+            "width": {
+              "type": "match_parent"
+            }
+          },
+          {
+            "type": "container",
+            "border": {
+              "corner_radius": "@{(superapp.profile.is_ultima_badge_available !: false) ? 40 : 44}",
+              "stroke": {
+                "color": "@{theme == 'dark' ? '#1aF5F4F2' : (theme == 'ultimaLight' ? '#1a848076' : (theme == 'ultimaDark' ? '#26F4F6F7' : '#1a5C5A57'))}",
+                "width": "@{0.5}"
+              }
+            },
+            "height": {
+              "type": "fixed",
+              "value": "@{(superapp.profile.is_ultima_badge_available !: false) ? 80 : 88}"
+            },
+            "margins": {
+              "bottom": "@{(superapp.profile.is_ultima_badge_available !: false) ? 4 : 0}",
+              "left": "@{(superapp.profile.is_ultima_badge_available !: false) ? 4 : 0}",
+              "right": "@{(superapp.profile.is_ultima_badge_available !: false) ? 4 : 0}",
+              "top": "@{(superapp.profile.is_ultima_badge_available !: false) ? 4 : 0}"
+            },
+            "width": {
+              "type": "fixed",
+              "value": "@{(superapp.profile.is_ultima_badge_available !: false) ? 80 : 88}"
+            }
+          },
+          {
+            "type": "container",
+            "background": [
+              {
+                "type": "solid",
+                "color": "#F3F0E7"
+              }
+            ],
+            "border": {
+              "corner_radius": 14
+            },
+            "content_alignment_horizontal": "center",
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "fixed",
+              "value": 28
+            },
+            "items": [
+              {
+                "type": "image",
+                "image_url": "div-load-image://load_by_tag?tag=superapp_profile_ultima_user_badge&cache_type=disk&theme=@{theme}",
+                "height": {
+                  "type": "fixed",
+                  "value": 19
+                },
+                "width": {
+                  "type": "fixed",
+                  "value": 14
+                }
+              }
+            ],
+            "margins": {
+              "bottom": 1,
+              "left": 1,
+              "right": 1,
+              "top": 1
+            },
+            "visibility": "@{(superapp.profile.is_ultima_badge_available !: false) ? 'visible' : 'gone'}",
+            "width": {
+              "type": "fixed",
+              "value": 28
+            }
+          },
+          {
+            "type": "container",
+            "border": {
+              "corner_radius": 15,
+              "stroke": {
+                "color": "@{theme == 'dark' ? '#191918' : (theme == 'ultimaDark' ? '#1F2021' : '#FFFFFF')}",
+                "width": 2.5
+              }
+            },
+            "height": {
+              "type": "fixed",
+              "value": 30
+            },
+            "visibility": "@{(superapp.profile.is_ultima_badge_available !: false) ? 'visible' : 'gone'}",
+            "width": {
+              "type": "fixed",
+              "value": 30
+            }
+          }
+        ],
+        "width": {
+          "type": "fixed",
+          "value": 88
+        }
+      },
+      "ProfileDivFactory:name": {
+        "type": "container",
+        "orientation": "horizontal",
+        "content_alignment_horizontal": "center",
+        "content_alignment_vertical": "center",
+        "height": {
+          "type": "wrap_content"
+        },
+        "items": [
+          {
+            "type": "text",
+            "$text": "name",
+            "$accessibility": "name_accessibility",
+            "$actions": "name_actions",
+            "auto_ellipsize": 1,
+            "font_feature_settings": "pnum, lnum",
+            "font_size": 20,
+            "font_weight_value": 500,
+            "height": {
+              "type": "wrap_content"
+            },
+            "letter_spacing": -0.01,
+            "line_height": 23,
+            "max_lines": 2,
+            "text_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+            "tighten_width": 1,
+            "width": {
+              "type": "wrap_content",
+              "constrained": 1
+            }
+          },
+          {
+            "type": "image",
+            "image_url": "div-load-image://load_by_res?res=Icon_16_ChevronRightFill",
+            "accessibility": {
+              "mode": "exclude"
+            },
+            "$actions": "name_actions",
+            "filters": [
+              {
+                "type": "rtl_mirror"
+              }
+            ],
+            "height": {
+              "type": "fixed",
+              "value": 14
+            },
+            "margins": {
+              "start": 4,
+              "top": 3
+            },
+            "preview": "",
+            "scale": "fit",
+            "tint_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+            "width": {
+              "type": "fixed",
+              "value": 14
+            }
+          }
+        ],
+        "margins": {
+          "bottom": 1,
+          "top": 10
+        },
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "ProfileDivFactory:subtitle": {
+        "type": "text",
+        "$text": "subtitle",
+        "$accessibility": "subtitle_accessibility",
+        "$actions": "subtitle_actions",
+        "font_feature_settings": "pnum, lnum",
+        "font_size": 13,
+        "height": {
+          "type": "wrap_content"
+        },
+        "text_color": "@{theme == 'ultimaLight' || theme == 'ultimaDark' ? '#999588' : '#9E9B98'}",
+        "width": {
+          "type": "wrap_content"
+        }
+      },
+      "ProfileDivFactory:login": {
+        "type": "text",
+        "$text": "login",
+        "$accessibility": "login_accessibility",
+        "action_animation": {
+          "duration": 200,
+          "end_value": 0.5,
+          "interpolator": "linear",
+          "name": "fade",
+          "start_value": 1.0
+        },
+        "$actions": "login_actions",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'ultimaLight' ? '#2C2B2A' : (theme == 'ultimaDark' ? '#EBE7DA' : '#FCE000')}"
+          }
+        ],
+        "border": {
+          "corner_radius": 16
+        },
+        "font_feature_settings": "pnum, lnum",
+        "font_size": 16,
+        "font_weight_value": 500,
+        "height": {
+          "type": "fixed",
+          "value": 48
+        },
+        "letter_spacing": -0.005,
+        "line_height": 19,
+        "margins": {
+          "bottom": 8,
+          "top": 16
+        },
+        "paddings": {
+          "end": 16,
+          "start": 16
+        },
+        "text_alignment_horizontal": "center",
+        "text_alignment_vertical": "center",
+        "text_color": "@{theme == 'ultimaLight' ? '#FFFFFF' : (theme == 'ultimaDark' ? '#1F2021' : '#21201F')}",
+        "$visibility_actions": "login_visibility_actions",
+        "width": {
+          "type": "match_parent"
+        }
+      },
+      "ProfileDivFactory:profile": {
+        "type": "container",
+        "orientation": "vertical",
+        "content_alignment_horizontal": "center",
+        "height": {
+          "type": "wrap_content"
+        },
+        "$items": "content_items",
+        "paddings": {
+          "$bottom": "content_padding_bottom",
+          "end": 16,
+          "start": 16,
+          "$top": "content_padding_top"
+        },
+        "$visibility": "visibility",
+        "$visibility_actions": "content_visibility_actions",
+        "width": {
+          "type": "match_parent"
+        }
+      }
+    },
+    "sections": {
+      "menu_notifications": {
+        "id": "menu_notifications"
+      },
+      "menu_pay": {
+        "id": "menu_pay"
+      },
+      "menu_offers": {
+        "id": "menu_offers"
+      },
+      "menu_settings": {
+        "id": "menu_settings"
+      },
+      "toolbar": {
+        "id": "toolbar"
+      },
+      "profile_header": {
+        "id": "profile_header"
+      }
+    },
+    "divData": {},
+    "analytics": {
+      "019a89-13": {
+        "source": "fallback",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-12": {
+        "item": "email",
+        "source": "fallback",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-11": {
+        "item": "name",
+        "source": "fallback",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-10": {
+        "item": "photo",
+        "source": "fallback",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-9": {
+        "id": "informaciya",
+        "position": 8,
+        "text": "Information",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-8": {
+        "id": "nastrojki",
+        "position": 7,
+        "text": "Settings",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-7": {
+        "id": "safety_center",
+        "position": 6,
+        "text": "Safety",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-6": {
+        "id": "support",
+        "position": 5,
+        "text": "Support",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-5": {
+        "id": "my_addresses",
+        "position": 4,
+        "text": "My addresses",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-4": {
+        "id": "order_history",
+        "position": 3,
+        "text": "History",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-3": {
+        "id": "skidki_i_podarki",
+        "position": 2,
+        "text": "Discounts and gifts",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-2": {
+        "id": "payment_method",
+        "position": 1,
+        "text": "Payment methods",
+        "source": "fallback",
+        "type": "menu_item_pay",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-1": {
+        "menu_item_id": "payment_method",
+        "menu_item_text": "Payment methods",
+        "badge_id": "badge_pay",
+        "menu_item_type": "menu_item_pay",
+        "badge_type": "badge_pay",
+        "source": "fallback",
+        "menu_item_position": 1,
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "019a89-0": {
+        "id": "vklyuchite_uvedomleniya",
+        "position": 0,
+        "text": "Enable notifications",
+        "source": "fallback",
+        "type": "menu_item_simple",
+        "_interfaces": {},
+        "_event_version": 2
+      },
+      "d3d651-0": {
+        "text": "Log in or register",
+        "source": "fallback",
+        "_interfaces": {},
+        "_event_version": 2
+      }
+    }
+  },
+  "actions": null,
+  "context": null
+}

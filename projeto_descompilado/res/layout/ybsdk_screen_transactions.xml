@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/contentContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ybsdk.widgets.common.ToolbarView android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ybsdk.widgets.common.swiperefresh.CustomSwipeRefreshLayout android:id="@id/swipeRefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/transactions" android:paddingBottom="24.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.ybsdk.widgets.common.swiperefresh.CustomSwipeRefreshLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <include android:id="@id/shimmer" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ybsdk_layout_transactions_shimmers" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

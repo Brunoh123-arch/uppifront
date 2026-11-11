@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/ya_eats_retail_search_top_carousel_header_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" android:letterSpacing="-0.005" app:lineHeight="19.0sp" style="@style/TextAppearance.YSText.Body2.Normal.Bold" />
+    <TextView android:textSize="13.0sp" android:textColor="?textMinor" android:id="@id/ya_eats_retail_search_top_carousel_header_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:maxLines="1" app:lineHeight="23.0sp" style="@style/TextAppearance.YSText.Caption1.Tight" />
+</LinearLayout>

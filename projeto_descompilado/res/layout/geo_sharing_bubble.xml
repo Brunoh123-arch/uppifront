@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="locale" android:paddingStart="10.0dip" android:paddingVertical="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:ellipsize="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:drawablePadding="4.0dip" android:layoutDirection="locale" app:robotoFontStyle="medium" app:useMinimumWidth="true" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_bubble" android:textColor="?textMain" android:ellipsize="end" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:useMinimumWidth="true" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="8.0dip" app:srcCompat="@drawable/ic_geo_sharing" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Go.Splash" parent="@style/Theme.SplashScreen">
+        <item name="android:windowLightStatusBar">@bool/is_splash_window_light_enabled</item>
+        <item name="android:windowLightNavigationBar">@bool/is_splash_window_light_enabled</item>
+        <item name="postSplashScreenTheme">@style/Go.Dark</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">0</item>
+        <item name="windowSplashScreenBackground">@color/go_brand</item>
+    </style>
+</resources>

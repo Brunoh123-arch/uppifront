@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/shimmering_images_slider_frame" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="164.0dip" app:placeholder_corner_radius="@dimen/discovery_organizations_organization_preview_image_slider_corner_round_size" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/shimmering_title" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="16.0dip" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_m_space" app:placeholder_corner_radius="16.0dip" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/shimmering_subtitle" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="16.0dip" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_m_space" app:placeholder_corner_radius="16.0dip" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+</merge>

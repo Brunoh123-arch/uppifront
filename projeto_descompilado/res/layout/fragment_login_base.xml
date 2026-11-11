@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/content_container" android:background="?bgMain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/toolbar_layout" layout="@layout/ya_eats_view_toolbar" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:layout_gravity="center_horizontal" android:id="@id/logo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_4" layout="@layout/view_logo" />
+                <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/host_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/fragment_host" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/g_2" />
+                </FrameLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:id="@id/loader" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="@dimen/g_5" android:layout_height="@dimen/g_5" style="?android:progressBarStyleLarge" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="40.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.eda_design.quarantine.image.EatsImageView android:id="@id/image" android:layout_width="99.0dip" android:layout_height="92.0dip" android:layout_marginBottom="17.0dip" />
+    <TextView android:textSize="24.0sp" android:textColor="?textMain" android:gravity="center" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:fontFamily="@font/ya_medium" />
+    <TextView android:textSize="16.0sp" android:textColor="?textMain" android:gravity="center" android:id="@id/description_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" android:fontFamily="@font/ya_regular" />
+    <TextView android:textSize="16.0sp" android:textColor="?textMain" android:gravity="center" android:id="@id/button_text_view" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="57.0dip" android:textAllCaps="false" android:fontFamily="@font/ys_text_medium" />
+</LinearLayout>

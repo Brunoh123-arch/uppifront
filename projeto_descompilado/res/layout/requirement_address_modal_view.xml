@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/requirement_address_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintBottom_toTopOf="@id/bottom_container" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="spread_inside">
+        <FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/content_recycler_view" android:paddingTop="0.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </FrameLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <ImageView android:id="@id/shadow" android:background="@null" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="-12.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:backgroundTint="?textMain" app:layout_constraintBottom_toTopOf="@id/bottom_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="@drawable/bg_rounded_24dp_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/requirement_address_scroll_view">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/requirement_address_promo_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" android:layout_marginHorizontal="16.0dip">
+            <ru.yandex.taxi.widget.ShimmeringFrameLayout android:layout_gravity="center_vertical" android:id="@id/requirement_address_promo_icon_shimmering" android:background="@drawable/bg_rounded" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="6.0dip" android:backgroundTint="?bgMinor">
+                <ImageView android:id="@id/requirement_address_promo_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            </ru.yandex.taxi.widget.ShimmeringFrameLayout>
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0sp" android:textColor="?textMain" android:ellipsize="end" android:gravity="center" android:id="@id/requirement_address_promo_info_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:drawablePadding="10.0dip" android:layout_weight="1.0" android:drawableEnd="@drawable/chevron_next" />
+        </LinearLayout>
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:component_rounded_background="?controlMain" app:component_subtitle_gravity="center_horizontal" app:component_subtitle_text_color="?textOnControl" app:component_title_gravity="center_horizontal" app:component_title_text_color="?textOnControl" app:component_title_typeface="medium" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

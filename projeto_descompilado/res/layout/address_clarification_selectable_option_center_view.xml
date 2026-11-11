@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/leading_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:ellipsize="middle" android:id="@id/leading_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:ellipsize="middle" android:id="@id/leading_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="end|center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/trailing_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:ellipsize="middle" android:layout_gravity="end" android:id="@id/trailing_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:ellipsize="middle" android:layout_gravity="end" android:id="@id/trailing_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

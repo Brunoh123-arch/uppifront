@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:layout_gravity="bottom" android:id="@id/constraint_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.ShimmeringFrameLayout android:id="@id/shimmering_layout" android:background="@drawable/scooters_detailed_order_card_background" android:layout_width="0.0dip" android:layout_height="wrap_content" android:translationZ="1.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:shimmeringAngle="22.5" app:shimmeringWidth="wrap_content">
+        <ru.yandex.taxi.design.DialogueComponent android:id="@id/dialogue_component" android:layout_width="fill_parent" android:layout_height="wrap_content" app:animate_header="false" app:animation_type="content_slide_bottom">
+            <include android:id="@id/status_bar_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/scooters_offer_status_bar" />
+            <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yandex.go.scooters.header.ScootersCardHeaderComponent android:id="@id/order_card_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip" />
+                <com.yandex.go.scooters.detailed_order.v2.components.actions.ScootersNewControlPanelView android:orientation="vertical" android:id="@id/control_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.yandex.go.design.view.GoLinearLayout>
+        </ru.yandex.taxi.design.DialogueComponent>
+    </ru.yandex.taxi.widget.ShimmeringFrameLayout>
+</com.yandex.go.design.view.GoConstraintLayout>

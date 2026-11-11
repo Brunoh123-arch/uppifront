@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.feature.educations.internal.ui.ShadowView android:id="@id/educationsV2ShadowView" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    <FrameLayout android:id="@id/educationsV2TooltipContentContainer" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/educationsV2TooltipDivkitData" android:paddingBottom="@dimen/ybsdk_arrow_padding_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20.0dip" android:layout_marginVertical="12.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|bottom|center" android:id="@id/educationsV2TooltipBubbleArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" app:srcCompat="@drawable/ybsdk_divkit_tooltip_arrow_bottom" />
+    </FrameLayout>
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/educationsV2DivkitContentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <androidx.appcompat.widget.AppCompatImageButton android:layout_gravity="end|center|top" android:id="@id/educationsV2CrossButton" android:background="@drawable/ybsdk_educations_ic_cross" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ybsdk_cross_button_margin_top" android:contentDescription="@string/ybsdk_educations_accessibility_close_button" android:layout_marginEnd="20.0dip" />
+</merge>

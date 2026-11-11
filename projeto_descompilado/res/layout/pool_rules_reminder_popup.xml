@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@drawable/bg_bottom_notification" style="@style/BottomModalContentHolder">
+        <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@null" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="61.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="30.0dip" android:paddingEnd="30.0dip">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="29.0sp" android:textColor="@color/black" android:id="@id/reminder_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="122.0dip" app:robotoFontStyle="medium" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/waiting_time_limit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.RobotoTextView android:textStyle="bold" android:text="@string/dialog_common_ok" style="@style/ModalErrorButton.Confirm" />
+        </FrameLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/cancel_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/cancel_feedback_title" style="@style/ListTitleComponent" />
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.ListAdapterLinearLayout android:id="@id/reasons" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/comment" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_type="margin" app:component_input_hint="@string/comment_hint" app:component_max_lines="3" />
+        </LinearLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" app:component_button_size="L" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

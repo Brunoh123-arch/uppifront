@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:background="@drawable/bg_minor_rounded_24dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_margin" android:importantForAccessibility="no" android:layout_marginStart="@dimen/section_margin_size" android:layout_marginEnd="@dimen/section_margin_size" android:paddingVertical="@dimen/section_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/section_header_height" android:importantForAccessibility="yes" android:layout_marginHorizontal="@dimen/component_medium_margin" android:paddingHorizontal="@dimen/content_horizontal_padding">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/section_header_text_size" android:textColor="?textMinor" android:id="@id/due_banner_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" app:robotoFontStyle="medium" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/section_header_text_size" android:textColor="?textMinor" android:id="@id/due_banner_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" app:robotoFontStyle="medium" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/banners_container_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.camera.view.PreviewView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/snapshot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <com.yandex.mobile.drive.scan.ui.CameraPatternView android:id="@id/pattern" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/topBar" android:layout_width="fill_parent" android:layout_height="@dimen/topBarHeight">
+        <com.yandex.mobile.drive.view.CameraTopBar android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/topContent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/capName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="@dimen/spacing_edge" app:fontFamily="@font/ya_medium" />
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:id="@id/capDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="41.0dip" android:layout_marginBottom="@dimen/spacing_edge" android:layout_marginStart="@dimen/spacing_edge" app:fontFamily="@font/ya_regular" />
+            <View android:layout_gravity="end" android:id="@id/cameraClose" android:background="@drawable/vec_close" android:layout_width="@dimen/сloseDim" android:layout_height="@dimen/сloseDim" android:layout_marginTop="12.0dip" android:alpha="0.8" android:layout_marginEnd="@dimen/spacing_edge" />
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/snap" android:layout_width="fill_parent" android:layout_height="@dimen/picSize" android:baselineAligned="false">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/picSize" android:layout_weight="2.0">
+            <View android:layout_gravity="center|right" android:id="@id/turn" android:background="@drawable/switch_camera" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/picSize" android:layout_weight="3.0">
+            <View android:layout_gravity="center_horizontal" android:id="@id/take" android:background="@drawable/ripple_circle_white_stroke" android:layout_width="@dimen/picSize" android:layout_height="@dimen/picSize" />
+            <com.yandex.mobile.drive.view.Loader android:layout_gravity="center" android:id="@id/hud" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="@dimen/picSize" android:layout_weight="2.0">
+            <View android:layout_gravity="center|left" android:id="@id/torch" android:background="@drawable/torch_disabled" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottomBar" android:paddingLeft="@dimen/spacing_edge" android:paddingRight="@dimen/spacing_edge" android:layout_width="fill_parent" android:layout_height="@dimen/bottomBarHeight">
+        <TextView android:id="@id/retake" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:layout_marginBottom="14.0dip" android:text="@string/camera_photo_retake" style="@style/Button.Transparent" />
+        <TextView android:id="@id/photoOk" android:background="@drawable/bg_button_white_no_outline" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="@string/camera_photo_accept" style="@style/Button.White" />
+    </LinearLayout>
+    <View android:id="@id/frontFlash" android:background="@android:color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

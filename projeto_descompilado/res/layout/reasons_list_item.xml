@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemCheckComponent android:id="@id/reason_checked_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:choice_mode="multiple" app:component_divider_position="bottom" app:component_divider_type="normal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

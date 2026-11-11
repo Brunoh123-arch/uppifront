@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetBottom="@dimen/ya_eats_flex_bottom_dialog_corner_radii_inverse"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <solid android:color="?bgMain" />
+        <corners android:radius="@dimen/ya_eats_flex_bottom_dialog_corner_radii" />
+        <padding android:bottom="@dimen/ya_eats_flex_bottom_dialog_corner_radii" />
+    </shape>
+</inset>

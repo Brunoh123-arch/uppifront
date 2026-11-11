@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:cornerRadius="@dimen/bottom_sheet_corner_radius" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:importantForAccessibility="no" android:layout_marginStart="10.0dip" />
+        <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" app:component_vertical_padding="0.0dip" />
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/bullets_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bullets_divider" android:showDividers="middle" />
+        <com.yandex.go.design.divider.CardDivider android:layout_width="fill_parent" android:layout_height="wrap_content" app:divider_color="?bgMinor" app:divider_type="bottom" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:id="@id/widgets_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

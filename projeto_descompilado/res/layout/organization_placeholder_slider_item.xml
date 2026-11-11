@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_s_space">
+        <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/placeholder_image" android:layout_width="@dimen/discovery_organizations_image_placeholder_image_size" android:layout_height="@dimen/discovery_organizations_image_placeholder_image_size" android:layout_marginBottom="4.0dip" android:importantForAccessibility="no" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?bgMinor" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/placeholder_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include android:id="@id/loading_container" layout="@layout/organization_card_loading_slider_item_layout" />
+</com.yandex.go.design.view.GoFrameLayout>

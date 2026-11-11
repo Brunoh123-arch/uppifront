@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.video.m3.ui.ListYandexPlayerView android:layout_width="fill_parent" android:layout_height="fill_parent" app:is_hide_shutter_when_player_ready="true" app:shutter_hiding_delay="250" app:surface_type="texture_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

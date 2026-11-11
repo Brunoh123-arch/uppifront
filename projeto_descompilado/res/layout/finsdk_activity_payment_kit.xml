@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/finsdkPaymentKitRoot" android:background="@android:color/transparent" android:fitsSystemWindows="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/finsdkDimmingBackground" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <FrameLayout android:id="@id/finsdkPaymentKitContainer" android:fitsSystemWindows="false" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:behavior_fitToContents="false" app:behavior_hideable="true" app:behavior_peekHeight="0.0dip" app:layout_behavior="com.yandex.fintechsdk.core.ui.impl.api.bottomsheet.CustomBottomSheetBehavior">
+        <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/finsdkPaymentKitHost" android:layout_width="fill_parent" android:layout_height="fill_parent" app:defaultNavHost="true" />
+        <FrameLayout android:gravity="center_horizontal" android:id="@id/finsdkDecorationContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

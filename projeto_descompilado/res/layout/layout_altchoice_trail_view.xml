@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/trail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:ellipsize="end" android:id="@id/trail_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/trail_image" android:layout_width="56.0dip" android:layout_height="32.0dip" android:scaleType="centerInside" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+    <ru.yandex.taxi.design.CheckBoxComponent android:layout_gravity="center_vertical" android:id="@id/trail_checkbox" android:layout_width="@dimen/component_image_holder_size" android:layout_height="@dimen/component_image_holder_size" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/trail_chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron_next" android:layout_marginStart="8.0dip" android:layout_marginEnd="16.0dip" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/content_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ImageView android:id="@id/shadow" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="-12.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:backgroundTint="?textMain" />
+    <FrameLayout android:id="@id/bottom_container" android:background="@drawable/bg_rounded_24dp_modal_view" android:padding="@dimen/go_design_s_space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_button_accent="true" />
+    </FrameLayout>
+</LinearLayout>

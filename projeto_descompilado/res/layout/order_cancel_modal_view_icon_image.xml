@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView android:id="@id/icon_image" android:layout_width="@dimen/cancel_modal_view_image_size_small" android:layout_height="@dimen/cancel_modal_view_image_size_small" android:scaleType="fitCenter"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

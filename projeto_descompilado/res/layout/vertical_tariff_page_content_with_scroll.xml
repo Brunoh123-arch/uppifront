@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.DialogueComponent android:id="@id/vertical_tariff_page_dialogue" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/vertical_tariff_page_dialogue_header" layout="@layout/summary_dialog_header_item" />
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/tariff_card_scroll_view" android:background="?bgMain" android:paddingBottom="@dimen/solid_summary_order_button_block_height" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/vertical_tariff_page_content" />
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    </ru.yandex.taxi.design.DialogueComponent>
+    <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/solid_summary_order_button_block_height" app:scroll_view_id="@id/tariff_card_scroll_view" />
+</merge>

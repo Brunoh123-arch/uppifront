@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/FinsdkTextAppearance.Paragraph.S.Secondary" android:ellipsize="end" android:id="@id/finsdkPanInputLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/finsdk_card_number" android:maxLines="1" android:labelFor="@id/finsdkPanInputText" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <EditText android:textAppearance="@style/FinsdkTextAppearance.Heading.S.Medium" android:textColorHint="@color/finsdk_text_tertiary" android:id="@id/finsdkPanInputText" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" android:textCursorDrawable="@drawable/finsdk_cursor" android:autofillHints="" />
+        <TextView android:textAppearance="@style/FinsdkTextAppearance.Heading.S.Medium" android:textColor="@color/finsdk_text_tertiary" android:id="@id/finsdkPanInputTextHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/finsdk_card_number_hint" android:contentDescription="@null" android:textIsSelectable="false" android:importantForAccessibility="no" />
+        <EditText android:textAppearance="@style/FinsdkTextAppearance.Heading.S.Medium" android:textColorHint="@color/finsdk_text_tertiary" android:id="@id/finsdkPanInputTextMasked" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:drawablePadding="8.0dip" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" android:contentDescription="@string/finsdk_card_number" android:textCursorDrawable="@drawable/finsdk_cursor" android:autofillHints="" />
+    </FrameLayout>
+</merge>

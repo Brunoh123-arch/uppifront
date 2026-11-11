@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@id/start">
+        <Constraint android:id="@id/clickable_header_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:translationZ="1.0dip" app:layout_constraintBottom_toBottomOf="@id/chevron_image_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/chevron_image_view" />
+        <Constraint android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" app:layout_constraintBottom_toTopOf="@id/subtitle_text_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/chevron_image_view" app:layout_constraintVertical_chainStyle="packed">
+            <CustomAttribute app:attributeName="textSize" app:customFloatValue="16.0" />
+        </Constraint>
+        <Constraint android:id="@id/subtitle_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" app:layout_constraintBottom_toBottomOf="@id/chevron_image_view" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_text_view" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/chevron_image_view" android:layout_width="56.0dip" android:layout_height="56.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/items_recycler_view" android:layout_width="fill_parent" android:layout_height="0.100000024px" android:paddingHorizontal="40.0dip" android:paddingVertical="@dimen/go_design_m_space" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/chevron_image_view" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/end">
+        <Constraint android:id="@id/clickable_header_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:translationZ="1.0dip" app:layout_constraintBottom_toBottomOf="@id/chevron_image_view" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/chevron_image_view" />
+        <Constraint android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/chevron_image_view">
+            <CustomAttribute app:attributeName="textSize" app:customFloatValue="24.0" />
+        </Constraint>
+        <Constraint android:id="@id/subtitle_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title_text_view" app:visibilityMode="ignore" />
+        <Constraint android:id="@id/chevron_image_view" android:layout_width="56.0dip" android:layout_height="56.0dip" android:rotation="-180.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <Constraint android:id="@id/items_recycler_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:paddingHorizontal="40.0dip" android:paddingVertical="@dimen/go_design_m_space" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/subtitle_text_view" />
+    </ConstraintSet>
+    <Transition app:constraintSetEnd="@id/end" app:constraintSetStart="@id/start" app:duration="400" app:motionInterpolator="easeInOut" />
+</MotionScene>

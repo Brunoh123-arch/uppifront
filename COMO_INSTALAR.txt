@@ -1,0 +1,16 @@
+﻿=== PROJETO UPPI (64-BIT) ===
+
+ARQUIVOS NESTA PASTA:
+1. Uppi_64bit.apks:
+   - Pacote pronto contendo todos os splits necessarios.
+   - Instale no celular usando o app gratuito 'SAI (Split APKs Installer)' da Play Store.
+
+2. base.apk, split_config.arm64_v8a.apk, split_config.xxhdpi.apk:
+   - Arquivos individuais do app.
+   - Podem ser instalados via USB/ADB com o comando:
+     adb install-multiple -r base.apk split_config.arm64_v8a.apk split_config.xxhdpi.apk
+
+NOTA SOBRE A MUDANCA DE NOME:
+O app original usa protecoes do Android 15/16 (API 36) e assinaturas criptograficas da Play Store.
+Para aplicar uma marca definitiva sem conflitos com os servidores de mapas e pagamentos,
+a alteracao oficial deve ser feita a nivel de codigo-fonte (strings.xml / productFlavors).

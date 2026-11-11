@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="end" android:orientation="vertical" android:paddingTop="4.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.TooltipView android:gravity="center" android:layout_gravity="center" android:id="@id/promo_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:body="@drawable/main_screen_promo_label_bg" app:text_color="?textMain" app:tip="@drawable/main_screen_promo_tooltip_pointer" app:tip_direction="down" app:tooltip_elevation="4.0dip" app:tooltip_max_width="@dimen/main_screen_promo_tooltip_max_width" />
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="end" android:id="@id/promo_animation_package" android:layout_width="@dimen/main_screen_promo_animation_width" android:layout_height="@dimen/main_screen_promo_animation_height" android:importantForAccessibility="no" />
+    <ImageView android:layout_gravity="end" android:id="@id/promo_static_image" android:visibility="gone" android:layout_width="@dimen/main_screen_promo_animation_width" android:layout_height="@dimen/main_screen_promo_animation_height" android:importantForAccessibility="no" />
+</LinearLayout>

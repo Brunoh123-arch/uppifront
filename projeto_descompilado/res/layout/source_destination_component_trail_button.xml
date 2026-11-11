@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/trail_button_text_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="@dimen/go_design_m_space" app:component_background_color="?controlMinor" app:component_button_rounded_corners="true" app:component_button_rounded_corners_radius="@dimen/trail_button_corner_radius" app:component_button_size="XS" app:component_title_color="?textOnControlMinor"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.FloatButtonIconComponent android:layout_gravity="start" android:id="@id/back_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/common_back" android:layout_marginStart="-12.0dip" app:component_circle_image="@drawable/ic_arrow_back_24dp" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:background="@drawable/bg_rounded_24dp_modal_view" android:paddingTop="@dimen/go_design_m_space" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</com.yandex.go.design.view.GoLinearLayout>

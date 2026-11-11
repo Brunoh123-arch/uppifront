@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/favorites_list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.yandex.go.design.view.GoView android:layout_gravity="top" android:id="@id/top_shadow" android:background="@drawable/top_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.design.ToolbarComponent android:layout_gravity="top" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="64.0dip" app:component_title_size="16.0dip" app:component_title_typeface="medium" />
+    <include android:id="@id/error_view_include" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" layout="@layout/favorites_error_state" />
+    <include android:id="@id/loading_state_favorites_include" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="64.0dip" layout="@layout/favorites_loading_state" />
+</merge>

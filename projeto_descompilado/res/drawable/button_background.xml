@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:drawable="@drawable/color_button_disabled" app:state_disabled="true" />
+    <item android:state_enabled="false" android:drawable="@drawable/color_button_disabled" app:state_delete="false" />
+    <item android:state_pressed="true" android:drawable="@drawable/ripple_bg" app:state_delete="false" />
+    <item android:state_focused="true" android:drawable="@drawable/ripple_bg" app:state_delete="false" />
+    <item android:drawable="@drawable/color_button_delete" app:state_delete="true" />
+    <item android:drawable="@drawable/color_button" app:state_delete="false" />
+</selector>

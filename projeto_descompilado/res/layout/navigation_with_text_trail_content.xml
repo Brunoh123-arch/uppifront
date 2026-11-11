@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/navigation_trail_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/navigation_trail_icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/go_design_m_space">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:id="@id/navigation_trail_text" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/navigation_trail_icon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:robotoFontStyle="medium" />
+        <ru.yandex.taxi.plus.design.view.GradientGlyphValueView android:id="@id/navigation_trail_cashback_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/navigation_trail_icon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_in_round_24" android:layout_marginEnd="@dimen/go_design_s_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/navigation_trail_text_container" app:layout_constraintTop_toTopOf="parent" />
+</merge>

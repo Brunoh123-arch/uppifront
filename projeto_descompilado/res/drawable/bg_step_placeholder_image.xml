@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners android:radius="16.0dip" />
+            <solid android:color="?bgMinor" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="40.0dip" android:width="40.0dip" android:drawable="@drawable/ic_picture_fill" />
+</layer-list>

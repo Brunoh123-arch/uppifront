@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ya_eats_dialog_snippet_action_detail_margin_around" android:layout_marginStart="@dimen/ya_eats_dialog_snippet_action_detail_margin_around" android:layout_marginEnd="@dimen/ya_eats_dialog_snippet_action_detail_margin_around"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/image" android:padding="@dimen/ya_eats_dialog_snippet_action_image_padding" android:layout_width="64.0dip" android:layout_height="64.0dip" android:layout_marginTop="@dimen/ya_eats_dialog_snippet_action_detail_image_margin_top" />
+    <TextView android:textSize="32.0sp" android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ya_eats_dialog_snippet_action_detail_title_margin_top" android:fontFamily="@font/ya_medium" android:textAlignment="center" />
+    <TextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ya_eats_dialog_snippet_action_detail_text_margin_top" android:layout_marginBottom="16.0dip" android:textAlignment="center" />
+    <LinearLayout android:orientation="vertical" android:id="@id/buttonContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.communication.CommunicationFullScreenView android:id="@id/autoTopupInstructionFullScreenView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/autoTopupInstructionToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:ybsdk_closeIconVisible="true" app:ybsdk_transparentBackground="true" />
+</FrameLayout>

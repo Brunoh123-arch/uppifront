@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/sdk_container" android:background="?bgMain" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ru.yandex.common.bugview.BugButtonContainer android:id="@id/bug_report_button_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="1.0dip" android:outlineProvider="none" />
+</FrameLayout>

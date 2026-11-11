@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemComponent android:id="@id/route_stop_item_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip" app:component_title_size="@dimen/component_text_size_body"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

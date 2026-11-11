@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ybsdk_dashboard_error_view_icon_size">50.0dip</dimen>
+    <dimen name="ybsdk_qr_error_view_icon_size">50.0dip</dimen>
+    <dimen name="ybsdk_qr_preview_size">211.0dip</dimen>
+    <dimen name="ybsdk_transfer_main_scenario_loading_margin">36.0dip</dimen>
+</resources>

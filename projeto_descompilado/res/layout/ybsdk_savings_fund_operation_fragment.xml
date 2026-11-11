@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.Group android:id="@id/operationConfirmGroup" android:layout_width="fill_parent" android:layout_height="fill_parent" app:constraint_referenced_ids="title, subtitle, buttonsGroup, divView, backgroundImage" />
+    <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintTop_toBottomOf="@id/toolbar" style="@style/Widget.YB.Text.Headline1" />
+    <TextView android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintTop_toBottomOf="@id/title" style="@style/Widget.YB.Text.Body2" />
+    <com.ybsdk.widgets.common.ImageViewWithCustomScaleTypes android:id="@id/backgroundImage" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/divView" app:layout_constraintTop_toTopOf="parent" app:ybsdk_custom_scale_type="FIT_BOTTOM" />
+    <com.ybsdk.widgets.common.YbButtonViewGroup android:id="@id/buttonsGroup" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintBottom_toBottomOf="parent" app:ybsdk_horizontal_margin="0.0dip" />
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/divView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintBottom_toTopOf="@id/buttonsGroup" />
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/errorView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.FullscreenStatusView android:id="@id/statusView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

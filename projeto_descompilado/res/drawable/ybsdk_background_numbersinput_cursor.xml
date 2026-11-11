@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?ybColor_textIcon_primary" />
+    <size android:height="@dimen/ybsdk_height_moneyinput_cursor" android:width="@dimen/ybsdk_width_moneyinput_cursor" />
+</shape>

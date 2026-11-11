@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toTopOf="@id/bottom_buttons" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="37.0sp" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/go_design_m_space" android:layout_marginTop="44.0dip" android:layout_marginRight="@dimen/go_design_m_space" android:textAlignment="center" app:robotoFontStyle="light" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textColor="?textMinor" android:textColorLink="?textMain" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/go_design_m_space" android:layout_marginTop="6.0dip" android:layout_marginRight="@dimen/go_design_m_space" android:textAlignment="center" app:robotoFontStyle="light" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </ScrollView>
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:id="@id/bottom_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/appeal_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" app:robotoFontStyle="light" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/change_number_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_button_accent="true" app:robotoFontStyle="light" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/call_taxi_by_phone_button_pressed_background"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/call_taxi_by_phone_button_background" />
+            <corners android:radius="50.0dip" />
+            <padding android:left="@dimen/rounded_rectangle_btn_bg_side_padding" android:right="@dimen/rounded_rectangle_btn_bg_side_padding" />
+        </shape>
+    </item>
+</ripple>

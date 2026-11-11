@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/cost_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="30.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/cost_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:maxLines="2" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="18.0sp" android:id="@id/cost_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="18.0sp" android:textColor="?textMinor" android:id="@id/cost" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rate_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.yandex.taxi.widget.RobotoTextView android:gravity="center" android:id="@id/rate_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rate_label" style="@style/header" />
+        <ru.yandex.taxi.widget.RobotoTextView android:gravity="center" android:id="@id/rate_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/Settings.Text" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="80.0sp" android:ellipsize="none" android:gravity="center" android:id="@id/rate_cost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="15.0dip" android:singleLine="true" android:layout_above="@id/rate_message" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:robotoFontStyle="light" />
+    </RelativeLayout>
+    <ru.yandex.taxi.design.ButtonComponent android:textColor="?textOnControl" android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/rate_confirm" android:layout_alignParentBottom="true" app:component_background_color="?controlMain" app:component_button_accent="true" style="@style/BottomEdgeButtonMarginStyle" />
+</RelativeLayout>

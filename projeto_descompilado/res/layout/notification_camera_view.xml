@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/notification_camera_view" android:background="@drawable/notification_camera_background" android:layout_width="wrap_content" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/ic_notification_camera" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="?textMain" android:ellipsize="none" android:gravity="center" android:layout_gravity="center" android:id="@id/distance_between_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="12.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

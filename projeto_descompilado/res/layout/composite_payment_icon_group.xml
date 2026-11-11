@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="@dimen/composite_payment_icon_width" android:layout_height="@dimen/composite_payment_icon_height">
+        <com.yandex.go.design.view.GoFrameLayout android:id="@id/composite_icons_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/composite_payment_icon_container_min_width" android:minHeight="@dimen/composite_payment_icon_container_min_height">
+            <ImageView android:layout_gravity="center" android:id="@id/composite_payment_secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:rotation="@integer/composite_payment_icon_rotation" />
+            <ImageView android:layout_gravity="center" android:id="@id/composite_payment_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/composite_payment_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/ic_warning_round_with_border" android:scaleType="center" android:layout_marginEnd="3.0dip" />
+        </com.yandex.go.design.view.GoFrameLayout>
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:id="@id/composite_payment_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingEnd="1.0dip" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</merge>

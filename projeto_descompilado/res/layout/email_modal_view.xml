@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/child_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:layout_marginBottom="@dimen/confirm_button_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.AnimatedListItemInputComponent android:id="@id/mail_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" app:component_title_input="@string/settings_mail_hint" app:component_type_input="email" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="14.0sp" android:textColor="?textMinor" android:id="@id/mail_status_message" android:paddingLeft="16.0dip" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.yandex.taxi.design.FloatingTitleToolbarComponent android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_floating_title="@string/settings_mail_title" app:component_toolbar_item_title="@string/settings_remove_email" app:component_tracked_view="@id/scroll" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/favorites_summary_add" app:component_button_accent="true" />
+</FrameLayout>

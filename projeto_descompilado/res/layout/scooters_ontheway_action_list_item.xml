@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemComponent android:background="@drawable/scooters_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image_padding="14.0dip" app:component_title_size="@dimen/component_text_size_body" app:component_title_typeface="regular" app:component_trail_image="@drawable/chevron_next" app:component_trail_image_tint="?textMain"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

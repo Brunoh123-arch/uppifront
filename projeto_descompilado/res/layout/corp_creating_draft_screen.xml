@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/header_linear_layout" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+                <ru.yandex.taxi.design.ListTitleComponent android:id="@id/branch_screen_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:component_auto_min_height="true" app:component_title_size="24.0sp" app:component_title_text_color="?textMain" app:component_title_typeface="bold" app:component_vertical_padding="0.0dip" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/branch_screen_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="24.0dip" app:component_auto_min_height="true" app:component_title_size="16.0sp" app:component_title_text_color="?textMain" app:component_title_typeface="regular" app:component_vertical_padding="0.0dip" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <FrameLayout android:id="@id/hint_description_layout" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/header_linear_layout">
+                <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="6.0dip" app:cardElevation="0.0dip">
+                    <ru.yandex.taxi.design.ListHintComponent android:id="@id/hint_description" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_text_background="?bgMinor" app:component_text_color="?textMinor" app:component_text_size="13.0sp" app:component_text_typeface="medium" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/company_name_item_input" android:background="?bgMain" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" app:component_input_type="text" app:layout_constraintTop_toBottomOf="@id/hint_description_layout" />
+            <FrameLayout android:id="@id/open_city_layout" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/company_name_item_input">
+                <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/city_item_input" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="text" app:component_max_lines="1" />
+                <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center" android:id="@id/shuttle_ticket_chevron" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginBottom="6.0dip" android:scaleType="centerInside" android:importantForAccessibility="no" app:srcCompat="@drawable/chevron_next" />
+                <View android:id="@id/click_catcher" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/contact_item_input" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="text" app:component_max_lines="1" app:layout_constraintTop_toBottomOf="@id/open_city_layout" />
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/phone_item_input" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="phone" app:component_max_lines="1" app:layout_constraintTop_toBottomOf="@id/contact_item_input" />
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/email_item_input" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="email" app:component_max_lines="1" app:layout_constraintTop_toBottomOf="@id/phone_item_input" />
+            <FrameLayout android:id="@id/politic_item_layout" android:background="@drawable/corp_creating_politic_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/email_item_input">
+                <ru.yandex.taxi.design.ListItemCheckComponent android:id="@id/politic_item_check" android:background="?bgTransparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <androidx.cardview.widget.CardView android:id="@id/business_account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="24.0dip" app:cardElevation="0.0dip" app:layout_constraintTop_toBottomOf="@id/politic_item_layout">
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/create_account_open_business_account" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_ellipsize_mode="end" app:component_subtitle_max_lines="1" app:component_title_ellipsize_mode="end" app:component_trail_mode="navigation" />
+            </androidx.cardview.widget.CardView>
+            <ru.yandex.taxi.widget.ShimmeringFrameLayout android:id="@id/create_account_frame_layout" android:background="@drawable/business_branched_corner_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:layout_constraintTop_toBottomOf="@id/business_account_layout">
+                <ru.yandex.taxi.design.ButtonComponent android:id="@id/create_account_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+            </ru.yandex.taxi.widget.ShimmeringFrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+</FrameLayout>

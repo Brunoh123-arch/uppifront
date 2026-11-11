@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/info_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:scaleType="centerInside" app:srcCompat="@drawable/info_icon" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/check_mark" android:padding="@dimen/component_safe_image_padding" android:layout_width="@dimen/component_image_holder_size" android:layout_height="@dimen/component_image_holder_size" android:scaleType="centerInside" app:srcCompat="@drawable/component_list_item_check_unchecked_single" />
+</merge>

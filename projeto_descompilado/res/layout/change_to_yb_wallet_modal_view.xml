@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:component_no_background="true" app:component_title_gravity="start" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" />
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_text_size="@dimen/go_design_m_space" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/close_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_button_size="L" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/change_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_button_size="L" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/tariff_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/section_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.taxi.intercity.dashboard.impl.presentation.component.IntercityDashboardSingleTariffContainerView android:id="@id/single_tariff_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/two_tariffs_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/intercity_dashboard_tariff_selector_horizontal_divider" android:showDividers="middle" android:layout_marginStart="@dimen/section_margin_size" android:layout_marginEnd="@dimen/section_margin_size">
+        <com.yandex.go.taxi.intercity.dashboard.impl.presentation.component.IntercityDashboardTariffView android:id="@id/first_tariff_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.yandex.go.taxi.intercity.dashboard.impl.presentation.component.IntercityDashboardTariffView android:id="@id/second_tariff_view" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/multiple_tariffs_container" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+</FrameLayout>

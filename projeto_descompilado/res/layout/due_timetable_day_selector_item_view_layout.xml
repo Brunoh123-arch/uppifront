@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minHeight="40.0dip" android:dividerPadding="2.0dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/lightning_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dip" android:paddingEnd="2.0dip">
+        <TextView android:textSize="@dimen/component_text_size_caption" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/component_text_size_caption_secondary" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

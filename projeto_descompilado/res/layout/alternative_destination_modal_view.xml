@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:importantForAccessibility="yes" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" app:component_title_size="@dimen/component_text_size_title" />
+    <ru.yandex.taxi.altpins.confirmation_screen.modal.comparison_block.ComparisonView android:id="@id/comparison_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.widget.ButtonsView android:orientation="horizontal" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+</LinearLayout>

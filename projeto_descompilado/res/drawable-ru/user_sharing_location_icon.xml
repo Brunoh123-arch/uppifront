@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="34.0dip" android:width="35.0dip" android:viewportWidth="35.0" android:viewportHeight="34.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffffff" android:pathData="M17.4598,27C24.0872,27 29.4598,21.6274 29.4598,15C29.4598,8.3726 24.0872,3 17.4598,3C10.8324,3 5.4598,8.3726 5.4598,15C5.4598,21.6274 10.8324,27 17.4598,27Z" />
+    <path android:fillColor="@color/pin_point_sharing_fill_color" android:pathData="M21.8479,7.405H18.0679C14.7499,7.405 12.6289,8.938 12.6289,12.172C12.6289,14.293 13.6999,15.742 15.6319,16.372L12.2299,22H14.9179L18.0049,16.792H19.3069V22H21.8479V7.405ZM18.0469,9.379H19.3069V14.818H17.9629C16.1779,14.818 15.2119,13.999 15.2119,12.172C15.2119,10.261 16.2829,9.379 18.0469,9.379Z" />
+</vector>

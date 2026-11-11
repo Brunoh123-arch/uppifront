@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="@dimen/ybsdk_toolbar_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ybsdk.widgets.common.LabeledNavigationButtonView android:layout_gravity="center_vertical" android:id="@id/referralEntrypointButton" android:layout_width="wrap_content" android:layout_height="@dimen/ybsdk_labeled_navigation_button_height" />
+</FrameLayout>

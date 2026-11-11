@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector android:drawable="@drawable/eats_radio_state_group"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <target android:name="unchecked" android:animation="@animator/in_unchecked" />
+    <target android:name="checked" android:animation="@animator/in_checked" />
+</animated-vector>

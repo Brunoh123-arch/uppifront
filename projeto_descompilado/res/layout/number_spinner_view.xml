@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/number_spinner_decrease" android:background="@drawable/bg_spinnner_button" android:focusable="true" android:layout_width="@dimen/number_spinner_button_size" android:layout_height="@dimen/number_spinner_button_size" android:scaleType="center" android:contentDescription="@string/number_spinner_decrease_content_description" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="24.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/number_spinner_value" android:layout_width="40.0dip" android:layout_height="wrap_content" app:robotoFontStyle="light" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/number_spinner_increase" android:background="@drawable/bg_spinnner_button" android:focusable="true" android:layout_width="@dimen/number_spinner_button_size" android:layout_height="@dimen/number_spinner_button_size" android:scaleType="center" android:contentDescription="@string/number_spinner_increase_content_description" />
+</merge>

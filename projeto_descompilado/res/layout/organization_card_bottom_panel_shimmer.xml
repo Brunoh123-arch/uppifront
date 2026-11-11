@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.PlaceholderView android:layout_width="0.0dip" android:layout_height="@dimen/places_card_bottom_panel_button_height" android:layout_weight="1.0" app:placeholder_color="?bgMinor" app:placeholder_corner_radius="@dimen/places_card_bottom_panel_button_corner_radius" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+    <ru.yandex.taxi.widget.PlaceholderView android:layout_width="@dimen/places_card_bottom_panel_button_height" android:layout_height="@dimen/places_card_bottom_panel_button_height" android:layout_marginStart="@dimen/places_card_bottom_panel_button_spacing" app:placeholder_color="?bgMinor" app:placeholder_corner_radius="@dimen/places_card_bottom_panel_button_corner_radius" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+</merge>

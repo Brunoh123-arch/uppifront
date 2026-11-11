@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/plus_switch_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ya_eats_cart_button_margin" app:layout_constraintEnd_toStartOf="@id/plus_switch" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/YSTCaptionRegular" />
+    <TextView android:id="@id/plus_switch_subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginHorizontal="@dimen/ya_eats_cart_button_margin" app:layout_constraintEnd_toStartOf="@id/plus_switch" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/plus_switch_title" style="@style/YSTCaption2Tight" />
+    <ru.yandex.eda_design.views.control.toggle.EatsControlToggle android:id="@id/plus_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ya_eats_cart_button_margin" app:layout_constraintBottom_toBottomOf="@id/plus_switch_subtitle" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/plus_switch_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

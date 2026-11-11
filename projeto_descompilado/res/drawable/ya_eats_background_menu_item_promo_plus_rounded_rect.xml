@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/eats_theme_default_day_night_background" />
+    <corners android:radius="@dimen/ya_eats_promo_badge_corner_radius" />
+</shape>

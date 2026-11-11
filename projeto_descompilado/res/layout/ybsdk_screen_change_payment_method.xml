@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ybsdk.widgets.common.bottomsheet.BottomSheetDialogView android:id="@id/change_payment_method_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/web3dsViewContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="9.0dip">
+        <com.ybsdk.widgets.common.ToolbarView android:id="@id/web3dsToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/banner_content_container" android:background="@color/transparent" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/banner_scroll_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <com.yandex.go.design.view.GoConstraintLayout android:id="@id/banner_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center_horizontal" android:id="@id/banner_image_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/banner_animation_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerInside" />
+                    <ru.yandex.taxi.widget.RoundedCornersImageView android:layout_gravity="center_horizontal" android:id="@id/banner_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginHorizontal="16.0dip" app:cornerRadius="16.0dip" />
+                    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="end|bottom|center" android:background="@drawable/bg_advertisement_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:layout_marginEnd="24.0dip">
+                        <ru.yandex.taxi.design.BadgeView android:id="@id/banner_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="1.0" />
+                    </com.yandex.go.design.view.GoFrameLayout>
+                </com.yandex.go.design.view.GoFrameLayout>
+                <ru.yandex.taxi.widget.ComponentLinearLayout android:orientation="vertical" android:id="@id/banner_bottom_container_in_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dip" app:layout_constraintTop_toBottomOf="@id/banner_image_holder">
+                    <ru.yandex.taxi.widget.RobotoTextView android:textAppearance="@style/TextAppearance.CardBanner.Title" android:textSize="32.0sp" android:textStyle="bold" android:textColor="?textMain" android:id="@id/banner_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:textAlignment="center" app:component_no_background="true" app:component_title_gravity="text_start" app:robotoFontStyle="heavy" />
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/banner_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:textAlignment="center" />
+                </ru.yandex.taxi.widget.ComponentLinearLayout>
+                <com.airbnb.lottie.LottieAnimationView android:id="@id/extra_animation_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@id/banner_image_holder" app:layout_constraintDimensionRatio="1:1" app:layout_constraintLeft_toLeftOf="@id/banner_image_holder" app:layout_constraintRight_toRightOf="@id/banner_image_holder" app:layout_constraintTop_toTopOf="@id/banner_image_holder" app:lottie_autoPlay="true" app:lottie_clipToCompositionBounds="false" app:lottie_loop="true" />
+            </com.yandex.go.design.view.GoConstraintLayout>
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/banner_bottom_scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/banner_scroll_view" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/banner_bottom_container" android:paddingTop="@dimen/go_design_l_space" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

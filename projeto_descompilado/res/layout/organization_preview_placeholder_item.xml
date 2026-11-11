@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/retry_icon" android:visibility="gone" android:layout_width="@dimen/component_image_holder_custom_width" android:layout_height="@dimen/component_image_holder_custom_width" android:src="@drawable/ic_discovery_organization_organization_preview_refresh" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center" android:id="@id/loading_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:scrolledHorizontally="true" />
+</com.yandex.go.design.view.GoFrameLayout>

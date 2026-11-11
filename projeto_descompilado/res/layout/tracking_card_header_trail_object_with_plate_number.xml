@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.superapp.orders.card.header.trails.TrackingCardPlateNumberView android:layout_gravity="end" android:id="@id/plate_number" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="end" android:id="@id/object" android:layout_width="74.0dip" android:layout_height="@dimen/car_height" android:layout_marginTop="12.0dip" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+</merge>

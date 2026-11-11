@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center" android:id="@id/image" android:layout_width="@dimen/horizontal_button_image_size" android:layout_height="@dimen/horizontal_button_image_size" style="@style/HorizontalButtonImage" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="14.0dip">
+        <ru.yandex.taxi.widget.RobotoTextView android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HorizontalButtonTitle" />
+        <ru.yandex.taxi.widget.RobotoTextView android:layout_gravity="center_vertical" android:id="@id/subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/HorizontalButtonSubtitle" />
+    </LinearLayout>
+</merge>

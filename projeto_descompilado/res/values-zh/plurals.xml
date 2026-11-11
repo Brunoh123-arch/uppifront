@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">天</item>
+        <item quantity="one">天</item>
+        <item quantity="few">天</item>
+        <item quantity="many">天</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">小时</item>
+        <item quantity="one">小时</item>
+        <item quantity="few">小时</item>
+        <item quantity="many">小时</item>
+    </plurals>
+</resources>

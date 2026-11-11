@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/RequirementItemContainer"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/RequirementItemTitle" />
+    <ImageView android:id="@id/check_mark" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_due_variant_check" app:tint="?textMain" />
+</ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout>

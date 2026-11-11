@@ -1,0 +1,320 @@
+{
+  "items": [
+    {
+      "id": "status",
+      "type": "status",
+      "analytics_id": "status_search",
+      "slot": {
+        "body": [
+          {
+            "lines": [
+              {
+                "ellipsis": "end",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "your_arrived",
+                      "font_size": 20,
+                      "font_weight": "medium",
+                      "font_style": "normal",
+                      "color": "textMain"
+                    }
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "align": "start"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "source",
+      "type": "source",
+      "analytics_id": "source_id",
+      "slot": {
+        "body": [
+          {
+            "lines": [
+              {
+                "ellipsis": "end",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "ride_card_pickup_point_label",
+                      "font_size": 13,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMinor"
+                    }
+                  ]
+                }
+              },
+              {
+                "ellipsis": "center",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "<<content>>",
+                      "font_size": 16,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMain"
+                    }
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "align": "start"
+            }
+          }
+        ],
+        "lead": {
+          "type": "icon",
+          "image": {
+            "image_tag": "image_source_hand"
+          }
+        }
+      }
+    },
+    {
+      "id": "route_point",
+      "type": "route_point",
+      "analytics_id": "route_point_id",
+      "slot": {
+        "body": [
+          {
+            "lines": [
+              {
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "route_point",
+                      "font_size": 13,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMinor"
+                    }
+                  ]
+                }
+              },
+              {
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "<<content>>",
+                      "font_size": 16,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMain"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "lead": {
+          "type": "icon",
+          "image": {
+            "image_tag": "card_info_route_point"
+          }
+        }
+      }
+    },
+    {
+      "id": "destination",
+      "type": "destination",
+      "analytics_id": "destination_id",
+      "slot": {
+        "body": [
+          {
+            "lines": [
+              {
+                "ellipsis": "end",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "due_chart_arrival_label",
+                      "font_size": 13,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMinor"
+                    }
+                  ]
+                }
+              },
+              {
+                "ellipsis": "center",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "<<content>>",
+                      "font_size": 16,
+                      "font_weight": "regular",
+                      "font_style": "normal",
+                      "color": "textMain"
+                    }
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "align": "start"
+            }
+          }
+        ],
+        "lead": {
+          "type": "icon",
+          "image": {
+            "image_tag": "image_destination"
+          }
+        }
+      }
+    },
+    {
+      "id": "compact_action_buttons",
+      "type": "action_buttons",
+      "analytics_id": "compact_action_buttons",
+      "buttons": [
+        {
+          "id": "open_details_button",
+          "type": "open_details_button",
+          "analytics_id": "open_details_button",
+          "accessibility": "",
+          "width_strategy": "default",
+          "button_properties": {
+            "size": "m",
+            "style": "minor",
+            "form": "squircle",
+            "color": "controlMinor"
+          },
+          "slot": {
+            "action": {
+              "type": "open_details"
+            },
+            "body": [
+              {
+                "lines": [
+                  {
+                    "ellipsis": "end",
+                    "line_count": 1,
+                    "text": {
+                      "items": [
+                        {
+                          "type": "image",
+                          "image_tag": "image_menu",
+                          "color": "textMain"
+                        },
+                        {
+                          "type": "text",
+                          "text": " ",
+                          "font_size": 13
+                        },
+                        {
+                          "type": "text",
+                          "text": "order_details",
+                          "font_size": 13,
+                          "font_weight": "medium",
+                          "font_style": "normal",
+                          "color": "textMain"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "properties": {
+                  "align": "center"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "complete_button",
+      "type": "button_done",
+      "analytics_id": "done_button",
+      "slot": {
+        "body": [
+          {
+            "lines": [
+              {
+                "ellipsis": "end",
+                "line_count": 1,
+                "text": {
+                  "items": [
+                    {
+                      "type": "text",
+                      "text": "common_done",
+                      "font_size": 16,
+                      "font_weight": "medium",
+                      "font_style": "normal",
+                      "color": "textOnControl"
+                    }
+                  ]
+                }
+              }
+            ],
+            "properties": {
+              "align": "center"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "dividers": [
+    {
+      "id": "divider_line_slot_1",
+      "type": "line_slot"
+    },
+    {
+      "id": "divider_spacer_vertical_32",
+      "type": "spacer_vertical",
+      "value": 32
+    },
+    {
+      "id": "divider_spacer_vertical_3",
+      "type": "spacer_vertical",
+      "value": 3
+    }
+  ],
+  "presentations": {
+    "details": {
+      "default_screen_ratio": "0.4",
+      "minimized_screen_ratio": "0.15",
+      "items": [
+        "status",
+        "source",
+        "divider_line_slot_1",
+        "destination",
+        "divider_spacer_vertical_32",
+        "complete_button"
+      ]
+    },
+    "compact": {
+      "items": [
+        "status",
+        "compact_action_buttons",
+        "divider_spacer_vertical_3"
+      ]
+    }
+  }
+}

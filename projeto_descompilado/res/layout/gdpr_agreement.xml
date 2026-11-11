@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_notification" style="@style/BottomModalContentHolder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <androidx.core.widget.NestedScrollView android:layout_gravity="bottom" android:id="@id/gdpr_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingTop="56.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/gdpr_center_image" android:visibility="gone" android:layout_width="@dimen/gdpr_agreement_image_size" android:layout_height="@dimen/gdpr_agreement_image_size" android:layout_marginBottom="24.0dip" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+                    <ImageView android:id="@id/gdpr_start_image" android:visibility="gone" android:layout_width="@dimen/gdpr_agreement_start_image_size" android:layout_height="@dimen/gdpr_agreement_start_image_size" android:scaleType="fitCenter" android:importantForAccessibility="no" android:layout_marginEnd="@dimen/go_design_s_space" />
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="21.0sp" android:textColor="?textMain" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/gdpr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="viewStart" app:robotoFontStyle="bold" />
+                </LinearLayout>
+                <ru.yandex.taxi.widget.RobotoTextView android:textSize="17.0sp" android:textStyle="normal" android:textColor="?textMain" android:textColorLink="?textMinor" android:gravity="start" android:id="@id/gdpr_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:textAlignment="viewStart" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+        <View android:layout_gravity="bottom" android:id="@id/gdpr_scroll_indicator_line" android:background="?line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|bottom|center" android:id="@id/gdpr_scroll_indicator_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="28.0dip" android:layout_marginBottom="5.0dip" android:layout_marginEnd="28.0dip" app:srcCompat="@drawable/ic_arrow_drop_down_pool_grey" />
+        <ImageView android:layout_gravity="end|center|top" android:id="@id/gdpr_close_button" android:padding="10.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/gdpr_close_button" android:contentDescription="@string/common_close" android:layout_marginEnd="4.0dip" />
+    </FrameLayout>
+    <ru.yandex.taxi.widget.ButtonsView android:orientation="horizontal" android:id="@id/bottom_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:importantForAccessibility="no" />
+</LinearLayout>

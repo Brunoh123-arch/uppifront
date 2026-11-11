@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="medium" />
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/text_description" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_padding_top="0.0dip" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" />
+</LinearLayout>

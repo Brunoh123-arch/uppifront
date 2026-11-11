@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation app:route="bdui" app:startDestination="@id/finsdk_bdui_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="BduiFragment" android:name="com.yandex.fintechsdk.features.bdui.internal.presentation.fragment.BduiFragment" android:id="@id/finsdk_bdui_fragment" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?ybColor_background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:id="@id/shimmer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/guideline" app:layout_constraintTop_toTopOf="parent" app:ybsdk_cornerRadius="4.0dip" />
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.45" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="113.0dip" app:layout_constraintTop_toBottomOf="@id/guideline" app:ybsdk_cornerRadius="4.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeleton1" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginTop="24.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="113.0dip" app:layout_constraintTop_toBottomOf="@id/guideline" app:ybsdk_cornerRadius="4.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeleton2" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="@dimen/ybsdk_card_reissue_shimmer_margin_start" android:layout_marginEnd="@dimen/ybsdk_card_reissue_shimmer_margin_end" app:layout_constraintTop_toBottomOf="@id/skeleton1" app:ybsdk_cornerRadius="4.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeleton3" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="@dimen/ybsdk_card_reissue_shimmer_margin_start" android:layout_marginEnd="@dimen/ybsdk_card_reissue_shimmer_margin_end" app:layout_constraintTop_toBottomOf="@id/skeleton2" app:ybsdk_cornerRadius="4.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeleton4" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginStart="@dimen/ybsdk_card_reissue_shimmer_margin_start" android:layout_marginEnd="@dimen/ybsdk_card_reissue_shimmer_margin_end" app:layout_constraintTop_toBottomOf="@id/skeleton3" app:ybsdk_cornerRadius="4.0dip" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>
+    <com.ybsdk.widgets.common.communication.CommunicationFullScreenView android:id="@id/landing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.OperationProgressOverlayDialog android:id="@id/progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/toolbarView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:ybsdk_closeIconVisible="true" app:ybsdk_transparentBackground="true" />
+</FrameLayout>

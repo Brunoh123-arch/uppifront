@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/order_info_content" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/driver_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/order_info_modal_view_driver" />
+        <com.yandex.go.taxi.order.info.ui.ListDriverComponent android:id="@id/order_info_driver" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" />
+        <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/driver_info_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin">
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_car" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_image="@drawable/ic_call" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_kis_art" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ru.yandex.taxi.design.AutoDividerComponentList>
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/driver_comment_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/comment_to_driver" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/order_info_carrier_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/order_info_modal_view_carrier" />
+        <com.yandex.go.taxi.order.info.OrderInfoOrganizationView android:id="@id/order_info_carrier" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/order_info_partner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/order_info_modal_view_partner" />
+        <com.yandex.go.taxi.order.info.OrderInfoOrganizationView android:id="@id/order_info_partner" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/order_info_route_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/order_info_modal_view_route" />
+        <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/route_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="icon">
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_source" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_order_card_source" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_destination" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_order_card_destination" />
+        </ru.yandex.taxi.design.AutoDividerComponentList>
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/order_info_time_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/common_time" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/order_info_payment_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_list_group_title="@string/order_info_modal_view_payment" />
+        <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/order_info_payment_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin">
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_tariff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_cost" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/order_info_modal_view_payment_method" />
+        </ru.yandex.taxi.design.AutoDividerComponentList>
+        <ru.yandex.taxi.design.ListGroupHeaderComponent android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+        <ru.yandex.taxi.design.AutoDividerComponentList android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" app:component_bottom_divider_type="normal" app:component_middle_divider_type="margin">
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_info_freightage" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+        </ru.yandex.taxi.design.AutoDividerComponentList>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

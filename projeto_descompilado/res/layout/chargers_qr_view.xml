@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/qr_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.chargers.qr.ChargersQrCameraPreview android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/chargers_permissions_view" />
+    <include layout="@layout/chargers_qr_photo_state" />
+    <include layout="@layout/chargers_qr_manual_enter_state" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/offer_card_offset_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

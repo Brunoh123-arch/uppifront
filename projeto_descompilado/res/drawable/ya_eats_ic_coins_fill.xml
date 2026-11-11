@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="16.0dip" android:width="17.0dip" android:viewportWidth="17.0" android:viewportHeight="16.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/theme_default_day_icon_main" android:pathData="M11.166,10.333C11.166,9.992 11.136,9.657 11.078,9.332C12.252,9.318 13.347,9.202 14.197,9.006C14.528,8.93 14.863,8.832 15.166,8.703V10.333C15.166,10.867 13.357,11.302 11.078,11.332C11.136,11.008 11.166,10.674 11.166,10.333Z" />
+    <path android:fillColor="@color/theme_default_day_icon_main" android:pathData="M15.166,7V5.37C14.863,5.499 14.528,5.597 14.197,5.673C13.288,5.883 12.099,6 10.833,6C10.213,6 9.611,5.972 9.052,5.919C9.74,6.473 10.296,7.185 10.665,7.999C10.72,8 10.776,8 10.833,8C13.226,8 15.166,7.552 15.166,7Z" />
+    <path android:fillColor="@color/theme_default_day_icon_main" android:pathData="M6.499,3.667C6.499,4.219 8.439,4.667 10.833,4.667C13.226,4.667 15.166,4.219 15.166,3.667V3C15.166,2.448 13.226,2 10.833,2C8.439,2 6.499,2.448 6.499,3V3.667Z" />
+    <path android:fillColor="@color/theme_default_day_icon_main" android:pathData="M5.499,14.667C7.893,14.667 9.833,12.727 9.833,10.333C9.833,7.94 7.893,6 5.499,6C3.106,6 1.166,7.94 1.166,10.333C1.166,12.727 3.106,14.667 5.499,14.667Z" />
+</vector>

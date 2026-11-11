@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.places.organization.card.impl.ui.card.flex.v1.PlacesOrganizationCardNestedScrollView android:id="@id/organization_card_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yandex.go.design.view.GoConstraintLayout android:background="?everBack" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/images_slider_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginBottom="150.0dip" />
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center|top" android:id="@id/close_button" android:background="@drawable/close_floating" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/go_design_s_space" android:scaleType="center" android:contentDescription="@string/common_back" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/ic_arrow_left" />
+            <FrameLayout android:id="@id/items_layout" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/images_slider_layout">
+                <ViewStub android:id="@id/inner_flex_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.yandex.go.design.view.GoConstraintLayout>
+    </com.yandex.go.places.organization.card.impl.ui.card.flex.v1.PlacesOrganizationCardNestedScrollView>
+</com.yandex.go.design.view.GoFrameLayout>

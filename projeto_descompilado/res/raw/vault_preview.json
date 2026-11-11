@@ -1,0 +1,64 @@
+{
+  "ui": {
+    "type": "skeleton",
+    "skeleton": "SKELETON_PLACEHOLDER"
+  },
+  "scaffold": {
+    "topView": {
+      "id": "VaultPreviewTopView",
+      "divDataTag": null,
+      "type": "DivkitSnippet",
+      "divData": {
+        "log_id": "VaultPreviewTopView",
+        "states": [
+          {
+            "state_id": 0,
+            "div": {
+              "type": "container",
+              "orientation": "overlap",
+              "height": {
+                "type": "fixed",
+                "value": "@{handleInsetsInFlex ? flex.statusbar_height : 0}"
+              },
+              "background": [
+                {
+                  "type": "solid",
+                  "color": "#000000"
+                }
+              ],
+              "width": {
+                "type": "match_parent"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "topPadding": {
+      "value": {
+        "relative": 1,
+        "type": "relative"
+      }
+    },
+    "bottomPadding": {
+      "value": {
+        "absolute": 0,
+        "type": "absolute"
+      }
+    },
+    "backgroundColor": {
+      "light": "#00000000",
+      "dark": "#00000000",
+      "ultimaLight": "#00000000",
+      "ultimaDark": "#00000000"
+    },
+    "type": "DivkitScaffold"
+  },
+  "shared": {
+    "divkitTemplates": {},
+    "sections": {},
+    "divData": {},
+    "analytics": {}
+  },
+  "context": null
+}

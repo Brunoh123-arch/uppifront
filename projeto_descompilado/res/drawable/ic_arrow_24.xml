@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_arrow_default" android:left="@dimen/arrow_navigation_left_offset" android:top="@dimen/arrow_navigation_top_offset" android:right="@dimen/arrow_navigation_right_offset" android:bottom="@dimen/arrow_navigation_bottom_offset" />
+</layer-list>

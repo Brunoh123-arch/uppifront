@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ToolbarComponent android:id="@id/safety_center_toolbar" android:layout_width="fill_parent" android:layout_height="60.0dip" app:component_no_background="true" />
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/safety_center_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_background="@drawable/gray_circle" app:component_lead_image="@drawable/ic_live_location_24" app:component_lead_image_size="48.0dip" />
+    <ru.yandex.taxi.widget.FlowLayout android:gravity="center_horizontal" android:id="@id/safety_center_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" android:layout_marginBottom="@dimen/go_design_m_space" android:paddingStart="32.0dip" android:paddingEnd="32.0dip" app:fixedColumns="true" app:lineSpacing="@dimen/go_design_m_space" app:maxColumns="3">
+        <ru.yandex.taxi.widget.buttons.IconCircleButton android:id="@id/safety_center_share" android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_circle_image="@drawable/ic_share_route_blue" />
+    </ru.yandex.taxi.widget.FlowLayout>
+</LinearLayout>

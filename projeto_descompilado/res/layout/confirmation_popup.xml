@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/PopupCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="504.0dip">
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button" android:layout_alignParentTop="true" android:scrollbarDefaultDelayBeforeFade="2000">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip">
+                <ImageView android:id="@id/icon" style="@style/PopupImageView" />
+                <ru.yandex.taxi.widget.RobotoTextView android:id="@id/title" style="@style/PopupTextViewTitle" />
+                <ru.yandex.taxi.widget.RobotoTextView android:id="@id/description" style="@style/PopupTextViewBody" />
+            </LinearLayout>
+        </ScrollView>
+        <ru.yandex.taxi.widget.RobotoTextView android:id="@id/button" android:text="@string/surge_info_button_name" android:layout_alignParentBottom="true" style="@style/clickable_item.PopupOkButton" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

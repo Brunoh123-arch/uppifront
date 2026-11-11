@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:id="@id/qr_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.scooters.qr.ui.ScootersQrCameraPreview android:id="@id/camera_preview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/scooters_permissions_view" />
+    <include layout="@layout/scooters_qr_photo_state" />
+    <include layout="@layout/scooters_qr_manual_enter_state" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/text_hint" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="56.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/offer_card_offset_guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_end="0.0dip" />
+    <androidx.constraintlayout.widget.Barrier android:id="@id/clean_area_bottom_barrier" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="top" app:constraint_referenced_ids="flash_light_btn, enter_number_manually, qr_state_back_button" />
+</com.yandex.go.design.view.GoConstraintLayout>

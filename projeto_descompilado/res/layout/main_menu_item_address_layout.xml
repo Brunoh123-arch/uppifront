@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemComponent android:id="@id/menu_item_address" android:background="@drawable/bg_main_ripple" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title="@string/menu_address_title" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" style="@style/MainMenuItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

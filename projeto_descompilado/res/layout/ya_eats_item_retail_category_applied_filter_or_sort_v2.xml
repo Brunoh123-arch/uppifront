@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="?bgMain" app:cardCornerRadius="10.0dip" app:cardElevation="4.0dip" app:strokeColor="?bgMinor" app:strokeWidth="1.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:id="@id/ya_eats_retail_category_applied_filter_or_sort_v2_container" android:layout_width="wrap_content" android:layout_height="36.0dip">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/ya_eats_retail_category_applied_filter_or_sort_v2_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="5.0dip" />
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="13.0sp" android:textColor="?textMain" android:layout_gravity="center" android:id="@id/ya_eats_retail_category_applied_filter_or_sort_v2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/ya_regular" android:layout_marginStart="14.0dip" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ya_eats_retail_category_applied_filter_or_sort_v2_cross" android:layout_width="32.0dip" android:layout_height="fill_parent" android:scaleType="center" app:srcCompat="@drawable/ic_cross_close_24_black" app:tint="?textMinor" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.google.android.material.card.MaterialCardView>

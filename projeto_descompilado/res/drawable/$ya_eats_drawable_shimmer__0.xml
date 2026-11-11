@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="160.0dip" android:width="160.0dip" android:viewportWidth="120.0" android:viewportHeight="160.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:name="shimmer">
+        <path android:fillColor="@drawable/$ya_eats_drawable_shimmer__1" android:pathData="M0,0L120,0L120,160L0,160L0,0Z" />
+    </group>
+</vector>

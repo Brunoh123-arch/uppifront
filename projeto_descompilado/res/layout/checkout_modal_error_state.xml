@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/error_state_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RoundedCornersImageView android:background="?error" android:padding="8.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/ic_alert" android:tint="@color/white" android:layout_marginStart="8.0dip" app:cornerRadius="100.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="24.0sp" android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="12.0dip" android:text="@string/chargers_something_wrong" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="bold" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/mt_error_subtitle" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="regular" />
+        <Space android:layout_width="fill_parent" android:layout_height="12.0dip" />
+        <ru.yandex.taxi.widget.ButtonsView android:id="@id/retry_button" android:background="?bgTransparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</merge>

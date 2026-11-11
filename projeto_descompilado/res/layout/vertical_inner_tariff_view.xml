@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/vertical_inner_recycler" android:paddingTop="@dimen/tariffs_selector_top_space" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/tariffs_selector_height" android:importantForAccessibility="yes" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" />
+</merge>

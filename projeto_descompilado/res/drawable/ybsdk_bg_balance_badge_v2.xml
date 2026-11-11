@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?ybsdk_badge_v2_view_background_color" />
+            <corners android:radius="@dimen/ybsdk_badge_v2_bg_corner_radius" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/ybsdk_badge_v2_bg_corner_radius" />
+            <gradient android:startColor="#00634bf8" android:endColor="#28634bf8" android:angle="0.0" android:type="linear" android:startX="48.657" android:startY="12.0" android:endX="56.301" android:endY="36.835" />
+        </shape>
+    </item>
+</layer-list>

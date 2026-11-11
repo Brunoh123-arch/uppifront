@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.progress.CircularProgressBar android:layout_gravity="center" android:id="@id/trusted_contacts_loading" android:visibility="gone" android:layout_width="@dimen/trusted_contacts_loading_view_size" android:layout_height="@dimen/trusted_contacts_loading_view_size" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/share_settings_content" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.yandex.taxi.design.ToolbarComponent android:id="@id/toolbar_modal_view_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="none" app:component_subtitle_gravity="center_horizontal" app:component_title="@string/common_edit" app:component_title_gravity="center_horizontal" app:component_title_typeface="medium" app:component_toolbar_background_accent_enabled="true" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/trusted_contacts_divider" android:background="@drawable/bg_rounded_24dp_modal_view" android:layout_width="fill_parent" android:layout_height="@dimen/trusted_contacts_bottom_content_height">
+            <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:layout_gravity="bottom" android:id="@id/save_and_close_btn" android:layout_width="fill_parent" android:layout_height="@dimen/trusted_contacts_action_button_height" android:layout_margin="@dimen/go_design_s_space" android:text="@string/trusted_contacts_save_and_close_action" app:component_button_accent="true" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

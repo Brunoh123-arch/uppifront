@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="@dimen/go_design_s_space" android:top="@dimen/go_design_s_space" android:right="@dimen/go_design_s_space" android:bottom="@dimen/go_design_s_space">
+        <shape android:shape="oval">
+            <size android:height="64.0dip" android:width="64.0dip" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:width="@dimen/go_design_s_space" android:color="@color/component_fog_dark" />
+        </shape>
+    </item>
+</layer-list>

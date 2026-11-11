@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ya_eats_advertiser_info_badge_container" android:background="@drawable/ya_eats_background_advertiser_info_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="3.0dip" android:paddingVertical="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="7.0sp" android:textColor="@color/advertiser_info_badge_text" android:gravity="center" android:id="@id/ya_eats_advertiser_info_badge_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/ya_medium" />
+</FrameLayout>

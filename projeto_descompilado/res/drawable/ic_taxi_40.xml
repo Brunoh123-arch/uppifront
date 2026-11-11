@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="40.0dip" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h40v40h-40z" />
+        <group>
+            <clip-path android:pathData="M0,19.2C0,12.479 0,9.119 1.308,6.552C2.458,4.294 4.294,2.458 6.552,1.308C9.119,0 12.479,0 19.2,0H20.8C27.521,0 30.881,0 33.448,1.308C35.706,2.458 37.542,4.294 38.692,6.552C40,9.119 40,12.479 40,19.2V20.8C40,27.521 40,30.881 38.692,33.448C37.542,35.706 35.706,37.542 33.448,38.692C30.881,40 27.521,40 20.8,40H19.2C12.479,40 9.119,40 6.552,38.692C4.294,37.542 2.458,35.706 1.308,33.448C0,30.881 0,27.521 0,20.8V19.2Z" />
+            <path android:fillColor="#ff2b2a28" android:pathData="M20,20h20v20h-20z" />
+            <path android:fillColor="@drawable/$ic_taxi_40__0" android:pathData="M0,20h20v20h-20z" />
+            <path android:fillColor="@drawable/$ic_taxi_40__1" android:pathData="M0,0h40v20h-40z" />
+        </group>
+    </group>
+</vector>

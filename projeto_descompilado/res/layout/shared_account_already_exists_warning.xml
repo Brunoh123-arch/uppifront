@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/account_exists_dialog_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="88.0dip" app:component_lead_image="@drawable/ic_payment_shared_family" app:component_title_max_lines="1" />
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/account_exists_dialog_explanation" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/account_exists_dialog_leave_account_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/family_account_exists_dialog_leave_account" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/account_exists_dialog_active_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/family_account_exists_dialog_close" />
+</LinearLayout>

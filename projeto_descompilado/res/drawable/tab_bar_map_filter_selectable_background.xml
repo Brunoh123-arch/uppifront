@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?controlPressed"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/discovery_organizations_chip_corner_radius" />
+                    <solid android:color="?bgInvert" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/discovery_organizations_chip_corner_radius" />
+                    <solid android:color="?bgMain" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

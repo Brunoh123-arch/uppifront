@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:height="34.0dip" android:width="35.0dip" android:viewportWidth="35.0" android:viewportHeight="34.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@null" />
+    <item android:drawable="@drawable/user_sharing_location_icon" android:left="@dimen/user_location_frame_dot_point_offset" />
+</layer-list>

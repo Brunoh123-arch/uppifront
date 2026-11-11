@@ -1,0 +1,32 @@
+# Git ignore para o projeto Uppi (App & Backend)
+
+# Binários pesados (> 100MB bloqueados pelo GitHub)
+*.apk
+*.apks
+*.dex
+*.so
+
+# Caches de compilação e diretórios temporários
+build/
+dist/
+bin/
+gen/
+out/
+target/
+.gradle/
+.idea/
+*.iml
+*.swp
+*.bak
+*.tmp
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Segredos e variáveis de ambiente locais
+.env
+.env.local
+*.keystore
+*.jks

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/appbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ya_eats_view_base_collapsing_title_layout" />
+    <ru.yandex.eats.common.ui.views.recycler.epoxy.ExtendedScrollRecyclerView android:id="@id/goals" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/empty_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/error_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dip">
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="?textMain" android:gravity="center" android:id="@id/error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.YSText.Title4.Normal.Heavy" />
+        <ru.yandex.eda_design.views.button.EatsControlButton android:layout_gravity="center_horizontal" android:id="@id/refresh_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:controlForm="squircle" app:controlLinesMode="single" app:controlSize="M" app:controlStyle="minor" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/popup_prominent_header_image" android:paddingBottom="@dimen/go_design_s_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_header" android:textColor="?textMain" android:gravity="center" android:id="@id/popup_prominent_header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:lineSpacingExtra="-2.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:letterSpacing="-0.02" app:robotoFontStyle="bold" />
+    <ru.yandex.taxi.design.DividerAwareComponent android:id="@id/popup_prominent_header_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/popup_prominent_header_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" />
+    </ru.yandex.taxi.design.DividerAwareComponent>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="?controlMinor"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="?controlMinor" />
+            <stroke android:width="1.0dip" />
+            <corners android:radius="100.0dip" />
+            <padding android:left="12.0dip" android:right="12.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?textMain" />
+            <stroke android:width="1.0dip" android:color="?line" />
+            <corners android:radius="100.0dip" />
+            <padding android:left="12.0dip" android:right="12.0dip" />
+        </shape>
+    </item>
+</ripple>

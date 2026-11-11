@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/detailed_price_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/detailed_price_loading" />
+        <include android:id="@id/detailed_price_error_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="@dimen/go_design_m_space" android:layout_marginHorizontal="10.0dip" layout="@layout/detailed_price_error" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/detailed_price_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.widget.ButtonsView android:id="@id/buttons_view" android:background="@drawable/footer_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/tooltip_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yandex.go.design.view.GoFrameLayout>

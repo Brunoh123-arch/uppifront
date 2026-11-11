@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.ListItemComponent android:id="@id/feedback" android:background="@drawable/bg_main_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/settings_feedback" style="@style/MainMenuItem"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center" android:height="54.0dip">
+        <shape android:shape="rectangle">
+            <solid android:color="?bgMinor" />
+        </shape>
+    </item>
+    <item android:gravity="top" android:height="24.0dip">
+        <shape android:shape="rectangle">
+            <corners android:bottomLeftRadius="@dimen/go_design_card_divider_radius" android:bottomRightRadius="@dimen/go_design_card_divider_radius" />
+            <solid android:color="?bgMain" />
+        </shape>
+    </item>
+    <item android:gravity="bottom" android:height="24.0dip">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/go_design_card_divider_radius" android:topRightRadius="@dimen/go_design_card_divider_radius" />
+            <solid android:color="?bgMain" />
+        </shape>
+    </item>
+</layer-list>

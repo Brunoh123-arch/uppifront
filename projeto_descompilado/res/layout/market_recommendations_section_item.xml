@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.utils.HorizontalRvHelper android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/scrollable_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</ru.yandex.taxi.utils.HorizontalRvHelper>

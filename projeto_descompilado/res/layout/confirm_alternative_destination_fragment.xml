@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/map_top_fade" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/map_top_fade_height" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:importantForAccessibility="no" app:robotoFontStyle="medium" />
+</com.yandex.go.design.view.GoFrameLayout>

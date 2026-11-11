@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M4,0L32,0A4,4 0,0 1,36 4L36,20A4,4 0,0 1,32 24L4,24A4,4 0,0 1,0 20L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ffffffff" android:pathData="M4,0L32,0A4,4 0,0 1,36 4L36,20A4,4 0,0 1,32 24L4,24A4,4 0,0 1,0 20L0,4A4,4 0,0 1,4 0z" />
+        <path android:fillColor="#ff000000" android:pathData="M32,0.5H4A3.5,3.5 0,0 0,0.5 4v16A3.5,3.5 0,0 0,4 23.5h28a3.5,3.5 0,0 0,3.5 -3.5V4A3.5,3.5 0,0 0,32 0.5ZM4,0a4,4 0,0 0,-4 4v16a4,4 0,0 0,4 4h28a4,4 0,0 0,4 -4V4a4,4 0,0 0,-4 -4H4Z" android:fillType="evenOdd" />
+        <group>
+            <clip-path android:pathData="M9,3h18v18H9z" />
+            <path android:fillColor="@drawable/$ic_payment_mbank_account__0" android:pathData="M27,5.95c0,-0.52 -0.2,-1.04 -0.58,-1.43a2.04,2.04 0,0 0,-2.86 0l-4.3,4.3a2.05,2.05 0,0 0,0 2.86c0.79,0.78 2.09,0.78 2.87,0l0.84,-0.85v7.1c0,1.1 0.91,2.02 2.02,2.02 1.1,0 2.01,-0.91 2.01,-2.02V5.95Z" />
+            <path android:fillColor="#fffabf00" android:pathData="M9,5.95c0,-0.52 0.2,-1.04 0.58,-1.43a2.04,2.04 0,0 1,2.86 0l4.3,4.3c0.77,0.78 0.77,2.08 0,2.86 -0.79,0.78 -2.09,0.78 -2.87,0l-0.84,-0.78V18c0,1.1 -0.91,2.01 -2.02,2.01 -1.1,0 -2.01,-0.9 -2.01,-2.02V5.95Z" android:fillType="evenOdd" />
+        </group>
+    </group>
+</vector>

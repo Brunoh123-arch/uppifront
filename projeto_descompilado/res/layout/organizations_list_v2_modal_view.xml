@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/organizations_list_v2_card_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ViewStub android:id="@id/inner_flex_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoFrameLayout>
+</com.yandex.go.design.view.GoFrameLayout>

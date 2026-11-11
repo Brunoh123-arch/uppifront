@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.address.design.SourceDestinationComponent android:id="@id/source_destination_component" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Space android:id="@id/solid_summary_remove_stops_anchor" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_remove_stops_top_overlap_size" />
+    <ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout android:id="@id/solid_summary_remove_stops" android:background="@drawable/bg_remove_stops_button_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/summary_remove_stops_height">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="14.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_remove_stops" android:drawablePadding="6.0dip" android:drawableStart="@drawable/component_list_item_input_clear_button" style="@style/SummaryTextView" />
+    </ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout>
+</merge>

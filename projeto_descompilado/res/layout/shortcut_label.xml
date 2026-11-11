@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.BadgeView android:background="@drawable/bg_shortcut_label" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_marginStart="4.0dip" android:elevation="@dimen/go_design_s_space" app:badge_horizontal_padding="6.0dip" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_default="wrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

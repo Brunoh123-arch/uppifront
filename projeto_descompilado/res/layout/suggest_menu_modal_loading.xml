@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/title_placeholder" android:layout_width="fill_parent" android:layout_height="@dimen/go_design_m_space" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/title_placeholder_margin_end" android:layout_marginVertical="@dimen/title_placeholder_margin_vertical" app:placeholder_corner_radius="@dimen/placeholder_radius" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+    <com.yandex.go.design.divider.CardDivider android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:id="@id/loading_item_1" layout="@layout/suggest_menu_loading_item" />
+    <ru.yandex.taxi.design.DividerWithColorView android:background="?line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginStart="@dimen/divider_margin_start" android:layout_marginEnd="@dimen/go_design_m_space" />
+    <include android:id="@id/loading_item_2" layout="@layout/suggest_menu_loading_item" />
+    <ru.yandex.taxi.design.DividerWithColorView android:background="?line" android:layout_width="fill_parent" android:layout_height="@dimen/divider_height" android:layout_marginStart="@dimen/divider_margin_start" android:layout_marginEnd="@dimen/go_design_m_space" />
+    <include android:id="@id/loading_item_3" layout="@layout/suggest_menu_loading_item" />
+</androidx.appcompat.widget.LinearLayoutCompat>

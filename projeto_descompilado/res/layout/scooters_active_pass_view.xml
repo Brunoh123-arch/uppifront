@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:background="@drawable/bg_scooters_active_pass" android:padding="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" app:indicatorColor="@color/component_amber_toxic" app:trackColor="?bgMain" app:trackCornerRadius="32.0dip" app:trackThickness="6.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

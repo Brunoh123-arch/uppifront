@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/shortcut_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="34.0sp" android:textColor="@color/white" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="2" android:includeFontPadding="false" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizeMinTextSize="20.0sp" android:autoSizeMaxTextSize="34.0sp" android:lineHeight="34.0sp" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="3" android:includeFontPadding="false" android:letterSpacing="-0.01" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizeMinTextSize="10.0sp" android:autoSizeMaxTextSize="20.0sp" android:lineHeight="23.0sp" />
+</LinearLayout>

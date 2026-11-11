@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout android:id="@id/action_list_item_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.design.action.ActionComponent android:id="@id/action_component" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/shortcut_foreground" />
+    <include layout="@layout/shortcut_labels_anchor" />
+</ru.yandex.taxi.widget.accessibility.AccessibilityButtonFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/notifications_system_disabled_section_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="margin" app:component_lead_image="@drawable/ic_warning_octagon_24" app:component_title_size="20.0dip" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/notifications_system_disabled_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+</merge>

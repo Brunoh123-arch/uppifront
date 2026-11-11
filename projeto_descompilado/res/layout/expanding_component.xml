@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemSwitchComponent android:id="@id/header_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/footer_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/go_design_s_space" app:component_divider_position="bottom" app:component_rounded_background="?controlMinor" />
+    <ru.yandex.taxi.design.ListItemCheckComponent android:theme="@style/SpecialNeedsCommentSave_Overlay" android:id="@id/checkbox_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/go_design_s_space" app:choice_mode="single" />
+</merge>

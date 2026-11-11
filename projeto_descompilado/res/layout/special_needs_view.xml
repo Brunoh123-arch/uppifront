@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/modal_layout" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_auto_min_height="true" app:component_divider_position="bottom" app:component_divider_type="margin" app:component_title_size="@dimen/component_text_size_body" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/header" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/expanded_recycler" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_container" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/subtitle" app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="6.0dip" android:layout_marginHorizontal="16.0dip">
+            <ru.yandex.taxi.widget.ShimmeringFrameLayout android:layout_gravity="center_vertical" android:id="@id/group_requirement_info_shimmering" android:background="@drawable/bg_rounded" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginEnd="6.0dip" android:backgroundTint="?bgMinor">
+                <ImageView android:id="@id/group_requirement_info_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            </ru.yandex.taxi.widget.ShimmeringFrameLayout>
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/group_requirement_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        </LinearLayout>
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/common_done" app:component_button_accent="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

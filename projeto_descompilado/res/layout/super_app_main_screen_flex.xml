@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/background" android:background="?bgMain" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:clipToOutline="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.mainscreen.superapp.impl.foundation.presentation.sidepager.MainSidePager android:enabled="false" android:id="@id/main_side_pager" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yandex.go.design.view.GoFrameLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/flex_sdk_container" android:background="?bgMain" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/superapp_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ViewStub android:layout_gravity="bottom" android:id="@id/popup" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.yandex.go.design.view.GoFrameLayout>
+    </com.yandex.go.mainscreen.superapp.impl.foundation.presentation.sidepager.MainSidePager>
+</com.yandex.go.design.view.GoFrameLayout>

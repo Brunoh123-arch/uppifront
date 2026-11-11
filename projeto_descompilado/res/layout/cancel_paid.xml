@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_layout">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/cancel_header" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ListTitleComponent" />
+            <ru.yandex.taxi.design.ListTextComponent android:id="@id/cancel_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </ScrollView>
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:id="@id/btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/order_cancel" app:component_background_color="?controlMinor" app:component_button_size="L" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/do_not_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/order_do_not_cancel" app:component_button_size="L" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    <ru.yandex.taxi.widget.progress.CircularProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

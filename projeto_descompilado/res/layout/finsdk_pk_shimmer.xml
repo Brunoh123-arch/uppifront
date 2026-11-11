@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:colorBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/finsdkShimmerFrameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:shimmer_base_alpha="1.0" app:shimmer_base_color="@color/finsdk_default_0" app:shimmer_colored="true" app:shimmer_dropoff="0.9" app:shimmer_highlight_alpha="0.25" app:shimmer_highlight_color="@color/finsdk_fullscreen_shimmer_color" app:shimmer_intensity="0.2" app:shimmer_shape="linear" app:shimmer_tilt="0.0">
+            <View android:id="@id/finsdkShimmerCards" android:background="@drawable/finsdk_bg_radius_20" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <com.yandex.fintechsdk.core.ui.impl.api.view.button.back.BackButtonView android:id="@id/finsdkPKBackButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:layout_marginStart="13.0dip" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

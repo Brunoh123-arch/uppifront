@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutDescription="@xml/scooters_finish_info_card_v2_scene"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoView android:id="@id/clickable_header_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:id="@id/title_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:id="@id/subtitle_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.yandex.go.design.view.GoImageView android:id="@id/chevron_image_view" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/chevron_round_down" android:scaleType="center" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/items_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="40.0dip" android:paddingVertical="@dimen/go_design_m_space" />
+</androidx.constraintlayout.motion.widget.MotionLayout>

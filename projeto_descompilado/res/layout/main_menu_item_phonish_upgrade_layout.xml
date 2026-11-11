@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.DividerAwareComponent android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/phonish_upgrade" android:background="@drawable/bg_force_phonish_upgrade_menu_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_text_color="?textOnControl" app:component_title_text_color="?textOnControl" app:component_trail_image="@drawable/chevron_next" app:component_trail_image_tint="?textOnControl" style="@style/MainMenuItem" />
+</ru.yandex.taxi.design.DividerAwareComponent>

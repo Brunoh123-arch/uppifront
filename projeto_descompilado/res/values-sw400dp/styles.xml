@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="main_menu_width">
+        <item name="android:layout_width">300.0dip</item>
+    </style>
+</resources>

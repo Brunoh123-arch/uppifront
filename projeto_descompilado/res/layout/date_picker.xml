@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.GoNumberPicker android:id="@id/day" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" app:layout_constraintEnd_toStartOf="@id/hour" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/NumberPicker" />
+    <ru.yandex.taxi.widget.GoNumberPicker android:id="@id/hour" android:layout_width="64.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toStartOf="@id/minute" app:layout_constraintStart_toEndOf="@id/day" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/NumberPicker" />
+    <ru.yandex.taxi.widget.GoNumberPicker android:id="@id/minute" android:layout_width="0.0dip" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/hour" app:layout_constraintTop_toTopOf="parent" style="@style/NumberPicker" />
+</androidx.constraintlayout.widget.ConstraintLayout>

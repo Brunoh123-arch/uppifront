@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/go_design_s_space" android:insetRight="@dimen/go_design_s_space" android:insetTop="@dimen/go_design_s_space" android:insetBottom="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="oval">
+        <solid android:color="@color/component_gray_125" />
+    </shape>
+</inset>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/chat_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/chat_header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_auto_min_height="true" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_lead_content_description="@string/common_close" app:component_lead_image="@drawable/ic_cross_close" app:component_subtitle_max_lines="1" app:component_title_max_lines="1" app:component_title_typeface="medium" app:component_trail_content_description="@string/order_options_call" app:component_trail_image="@drawable/ic_call" app:component_trail_mode="navigation" app:component_vertical_padding="0.0dip" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/chat_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.appcompat.widget.LinearLayoutCompat>

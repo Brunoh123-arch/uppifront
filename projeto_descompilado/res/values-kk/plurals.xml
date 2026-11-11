@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d секунд алға айналдыру</item>
+        <item quantity="one">%d секунд алға айналдыру</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d секунд артқа айналдыру</item>
+        <item quantity="one">%d секунд артқа айналдыру</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">күн</item>
+        <item quantity="one">күн</item>
+        <item quantity="few">күн</item>
+        <item quantity="many">күн</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">сағ</item>
+        <item quantity="one">сағ</item>
+        <item quantity="few">сағ</item>
+        <item quantity="many">сағ</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d жаңа хабарландыру</item>
+        <item quantity="one">%d жаңа хабарландыру</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Соңғы %1$d санды</item>
+        <item quantity="zero">Соңғы %1$d санды</item>
+        <item quantity="one">Соңғы %1$d санды</item>
+        <item quantity="few">Соңғы %1$d санды</item>
+        <item quantity="many">Соңғы %1$d санды</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Қазір сізге %1$s
+нөмірінен қоңырау келіп түседі. Нөмірдің соңғы %2$d санын енгізіңіз"</item>
+        <item quantity="zero">"Қазір сізге %1$s
+нөмірінен қоңырау келіп түседі. Нөмірдің соңғы %2$d санын енгізіңіз"</item>
+        <item quantity="one">"Қазір сізге %1$s
+нөмірінен қоңырау келіп түседі. Нөмірдің соңғы %2$d санын енгізіңіз"</item>
+        <item quantity="few">"Қазір сізге %1$s
+нөмірінен қоңырау келіп түседі. Нөмірдің соңғы %2$d санын енгізіңіз"</item>
+        <item quantity="many">"Қазір сізге %1$s
+нөмірінен қоңырау келіп түседі. Нөмірдің соңғы %2$d санын енгізіңіз"</item>
+    </plurals>
+</resources>

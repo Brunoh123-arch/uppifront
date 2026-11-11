@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_lead_background="@drawable/accent_circle" app:component_lead_image="@drawable/ic_edit_passenger_name_header" app:component_no_background="true" app:component_title="@string/user_profile_rating_title" />
+    <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/passenger_name_input" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_type="none" app:component_input_clear_enable="false" app:component_input_title="@string/user_profile_name_input_hint" app:component_input_type="textCapWords" app:component_max_lines="1" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/show_rating_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/user_profile_show_rating" />
+</LinearLayout>

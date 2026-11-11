@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/image_view" android:layout_width="@dimen/go_design_m_space" android:layout_height="@dimen/go_design_m_space" android:tint="?textMain" android:layout_marginEnd="@dimen/go_design_s_space" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_bubble" android:id="@id/text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

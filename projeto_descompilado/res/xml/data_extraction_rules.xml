@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="cprocsp" />
+        <exclude domain="device_root" path="cprocsp" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" path="cprocsp" />
+        <exclude domain="device_root" path="cprocsp" />
+    </device-transfer>
+</data-extraction-rules>

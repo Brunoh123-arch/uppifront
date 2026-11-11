@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.AnimatedCircularHoleFogView android:id="@id/search_animated_fog" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.taxi.order.search.ui.search.SearchViews android:id="@id/search_animation_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/long_search_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/order_status_map_curtain_view_stub" android:layout="@layout/order_status_map_curtain_view_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/order_bubbles_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/map_top_fade" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/order_fragment_map_top_fade_height" />
+    <FrameLayout android:id="@id/order_list_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/top_end_corner_with_cashback" />
+    <ViewStub android:layout_gravity="start|center|top" android:id="@id/track_route_telemetry_overlay_stub" android:layout="@layout/track_route_telemetry_overlay" android:inflatedId="@id/track_route_telemetry_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+</FrameLayout>

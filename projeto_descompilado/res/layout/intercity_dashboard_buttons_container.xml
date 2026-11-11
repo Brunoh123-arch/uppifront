@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/intercity_dashboard_button_lead" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_margin" android:layout_marginHorizontal="@dimen/section_vertical_padding" app:component_button_accent="true" app:component_button_size="L" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/intercity_dashboard_button_trail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/section_margin" android:layout_marginHorizontal="@dimen/section_vertical_padding" app:component_button_accent="true" app:component_button_size="L" />
+</merge>

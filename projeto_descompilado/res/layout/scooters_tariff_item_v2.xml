@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.scooters.offers.v2.components.tariffs.ui.v2.ScootersTariffView android:id="@id/tariff_alternative" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <androidx.constraintlayout.widget.Barrier android:orientation="vertical" android:id="@id/tariff_right" android:layout_width="wrap_content" android:layout_height="wrap_content" app:barrierDirection="right" app:barrierMargin="-16.0dip" app:constraint_referenced_ids="tariff" />
+    <com.yandex.go.scooters.offers.v2.components.tariffs.ui.v2.ScootersTariffView android:id="@id/tariff" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

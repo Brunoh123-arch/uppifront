@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/loading_feed_sdk_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.widget.RoundedCornersImageView android:layout_gravity="end" android:id="@id/close_button" android:layout_width="@dimen/morphlex_header_close_icon_size" android:layout_height="@dimen/morphlex_header_close_icon_size" android:layout_marginTop="@dimen/morphlex_header_close_icon_margin_top" android:scaleType="centerCrop" android:contentDescription="@string/common_close" android:importantForAccessibility="yes" android:layout_marginEnd="@dimen/morphlex_header_close_icon_margin_end" app:cornerRadius="@dimen/morphlex_header_close_icon_corner_radius" app:srcCompat="@drawable/ic_cross_filled" />
+</com.yandex.go.design.view.GoFrameLayout>

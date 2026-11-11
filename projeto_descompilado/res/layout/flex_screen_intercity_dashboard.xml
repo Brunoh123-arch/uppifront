@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/feed_sdk_intercity_dashboard_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center" android:id="@id/feed_sdk_intercity_dashboard_progress" android:background="?bgMain" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/common_loading">
+        <ru.yandex.taxi.widget.progress.CircularProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoFrameLayout>
+</merge>

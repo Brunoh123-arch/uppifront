@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_bottom_padding">36.0dip</dimen>
+    <dimen name="card_top_margin">36.0dip</dimen>
+</resources>

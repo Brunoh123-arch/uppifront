@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?cardDivider" android:pathData="M0,0V32C0,24.5602 0,20.8403 0.8178,17.7883C3.037,9.5061 9.5061,3.037 17.7883,0.8178C20.8403,0 24.5602,0 32,0H0Z" android:fillType="evenOdd" />
+</vector>

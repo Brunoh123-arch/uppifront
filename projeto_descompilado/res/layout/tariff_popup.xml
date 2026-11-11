@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_notification" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" style="@style/BottomModalContentHolder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:drawablePadding="@dimen/go_design_m_space" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="@dimen/go_design_s_space" app:robotoFontStyle="regular" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" android:layout_marginBottom="@dimen/go_design_m_space" app:component_button_accent="true" app:component_button_rounded_corners="true" />
+</LinearLayout>

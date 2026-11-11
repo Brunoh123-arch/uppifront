@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/shortcut_shape" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Space android:id="@id/shortcut_bottom_start_space" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="6.0dip" android:layout_marginStart="@dimen/go_design_s_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_goneMarginBottom="0.0dip" app:layout_goneMarginStart="0.0dip" />
+        <Space android:id="@id/shortcut_bottom_end_space" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="6.0dip" android:layout_marginEnd="@dimen/go_design_s_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_goneMarginEnd="0.0dip" />
+        <include layout="@layout/base_shortcut_list_item" />
+        <include layout="@layout/right_bottom_badge_anchor" />
+        <ru.yandex.taxi.design.BadgeView android:id="@id/shortcut_badge_right" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" app:badge_horizontal_padding="6.0dip" app:badge_text_size="32.0dip" app:badge_text_typeface="light" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintWidth_max="wrap" />
+        <ru.yandex.taxi.design.BadgeView android:id="@id/shortcut_badge_left" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/shortcut_bottom_start_space" app:layout_constraintEnd_toEndOf="@id/shortcut_bottom_end_space" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="@id/shortcut_bottom_start_space" app:layout_constraintWidth_max="wrap" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/shortcut_labels_anchor" />
+</FrameLayout>

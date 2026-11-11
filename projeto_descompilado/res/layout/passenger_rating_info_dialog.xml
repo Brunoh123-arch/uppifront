@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView style="@style/PopupCardView"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/rating_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_lead_background="@drawable/accent_circle" app:component_lead_image="@drawable/ic_star_black_filled" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/rating_description_text" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="Вы на хорошем счету и у водителей, и в сервисе. Приятно познакомиться, %@." />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/rating_info_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="4.0dip" android:text="@string/show_rating_info_alert_button_title" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/accept_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/confirm_rating_info_alert_button_title" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

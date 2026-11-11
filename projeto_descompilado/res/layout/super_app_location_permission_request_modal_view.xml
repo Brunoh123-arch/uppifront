@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?bgMain" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_logo" android:layout_marginHorizontal="16.0dip" />
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="30.0sp" app:component_title_text_color="?textMain" app:component_title_typeface="bold" />
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/btn_go_back" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_button_size="L" app:component_title_color="?textMain" app:robotoFontStyle="medium" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/btn_confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/navigator_permission_request_button_share_location" app:component_button_size="L" app:robotoFontStyle="medium" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</LinearLayout>

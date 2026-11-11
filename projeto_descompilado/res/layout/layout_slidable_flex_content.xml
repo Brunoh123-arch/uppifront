@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.flex.common.api.ui.theme.DivKitThemedFrameLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:id="@id/fullscreen_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="bottom" android:id="@id/flex_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.flex.common.api.ui.theme.DivKitThemedFrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:bottomLeftRadius="@dimen/go_design_card_divider_radius" android:bottomRightRadius="@dimen/go_design_card_divider_radius" />
+    <solid android:color="?bgMain" />
+</shape>

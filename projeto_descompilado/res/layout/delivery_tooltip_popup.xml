@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.TooltipView android:layout_width="wrap_content" android:layout_height="wrap_content" app:body="@drawable/delivery_tooltip_popup_body" app:text_color="?textInvert" app:tip="@drawable/delivery_tooltip_popup_pin" app:tip_direction="down"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

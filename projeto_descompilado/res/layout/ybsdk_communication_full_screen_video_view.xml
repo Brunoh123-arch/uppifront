@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextureView android:id="@id/playerTextureView" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@null" />
+    <ImageView android:id="@id/placeholderImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" android:importantForAccessibility="no" />
+    <com.ybsdk.widgets.common.communication.CommunicationFullScreenInfoView android:id="@id/infoView" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ebs_message_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ebssdk_margin_6" android:src="@drawable/ebssdk_icon_indicator" />
+    <TextView android:textAppearance="@style/Ebssdk.Text.Message" android:id="@id/ebs_message_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" android:layout_marginStart="@dimen/ebssdk_margin_8" />
+</merge>

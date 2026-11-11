@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/banner_background_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/banner_background_animation_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.banners.presentation.fullscreen.FullScreenBannerPageContainer android:orientation="vertical" android:id="@id/banner_content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:importantForAccessibility="no">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/banner_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:importantForAccessibility="no">
+                <ru.yandex.taxi.banners.presentation.fullscreen.FullScreenBannerTopContainer android:orientation="vertical" android:id="@id/banner_top_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ru.yandex.taxi.design.BadgeView android:id="@id/banner_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="16.0dip" />
+                    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/banner_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:component_no_background="true" app:component_title_gravity="text_start" app:component_title_size="32.0dip" />
+                    <ru.yandex.taxi.design.ListTextComponent android:id="@id/banner_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:component_text_background="@color/transparent" app:component_text_gravity="text_start" app:component_text_size="16.0sp" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/banner_bottom_container_in_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:importantForAccessibility="no">
+                        <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.airbnb.lottie.LottieAnimationView android:id="@id/banner_preload_animation" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_l_space" android:scaleType="centerInside" android:importantForAccessibility="no" />
+                            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/banner_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:scaleType="fitXY" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+                            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center_horizontal" android:id="@id/banner_animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:scaleType="centerInside" android:importantForAccessibility="no" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </ru.yandex.taxi.banners.presentation.fullscreen.FullScreenBannerTopContainer>
+            </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+            <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/banner_bottom_scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:scroll_view_id="@id/banner_scroll_view" />
+            <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:id="@id/banner_top_scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:scroll_view_id="@id/banner_scroll_view" app:scroll_view_position="top" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/banner_bottom_container" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ru.yandex.taxi.banners.presentation.fullscreen.FullScreenBannerPageContainer>
+</merge>

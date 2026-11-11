@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/alert" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/main" android:background="@drawable/bg_alert" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="50.0dip" android:layout_weight="1.0">
+        <View android:id="@id/topSpace" android:layout_width="0.0dip" android:layout_height="14.0dip" />
+        <ImageView android:id="@id/icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="18.0dip" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Text.Bold" />
+        <TextView android:gravity="center" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/Text" />
+        <View android:id="@id/separator" android:background="@color/grayE8" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" />
+        <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/OverScrollIfApi31">
+            <LinearLayout android:orientation="vertical" android:id="@id/buttonList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/bg_separator" android:showDividers="middle" />
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <com.yandex.mobile.drive.view.AlertButtonView android:id="@id/cancel" android:background="@drawable/bg_alert" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+</LinearLayout>

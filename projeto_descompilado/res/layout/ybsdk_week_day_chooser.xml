@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="36.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ybsdk_auto_topup_bottom_sheet_choose_date_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.YB.Text.Headline1" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:overScrollMode="never" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.ybsdk.widgets.common.YbButtonView android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:ybsdk_buttonTitle="@string/ybsdk_auto_topup_bottom_sheet_choose_week_day_save_button" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Primary.L" />
+</LinearLayout>

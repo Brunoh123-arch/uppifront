@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?textMain" android:gravity="center" android:id="@id/ya_eats_item_advertisement_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginHorizontal="4.0dip" android:textFontWeight="900" app:emojiCompatEnabled="false" app:lineHeight="31.0sp" style="@style/TextAppearance.YSText.Title4.Normal.Heavy"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/report_placeholder" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ya_eats_report_placeholder" />
+    <FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/hero_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:foreground="@drawable/ya_eats_background_item_snippet_image_ripple" />
+        <include android:layout_gravity="end|bottom|center" android:id="@id/ya_eats_informer_advertiser_info_badge" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginEnd="8.0dip" layout="@layout/ya_eats_advertiser_info_badge" />
+        <include android:layout_gravity="end|bottom|center" android:id="@id/marketing_info_badge" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginBottom="10.0dip" android:layout_marginEnd="8.0dip" layout="@layout/ya_eats_marketing_info_badge" />
+    </FrameLayout>
+</FrameLayout>

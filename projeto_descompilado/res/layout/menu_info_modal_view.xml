@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/parks" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/partners_title" app:component_trail_mode="navigation" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/tariffs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/tariffs_title" app:component_trail_mode="navigation" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/about" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/about_title" app:component_trail_mode="navigation" />
+        </LinearLayout>
+    </ScrollView>
+    <ru.yandex.taxi.design.FloatingTitleToolbarComponent android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_floating_title="@string/settings_info" app:component_tracked_view="@id/scroll" />
+</FrameLayout>

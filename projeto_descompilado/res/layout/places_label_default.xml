@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/label_root" android:background="@color/white" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_s_space" android:paddingEnd="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="start|center|top" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="start|center|top" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxWidth="180.0dip" android:maxLines="1" />
+</com.yandex.go.design.view.GoLinearLayout>

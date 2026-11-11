@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/spinner_container" android:layout_width="@dimen/discovery_payments_processing_modal_view_spinner_size" android:layout_height="@dimen/discovery_payments_processing_modal_view_spinner_size" android:layout_marginBottom="@dimen/discovery_payments_processing_modal_view_spinner_margin_bottom">
+        <com.yandex.go.design.view.GoImageView android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_discovery_payments_processing_spinner" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/success_arrow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_discovery_payments_processing_success_arrow" android:tint="@color/component_amber_toxic" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/discovery_payments_processing_modal_view_label_text_size" android:textColor="?textMain" android:gravity="center_horizontal" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/discovery.payments.processing" android:accessibilityLiveRegion="polite" android:textFontWeight="400" app:robotoFontStyle="regular" style="@style/TextAppearance.AppCompat.Body2" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.FloatButtonIconComponent android:layout_gravity="center_vertical" android:id="@id/incidents_Button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/map_controls_height" app:component_circle_icon_padding="16.0dip" app:component_circle_image="@drawable/ic_incident" app:component_frame_height="@dimen/map_controls_height" />
+    <ru.yandex.taxi.design.FloatButtonIconComponent android:layout_gravity="bottom" android:id="@id/back_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="@dimen/map_controls_height" app:component_circle_icon_padding="16.0dip" app:component_circle_image="@drawable/ic_back" app:component_frame_height="@dimen/map_controls_height" />
+</com.yandex.go.design.view.GoFrameLayout>

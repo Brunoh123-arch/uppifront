@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/background" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_support_icon_spot_bg" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.widget.MaskedShimmeringBar android:id="@id/shimmering" android:visibility="visible" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" app:mask="@drawable/ic_support_icon_spot_mask" />
+    <ImageView android:id="@id/icon" android:padding="@dimen/go_design_s_space" android:visibility="gone" android:layout_width="@dimen/icon_size" android:layout_height="@dimen/icon_size" android:importantForAccessibility="no" />
+</FrameLayout>

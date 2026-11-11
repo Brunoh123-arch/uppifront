@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textColor="?textMain" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:robotoFontStyle="bold" />
+        <ru.yandex.taxi.design.BadgeView android:id="@id/badge" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:id="@id/subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

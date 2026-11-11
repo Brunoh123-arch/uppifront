@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="start|center" android:id="@id/turbo_buttons_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/shortcuts_section_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" app:component_no_background="true" app:component_title_ellipsize_mode="end" app:component_title_max_lines="1" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="medium" app:component_vertical_padding="0.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center" android:id="@id/icon_header" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="30.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_marginStart="18.0dip" />
+</FrameLayout>

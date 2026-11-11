@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+        <include android:id="@id/toolbar_layout" layout="@layout/ya_eats_view_toolbar" />
+        <ru.yandex.eda_design.common.Loader android:layout_gravity="center_horizontal" android:id="@id/loader" android:visibility="gone" android:layout_width="@dimen/g_3" android:layout_height="@dimen/g_3" android:layout_marginTop="@dimen/g_3" android:layout_marginBottom="@dimen/g_3" />
+        <LinearLayout android:orientation="vertical" android:id="@id/feedback_channels_group" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

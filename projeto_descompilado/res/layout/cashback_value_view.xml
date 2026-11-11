@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.plus.design.view.CashbackClipFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/content_cashback_icon_view" android:layout_width="wrap_content" android:layout_height="13.0dip" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_plus_glyph_label" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0dip" android:id="@id/content_cashback_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dip" app:robotoFontStyle="bold" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0dip" android:id="@id/content_cashback_promo_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="2.0dip" app:robotoFontStyle="bold" />
+        </FrameLayout>
+    </LinearLayout>
+</ru.yandex.taxi.plus.design.view.CashbackClipFrameLayout>

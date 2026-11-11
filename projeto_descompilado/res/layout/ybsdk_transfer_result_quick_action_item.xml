@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/transferQuickActionIcon" android:layout_width="@dimen/ybsdk_transfer_quick_action_icon_holder_size" android:layout_height="@dimen/ybsdk_transfer_quick_action_icon_holder_size" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:gravity="center_horizontal" android:id="@id/transferQuickActionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:importantForAccessibility="no" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/transferQuickActionIcon" style="@style/Widget.YB.Text.Caption1.Medium" />
+</androidx.constraintlayout.widget.ConstraintLayout>

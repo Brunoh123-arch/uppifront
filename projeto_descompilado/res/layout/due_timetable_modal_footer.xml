@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/due_timetable_modal_footer_holder" android:background="@drawable/bg_due_timetable_modal_footer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/footer_containers_holder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/due_timetable_additional_actions_divider" android:showDividers="middle" android:dividerPadding="16.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/promo_items_holder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/due_timetable_additional_actions_divider" android:showDividers="middle" android:dividerPadding="16.0dip" />
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/footer_time_container" android:paddingBottom="@dimen/go_design_s_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_component_min_height" android:paddingHorizontal="@dimen/go_design_m_space">
+            <FrameLayout android:id="@id/departure_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_container_top_margin" app:layout_constraintEnd_toStartOf="@id/arrival_container" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ru.yandex.taxi.widget.SingleShimmeringBar android:layout_gravity="start|center" android:id="@id/shimmering_departure_content" android:layout_width="100.0dip" android:layout_height="16.0dip" />
+                <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/departure_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:ellipsize="end" android:gravity="start" android:id="@id/departure_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxLines="2" />
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/departure_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@id/arrival_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_container_top_margin" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ru.yandex.taxi.widget.SingleShimmeringBar android:layout_gravity="end|center" android:id="@id/shimmering_arrival_content" android:layout_width="100.0dip" android:layout_height="16.0dip" />
+                <LinearLayout android:gravity="end|center" android:orientation="vertical" android:id="@id/arrival_content" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:ellipsize="end" android:gravity="end" android:id="@id/arrival_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxLines="2" />
+                    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/arrival_label" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+            <FrameLayout android:id="@id/unavailable_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/time_container_top_margin" android:minHeight="40.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/unavailable_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_due_timetable_info" />
+                <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:layout_gravity="center_vertical" android:id="@id/unavailable_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="40.0dip" />
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/footer_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:layout_marginHorizontal="@dimen/go_design_s_space" />
+</LinearLayout>

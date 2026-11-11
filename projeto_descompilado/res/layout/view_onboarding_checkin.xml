@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:background="@drawable/bg_main_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListTitleComponent android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.widget.ShimmeringFrameLayout android:id="@id/picture_shimmer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space">
+                <ru.yandex.taxi.widget.RoundedCornersImageView android:id="@id/picture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/placeholder_picture" android:adjustViewBounds="true" app:cornerRadius="@dimen/go_design_m_space" />
+            </ru.yandex.taxi.widget.ShimmeringFrameLayout>
+            <ru.yandex.taxi.design.ListTextComponent android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_text_background="@color/transparent" />
+        </LinearLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <LinearLayout android:orientation="vertical" android:id="@id/buttons_container" android:background="@drawable/bg_main_rounded" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_weight="0.0">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/skip_steps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginBottom="4.0dip" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" app:component_background_color="?controlMinor" app:component_button_accent="true" app:component_button_icon="@drawable/ic_tick" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/show_steps" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" app:component_button_accent="true" />
+    </LinearLayout>
+</LinearLayout>

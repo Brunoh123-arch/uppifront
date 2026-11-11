@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textColor="?textMain" android:ellipsize="end" android:gravity="center" android:id="@id/ya_eats_retail_category_tag_more_items_redesign_title" android:background="@drawable/ya_eats_background_retail_category_tag_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip" android:maxLines="1" android:paddingHorizontal="14.0dip" style="@style/TextAppearance.YSText.Body2.Tight"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

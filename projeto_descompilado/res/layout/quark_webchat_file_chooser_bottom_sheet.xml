@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="16.0dip" android:paddingEnd="16.0dip" android:backgroundTint="#ffffffff"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/capture_photo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quark_webchat_file_chooser_take_photo" app:drawableStartCompat="@drawable/quark_webchat_file_chooser_photo" style="@style/WebChat.FileChooser.Item" />
+    <include android:id="@id/divider_1" layout="@layout/quark_webchat_file_chooser_divider" />
+    <TextView android:id="@id/choose_from_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quark_webchat_file_chooser_choose_from_gallery" app:drawableStartCompat="@drawable/quark_webchat_file_chooser_gallery" style="@style/WebChat.FileChooser.Item" />
+    <include android:id="@id/divider_2" layout="@layout/quark_webchat_file_chooser_divider" />
+    <TextView android:id="@id/choose_file" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/quark_webchat_file_chooser_attach_file" app:drawableStartCompat="@drawable/quark_webchat_file_chooser_attach" style="@style/WebChat.FileChooser.Item" />
+</LinearLayout>

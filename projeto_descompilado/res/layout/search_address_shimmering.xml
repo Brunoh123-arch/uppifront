@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.LoadingComponent android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="icon_margin" app:component_loading_mode="icon_mode" />
+    <ru.yandex.taxi.design.LoadingComponent android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="icon_margin" app:component_loading_mode="icon_mode" />
+</LinearLayout>

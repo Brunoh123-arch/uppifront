@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.eda_design.quarantine.image.EatsImageView android:id="@id/badge_image" android:background="@drawable/ya_eats_background_badge_item" android:layout_width="wrap_content" android:layout_height="@dimen/ya_eats_restaurant_menu_item_promo_height" android:rotation="4.0" android:paddingHorizontal="10.0dip" android:paddingVertical="1.0dip" />
+</LinearLayout>

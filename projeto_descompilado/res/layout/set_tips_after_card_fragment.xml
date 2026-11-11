@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/content" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/promocode_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_title="@string/tips_set_after_card_title" />
+        <ru.yandex.taxi.design.ListTextComponent android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:component_text="@string/tips_set_after_card_explanation" app:component_text_background="?bgTransparent" app:component_text_size="@dimen/component_text_size_body" />
+        <com.yandex.go.tips.ui.TipsView android:layout_gravity="center_horizontal" android:id="@id/tips_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListTextComponent android:textSize="@dimen/component_text_size_caption" android:gravity="center_horizontal" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_text="@string/tips_set_after_card_full_description" app:component_text_background="?bgTransparent" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tips_set_done" android:layout_alignParentBottom="true" app:component_button_size="L" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoFrameLayout>

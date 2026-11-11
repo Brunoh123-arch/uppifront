@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" style="@style/ModalContentHolder">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/no_internet_connection_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" />
+        <ru.yandex.taxi.design.ListTextComponent android:id="@id/no_internet_connection_error_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.widget.buttons.IconCircleButton android:layout_gravity="center_horizontal" android:id="@id/no_internet_connection_call_taxi_by_phone_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_circle_image="@null" />
+    </LinearLayout>
+</merge>

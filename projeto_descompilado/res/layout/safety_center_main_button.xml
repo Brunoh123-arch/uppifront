@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewAnimator android:id="@id/safety_center_main_button_animator" android:layout_width="@dimen/circle_buttons_frame_size" android:layout_height="wrap_content" android:inAnimation="@android:anim/fade_in" android:outAnimation="@android:anim/fade_out"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.buttons.IconCircleButton android:id="@id/safety_center_main_button" android:layout_width="@dimen/circle_buttons_frame_size" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.LoadingCircleButtonComponent android:layout_gravity="center_horizontal" android:id="@id/safety_center_main_button_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</ViewAnimator>

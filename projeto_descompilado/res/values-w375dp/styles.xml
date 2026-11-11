@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YbSdk.Widget.BannerTitle" parent="@style/Widget.YB.Text.Headline1" />
+    <style name="YbSdk.WidgetTextStyle" parent="@style/Widget.YB.Text.Body3" />
+    <style name="YbSdk.WidgetTitleStyle" parent="@style/Widget.YB.Text.Title1" />
+    <style name="YbSdk.WidgetWithButtonDescriptionStyle" parent="@style/Widget.YB.Text.Body3" />
+    <style name="YbSdk.WidgetWithButtonTitleStyle" parent="@style/Widget.YB.Text.Headline3" />
+    <style name="YbSdk.WidgetWithSwitchDescriptionStyle" parent="@style/Widget.YB.Text.Body3" />
+    <style name="YbSdk.WidgetWithSwitchTitleStyle" parent="@style/Widget.YB.Text.Headline3" />
+    <style name="YbSdkTransferMessageTextStyle" parent="@style/Widget.YB.Text.Body2" />
+    <style name="YbSdkTransferTitleNumbersStyle" parent="@style/Widget.YB.Text.Numbers3" />
+</resources>

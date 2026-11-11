@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.MenuFrameLayout android:layout_height="fill_parent" android:fillViewport="true" style="@style/main_menu_width"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/menu_scroll_view" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/menu_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewStub android:id="@id/user_profile_stub" android:layout="@layout/main_menu_item_user_profile_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/auth_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ViewStub android:id="@id/ultima_card_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.design.AutoDividerComponentList android:id="@id/menu_personal_section" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="none" style="@style/MainMenuDivider">
+                <ViewStub android:id="@id/enter_phone_view_stub" android:layout="@layout/main_menu_item_enter_phone_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/phonish_upgrade_view_stub" android:layout="@layout/main_menu_item_phonish_upgrade_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/upgrade_account_view_stub" android:layout="@layout/main_menu_item_upgrade_account_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/lottery_view_stub" android:layout="@layout/main_menu_item_lottery_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/menu_item_address_view_stub" android:layout="@layout/main_menu_item_address_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/order_history_view_stub" android:layout="@layout/main_menu_item_order_history_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/menu_item_payment_method_view_stub" android:layout="@layout/main_menu_item_payment_method_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/yb_wallet_view_stub" android:layout="@layout/main_menu_item_yandex_wallet_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/add_payment_method_button_view_stub" android:layout="@layout/main_menu_item_add_payment_method_button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/plus_cashback_stub" android:layout="@layout/main_menu_item_plus_cashback_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/hire_driver_stub" android:layout="@layout/main_menu_item_hire_driver_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/yango_business_item_stub" android:layout="@layout/main_menu_item_yango_business_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/business_to_business_view_stub" android:layout="@layout/main_menu_item_business_to_business_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.yandex.taxi.design.DividerAwareComponent android:id="@id/business_account_menu_prioritized_container_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="none">
+                    <ru.yandex.taxi.design.AutoDividerComponentList android:id="@id/business_account_menu_prioritized_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="none" />
+                </ru.yandex.taxi.design.DividerAwareComponent>
+                <ViewStub android:id="@id/feedback_view_stub" android:layout="@layout/main_menu_item_feedback_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/safety_center_stub" android:layout="@layout/main_menu_item_safety_center_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/my_addresses_view_stub" android:layout="@layout/main_menu_item_my_addresses_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/ugc_item_stub" android:layout="@layout/main_menu_item_ugc_group_item" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/promocode_view_stub" android:layout="@layout/main_menu_item_promocode_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/maas_stub" android:layout="@layout/main_menu_item_maas_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/family_group_item_stub" android:layout="@layout/main_menu_item_family_group_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.yandex.taxi.design.DividerAwareComponent android:id="@id/shared_payment_accounts_menu_container_parent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="none">
+                    <ru.yandex.taxi.design.AutoDividerComponentList android:id="@id/shared_payment_accounts_menu_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="none" />
+                </ru.yandex.taxi.design.DividerAwareComponent>
+                <ViewStub android:id="@id/settings_item_view_stub" android:layout="@layout/main_menu_item_settings_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/info_view_stub" android:layout="@layout/main_menu_item_info_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/special_needs_view_stub" android:layout="@layout/main_menu_item_special_needs_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/bug_report_item_stub" android:layout="@layout/main_menu_item_bug_report_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ViewStub android:id="@id/logout_item_stub" android:layout="@layout/main_menu_item_logout_item_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ru.yandex.taxi.design.AutoDividerComponentList>
+        </LinearLayout>
+    </ScrollView>
+</ru.yandex.taxi.widget.MenuFrameLayout>

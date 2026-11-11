@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/notification_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Compat.Notification.Title" />
+    <TextView android:id="@id/notification_content" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.Compat.Notification.Line2" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:weightSum="5.0">
+        <ImageView android:id="@id/star1" android:layout_width="@dimen/notification_feedback_star_expanded_size" android:layout_height="@dimen/notification_feedback_star_expanded_size" android:src="@drawable/feedback_star_empty" android:layout_weight="1.0" />
+        <ImageView android:id="@id/star2" android:layout_width="@dimen/notification_feedback_star_expanded_size" android:layout_height="@dimen/notification_feedback_star_expanded_size" android:src="@drawable/feedback_star_empty" android:layout_weight="1.0" android:layout_marginStart="@dimen/notification_feedback_star_expanded_margin" />
+        <ImageView android:id="@id/star3" android:layout_width="@dimen/notification_feedback_star_expanded_size" android:layout_height="@dimen/notification_feedback_star_expanded_size" android:src="@drawable/feedback_star_empty" android:layout_weight="1.0" android:layout_marginStart="@dimen/notification_feedback_star_expanded_margin" />
+        <ImageView android:id="@id/star4" android:layout_width="@dimen/notification_feedback_star_expanded_size" android:layout_height="@dimen/notification_feedback_star_expanded_size" android:src="@drawable/feedback_star_empty" android:layout_weight="1.0" android:layout_marginStart="@dimen/notification_feedback_star_expanded_margin" />
+        <ImageView android:id="@id/star5" android:layout_width="@dimen/notification_feedback_star_expanded_size" android:layout_height="@dimen/notification_feedback_star_expanded_size" android:src="@drawable/feedback_star_empty" android:layout_weight="1.0" android:layout_marginStart="@dimen/notification_feedback_star_expanded_margin" />
+    </LinearLayout>
+</LinearLayout>

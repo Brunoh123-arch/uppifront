@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/top_start_side_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/component_float_button_icon_shadow_compensation" app:layout_anchor="@id/top_container" app:layout_anchorGravity="start|top|center" />
+    <ViewStub android:layout_gravity="center_horizontal" android:id="@id/top_decoration_stub" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_anchor="@id/top_container" app:layout_anchorGravity="start|top|center" />
+    <ru.yandex.taxi.widget.floatbuttonholder.FloatButtonHolderLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/top_end_side_fab_container" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="5.0dip" app:layout_anchor="@id/top_container" app:layout_anchorGravity="end|top|center" />
+    <LinearLayout android:orientation="vertical" android:id="@id/top_container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="ru.yandex.taxi.coordinator.AnchorBottomSheetBehavior">
+        <com.yandex.go.design.view.GoFrameLayout android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Space android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/bottom_start_side_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_anchor="@id/top_container" app:layout_anchorGravity="start|bottom|center" app:layout_behavior="com.yandex.go.taxi.order.feed.ui.FeedSdkBottomFloatButtonBehavior" />
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/bottom_end_side_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_anchor="@id/top_container" app:layout_anchorGravity="end|bottom|center" app:layout_behavior="com.yandex.go.taxi.order.feed.ui.FeedSdkBottomFloatButtonBehavior" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/footer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

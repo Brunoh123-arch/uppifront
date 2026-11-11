@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.mapkit.mapview.MapView android:id="@id/yandex_map_view" android:layout_width="fill_parent" android:layout_height="fill_parent" yandex:movable="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yandex="http://schemas.android.com/apk/res-auto" />

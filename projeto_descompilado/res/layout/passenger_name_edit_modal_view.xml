@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/component_black_opacity_45" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:background="@drawable/bg_round_modal_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/passenger_name_edit_header" android:background="@drawable/bg_top_round_12dp_minor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_title="@string/user_profile_name_input_hint" app:component_title_gravity="center_horizontal" app:component_title_size="16.0sp" app:component_title_typeface="bold" />
+        <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/passenger_name_input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_type="none" app:component_input_clear_enable="true" app:component_max_lines="1" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/passenger_name_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:text="@string/settings_save" />
+    </LinearLayout>
+</LinearLayout>

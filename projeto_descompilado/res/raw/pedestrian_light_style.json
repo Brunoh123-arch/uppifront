@@ -1,0 +1,20 @@
+{
+  "map_style": [],
+  "name": "pedestrian",
+  "theme": "light",
+  "route_traffic_style": {
+    "stroke_width": 3,
+    "outline_color": "ffffff",
+    "outline_width": 2,
+    "gradient_length": 5,
+    "jam_style_colors": {
+      "free": "00CA50",
+      "hard": "F5523A",
+      "light": "FCB900",
+      "blocked": "302E27",
+      "unknown": "D2D0CC",
+      "very_hard": "CC2D32"
+    },
+    "inner_outline_enabled": false
+  }
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/booking_container" android:layout_width="fill_parent" android:layout_height="@dimen/discovery_booking_item_height" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginHorizontal="@dimen/go_design_m_space" layout="@layout/places_booking_template" />
+</com.yandex.go.design.view.GoFrameLayout>

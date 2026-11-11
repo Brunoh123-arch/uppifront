@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoView android:id="@id/gradient" android:layout_width="fill_parent" android:layout_height="234.0dip" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="start|center|top" android:id="@id/back_float_btn" android:background="@drawable/ic_arrow_left" android:focusable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="20.0dip" android:contentDescription="@string/common_back" android:textAlignment="center" android:layout_marginStart="16.0dip" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center|top" android:id="@id/title_image" android:layout_width="wrap_content" android:layout_height="100.0dip" android:layout_marginTop="42.0dip" />
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="150.0dip">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="38.0sp" android:textStyle="bold" android:textColor="?textMain" android:layout_gravity="center_horizontal" android:id="@id/title" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:textAlignment="center" android:letterSpacing="0.0" android:layout_marginHorizontal="10.0dip" android:textFontWeight="900" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0sp" android:textColor="?textMinor" android:layout_gravity="center_horizontal" android:id="@id/subtitle" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" android:letterSpacing="0.0" android:layout_marginHorizontal="10.0dip" android:textFontWeight="500" />
+        <com.yandex.go.design.view.GoLinearLayout android:layout_gravity="center|top" android:orientation="horizontal" android:id="@id/buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="28.0dip" android:layout_marginHorizontal="10.0dip">
+            <include android:id="@id/call_emergency_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="2.0dip" layout="@layout/safety_center_web_failure_screen_btn" />
+            <include android:id="@id/open_support_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="2.0dip" layout="@layout/safety_center_web_failure_screen_btn" />
+            <include android:id="@id/share_route_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="2.0dip" layout="@layout/safety_center_web_failure_screen_btn" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.design.ButtonComponent android:textSize="16.0sp" android:layout_gravity="bottom" android:id="@id/reload_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" app:component_background_color="?controlMain" app:component_title_color="?textOnControl" app:robotoFontStyle="bold" />
+</merge>

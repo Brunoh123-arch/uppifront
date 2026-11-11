@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/scaffold" android:background="?bgMain" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/benefits_center_top_view" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/contentContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="72.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:layout_gravity="start|center|top" android:id="@id/power_bank_number_text_view" android:background="@drawable/bg_chargers_active_order_powerbank_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.5dip" android:maxLines="1" android:paddingHorizontal="8.0dip" android:paddingVertical="4.0dip" app:robotoFontStyle="regular" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="end|bottom|center" android:id="@id/header_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.5099792dip" />
+</com.yandex.go.design.view.GoFrameLayout>

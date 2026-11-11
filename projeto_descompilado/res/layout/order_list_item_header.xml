@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_list_item_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/bg_order_item_round_top_rect_ripple" android:minHeight="72.0dip" app:component_no_background="true" app:component_subtitle_ellipsize_mode="end" app:component_subtitle_gravity="start" app:component_subtitle_max_lines="3" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title_ellipsize_mode="end" app:component_title_gravity="start" app:component_title_max_lines="2" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="medium" app:component_title_with_navigation="true" />
+    <ru.yandex.taxi.widget.SearchProgressBar android:layout_gravity="bottom" android:id="@id/order_list_item_search_progress" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" />
+</FrameLayout>

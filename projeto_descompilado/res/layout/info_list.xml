@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/info_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/close_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/go_design_s_space" android:text="@string/common_close" app:component_background_color="@color/component_control_minor_light" app:component_button_rounded_corners_radius="@dimen/button_component_default_rounded_corners_radius" />
+</LinearLayout>

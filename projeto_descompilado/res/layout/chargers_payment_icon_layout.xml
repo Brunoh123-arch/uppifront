@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/payment_layout" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="@dimen/component_image_holder_size" app:layout_constraintBottom_toBottomOf="@id/buttons_container" app:layout_constraintEnd_toStartOf="@id/buttons_container" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/buttons_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/payment_add_card_view" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_payment_add_card" android:scaleType="center" android:contentDescription="@string/scooters_offer_card_v2_a11y_payment_info_button_add" />
+    <com.yandex.go.payments.design.composite.CompositePaymentIconsView android:layout_gravity="center" android:id="@id/payment_info_view" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" />
+</com.yandex.go.design.view.GoFrameLayout>

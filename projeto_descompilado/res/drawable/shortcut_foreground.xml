@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/shortcut_pressed_shadow"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/shortcuts_corners_round" />
+            <solid android:color="@color/filled_to_tint_or_mask" />
+        </shape>
+    </item>
+</ripple>

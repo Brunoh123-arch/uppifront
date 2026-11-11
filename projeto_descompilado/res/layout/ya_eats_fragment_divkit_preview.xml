@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/divkit_preview_root" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/divkit_preview_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="8.0dip">
+        <ru.yandex.eats.divkit_preview_feature.presentation.screen.views.ClipboardEditText android:textColor="?textMain" android:textColorHint="?textMinor" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/divkit_preview_input" android:background="@drawable/ya_eats_divkit_preview_clipboard_input_bg" android:layout_width="120.0dip" android:layout_height="wrap_content" android:hint="Clipboard ID" android:inputType="numberDecimal" android:paddingHorizontal="8.0dip" android:paddingVertical="4.0dip" android:importantForAutofill="no" style="@style/TextAppearance.YSText.Body2.Normal" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/divkit_preview_sync_state" android:layout_width="24.0dip" android:layout_height="24.0dip" android:scaleType="centerInside" android:adjustViewBounds="true" android:tint="?textMain" android:layout_marginStart="8.0dip" />
+        <TextView android:textColor="?textMain" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/divkit_preview_sync_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="8.0dip" style="@style/TextAppearance.YSText.Caption1.Normal" />
+    </LinearLayout>
+</LinearLayout>

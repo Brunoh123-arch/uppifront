@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingHorizontal="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/go_design_s_space">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:layout_gravity="end" android:id="@id/price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.yandex.go.order.tariffs_suggest.ui.SuggestTariffCashbackView android:layout_gravity="end" android:id="@id/cashback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.design.CheckBoxComponent android:layout_gravity="center_vertical" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

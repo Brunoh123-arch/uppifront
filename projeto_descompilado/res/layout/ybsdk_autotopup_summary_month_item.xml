@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/ybsdk_autotopup_rounding_month_background" android:layout_width="wrap_content" android:layout_height="48.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.core.design.spoiler.SpoilerTextView android:textColor="?ybColor_textIcon_primary" android:id="@id/summaryMonthAmount" android:layout_width="wrap_content" android:layout_height="18.0dip" android:maxLines="1" app:autoSizeMaxTextSize="14.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" app:ybsdk_spoiler_height="18.0dip" app:ybsdk_spoiler_horizontal_gravity="left" app:ybsdk_spoiler_width="34.0dip" style="@style/Widget.YB.Text.Title3" />
+    <TextView android:textColor="?ybColor_textIcon_primary" android:id="@id/summaryMonthDescription" android:layout_width="wrap_content" android:layout_height="14.0dip" android:maxLines="1" app:autoSizeMaxTextSize="12.0sp" app:autoSizeMinTextSize="8.0sp" app:autoSizeTextType="uniform" style="@style/Widget.YB.Text.Caption2.Medium" />
+</LinearLayout>

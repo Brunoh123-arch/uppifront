@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/rounded_background_view" android:background="?cardDivider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="68.0dip" android:foreground="@drawable/bg_rounded_24dp_modal_view" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/flex_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yandex.go.design.view.GoFrameLayout>

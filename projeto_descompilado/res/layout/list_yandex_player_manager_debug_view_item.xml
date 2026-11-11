@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:ellipsize="middle" android:id="@id/tv_item_uuid" android:layout_width="120.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textColor="#ffffffff" android:id="@id/tv_engine" android:layout_width="90.0dip" android:layout_height="wrap_content" android:lines="1" android:autoSizeTextType="uniform" android:autoSizeStepGranularity="2.0sp" android:autoSizeMinTextSize="8.0sp" android:autoSizeMaxTextSize="100.0sp" />
+    <TextView android:textColor="#ffffffff" android:id="@id/tv_preload" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

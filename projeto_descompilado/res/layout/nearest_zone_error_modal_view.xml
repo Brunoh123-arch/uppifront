@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/bg_round_modal_view" android:importantForAccessibility="no" style="@style/ModalContentHolder">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/nearest_zone_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="@color/component_black" android:id="@id/nearest_zone_error_subtitle" android:paddingTop="@dimen/go_design_s_space" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" android:accessibilityTraversalAfter="@id/nearest_zone_error_title" app:robotoFontStyle="regular" />
+        <ru.yandex.taxi.design.ListTextComponent android:id="@id/nearest_zone_error_info" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/nearest_change_address_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/address_another" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" android:accessibilityTraversalAfter="@id/nearest_zone_error_subtitle" app:component_background_color="?controlMain" app:component_button_accent="true" />
+    </LinearLayout>
+</merge>

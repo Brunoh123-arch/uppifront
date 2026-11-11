@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:background="@drawable/bg_panorama_bubble" android:padding="@dimen/go_design_s_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:minHeight="24.0dip" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@color/component_gray_100_cold" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:robotoFontStyle="medium" app:useMinimumWidth="true" />
+</com.yandex.go.design.view.GoFrameLayout>

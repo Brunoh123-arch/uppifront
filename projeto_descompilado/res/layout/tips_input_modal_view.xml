@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BottomModalContentHolder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/tips_input" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_clear_enable="false" app:component_input_type="number" app:imeOptions="actionDone" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/tips_another_amount_cancel" android:layout_weight="0.5" android:layout_marginStart="4.0dip" android:layout_marginEnd="2.0dip" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/tips_another_amount_select" android:layout_weight="0.5" android:layout_marginStart="2.0dip" android:layout_marginEnd="4.0dip" />
+    </LinearLayout>
+</LinearLayout>

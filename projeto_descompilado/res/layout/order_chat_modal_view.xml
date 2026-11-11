@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chat_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_chat_closing" android:layout_width="56.0dip" android:layout_height="56.0dip" android:scaleType="center" android:contentDescription="@string/common_close" app:srcCompat="@drawable/ic_cross_close" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/order_chat_header" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="0.0dip" app:component_auto_min_height="true" app:component_divider_type="none" app:component_lead_background="@drawable/ic_chat_avatar_placeholder" app:component_lead_image_padding="0.0dip" app:component_lead_image_padding_left="0.0dip" app:component_lead_image_size="40.0dip" app:component_no_background="true" app:component_subtitle_max_lines="1" app:component_title_ellipsize_mode="end" app:component_title_max_lines="1" app:component_title_typeface="medium" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iv_chat_calling" android:layout_width="56.0dip" android:layout_height="56.0dip" android:scaleType="center" android:contentDescription="@string/taxiotw_call" app:srcCompat="@drawable/ic_call_green" />
+    </LinearLayout>
+    <View android:background="?line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <androidx.fragment.app.FragmentContainerView android:id="@id/chat_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ya_eats_retail_product_page_navigation_bubble_container" android:background="?controlMinor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="32.0dip" android:paddingStart="12.0dip" android:paddingEnd="5.0dip" android:layout_marginEnd="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?textMain" android:id="@id/ya_eats_retail_product_page_navigation_bubble_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/TextAppearance.YSText.Caption1.Tight.Medium" />
+    <ImageView android:id="@id/ya_eats_retail_product_page_navigation_bubble_chevron" android:layout_width="wrap_content" android:layout_height="12.0dip" android:src="@drawable/ic_chevron_right_16_main" android:tint="?textMain" />
+</LinearLayout>

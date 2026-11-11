@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/ybsdk_pfm_shimmer_categories_padding_top" android:visibility="visible" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <include android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="@dimen/ybsdk_pfm_category_margin_horizontal" layout="@layout/ybsdk_item_pfm_category_shimmer" />
+        <include android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginHorizontal="@dimen/ybsdk_pfm_category_margin_horizontal" layout="@layout/ybsdk_item_pfm_category_shimmer" />
+        <include android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/ybsdk_pfm_category_margin_horizontal" layout="@layout/ybsdk_item_pfm_category_shimmer" />
+    </LinearLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

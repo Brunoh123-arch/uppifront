@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.DialogueComponent android:id="@id/dialogue" android:layout_width="fill_parent" android:layout_height="fill_parent" app:component_rounded_type="top">
+        <com.yandex.go.design.view.GoConstraintLayout android:id="@id/attention_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/chargers_attention_header_height">
+            <ImageView android:id="@id/attention_header_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/attention_header_text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/attention_header_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/attention_header_image" app:layout_constraintStart_toEndOf="@id/attention_header_icon" app:layout_constraintTop_toTopOf="parent" app:robotoFontStyle="regular" />
+            <ImageView android:id="@id/attention_header_image" android:layout_width="85.0dip" android:layout_height="55.0dip" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/attention_header_text" app:layout_wrapBehaviorInParent="skipped" />
+        </com.yandex.go.design.view.GoConstraintLayout>
+    </ru.yandex.taxi.design.DialogueComponent>
+</com.yandex.go.design.view.GoFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_m_space" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" app:robotoFontStyle="regular" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_s_space" android:divider="@drawable/dialog_button_divider" android:showDividers="middle">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/negative_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_button_size="M" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/positive_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_button_size="M" />
+    </LinearLayout>
+</LinearLayout>

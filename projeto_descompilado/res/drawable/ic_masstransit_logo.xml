@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="48.0dip" android:width="48.0dip" android:viewportWidth="48.0" android:viewportHeight="48.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M24,0L24,0A24,24 0,0 1,48 24L48,24A24,24 0,0 1,24 48L24,48A24,24 0,0 1,0 24L0,24A24,24 0,0 1,24 0z" />
+        <path android:fillColor="?controlMinor" android:pathData="M24,0L24,0A24,24 0,0 1,48 24L48,24A24,24 0,0 1,24 48L24,48A24,24 0,0 1,0 24L0,24A24,24 0,0 1,24 0z" />
+        <group>
+            <clip-path android:pathData="M0.002,0h48v48h-48z" />
+            <group>
+                <clip-path android:pathData="M0.002,0h48v48h-48z" />
+                <path android:fillColor="#00000000" android:pathData="M6.9,42L101.412,42" android:strokeColor="#ff21201f" android:strokeWidth="0.725076" android:strokeAlpha="0.2" android:fillAlpha="0.2" />
+                <path android:fillColor="#ff000000" android:pathData="M21.232,28.169h67.955v10.667h-67.955z" />
+                <path android:fillColor="#ff262626" android:pathData="M49.571,42C51.903,42 53.793,39.354 53.793,36.09C53.793,32.825 51.903,30.179 49.571,30.179H45.658V42H49.571Z" />
+                <path android:fillColor="#ff262626" android:pathData="M41.437,36.09a4.222,5.911 0,1 0,8.444 0a4.222,5.911 0,1 0,-8.444 0z" />
+                <path android:fillColor="#ff262626" android:pathData="M31.606,42C33.938,42 35.828,39.354 35.828,36.09C35.828,32.825 33.938,30.179 31.606,30.179H27.693V42H31.606Z" />
+                <path android:fillColor="#ff262626" android:pathData="M23.473,36.09a4.222,5.911 0,1 0,8.444 0a4.222,5.911 0,1 0,-8.444 0z" />
+                <path android:fillColor="#ffd2d0cc" android:pathData="M24.816,36.09a2.878,4.317 0,1 0,5.756 0a2.878,4.317 0,1 0,-5.756 0z" />
+                <path android:fillColor="@drawable/$ic_masstransit_logo__0" android:pathData="M11.436,7.112C10.381,7.112 9.525,7.968 9.525,9.023V36.935C9.525,37.99 10.381,38.846 11.436,38.846H21.328C22.078,38.846 22.7,38.267 22.767,37.519C22.873,36.328 23.001,35.183 23.164,33.956C23.474,31.628 25.303,29.819 27.652,29.819C30.01,29.819 31.865,31.613 32.202,33.946C32.38,35.177 32.515,36.325 32.625,37.52C32.694,38.267 33.315,38.846 34.065,38.846H63.056C63.807,38.846 64.429,38.267 64.495,37.519C64.602,36.318 64.731,35.165 64.895,33.93C65.204,31.601 67.034,29.792 69.383,29.792C71.741,29.792 73.595,31.586 73.933,33.92C74.112,35.16 74.248,36.315 74.359,37.52C74.427,38.267 75.048,38.846 75.799,38.846H99.306C101.417,38.846 103.128,37.134 103.128,35.024V10.934C103.128,8.824 101.417,7.112 99.306,7.112H11.436Z" android:fillType="evenOdd" />
+                <path android:fillColor="#ffff3d39" android:pathData="M9.895,33.953L11.663,33.953A0.956,0.956 0,0 1,12.619 34.908L12.619,35.134A0.956,0.956 0,0 1,11.663 36.09L9.895,36.09A0.956,0.956 0,0 1,8.939 35.134L8.939,34.908A0.956,0.956 0,0 1,9.895 33.953z" />
+                <path android:fillColor="@drawable/$ic_masstransit_logo__1" android:pathData="M16.923,11.335C16.925,10.28 17.781,9.425 18.836,9.425L80.787,9.425C81.842,9.425 82.698,10.28 82.698,11.336V22.47C82.701,22.512 82.702,22.555 82.702,22.598V34.571C82.702,35.627 81.847,36.482 80.791,36.482H77.513C76.457,36.482 75.602,35.627 75.602,34.571V28.157L49.654,28.157V34.571C49.654,35.627 48.799,36.482 47.743,36.482H41.198C40.143,36.482 39.287,35.627 39.287,34.571V28.157H32.404H18.817C17.769,28.157 16.916,27.313 16.91,26.265C16.886,22.461 16.899,18.543 16.912,14.942C16.916,13.696 16.92,12.488 16.923,11.335Z" android:fillType="evenOdd" />
+                <path android:fillColor="@drawable/$ic_masstransit_logo__2" android:pathData="M38.242,9.425h1.108v18.729h-1.108z" />
+            </group>
+        </group>
+    </group>
+</vector>

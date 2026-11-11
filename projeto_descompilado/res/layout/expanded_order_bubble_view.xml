@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.bubble.BubbleComponent android:id="@id/bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:use_bg_main="true">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_bubble" android:id="@id/title" android:padding="@dimen/go_design_s_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160.0dip" android:minWidth="40.0dip" android:minHeight="36.0dip" android:maxLines="3" app:useMinimumWidth="true" />
+    </ru.yandex.taxi.design.bubble.BubbleComponent>
+</merge>

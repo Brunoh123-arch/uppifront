@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/address_picker_v2_bottom_sheet_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.eda_design.common.Loader android:layout_gravity="center" android:id="@id/loader" android:layout_width="@dimen/address_picker_loader_size" android:layout_height="@dimen/address_picker_loader_size" />
+</FrameLayout>

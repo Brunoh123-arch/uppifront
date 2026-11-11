@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_24dp_rounded_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="?textMain" android:id="@id/dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <TextView android:textSize="16.0sp" android:textColor="?textMain" android:id="@id/dialog_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/web_app_loading_error_description" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="8.0dip" android:baselineAligned="false" android:divider="@drawable/divider_8dp" android:showDividers="middle" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+            <TextView android:textSize="20.0sp" android:id="@id/dialog_cancel_button" android:background="@drawable/bg_16dp_rounded_minor" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/common_close" style="@style/ErrorDialogButton" />
+            <TextView android:textSize="20.0sp" android:ellipsize="end" android:id="@id/dialog_action_button" android:background="@drawable/bg_16dp_rounded_minor" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/web_app_loading_error_retry_btn" android:maxLines="2" style="@style/ErrorDialogButton" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

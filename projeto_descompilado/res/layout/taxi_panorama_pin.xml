@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center_horizontal" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/pin_icon" android:layout_width="160.0dip" android:layout_height="160.0dip" android:contentDescription="@null" />
+</com.yandex.go.design.view.GoFrameLayout>

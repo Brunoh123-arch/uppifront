@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:background="@drawable/bg_rectangle_round_16dp_minor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yandex.go.design.view.GoLinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginHorizontal="16.0dip">
+            <com.yandex.go.design.view.GoImageView android:layout_gravity="center_vertical" android:id="@id/number_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="40.0sp" android:textColor="?textMain" android:layout_gravity="center_vertical" android:id="@id/number_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:lineSpacingExtra="-13.0sp" android:letterSpacing="0.2" android:fontFeatureSettings="pnum, lnum" android:paddingVertical="24.0dip" app:robotoFontStyle="heavy" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </com.yandex.go.design.view.GoFrameLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/number_checkout_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="medium" />
+</merge>

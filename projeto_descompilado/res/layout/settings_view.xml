@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yandex.go.design.view.GoFrameLayout android:gravity="center_vertical" android:layout_gravity="top" android:id="@id/title_container" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:elevation="1.0dip">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/shadow_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="30.0sp" android:textColor="?textMain" android:id="@id/screen_title" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:robotoFontStyle="bold" />
+        </com.yandex.go.design.view.GoFrameLayout>
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:layout_weight="1.0">
+            <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/settings_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.yandex.go.design.view.GoLinearLayout>
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <com.yandex.go.design.view.GoFrameLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/shadow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-24.0dip" />
+            <com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginHorizontal="@dimen/go_design_s_space" android:layout_marginVertical="@dimen/go_design_s_space">
+                <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:layout_gravity="bottom" android:id="@id/first_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_close" android:layout_weight="1.0" app:component_button_accent="true" app:component_button_size="L" app:component_disabled_background_color="?controlMinor" app:component_disabled_title_color="?textOnControlMinor" />
+                <Space android:layout_width="4.0dip" android:layout_height="0.0dip" />
+                <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:layout_gravity="bottom" android:id="@id/second_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/trusted_contacts_save_and_close_action" android:layout_weight="1.0" app:component_button_accent="true" app:component_button_size="L" app:component_disabled_background_color="?controlMinor" app:component_disabled_title_color="?textOnControlMinor" />
+            </com.yandex.go.design.view.GoLinearLayout>
+        </com.yandex.go.design.view.GoFrameLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/coupon_icon_stub" android:layout="@layout/tariff_card_info_coupon_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="8.0dip" />
+    <ViewStub android:id="@id/branding_icon_stub" android:layout="@layout/tariff_card_info_branding_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="8.0dip" />
+    <ru.yandex.taxi.plus.badge.CashbackHorizontalView android:id="@id/text_plus_cash_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" />
+</FrameLayout>

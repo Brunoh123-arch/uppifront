@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.DividerAwareComponent android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/tariff_card_badge_item" android:background="@drawable/bg_transparent_ripple" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_caption" app:component_subtitle_text_color="?textMain" app:component_title_size="@dimen/component_text_size_body" app:component_title_text_color="?textMain" />
+    <ru.yandex.taxi.design.LoadingComponent android:id="@id/tariff_card_badge_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</ru.yandex.taxi.design.DividerAwareComponent>

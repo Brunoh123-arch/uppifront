@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_info_number_margin_top">97.0dip</dimen>
+    <dimen name="card_info_padding_bottom">24.0dip</dimen>
+    <dimen name="card_info_padding_horizontal">16.0dip</dimen>
+</resources>

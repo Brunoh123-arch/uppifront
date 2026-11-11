@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/progress_group" android:background="@color/component_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.yandex.taxi.widget.progress.CircularProgressBar android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="8.0dip" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/webview_error_group" android:background="@color/component_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_header" android:textColor="@color/component_black" android:id="@id/error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:text="@string/webview_error_title" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_subtitle" android:textColor="@color/component_black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:text="@string/webview_error_description" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ru.yandex.taxi.widget.RobotoTextView android:id="@id/reload_button" android:layout_marginTop="32.0dip" android:text="@string/webview_error_reload" style="@style/settings_modal_view_confirm_button" />
+    </LinearLayout>
+</merge>

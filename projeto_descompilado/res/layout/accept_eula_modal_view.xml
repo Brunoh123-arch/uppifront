@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_24dp_modal_view" style="@style/BottomModalContentHolder">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/eula_scroll_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListTitleComponent android:id="@id/eula_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+                <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColorLink="?textMain" android:gravity="start" android:id="@id/eula_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/self_driving_agreement_content_bottom_margin" android:textAlignment="viewStart" android:layout_marginStart="@dimen/self_driving_agreement_content_horizontal_margin" android:layout_marginEnd="@dimen/self_driving_agreement_content_horizontal_margin" app:robotoFontStyle="medium" />
+            </LinearLayout>
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/eula_scroll_view" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:gravity="center_vertical" android:id="@id/buttons_holder" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/eula_discard" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_cancel" android:layout_weight="1.0" app:component_background_color="?controlMinor" app:component_button_size="L" app:component_title_color="?textOnControlMinor" />
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/eula_confirm" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_continue" android:layout_weight="1.0" app:component_button_accent="true" app:component_button_size="L" />
+        </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    </LinearLayout>
+</merge>

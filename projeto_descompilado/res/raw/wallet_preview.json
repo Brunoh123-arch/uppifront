@@ -1,0 +1,638 @@
+{
+  "ui": {
+    "sections": [
+      {
+        "id": "wallet_skeleton",
+        "origType": "wallet_skeleton_section",
+        "reloadable": false,
+        "content": [
+          {
+            "id": "ContainerComponent#caf6d485-15e3-41b3-9ea2-ae3154faa240-c66b92f8-abd7-47b3-8b68-19fa5e5d0178",
+            "divDataTag": null,
+            "type": null,
+            "differ": {
+              "considerItemIds": true,
+              "animateOnChange": true,
+              "skipModelCheck": false
+            },
+            "actions": {},
+            "divData": {
+              "log_id": "ContainerComponent#caf6d485-15e3-41b3-9ea2-ae3154faa240",
+              "states": [
+                {
+                  "state_id": 0,
+                  "div": {
+                    "type": "f51d9848-6068-4b38-92e1-858abda31e86",
+                    "border": {
+                      "has_shadow": 0
+                    },
+                    "items": [
+                      {
+                        "type": "3119f30a-a3f9-411d-98b5-7a30bdcc284a",
+                        "border": {
+                          "corners_radius": {
+                            "bottom-left": 100,
+                            "bottom-right": 100,
+                            "top-left": 100,
+                            "top-right": 100
+                          },
+                          "has_shadow": 0
+                        },
+                        "items": []
+                      },
+                      {
+                        "type": "9a4b5f93-1b64-4416-a09c-07af0ef07e5c",
+                        "border": {
+                          "has_shadow": 0
+                        },
+                        "items": [
+                          {
+                            "type": "e0862f46-0cf7-4ae1-8a76-e454cef85588",
+                            "border": {
+                              "corners_radius": {
+                                "bottom-left": 24,
+                                "bottom-right": 24,
+                                "top-left": 24,
+                                "top-right": 24
+                              },
+                              "has_shadow": 0
+                            },
+                            "items": []
+                          }
+                        ]
+                      },
+                      {
+                        "type": "99636153-7140-4d7c-a0aa-b80b65771aa8",
+                        "border": {
+                          "has_shadow": 0
+                        },
+                        "items": [
+                          {
+                            "type": "b610a79c-c7b3-4b9d-962f-45c34169955c",
+                            "border": {
+                              "corners_radius": {
+                                "bottom-left": 16,
+                                "bottom-right": 16,
+                                "top-left": 16,
+                                "top-right": 16
+                              },
+                              "has_shadow": 0
+                            },
+                            "items": []
+                          },
+                          {
+                            "type": "b610a79c-c7b3-4b9d-962f-45c34169955c",
+                            "border": {
+                              "corners_radius": {
+                                "bottom-left": 16,
+                                "bottom-right": 16,
+                                "top-left": 16,
+                                "top-right": 16
+                              },
+                              "has_shadow": 0
+                            },
+                            "items": []
+                          }
+                        ]
+                      },
+                      {
+                        "type": "b56433d8-c7bf-43a7-9c9b-b034b782b9fb",
+                        "border": {
+                          "has_shadow": 0
+                        },
+                        "items": [
+                          {
+                            "type": "88a3cd07-0e39-4d75-a6d1-1c05152b30e7",
+                            "border": {
+                              "corners_radius": {
+                                "bottom-left": 20,
+                                "bottom-right": 20,
+                                "top-left": 20,
+                                "top-right": 20
+                              },
+                              "has_shadow": 0
+                            },
+                            "items": []
+                          },
+                          {
+                            "type": "9fa8e2d9-4299-4ee3-87f7-df0ce9ffc4c3",
+                            "border": {
+                              "corners_radius": {
+                                "bottom-left": 100,
+                                "bottom-right": 100,
+                                "top-left": 100,
+                                "top-right": 100
+                              },
+                              "has_shadow": 0
+                            },
+                            "items": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ],
+              "timers": [],
+              "variable_triggers": [],
+              "variables": []
+            }
+          }
+        ],
+        "type": "DivkitSection"
+      }
+    ],
+    "settings": {
+      "refreshable": false,
+      "pagination": {
+        "triggerFactor": 0.3,
+        "minPagingThreshold": 100.0
+      }
+    },
+    "loadingSettings": {
+      "reusePolicy": "FALLBACK_TO_NATIVE"
+    },
+    "type": "section"
+  },
+  "scaffold": {
+    "fillColor": {
+      "light": "#FFFFFF",
+      "dark": "#191918",
+      "ultimaLight": "#FFFFFF",
+      "ultimaDark": "#1F2021"
+    },
+    "toolbarView": {
+      "id": "WalletTopView",
+      "divDataTag": null,
+      "type": null,
+      "differ": {
+        "considerItemIds": true,
+        "animateOnChange": true,
+        "skipModelCheck": false
+      },
+      "actions": {
+        "goBackFromWallet": {
+          "type": "BackwardAction"
+        }
+      },
+      "divData": {
+        "log_id": "WalletTopView",
+        "states": [
+          {
+            "state_id": 0,
+            "div": {
+              "type": "ToolbarDivFactory:toolbar",
+              "badge_items": [],
+              "badge_items_visibility": "@{(false) ? 'visible' : 'invisible'}",
+              "navigation_icon_visibility": "visible",
+              "body_items": [],
+              "navigation_icon_click": [
+                {
+                  "log_id": "goBackFromWallet",
+                  "url": "flex-action://dispatch/goBackFromWallet"
+                }
+              ],
+              "navigation_icon_accessibility": {
+                "description": "@{strings.common_back}",
+                "mode": "merge",
+                "type": "button"
+              },
+              "navigation_icon_preview": "@{wallet.navigation_icon_preview}",
+              "body_items_visibility": "@{(false) ? 'visible' : 'invisible'}"
+            }
+          }
+        ]
+      }
+    },
+    "bottomPadding": {
+      "value": 0,
+      "respectNavigationInset": false
+    },
+    "backgroundColor": {
+      "light": "#FFFFFF",
+      "dark": "#191918",
+      "ultimaLight": "#FFFFFF",
+      "ultimaDark": "#1F2021"
+    },
+    "type": "AppBarScaffold"
+  },
+  "shared": {
+    "divkitTemplates": {
+      "f51d9848-6068-4b38-92e1-858abda31e86": {
+        "type": "container",
+        "orientation": "vertical",
+        "background": [],
+        "border": {
+          "has_shadow": 0
+        },
+        "paddings": {
+          "bottom": 16,
+          "end": 0,
+          "start": 0,
+          "top": 8
+        },
+        "separator": {
+          "show_at_end": 0,
+          "show_at_start": 0,
+          "show_between": 1,
+          "style": {
+            "type": "shape_drawable",
+            "color": "#00000000",
+            "shape": {
+              "type": "rounded_rectangle",
+              "item_height": {
+                "type": "fixed",
+                "value": 16,
+                "unit": "dp"
+              },
+              "item_width": {
+                "type": "fixed",
+                "value": 0,
+                "unit": "dp"
+              }
+            }
+          }
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        },
+        "extensions": [
+          {
+            "id": "shortcut_shimmer",
+            "params": {
+              "colors": [
+                {
+                  "expression": "#00000000"
+                },
+                {
+                  "expression": "#00000000"
+                },
+                {
+                  "expression": "@{theme == 'dark' ? '#191918' : (theme == 'ultimaDark' ? '#1F2021' : '#FFFFFF')}"
+                },
+                {
+                  "expression": "#00000000"
+                },
+                {
+                  "expression": "#00000000"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "3119f30a-a3f9-411d-98b5-7a30bdcc284a": {
+        "type": "container",
+        "orientation": "overlap",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corners_radius": {
+            "bottom-left": 100,
+            "bottom-right": 100,
+            "top-left": 100,
+            "top-right": 100
+          },
+          "has_shadow": 0
+        },
+        "clip_to_bounds": 1,
+        "height": {
+          "type": "fixed",
+          "value": 16,
+          "unit": "dp"
+        },
+        "margins": {
+          "bottom": 0,
+          "end": 32,
+          "start": 16,
+          "top": 0
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "9a4b5f93-1b64-4416-a09c-07af0ef07e5c": {
+        "type": "container",
+        "orientation": "horizontal",
+        "content_alignment_horizontal": "center",
+        "height": {
+          "type": "wrap_content"
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "e0862f46-0cf7-4ae1-8a76-e454cef85588": {
+        "type": "container",
+        "orientation": "overlap",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corners_radius": {
+            "bottom-left": 24,
+            "bottom-right": 24,
+            "top-left": 24,
+            "top-right": 24
+          },
+          "has_shadow": 0
+        },
+        "clip_to_bounds": 1,
+        "height": {
+          "type": "fixed",
+          "value": 168,
+          "unit": "dp"
+        },
+        "margins": {
+          "bottom": 30,
+          "end": 54,
+          "start": 54,
+          "top": 10
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "99636153-7140-4d7c-a0aa-b80b65771aa8": {
+        "type": "container",
+        "orientation": "horizontal",
+        "background": [],
+        "border": {
+          "has_shadow": 0
+        },
+        "margins": {
+          "bottom": 0,
+          "end": 16,
+          "start": 16,
+          "top": 0
+        },
+        "separator": {
+          "show_at_end": 0,
+          "show_at_start": 0,
+          "show_between": 1,
+          "style": {
+            "type": "shape_drawable",
+            "color": "#00000000",
+            "shape": {
+              "type": "rounded_rectangle",
+              "item_height": {
+                "type": "fixed",
+                "value": 0,
+                "unit": "dp"
+              },
+              "item_width": {
+                "type": "fixed",
+                "value": 8,
+                "unit": "dp"
+              }
+            }
+          }
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "b610a79c-c7b3-4b9d-962f-45c34169955c": {
+        "type": "container",
+        "orientation": "overlap",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corners_radius": {
+            "bottom-left": 16,
+            "bottom-right": 16,
+            "top-left": 16,
+            "top-right": 16
+          },
+          "has_shadow": 0
+        },
+        "clip_to_bounds": 1,
+        "height": {
+          "type": "fixed",
+          "value": 96,
+          "unit": "dp"
+        },
+        "margins": {
+          "bottom": 0,
+          "end": 0,
+          "start": 0,
+          "top": 0
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "b56433d8-c7bf-43a7-9c9b-b034b782b9fb": {
+        "type": "container",
+        "orientation": "horizontal",
+        "content_alignment_vertical": "center",
+        "separator": {
+          "show_at_end": 0,
+          "show_at_start": 0,
+          "show_between": 1,
+          "style": {
+            "type": "shape_drawable",
+            "color": "#00000000",
+            "shape": {
+              "type": "rounded_rectangle",
+              "item_height": {
+                "type": "fixed",
+                "value": 0,
+                "unit": "dp"
+              },
+              "item_width": {
+                "type": "fixed",
+                "value": 16,
+                "unit": "dp"
+              }
+            }
+          }
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "88a3cd07-0e39-4d75-a6d1-1c05152b30e7": {
+        "type": "container",
+        "orientation": "overlap",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corners_radius": {
+            "bottom-left": 20,
+            "bottom-right": 20,
+            "top-left": 20,
+            "top-right": 20
+          },
+          "has_shadow": 0
+        },
+        "clip_to_bounds": 1,
+        "height": {
+          "type": "fixed",
+          "value": 40,
+          "unit": "dp"
+        },
+        "margins": {
+          "bottom": 0,
+          "end": 0,
+          "start": 16,
+          "top": 0
+        },
+        "width": {
+          "type": "fixed",
+          "value": 40,
+          "unit": "dp"
+        }
+      },
+      "9fa8e2d9-4299-4ee3-87f7-df0ce9ffc4c3": {
+        "type": "container",
+        "orientation": "overlap",
+        "background": [
+          {
+            "type": "solid",
+            "color": "@{theme == 'dark' ? '#302F2D' : (theme == 'ultimaLight' ? '#F9F7F2' : (theme == 'ultimaDark' ? '#2E2E30' : '#F5F4F2'))}"
+          }
+        ],
+        "border": {
+          "corners_radius": {
+            "bottom-left": 100,
+            "bottom-right": 100,
+            "top-left": 100,
+            "top-right": 100
+          },
+          "has_shadow": 0
+        },
+        "clip_to_bounds": 1,
+        "height": {
+          "type": "fixed",
+          "value": 16,
+          "unit": "dp"
+        },
+        "margins": {
+          "bottom": 0,
+          "end": 32,
+          "start": 0,
+          "top": 0
+        },
+        "width": {
+          "type": "match_parent",
+          "weight": 1.0
+        }
+      },
+      "ToolbarDivFactory:toolbar": {
+        "type": "container",
+        "orientation": "horizontal",
+        "height": {
+          "type": "fixed",
+          "value": "@{ignoreFitSystemWindows ? max(flex.statusbar_height + 64, 64) : 64}"
+        },
+        "items": [
+          {
+            "type": "image",
+            "image_url": "empty://",
+            "$accessibility": "navigation_icon_accessibility",
+            "action_animation": {
+              "duration": 200,
+              "end_value": 0.5,
+              "interpolator": "linear",
+              "name": "fade",
+              "start_value": 1.0
+            },
+            "$actions": "navigation_icon_click",
+            "filters": [
+              {
+                "type": "rtl_mirror"
+              }
+            ],
+            "height": {
+              "type": "fixed",
+              "value": 64
+            },
+            "paddings": {
+              "bottom": 20,
+              "left": 16,
+              "right": 24,
+              "top": 20
+            },
+            "$preview": "navigation_icon_preview",
+            "tint_color": "@{theme == 'dark' ? '#E0DEDA' : (theme == 'ultimaLight' ? '#1E1D1D' : (theme == 'ultimaDark' ? '#F2F4F5' : '#21201F'))}",
+            "$visibility": "navigation_icon_visibility",
+            "width": {
+              "type": "fixed",
+              "value": 64
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "vertical",
+            "content_alignment_horizontal": "center",
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "match_parent"
+            },
+            "$items": "body_items",
+            "$visibility": "body_items_visibility",
+            "width": {
+              "type": "match_parent"
+            }
+          },
+          {
+            "type": "container",
+            "orientation": "horizontal",
+            "content_alignment_horizontal": "center",
+            "content_alignment_vertical": "center",
+            "height": {
+              "type": "fixed",
+              "value": 64
+            },
+            "$items": "badge_items",
+            "$visibility": "badge_items_visibility",
+            "width": {
+              "type": "wrap_content",
+              "min_size": {
+                "value": 64
+              }
+            }
+          }
+        ],
+        "paddings": {
+          "top": "@{ignoreFitSystemWindows ? flex.statusbar_height : 0}",
+          "end": 16
+        },
+        "width": {
+          "type": "match_parent"
+        }
+      }
+    },
+    "sections": {
+      "wallet_skeleton": {
+        "id": "wallet_skeleton"
+      }
+    },
+    "divData": {},
+    "analytics": {}
+  },
+  "context": null
+}

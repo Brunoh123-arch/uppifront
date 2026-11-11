@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/safety_center_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/safety_center_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingStart="10.0dip" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="24.0sp" android:textColor="?textMain" android:id="@id/title" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+            <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/safety_center_items" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin" />
+        </LinearLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/safety_center_scroll_view" />
+</FrameLayout>

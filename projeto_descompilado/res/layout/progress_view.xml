@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center_horizontal" android:id="@id/progressview_guidance" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:layout_gravity="center_vertical" android:background="@drawable/contextprogress_background" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginHorizontal="6.0dip" />
+    <com.yandex.go.design.view.GoView android:layout_gravity="center_vertical" android:id="@id/view_progress_jams" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginHorizontal="6.0dip" />
+    <com.yandex.go.design.view.GoView android:layout_gravity="center_vertical" android:id="@id/view_progress_shade" android:background="@drawable/contextprogress_background" android:layout_width="0.0dip" android:layout_height="6.0dip" android:layout_marginHorizontal="6.0dip" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center|right" android:id="@id/dot_at_end" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_progress_end_point" android:importantForAccessibility="no" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center_vertical" android:id="@id/imageview_progress_arrow" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_navigator_route_arrow_small" android:importantForAccessibility="no" />
+</com.yandex.go.design.view.GoFrameLayout>

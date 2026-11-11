@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d saniye ileri sar</item>
+        <item quantity="one">%d saniye ileri sar</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d saniye geri sar</item>
+        <item quantity="one">%d saniye geri sar</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">gün</item>
+        <item quantity="one">gün</item>
+        <item quantity="few">gün</item>
+        <item quantity="many">gün</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">saat</item>
+        <item quantity="one">saat</item>
+        <item quantity="few">saat</item>
+        <item quantity="many">saat</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d yeni bildirim</item>
+        <item quantity="one">%d yeni bildirim</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Son %1$d rakam</item>
+        <item quantity="zero">Son %1$d rakam</item>
+        <item quantity="one">Son %1$d rakam</item>
+        <item quantity="few">Son %1$d rakam</item>
+        <item quantity="many">Son %1$d rakam</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Birazdan
+%1$s numarasından aranacaksınız. Lütfen, numaranın son %2$d hanesini girin."</item>
+        <item quantity="zero">"Birazdan
+%1$s numarasından aranacaksınız. Lütfen, numaranın son %2$d hanesini girin."</item>
+        <item quantity="one">"Birazdan
+%1$s numarasından aranacaksınız. Lütfen, numaranın son %2$d hanesini girin."</item>
+        <item quantity="few">"Birazdan
+%1$s numarasından aranacaksınız. Lütfen, numaranın son %2$d hanesini girin."</item>
+        <item quantity="many">"Birazdan
+%1$s numarasından aranacaksınız. Lütfen, numaranın son %2$d hanesini girin."</item>
+    </plurals>
+</resources>

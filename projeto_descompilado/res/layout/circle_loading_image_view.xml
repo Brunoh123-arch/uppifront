@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.buttons.CircleButtonImageView android:layout_gravity="center" android:id="@id/photo_image" android:background="@drawable/circle_loading_image_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ru.yandex.taxi.widget.progress.CircularProgressBar android:layout_gravity="center" android:id="@id/progress" android:padding="0.0dip" android:visibility="gone" android:layout_width="@dimen/circle_loading_image_progress_size" android:layout_height="@dimen/circle_loading_image_progress_size" app:component_stroke_color="?textOnControlMinor" app:component_stroke_width="@dimen/circle_loading_image_stroke_width" />
+</merge>

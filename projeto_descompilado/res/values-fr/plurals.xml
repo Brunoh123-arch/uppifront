@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Avancer de %d secondes</item>
+        <item quantity="one">Avancer de %d seconde</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Revenir en arrière de %d secondes</item>
+        <item quantity="one">Revenir en arrière de %d seconde</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">jours</item>
+        <item quantity="one">jour</item>
+        <item quantity="few">jours</item>
+        <item quantity="many">jours</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">heures</item>
+        <item quantity="one">heure</item>
+        <item quantity="few">heures</item>
+        <item quantity="many">heures</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nouvelles notifications</item>
+        <item quantity="one">%d nouvelle notification</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">%1$d dernières chiffres</item>
+        <item quantity="zero">%1$d dernières chiffres</item>
+        <item quantity="one">%1$d dernière chiffre</item>
+        <item quantity="few">%1$d dernières chiffres</item>
+        <item quantity="many">%1$d dernières chiffres</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Vous allez recevoir un appel de
+%1$s. Saisissez les derniers %2$d chiffres de ce numéro."</item>
+        <item quantity="zero">"Vous allez recevoir un appel de
+%1$s. Saisissez les derniers %2$d chiffres de ce numéro."</item>
+        <item quantity="one">"Vous allez recevoir un appel de
+%1$s. Saisissez le dernier %2$d chiffre de ce numéro."</item>
+        <item quantity="few">"Vous allez recevoir un appel de
+%1$s. Saisissez les derniers %2$d chiffres de ce numéro."</item>
+        <item quantity="many">"Vous allez recevoir un appel de
+%1$s. Saisissez les derniers %2$d chiffres de ce numéro."</item>
+    </plurals>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lead_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingEnd="@dimen/go_design_s_space" android:paddingVertical="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/lead_background" android:background="@drawable/bg_list_shortcut_background" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="centerInside" />
+</FrameLayout>

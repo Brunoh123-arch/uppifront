@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/menu_button_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.eda_design.views.button.EatsControlButton android:theme="@style/Theme.MaterialComponents.Light" android:id="@id/menu_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:controlForm="squircle" app:controlSize="M" app:controlStyle="minor" style="@style/OpenMenuButton" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_24dp_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/comment_suggests_modal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.FlowLayout android:orientation="vertical" android:id="@id/comment_suggests_modal_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:itemSpacing="8.0dip" app:lineSpacing="8.0dip" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/comment_suggests_modal_done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" app:component_background_color="?controlMain" app:component_button_accent="true" app:component_button_size="L" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

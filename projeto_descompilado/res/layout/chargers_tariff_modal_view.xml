@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.chargers.tariff_item_info.api.ChargersTariffsView android:id="@id/chargers_tariffs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:id="@id/button_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/action_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_got_it" app:component_button_accent="true" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoLinearLayout>

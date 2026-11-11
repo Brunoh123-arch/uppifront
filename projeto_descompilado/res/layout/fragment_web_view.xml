@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_layout" layout="@layout/ya_eats_view_toolbar" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/swipeContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:id="@id/webViewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ru.yandex.eda_design.common.Loader android:layout_gravity="center" android:id="@id/loader" android:visibility="gone" android:layout_width="@dimen/g_3" android:layout_height="@dimen/g_3" app:loaderDrawable="@drawable/ya_eats_ic_preloader_24" app:loaderDuration="@integer/loader_duration" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

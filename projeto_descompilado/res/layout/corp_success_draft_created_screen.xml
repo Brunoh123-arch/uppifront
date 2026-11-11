@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/business_branched_corner_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/corp_success_title_icon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:adjustViewBounds="true" />
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/corp_success_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:component_auto_min_height="true" app:component_title_size="24.0sp" app:component_title_text_color="?textMain" app:component_title_typeface="bold" app:component_vertical_padding="0.0dip" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/corp_success_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="24.0dip" app:component_auto_min_height="true" app:component_title_size="16.0sp" app:component_title_text_color="?textMain" app:component_title_typeface="regular" app:component_vertical_padding="0.0dip" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/corp_success_button_accept" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

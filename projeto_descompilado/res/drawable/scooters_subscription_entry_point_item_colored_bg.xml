@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/black_alpha20"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/go_design_m_space" />
+            <solid android:color="?controlMinor" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/go_design_m_space" />
+            <gradient android:startColor="#ff71a3e8" android:endColor="#ffcd68c9" android:angle="270.0" />
+        </shape>
+    </item>
+</ripple>

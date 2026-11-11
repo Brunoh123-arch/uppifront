@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.image_viewer.ScalingContentFrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" />
+    <com.yandex.go.image_viewer.ScalingContentViewPager android:id="@id/image_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.design.StoryProgressComponent android:id="@id/image_progress_component" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:layout_marginHorizontal="@dimen/go_design_s_space" app:border_enabled="false" app:color="@color/shimmering_edge_point_2_light" app:fill_color="@color/shimmering_center_light" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start|center|top" android:id="@id/complaint_button" android:visibility="gone" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/go_design_s_space" android:scaleType="center" app:srcCompat="@drawable/more_horizontal" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end|center|top" android:id="@id/content_close_button" android:background="@drawable/close_floating" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/go_design_s_space" android:scaleType="center" android:elevation="2.0dip" app:srcCompat="@drawable/ic_cross_close" />
+</com.yandex.go.image_viewer.ScalingContentFrameLayout>

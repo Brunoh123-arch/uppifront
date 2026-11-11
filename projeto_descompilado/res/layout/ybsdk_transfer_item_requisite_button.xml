@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.YbButtonView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Primary.L"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

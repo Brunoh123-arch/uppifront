@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/network_message_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/destination_address_title_margin_top" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ru.yandex.taxi.widget.RobotoTextView android:id="@id/network_message" style="@style/address_name_title" />
+        <include layout="@layout/enable_location_view" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_buttons_layout" android:background="@drawable/bg_round_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/address_map_fragment_address_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="margin" />
+        <ru.yandex.taxi.design.AddressInputComponent android:id="@id/address_map_fragment_address_component" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_address_mode="view" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_destination_confirm" style="@style/OrderButtonStyle" />
+    </LinearLayout>
+    <ru.yandex.taxi.widget.floatbuttonholder.FloatButtonHolderLayout android:id="@id/float_button_holder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:layout_marginEnd="1.0dip" app:layout_constraintBottom_toTopOf="@id/bottom_buttons_layout" app:layout_constraintEnd_toEndOf="parent" />
+    <FrameLayout android:id="@id/modal_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:elevation="@dimen/white_button_resting_elevation" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

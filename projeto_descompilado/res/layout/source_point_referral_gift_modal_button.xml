@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@id/shadow_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.NonTraversableImageView android:layout_gravity="center" android:id="@id/referral_gift_button" android:background="@drawable/shape_circle_pressable" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/go_design_s_space" android:src="@drawable/ic_gift_box" android:scaleType="centerCrop" android:contentDescription="@string/content_description_promocode_for_friend" />
+    </FrameLayout>
+</merge>

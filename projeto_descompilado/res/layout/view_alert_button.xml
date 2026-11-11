@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="21.0dip" android:layout_marginBottom="21.0dip" android:layout_marginStart="25.0dip" />
+    <com.yandex.mobile.drive.view.Loader android:layout_gravity="center" android:id="@id/loader" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingTop="13.0dip" android:paddingBottom="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/topSpace" android:layout_width="0.0dip" android:layout_height="7.0dip" />
+        <TextView android:id="@id/textTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_alert_close" style="@style/Text" />
+        <TextView android:textSize="14.0dip" android:id="@id/textBottom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.5" style="@style/Text" />
+        <Space android:id="@id/bottomSpace" android:layout_width="0.0dip" android:layout_height="7.0dip" />
+    </LinearLayout>
+</merge>

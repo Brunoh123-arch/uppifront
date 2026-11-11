@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:background="@drawable/super_app_map_filter_selectable_background" android:padding="@dimen/super_app_map_category_filter_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:id="@id/icon" android:layout_width="@dimen/super_app_map_category_filter_icon_size" android:layout_height="@dimen/super_app_map_category_filter_icon_size" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/super_app_map_category_filter_text_padding" android:lineHeight="@dimen/super_app_map_category_filter_line_height" app:robotoFontStyle="medium" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constrainedHeight="true">
+        <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/image_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:gravity="center_horizontal" android:id="@id/caption" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" app:robotoFontStyle="medium" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" />
+            <ru.yandex.taxi.design.DividerWithColorView android:id="@id/divider_action_items" android:background="?line" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/component_divider_height" android:layout_marginTop="@dimen/go_design_m_space" android:importantForAccessibility="no" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_action_items" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.yandex.go.design.view.GoLinearLayout>

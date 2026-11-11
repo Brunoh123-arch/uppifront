@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:id="@id/ya_eats_product_page_badges_v2_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginHorizontal="16.0dip" app:alignItems="stretch" app:dividerDrawableHorizontal="@drawable/ya_eats_divider_vertical_4dp" app:flexWrap="wrap" app:showDividerHorizontal="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

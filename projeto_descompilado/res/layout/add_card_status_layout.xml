@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/status_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:id="@id/status_title" android:layout_width="fill_parent" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" style="@style/settings_modal_view_message.title" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:id="@id/status_text" style="@style/settings_modal_view_message" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/hourglass_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/ya_eats_view_hourglass_divider" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+    <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+    <include layout="@layout/ya_eats_item_cart_item_shimmer" />
+</LinearLayout>

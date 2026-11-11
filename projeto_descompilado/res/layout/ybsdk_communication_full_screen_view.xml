@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.ScrollableNestedScrollView android:id="@id/clickableNestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:overScrollMode="never">
+        <FrameLayout android:id="@id/communicationViewContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ybsdk.widgets.common.ScrollableNestedScrollView>
+    <com.ybsdk.widgets.common.AdLabelView android:id="@id/ybAdLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintBottom_toTopOf="@id/ybButtonsGroupCommunication" app:layout_constraintEnd_toEndOf="parent" />
+    <com.ybsdk.widgets.common.YbButtonViewGroup android:id="@id/ybButtonsGroupCommunication" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</merge>

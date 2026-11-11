@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/list_item_component_size_L">
+        <ru.yandex.taxi.design.ListItemSideContainer android:id="@id/address_select_lead_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+        <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/address_select_input" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <View android:id="@id/address_select_trail_divider" android:background="?line" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="36.0dip" />
+        <ru.yandex.taxi.design.ListItemSideContainer android:gravity="center" android:id="@id/address_select_trail" android:background="@drawable/component_default_list_item_bg" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</merge>

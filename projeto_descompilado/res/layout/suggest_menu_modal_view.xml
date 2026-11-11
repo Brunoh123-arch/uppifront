@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="30.0sp" android:textColor="?textMain" android:gravity="start" android:id="@id/container_header" android:paddingTop="13.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space" />
+    <include android:id="@id/map_container" layout="@layout/suggest_menu_modal_map" />
+    <include android:id="@id/content_container" android:visibility="gone" layout="@layout/suggest_menu_modal_content" />
+    <include android:id="@id/error_container" android:visibility="gone" layout="@layout/suggest_menu_modal_error" />
+    <include android:id="@id/loading_container" layout="@layout/suggest_menu_modal_loading" />
+</androidx.appcompat.widget.LinearLayoutCompat>

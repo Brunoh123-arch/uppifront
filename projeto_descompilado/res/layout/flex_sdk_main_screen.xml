@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/feed_sdk_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="start|bottom|center" android:id="@id/bottom_start_side_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/bottom_end_side_fab_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</merge>

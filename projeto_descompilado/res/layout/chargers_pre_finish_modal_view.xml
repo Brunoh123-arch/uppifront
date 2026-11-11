@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:id="@id/full_screen_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/preparing_view" android:visibility="gone" layout="@layout/chargers_order_preparing_modal_view" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.NumberCheckoutView android:id="@id/number_checkout_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="16.0dip" />
+        <include android:layout_gravity="bottom" android:id="@id/powerbank_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="90.0dip" android:layout_marginHorizontal="16.0dip" layout="@layout/chargers_pre_finish_order_item" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="28.0dip" android:width="84.0dip" android:viewportWidth="84.0" android:viewportHeight="28.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M29,1h55v25h-55z" />
+        <path android:fillColor="@color/finsdk_pay_logo" android:pathData="M43.504,4.792C49.187,4.792 51.353,8.961 49.481,13.69V13.692C48.168,17.01 45.376,19.111 39.958,19.57L37.591,19.764L35.166,25.908L29.089,26.597L37.66,4.792H43.504ZM58.313,4.79L58.311,4.792H62.942L62.809,22.754L56.866,23.442L56.974,20.467L51.95,20.976L50.167,24.231L44.028,24.92L55.849,4.79H58.313ZM71.578,11.137L76.637,4.79H82.747L72.889,16.461L70.76,21.867L64.389,22.589L66.71,16.663L64.257,4.79H70.366L71.578,11.137ZM54.14,16.979L57.111,16.767L57.314,11.182L54.14,16.979ZM39.458,15.029L40.515,14.971C42.42,14.872 43.339,14.182 43.898,12.737C44.655,10.799 43.865,9.52 42.257,9.519H41.635L39.458,15.029Z" />
+    </group>
+    <group>
+        <clip-path android:pathData="M14,0L14,0A14,14 0,0 1,28 14L28,14A14,14 0,0 1,14 28L14,28A14,14 0,0 1,0 14L0,14A14,14 0,0 1,14 0z" />
+        <path android:fillColor="@color/finsdk_pay_logo" android:pathData="M28,0H0V28H28V0ZM15.47,20.014C15.47,17.862 15.198,17.238 14.38,15.446L10.085,6.068H7.036L12.549,18.056V22.868H15.47V20.014ZM14.409,14.19L17.983,6.068H20.963L17.379,14.19H14.409Z" android:fillType="evenOdd" />
+    </group>
+</vector>

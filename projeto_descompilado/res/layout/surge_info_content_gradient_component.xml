@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/gradient_component_root" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingHorizontal="16.0dip" android:paddingVertical="11.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/lead_body" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.yandex.go.design.view.GoLinearLayout android:gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/lead_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" />
+        <com.yandex.go.design.view.GoLinearLayout android:gravity="start|bottom|center" android:orientation="horizontal" android:id="@id/lead_bottom_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:baselineAligned="true" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="end|bottom|center" android:orientation="vertical" android:id="@id/trail_body" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.yandex.go.design.view.GoLinearLayout android:gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/trail_top_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="true" />
+        <com.yandex.go.design.view.GoLinearLayout android:gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/trail_bottom_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:baselineAligned="true" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/active_promo_code_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip" app:component_divider_position="bottom" app:component_divider_type="margin" app:component_trail_mode="navigation" />
+</FrameLayout>

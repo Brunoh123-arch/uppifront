@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/root_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:background="@color/component_gray_600_cold" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/taxi_panorama_content" />
+    <include android:id="@id/error_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/taxi_panorama_error_content" />
+    <ru.yandex.taxi.widget.floatbuttonholder.RotatableFloatButton android:layout_gravity="start" android:id="@id/close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/tooltip_container" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    <include android:layout_gravity="bottom" android:id="@id/taxi_panorama_bottom_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/taxi_panorama_bottom_modal_view" />
+</com.yandex.go.design.view.GoFrameLayout>

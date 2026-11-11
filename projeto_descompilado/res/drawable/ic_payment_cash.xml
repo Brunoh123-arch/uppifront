@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="36.0dip" android:viewportWidth="36.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M16,3h18a2,2 0,0 1,2 2v16a2,2 0,0 1,-2 2H16V3Z" />
+        <path android:fillColor="#ff239808" android:pathData="M0,3h36v20H0z" />
+        <path android:fillColor="#ff5ac31a" android:pathData="M31,5a3,3 0,0 0,3 3v10a3,3 0,0 0,-3 3H5a3,3 0,0 0,-3 -3V8a3,3 0,0 0,3 -3h26Z" />
+    </group>
+    <path android:fillColor="@drawable/$ic_payment_cash__0" android:pathData="M20,3h4v20h-4V3Z" />
+    <path android:fillColor="#ff000000" android:pathData="M16,3h4v20h-4V3Z" android:fillAlpha="0.4" />
+    <group>
+        <clip-path android:pathData="M0,3a2,2 0,0 1,2 -2h18v20H2a2,2 0,0 1,-2 -2V3Z" />
+        <path android:fillColor="#ff5ac31a" android:pathData="M0,1h36v20H0z" />
+        <path android:fillColor="#ff9ae63c" android:pathData="M31,3a3,3 0,0 0,3 3v10a3,3 0,0 0,-3 3H5a3,3 0,0 0,-3 -3V6a3,3 0,0 0,3 -3h26Z" />
+        <path android:fillColor="#ff5ac31a" android:pathData="M18,11m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0" />
+    </group>
+</vector>

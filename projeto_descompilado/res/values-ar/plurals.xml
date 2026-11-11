@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">تقديم سريع للفيديو بمقدار %d ثانية</item>
+        <item quantity="one">تقديم سريع للفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">تقديم سريع للفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">تقديم سريع للفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">تقديم سريع للفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="zero">ترجيع الفيديو بمقدار %d ثانية</item>
+        <item quantity="one">ترجيع الفيديو بمقدار ثانية واحدة (%d)</item>
+        <item quantity="two">ترجيع الفيديو بمقدار ثانيتَين (%d)</item>
+        <item quantity="few">ترجيع الفيديو بمقدار %d ثوانٍ</item>
+        <item quantity="many">ترجيع الفيديو بمقدار %d ثانية</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">من الأيام</item>
+        <item quantity="zero">من الأيام</item>
+        <item quantity="one">يوم</item>
+        <item quantity="two">من الأيام</item>
+        <item quantity="few">من الأيام</item>
+        <item quantity="many">من الأيام</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">من الساعات</item>
+        <item quantity="zero">من الساعات</item>
+        <item quantity="one">ساعة</item>
+        <item quantity="two">من الساعات</item>
+        <item quantity="few">من الساعات</item>
+        <item quantity="many">من الساعات</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d إشعار جديد</item>
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">آخر %1$d رقمين</item>
+        <item quantity="zero">آخر %1$d أرقام</item>
+        <item quantity="one">آخر %1$d رقم</item>
+        <item quantity="few">آخر %1$d رقمين</item>
+        <item quantity="many">آخر %1$d أرقام</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"ستتلقّى الآن مكالمة من 
+%1$s. أدخِل آخر %2$d رقمين من هذا الرقم."</item>
+        <item quantity="zero">"ستتلقّى الآن مكالمة من 
+%1$s. أدخِل آخر %2$d أرقام من هذا الرقم."</item>
+        <item quantity="one">"ستتلقّى الآن مكالمة من 
+%1$s. أدخِل آخر %2$d رقم من هذا الرقم."</item>
+        <item quantity="few">"ستتلقّى الآن مكالمة من 
+%1$s. أدخِل آخر %2$d رقمين من هذا الرقم."</item>
+        <item quantity="many">"ستتلقّى الآن مكالمة من 
+%1$s. أدخِل آخر %2$d أرقام من هذا الرقم."</item>
+    </plurals>
+</resources>

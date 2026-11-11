@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:id="@id/icon" android:layout_width="16.0dip" android:layout_height="16.0dip" android:scaleType="centerInside" android:layout_marginStart="-2.0dip" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0sp" android:id="@id/pedestrian_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/ys_text_regular" app:layout_constraintStart_toEndOf="@id/icon" />
+</merge>

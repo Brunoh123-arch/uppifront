@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/weekDaysContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.5" android:paddingHorizontal="16.0dip" android:paddingVertical="13.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/calendarRecyclerView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:overScrollMode="never" android:nestedScrollingEnabled="false" android:paddingHorizontal="16.0dip" />
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/ya_eats_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/ya_eats_coordinator" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.eda_design.views.common.compose.BaseComposeView android:id="@id/ya_eats_compose_view" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="ru.yandex.eats.compose_utils.bottom_sheet.BaseComposeBottomSheetDialogBehavior" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

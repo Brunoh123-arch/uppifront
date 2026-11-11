@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/topupNoticeDivView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="1.0" />
+    <FrameLayout android:id="@id/topupNoticeErrorViewHolder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/topupNoticeErrorView" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/ybsdk_bottom_sheet_error" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/topupNoticeShimmerViewHolder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="400.0dip">
+        <com.ybsdk.feature.divkit.api.ui.skeletons.DivSkeletonsView android:layout_gravity="center" android:id="@id/topupNoticeShimmerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</merge>

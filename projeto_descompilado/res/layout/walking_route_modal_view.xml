@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/walking_route_info" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_caption" app:component_subtitle_text_color="?textMain" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_text_color="?textMain" app:component_title_typeface="medium" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" app:component_button_size="L" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/error_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@null" />
+        <ru.yandex.taxi.design.ListItemComponent android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" app:component_subtitle="@string/feed_sdk_error_view_subtitle" app:component_subtitle_gravity="center_horizontal" app:component_title="@string/feed_sdk_error_view_title" app:component_title_gravity="center_horizontal" app:component_title_typeface="medium" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/retry_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/feed_sdk_error_view_retry_button_title" android:layout_marginHorizontal="8.0dip" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

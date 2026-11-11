@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:id="@id/splitContentShimmer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="24.0dip" app:layout_constraintBottom_toBottomOf="@id/splitHorizontalLineBalance">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="164.0dip" android:layout_height="20.0dip" app:ybsdk_cornerRadius="6.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="218.0dip" android:layout_height="52.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="12.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="24.0dip" />
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Constraints android:id="@id/splitHorizontalLineBalance" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.33" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/splitRecyclerItem1" android:layout_width="fill_parent" android:layout_height="195.0dip" android:layout_marginTop="20.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintBottom_toTopOf="@id/splitRecyclerItem2" app:layout_constraintTop_toBottomOf="@id/splitHorizontalLineBalance" app:ybsdk_cornerRadius="24.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/splitRecyclerItem2" android:layout_width="fill_parent" android:layout_height="184.0dip" android:layout_marginTop="12.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem1" app:ybsdk_cornerRadius="24.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/splitRecyclerItem3" android:layout_width="186.0dip" android:layout_height="24.0dip" android:layout_marginTop="32.0dip" android:layout_marginHorizontal="16.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem2" app:ybsdk_cornerRadius="24.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/splitRecyclerItem4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem3">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="40.0dip" android:layout_height="40.0dip" app:ybsdk_cornerRadius="360.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="219.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/splitRecyclerItem5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem4">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="40.0dip" android:layout_height="40.0dip" app:ybsdk_cornerRadius="360.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="163.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/splitRecyclerItem6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem5">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="40.0dip" android:layout_height="40.0dip" app:ybsdk_cornerRadius="360.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="109.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/splitRecyclerItem7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/splitRecyclerItem6">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="40.0dip" android:layout_height="40.0dip" app:ybsdk_cornerRadius="360.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="163.0dip" android:layout_height="24.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MultiOrderItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MultiOrderItemLayoutStyle">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="20.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" android:textFontWeight="700" />
+        <ru.yandex.taxi.widget.progress.SpinnerProgressBar android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginEnd="8.0dip" app:spinnerColor="@color/component_amber_toxic" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <View android:id="@id/separator" android:background="?line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginHorizontal="16.0dip" />
+</com.yandex.go.design.view.GoFrameLayout>

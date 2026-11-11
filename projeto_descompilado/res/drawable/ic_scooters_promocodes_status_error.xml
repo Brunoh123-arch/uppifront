@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="40.0dip" android:viewportWidth="40.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/component_cinnaban_toxic" android:pathData="M20,0L20,0A20,20 0,0 1,40 20L40,20A20,20 0,0 1,20 40L20,40A20,20 0,0 1,0 20L0,20A20,20 0,0 1,20 0z" />
+    <path android:fillColor="@color/white" android:pathData="M18.58,20 L12,13.42 13.42,12 20,18.58 26.58,12 28,13.42 21.42,20 28,26.58 26.58,28 20,21.42 13.42,28 12,26.58 18.58,20Z" />
+</vector>

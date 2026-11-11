@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ya_eats_checkout_split_days">
+        <item quantity="other">%1$d days</item>
+        <item quantity="one">%1$d day</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_months">
+        <item quantity="other">%1$d months</item>
+        <item quantity="one">%1$d month</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_payments">
+        <item quantity="other">%1$d payments</item>
+        <item quantity="one">%1$d payment</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_weeks">
+        <item quantity="other">%1$d weeks</item>
+        <item quantity="one">%1$d week</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_years">
+        <item quantity="other">%1$d years</item>
+        <item quantity="one">%1$d year</item>
+    </plurals>
+</resources>

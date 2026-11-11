@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ViewStub android:id="@id/regular_timeline_stub" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_item_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ViewStub android:id="@id/compact_timeline_stub" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_item_height" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <Space android:id="@id/timeline_space" android:layout_width="fill_parent" android:layout_height="@dimen/timeline_item_height" />
+    <ViewStub android:id="@id/timeline_bubble_stub" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/timeline_space" />
+</merge>

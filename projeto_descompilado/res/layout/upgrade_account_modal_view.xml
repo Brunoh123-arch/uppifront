@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom_notification" style="@style/BottomModalContentHolder"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+    <ru.yandex.taxi.design.ListTextComponent android:textColor="?textMain" android:id="@id/message" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" app:component_button_accent="true" app:component_button_size="L" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

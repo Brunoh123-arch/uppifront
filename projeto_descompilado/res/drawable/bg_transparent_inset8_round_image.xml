@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetLeft="@dimen/section_header_image_inset" android:insetRight="@dimen/section_header_image_inset" android:insetTop="@dimen/section_header_image_inset" android:insetBottom="@dimen/section_header_image_inset"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="oval">
+        <solid android:color="?bgTransparent" />
+    </shape>
+</inset>

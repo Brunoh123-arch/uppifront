@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/turbo_buttons_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/shortcuts_section_title_height" android:paddingHorizontal="4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/shortcuts_section_header" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="-4.0dip" android:layout_marginStart="-16.0dip" android:layout_marginEnd="-16.0dip" app:component_no_background="true" app:component_title_ellipsize_mode="end" app:component_title_max_lines="1" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="medium" />
+</FrameLayout>

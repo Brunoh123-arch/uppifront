@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/account_creation_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/account_creation_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/creation_card_root" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ListTitleComponent android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/account_creation_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" app:component_subtitle_gravity="center_horizontal" app:component_title_gravity="center_horizontal" />
+            <FrameLayout android:id="@id/stories_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/story_card_height" android:layout_marginTop="@dimen/go_design_m_space" android:layout_marginBottom="@dimen/go_design_m_space">
+                <ru.yandex.taxi.design.LoadingStoriesComponent android:id="@id/stories_loading" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/items_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.AutoDividerComponentList android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin">
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/account_creation_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" />
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/account_creation_email" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" app:component_trail_mode="navigation" />
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/account_creation_invitation" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+                </ru.yandex.taxi.design.AutoDividerComponentList>
+                <ru.yandex.taxi.design.ListGroupHeaderComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin">
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/account_creation_big_company" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/open_corp_account" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/account_creation_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+                </ru.yandex.taxi.design.AutoDividerComponentList>
+            </LinearLayout>
+            <include android:id="@id/shimmer_layout" android:visibility="gone" layout="@layout/business_payments_creation_loading_view" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:id="@id/account_creation_button_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="20.0dip">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/account_creation_order_delivery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_component" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</FrameLayout>

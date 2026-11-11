@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loyaltyErrorView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?ybColor_textIcon_primaryStaticInverted" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ybsdk_loyalty_wallet_widget_error_title" android:paddingVertical="4.0dip" style="@style/Widget.YB.Text.Caption1.Medium" />
+    <com.ybsdk.widgets.common.YbButtonView android:theme="@style/Theme.YB.Widgets.Common.Light" android:textColor="?ybColor_textIcon_primaryStaticInverted" android:id="@id/button" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" app:ybsdk_buttonTitle="@string/ybsdk_loyalty_wallet_widget_error_button_title" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Primary.S" />
+</LinearLayout>

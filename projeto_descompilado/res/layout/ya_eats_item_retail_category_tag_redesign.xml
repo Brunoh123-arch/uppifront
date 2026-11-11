@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ya_eats_retail_category_tag_redesign" android:background="@drawable/ya_eats_background_retail_category_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ya_eats_retail_category_tag_redesign_image" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="4.0dip" />
+    <TextView android:textSize="16.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/ya_eats_retail_category_tag_redesign_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="2.0dip" android:layout_marginEnd="14.0dip" style="@style/TextAppearance.YSText.Body2.Tight" />
+</androidx.appcompat.widget.LinearLayoutCompat>

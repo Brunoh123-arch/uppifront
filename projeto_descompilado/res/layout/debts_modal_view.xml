@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/debt_info_group" android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/top_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" />
+                <ru.yandex.taxi.design.ListTextComponent android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/primary_ride" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/secondary_ride" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+            </LinearLayout>
+            <com.yandex.go.design.divider.CardDivider android:id="@id/card_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:id="@id/bottom_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/payment" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" />
+                <ru.yandex.taxi.design.ListItemSwitchComponent android:id="@id/plus" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="top" app:component_divider_type="margin" app:component_no_background="true" />
+                <ru.yandex.taxi.design.ButtonComponent android:id="@id/secondary_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="56.0dip" app:component_title_gravity="center_horizontal" />
+                <ru.yandex.taxi.design.ButtonComponent android:id="@id/primary_button" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+            </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@id/debt_progress_group" android:background="?bgMain" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

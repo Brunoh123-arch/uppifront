@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/auto_fund_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ybsdk.widgets.common.LoadableInput android:id="@id/auto_fund_limit_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" style="@style/YbSdk.Widget.WidgetsCommon.LoadableInput.WithBackground" />
+    <TextView android:id="@id/auto_found_hint_text_view" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:paddingHorizontal="16.0dip" style="@style/Widget.YB.Text.Caption1.Regular.SecondaryColor" />
+</LinearLayout>

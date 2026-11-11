@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:textColor="?textMain" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="12.0dip" android:layout_marginHorizontal="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/items_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/ok_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_ok" style="@style/BottomEdgeButtonMarginStyle" />
+</com.yandex.go.design.view.GoLinearLayout>

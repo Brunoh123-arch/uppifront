@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:textColor="?textMain" android:gravity="center" android:layout_gravity="center" android:id="@id/title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/scooters_data_load_failed" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/retry_button" android:layout_width="fill_parent" android:layout_height="56.0dip" android:text="@string/common_retry" app:component_button_accent="true" style="@style/BottomEdgeButtonMarginStyle" />
+</com.yandex.go.design.view.GoFrameLayout>

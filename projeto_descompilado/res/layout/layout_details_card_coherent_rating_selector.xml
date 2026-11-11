@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/coherent_rating_header_height">
+        <ru.yandex.taxi.widget.RobotoTextView android:gravity="center_horizontal" android:id="@id/rating_title_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.widget.RobotoTextView android:gravity="center_horizontal" android:id="@id/rating_subtitle_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.design.RatingBarComponent android:id="@id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:contentDescriptions="@array/rating_view_titles" app:starHeight="@dimen/order_screens_rate_stars_height" app:starWidth="@dimen/order_screens_rate_stars_width" style="@style/rating_bar" />
+</merge>

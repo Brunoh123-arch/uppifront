@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ya_eats_retail_carousel_header_view" layout="@layout/ya_eats_item_retail_category_carousel_header" />
+    <com.airbnb.epoxy.EpoxyRecyclerView android:orientation="horizontal" android:id="@id/ya_eats_retail_carousel_recycler" android:paddingBottom="4.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:nestedScrollingEnabled="false" android:paddingHorizontal="12.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

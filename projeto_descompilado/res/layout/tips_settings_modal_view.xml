@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/tips_set_preferred_title" app:component_title_font_feature_settings="pnum, lnum" app:component_title_lineSpacingExtra="-1.0sp" app:component_title_size="27.0sp" style="@style/ListTitleComponent" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="19.0sp" android:textColor="?textMain" android:ellipsize="end" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" app:component_title_font_feature_settings="pnum, lnum" app:component_title_lineSpacingExtra="0.0sp" />
+    <com.yandex.go.tips.ui.TipsView android:layout_gravity="start" android:id="@id/tips" android:paddingTop="@dimen/go_design_s_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-6.0dip" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" app:component_button_size="L" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" android:paddingVertical="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:id="@id/lead" android:layout_width="56.0dip" android:layout_height="0.0dip" android:importantForAccessibility="no" />
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:id="@id/train" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="yes">
+        <com.yandex.go.design.view.GoImageView android:id="@id/start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_start" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/first_segment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_car" android:contentDescription="@null" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/near_first_segment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_car" android:contentDescription="@null" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/middle_segment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_car" android:contentDescription="@null" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/near_last_segment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_car" android:contentDescription="@null" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:id="@id/last_segment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_car" android:contentDescription="@null" android:importantForAccessibility="no" />
+        <com.yandex.go.design.view.GoImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mt_train_end" android:contentDescription="@null" android:importantForAccessibility="no" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

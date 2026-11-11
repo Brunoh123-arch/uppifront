@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout android:id="@id/gradient_glyph_prefix_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/cashback_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" app:robotoFontStyle="bold" />
+        </ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout>
+        <ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout android:layout_gravity="center_vertical" android:id="@id/gradient_glyph_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/cashback_icon" android:layout_width="wrap_content" android:layout_height="@dimen/trail_cashback_glyph_side" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_plus_glyph_badge_small" />
+        </ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout>
+        <ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout android:id="@id/gradient_glyph_value_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dip">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/cashback_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:robotoFontStyle="bold" />
+        </ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout>
+    </LinearLayout>
+</merge>

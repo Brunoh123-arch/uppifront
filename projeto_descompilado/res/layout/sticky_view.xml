@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.AutoDividerComponentList android:id="@id/item_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="ListItemComponent 1 " />
+    <ru.yandex.taxi.design.ListItemComponent android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="ListItemComponent 2 " />
+    <ru.yandex.taxi.design.ListItemComponent android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="ListItemComponent 3 " />
+</ru.yandex.taxi.design.AutoDividerComponentList>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/icon_spot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/support_menu_icon_margin" android:layout_marginHorizontal="@dimen/support_menu_icon_margin" layout="@layout/shimmering_icon_spot_view" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginHorizontal="@dimen/go_design_m_space" app:layout_goneMarginTop="0.0dip" app:robotoFontStyle="bold" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/go_design_m_space" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+    <View android:id="@id/divider" android:background="?controlMinor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_action_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoLinearLayout>

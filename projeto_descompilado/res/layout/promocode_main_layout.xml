@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ru.yandex.taxi.design.FloatingTitleToolbarComponent android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_floating_title="@string/promocode_discounts" app:component_toolbar_item_title="@string/favorites_remove_address" app:component_tracked_view="@id/scrollable_container" />
+            <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/scrollable_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:nestedScrollingEnabled="false" />
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="start" android:id="@id/promocode_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" app:srcCompat="@null" />
+                </LinearLayout>
+            </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        </LinearLayout>
+        <ImageView android:layout_gravity="bottom" android:id="@id/invite_button_shadow" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/invite" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/referral_invite" style="@style/BottomEdgeButtonMarginStyle" />
+</LinearLayout>

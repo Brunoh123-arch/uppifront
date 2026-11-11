@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.ShimmeringFrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/condition_title_placeholder" android:background="@drawable/bg_placeholder_large" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+    <View android:id="@id/condition_subtitle_placeholder" android:background="@drawable/bg_placeholder_med" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/go_design_m_space" />
+    <View android:id="@id/condition_block_placeholder" android:background="@drawable/bg_placeholder_min" android:layout_width="fill_parent" android:layout_height="16.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/condition_placeholders_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="11.0dip">
+        <View android:id="@id/condition_name_placeholder" android:background="@drawable/bg_placeholder_large" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_weight="1.0" android:layout_marginEnd="32.0dip" />
+        <View android:id="@id/condition_value_placeholder" android:background="@drawable/bg_placeholder_large" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_weight="6.0" />
+    </LinearLayout>
+</ru.yandex.taxi.widget.ShimmeringFrameLayout>

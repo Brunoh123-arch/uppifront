@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды вперед</item>
+        <item quantity="one">Перемотать на %d секунду вперед</item>
+        <item quantity="few">Перемотать на %d секунды вперед</item>
+        <item quantity="many">Перемотать на %d секунд вперед</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Перемотать на %d секунды назад</item>
+        <item quantity="one">Перемотать на %d секунду назад</item>
+        <item quantity="few">Перемотать на %d секунды назад</item>
+        <item quantity="many">Перемотать на %d секунд назад</item>
+    </plurals>
+    <plurals name="mt_date_format_in_minutes">
+        <item quantity="other">%d минуты</item>
+        <item quantity="one">%d минута</item>
+        <item quantity="few">%d минуты</item>
+        <item quantity="many">%d минут</item>
+    </plurals>
+    <plurals name="mt_date_format_in_seconds">
+        <item quantity="other">%d секунды</item>
+        <item quantity="one">%d секунда</item>
+        <item quantity="few">%d секунды</item>
+        <item quantity="many">%d секунд</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">дней</item>
+        <item quantity="one">день</item>
+        <item quantity="few">дня</item>
+        <item quantity="many">дней</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">часов</item>
+        <item quantity="one">час</item>
+        <item quantity="few">часа</item>
+        <item quantity="many">часов</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового уведомления</item>
+        <item quantity="one">%d новое уведомление</item>
+        <item quantity="few">%d новых уведомления</item>
+        <item quantity="many">%d новых уведомлений</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Последние %1$d цифры</item>
+        <item quantity="zero">Последние %1$d цифр</item>
+        <item quantity="one">Последнюю %1$d цифру</item>
+        <item quantity="few">Последние %1$d цифры</item>
+        <item quantity="many">Последние %1$d цифр</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Сейчас вам поступит звонок с номера
+%1$s. Введите последние %2$d цифры номера"</item>
+        <item quantity="zero">"Сейчас вам поступит звонок с номера
+%1$s. Введите последние %2$d цифр номера"</item>
+        <item quantity="one">"Сейчас вам поступит звонок с номера
+%1$s. Введите последнюю %2$d цифру номера"</item>
+        <item quantity="few">"Сейчас вам поступит звонок с номера
+%1$s. Введите последние %2$d цифры номера"</item>
+        <item quantity="many">"Сейчас вам поступит звонок с номера
+%1$s. Введите последние %2$d цифр номера"</item>
+    </plurals>
+    <plurals name="ybsdk_cashback_select_categories_description_plurals">
+        <item quantity="other">Где чаще платите? Выберите %d категории с повышенным кешбэком</item>
+        <item quantity="zero">Где чаще платите? Выберите %d категорий с повышенным кешбэком</item>
+        <item quantity="one">Выберите ещё %d категорию</item>
+        <item quantity="few">Где чаще платите? Выберите %d категории с повышенным кешбэком</item>
+        <item quantity="many">Где чаще платите? Выберите %d категорий с повышенным кешбэком</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_circular_progress">
+        <item quantity="other">Прогресс %d процента</item>
+        <item quantity="zero">Прогресс %d процентов</item>
+        <item quantity="one">Прогресс %d процент</item>
+        <item quantity="few">Прогресс %d процента</item>
+        <item quantity="many">Прогресс %d процентов</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_kopeck_amount">
+        <item quantity="other">%d копейки</item>
+        <item quantity="zero">%d копеек</item>
+        <item quantity="one">%d копейка</item>
+        <item quantity="few">%d копейки</item>
+        <item quantity="many">%d копеек</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_ruble_amount">
+        <item quantity="other">%d рубля</item>
+        <item quantity="zero">%d рублей</item>
+        <item quantity="one">%d рубль</item>
+        <item quantity="few">%d рубля</item>
+        <item quantity="many">%d рублей</item>
+    </plurals>
+    <plurals name="ybsdk_common_seconds">
+        <item quantity="other">секунды</item>
+        <item quantity="zero">секунд</item>
+        <item quantity="one">секунду</item>
+        <item quantity="few">секунды</item>
+        <item quantity="many">секунд</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_accessibility_kopeck_amount">
+        <item quantity="other">%d копейки</item>
+        <item quantity="zero">%d копеек</item>
+        <item quantity="one">%d копейка</item>
+        <item quantity="few">%d копейки</item>
+        <item quantity="many">%d копеек</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_accessibility_ruble_amount">
+        <item quantity="other">%d рубля</item>
+        <item quantity="zero">%d рублей</item>
+        <item quantity="one">%d рубль</item>
+        <item quantity="few">%d рубля</item>
+        <item quantity="many">%d рублей</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_plus_points">
+        <item quantity="other">балла</item>
+        <item quantity="zero">баллов</item>
+        <item quantity="one">балл</item>
+        <item quantity="few">балла</item>
+        <item quantity="many">баллов</item>
+    </plurals>
+    <plurals name="ybsdk_pin_enter_pin_attempts_remaining">
+        <item quantity="other">Неверно. Осталось %d попытки</item>
+        <item quantity="zero">Неверно. Осталось %d попыток</item>
+        <item quantity="one">Неверно. Осталась %d попытка</item>
+        <item quantity="few">Неверно. Осталось %d попытки</item>
+        <item quantity="many">Неверно. Осталось %d попыток</item>
+    </plurals>
+    <plurals name="ybsdk_pin_pin_indicator_accessibility_announcer">
+        <item quantity="other">Введено %d символов из 4</item>
+        <item quantity="zero">Введено %d символов из 4</item>
+        <item quantity="one">Введен %d символ из 4</item>
+        <item quantity="few">Введено %d символов из 4</item>
+        <item quantity="many">Введено %d символов из 4</item>
+    </plurals>
+    <plurals name="ybsdk_sms_code_confirmation_seconds">
+        <item quantity="other">секунды</item>
+        <item quantity="zero">секунд</item>
+        <item quantity="one">секунду</item>
+        <item quantity="few">секунды</item>
+        <item quantity="many">секунд</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_accessibility_kopeck_amount">
+        <item quantity="other">%d копейки</item>
+        <item quantity="zero">%d копеек</item>
+        <item quantity="one">%d копейка</item>
+        <item quantity="few">%d копейки</item>
+        <item quantity="many">%d копеек</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_accessibility_ruble_amount">
+        <item quantity="other">%d рубля</item>
+        <item quantity="zero">%d рублей</item>
+        <item quantity="one">%d рубль</item>
+        <item quantity="few">%d рубля</item>
+        <item quantity="many">%d рублей</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_plus_points">
+        <item quantity="other">балла</item>
+        <item quantity="zero">баллов</item>
+        <item quantity="one">балл</item>
+        <item quantity="few">балла</item>
+        <item quantity="many">баллов</item>
+    </plurals>
+    <plurals name="ybsdk_uprid_birthdate_tip_title">
+        <item quantity="other">Вам должно быть больше %d лет</item>
+        <item quantity="zero">Вам должно быть больше %d лет</item>
+        <item quantity="one">Вам должно быть больше %d года</item>
+        <item quantity="few">Вам должно быть больше %d лет</item>
+        <item quantity="many">Вам должно быть больше %d лет</item>
+    </plurals>
+</resources>

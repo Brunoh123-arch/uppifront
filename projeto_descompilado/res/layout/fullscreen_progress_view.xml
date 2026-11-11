@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.design.StoryProgressComponent android:layout_gravity="top" android:id="@id/banner_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" app:border_enabled="false" app:color="@color/component_black_opacity_20" app:fill_color="@color/component_black"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

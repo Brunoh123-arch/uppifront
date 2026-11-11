@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <set>
+        <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="@integer/radio_in_offset" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="scaleX" />
+    </set>
+    <set>
+        <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="@integer/radio_in_offset" android:valueFrom="0" android:valueTo="0" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+    <set>
+        <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="@integer/radio_in_checked" android:startOffset="@integer/radio_in_offset" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleX" />
+    </set>
+    <set>
+        <objectAnimator android:interpolator="@android:interpolator/fast_out_slow_in" android:duration="@integer/radio_in_checked" android:startOffset="@integer/radio_in_offset" android:valueFrom="0" android:valueTo="1" android:valueType="floatType" android:propertyName="scaleY" />
+    </set>
+</set>

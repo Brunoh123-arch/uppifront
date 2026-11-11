@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="@dimen/textblock_icon_size" android:layout_height="@dimen/textblock_icon_size" android:scaleType="center" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/center_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/trail" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/go_design_m_space" app:layout_goneMarginStart="@dimen/go_design_m_space">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/trail" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/chevron" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="@dimen/go_design_m_space" />
+    <com.yandex.go.design.view.GoImageView android:id="@id/chevron" android:visibility="gone" android:layout_width="@dimen/go_design_l_space" android:layout_height="@dimen/go_design_l_space" android:scaleType="centerInside" android:layout_marginEnd="@dimen/go_design_m_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/chevron_next" />
+</androidx.constraintlayout.widget.ConstraintLayout>

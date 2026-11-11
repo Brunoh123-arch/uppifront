@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="30.0sp" android:textColor="?textMain" android:id="@id/screen_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/navigator_petrol_station_filters_title" android:paddingHorizontal="16.0dip" android:paddingVertical="20.0dip" app:robotoFontStyle="bold" />
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <com.yandex.go.design.view.GoFrameLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/shadow_btn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-24.0dip" />
+            <com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginHorizontal="6.0dip" android:layout_marginVertical="@dimen/go_design_s_space">
+                <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:layout_gravity="bottom" android:id="@id/close_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" android:layout_weight="1.0" android:layout_marginHorizontal="2.0dip" app:component_button_accent="true" app:component_button_size="L" app:component_disabled_background_color="?controlMinor" app:component_disabled_title_color="?textOnControlMinor" />
+            </com.yandex.go.design.view.GoLinearLayout>
+        </com.yandex.go.design.view.GoFrameLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:id="@id/vertical_selector_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tariffs_selector_top_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="horizontal" android:id="@id/tariff_selector_viewpager" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="yes" android:accessibilityTraversalAfter="@id/vertical_selector_recycler_stub" app:layout_constraintTop_toTopOf="@id/tariff_selector_viewpager_anchor" />
+    <View android:id="@id/vertical_selector_recycler_stub" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:importantForAccessibility="yes" android:paddingHorizontal="@dimen/go_design_m_space" app:layout_constraintTop_toTopOf="parent" />
+    <Space android:id="@id/tariff_selector_viewpager_anchor" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_marginBottom="40.0dip" app:layout_constraintBottom_toBottomOf="@id/vertical_selector_recycler_stub" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</com.yandex.go.design.view.GoConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/point_selection_modal_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/point_selection_modal_title" android:layout_width="fill_parent" android:layout_height="wrap_content" tools:component_subtitle_text_color="?textMain" tools:component_title="Точка отправления" tools:component_title_typeface="bold" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/point_selection_stop_point" android:layout_width="fill_parent" android:layout_height="wrap_content" tools:component_subtitle_text_color="?textMinor" tools:component_title="Точка отправления" tools:component_title_typeface="medium" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/point_selection_modal_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" tools:text="@string/common_done" style="@style/OrderButtonStyle" />
+</LinearLayout>

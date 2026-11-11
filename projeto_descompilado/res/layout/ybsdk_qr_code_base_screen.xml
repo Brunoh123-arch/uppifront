@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/screenBackground" android:background="@color/yb_dark_background_education" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/qrContainer" android:background="@color/yb_light_background_primary" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/passesWidget" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ybsdk.widgets.common.segmented.SegmentedControlView android:layout_gravity="bottom" android:id="@id/tabView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/ybsdk_qr_container_tabview_bottom_margin" />
+    </FrameLayout>
+    <com.ybsdk.feature.passes.widget.api.presentation.PassesWidgetView android:id="@id/passesWidget" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

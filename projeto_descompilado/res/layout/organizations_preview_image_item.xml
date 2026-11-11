@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:id="@id/image" android:background="?controlMinor" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/discovery_accessibility_content_description_image" />
+    <View android:layout_gravity="start|bottom|center" android:id="@id/icon_bg" android:background="@drawable/ic_places_org_preview_bg" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/organizations_preview_image_icon_bg_size" android:layout_height="@dimen/organizations_preview_image_icon_bg_size" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="start|bottom|center" android:id="@id/icon" android:background="?controlMinor" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/organizations_preview_image_icon_size" android:layout_height="@dimen/organizations_preview_image_icon_size" android:scaleType="centerCrop" />
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center" android:id="@id/retry_icon" android:visibility="gone" android:layout_width="@dimen/component_image_holder_custom_width" android:layout_height="@dimen/component_image_holder_custom_width" android:src="@drawable/ic_discovery_organization_organization_preview_refresh" />
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/loading_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:placeholder_shimmering="true" app:placeholder_type="rectangle" />
+</com.yandex.go.design.view.GoFrameLayout>

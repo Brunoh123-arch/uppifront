@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shortcuts_corners_round">19.0dip</dimen>
+    <dimen name="shortcuts_horizontal_paddings">47.5dip</dimen>
+</resources>

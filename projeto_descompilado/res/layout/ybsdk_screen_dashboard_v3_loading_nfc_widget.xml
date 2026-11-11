@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:id="@id/loadingShimmer" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeletonview1" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="18.0dip" app:ybsdk_cornerRadius="12.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeletonview2" android:layout_width="233.0dip" android:layout_height="13.0dip" android:layout_marginTop="7.0dip" app:ybsdk_cornerRadius="7.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:id="@id/skeletonview3" android:layout_width="116.0dip" android:layout_height="13.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="23.0dip" app:ybsdk_cornerRadius="7.0dip" />
+    </LinearLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

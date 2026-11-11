@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="24.0dip" android:viewportWidth="500.0" android:viewportHeight="500.0" xmlns:aapt="http://schemas.android.com/aapt"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <clip-path android:pathData="M0,0h500v500h-500z" />
+        <path android:fillColor="#ffffffff" android:pathData="M249.99,500C388.06,500 499.99,388.07 499.99,250C499.99,111.93 388.06,0 249.99,0C111.92,0 -0.01,111.93 -0.01,250C-0.01,388.07 111.92,500 249.99,500Z" />
+        <path android:fillColor="@drawable/$ya_eats_ic_yango_plus_24__0" android:pathData="M249.98,0C276.95,0 302.93,4.27 327.27,12.18L270.3,187.5H103.9L83.57,250H249.98L201.23,400H269.98L318.73,250H499.98C499.98,388.07 388.05,500 249.98,500C111.9,500 -0.02,388.07 -0.02,250C-0.02,111.93 111.9,0 249.98,0ZM386.76,40.7C438.14,74.35 476.37,126.41 492.1,187.5H339.05L386.76,40.7Z" />
+    </group>
+</vector>

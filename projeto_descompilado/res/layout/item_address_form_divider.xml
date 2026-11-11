@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMinor" android:id="@id/divider_title" android:background="@drawable/bg_address_form_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginHorizontal="@dimen/go_design_s_space" style="@style/DeliveryUnitedPointTitle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

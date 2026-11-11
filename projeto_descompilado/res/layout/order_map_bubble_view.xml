@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_bubble" android:textColor="?textInvert" android:id="@id/bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="134.0dip" android:textAlignment="center" />
+</FrameLayout>

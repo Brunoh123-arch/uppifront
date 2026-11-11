@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar_layout" layout="@layout/ya_eats_view_toolbar" />
+    <androidx.core.widget.NestedScrollView android:id="@id/scroll" android:paddingTop="@dimen/g_1" android:paddingBottom="@dimen/g_4" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:isScrollContainer="false" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <FrameLayout android:orientation="vertical" android:background="?cardDivider" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/ya_eats_profile_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/ya_eats_background_bottom_rounded" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/name_wrapper" android:labelFor="@id/name" style="@style/TextInputLayoutStyle">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/name" android:maxLines="1" android:maxLength="140" android:inputType="textNoSuggestions" android:imeOptions="actionNext" style="@style/TextInputLayoutEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/birthday_wrapper" android:labelFor="@id/birthday" style="@style/TextInputLayoutStyle">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/birthday" android:focusable="false" android:clickable="true" android:maxLines="1" android:maxLength="140" android:inputType="textNoSuggestions" style="@style/TextInputLayoutEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/sex_wrapper" android:labelFor="@id/gender" style="@style/TextInputLayoutStyle">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/gender" android:focusable="false" android:clickable="true" android:maxLines="1" android:maxLength="140" android:inputType="textNoSuggestions" style="@style/TextInputLayoutEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/email_wrapper" android:hint="@string/common_email" android:labelFor="@id/email" style="@style/TextInputLayoutStyle">
+                        <androidx.appcompat.widget.AppCompatEditText android:id="@id/email" android:maxLines="1" android:maxLength="140" android:inputType="textEmailAddress" android:imeOptions="actionDone" style="@style/TextInputLayoutEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout android:id="@id/phone_wrapper" android:layout_marginBottom="16.0dip" android:labelFor="@id/phone" style="@style/TextInputLayoutStyle">
+                        <EditText android:id="@id/phone" android:focusable="false" android:inputType="phone" android:imeOptions="actionDone" android:nextFocusForward="@id/next" style="@style/TextInputLayoutEditTextStyle" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/payment_methods" android:background="@drawable/ya_eats_profile_bg_rounded_32" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:paddingVertical="20.0dip">
+                    <TextView android:textColor="?textMain" android:id="@id/payment_methods_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_payment_methods_list_title" android:layout_weight="1.0" android:layout_marginStart="16.0dip" style="@style/TextAppearance.YSText.Body2.Normal" />
+                    <ImageView android:background="@drawable/ya_eats_ic_chevron_4x9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/taxpayer_identification_number" android:background="@drawable/ya_eats_profile_bg_rounded_32" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:foreground="?selectableItemBackground" android:paddingHorizontal="16.0dip" android:paddingVertical="16.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textColor="?textMain" android:id="@id/taxpayer_identification_number_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_taxpayer_identification_number" style="@style/TextAppearance.YSText.Body2.Normal" />
+                        <TextView android:textColor="?textMinor" android:id="@id/taxpayer_identification_number_subtitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextAppearance.YSText.Caption1.Normal" />
+                    </LinearLayout>
+                    <ImageView android:background="@drawable/ya_eats_ic_chevron_4x9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/profile_background_top_rounded" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="6.0dip">
+                    <ru.yandex.eda_design.views.label.EatsLabel android:id="@id/notification_methods_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="8.0dip" android:paddingHorizontal="16.0dip" app:subtitleTextSize="caption1" app:subtitleTextType="regular" app:titleTextSize="body1" app:titleTextType="bold" />
+                    <ru.yandex.eats.common.ui.views.toggle.SwitchWithSubtitleView android:id="@id/email_notification" android:layout_width="fill_parent" android:layout_height="@dimen/g_6" android:layout_marginStart="@dimen/g_2" android:layout_marginEnd="@dimen/g_2" app:ya_eats_subtitle_color="?textMinor" app:ya_eats_title_color="?textMain" app:ya_eats_title_size="18.0sp" />
+                    <View android:background="?controlMinor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginHorizontal="16.0dip" />
+                    <ru.yandex.eats.common.ui.views.toggle.SwitchWithSubtitleView android:id="@id/sms_notifications" android:layout_width="fill_parent" android:layout_height="@dimen/g_6" android:layout_marginStart="@dimen/g_2" android:layout_marginEnd="@dimen/g_2" app:ya_eats_subtitle_color="?textMinor" app:ya_eats_title_color="?textMain" app:ya_eats_title_size="16.0sp" />
+                    <View android:id="@id/sms_notifications_divider" android:background="?controlMinor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginHorizontal="16.0dip" />
+                    <ru.yandex.eats.common.ui.views.toggle.SwitchWithSubtitleView android:id="@id/push_notifications" android:layout_width="fill_parent" android:layout_height="@dimen/g_6" android:layout_marginStart="@dimen/g_2" android:layout_marginEnd="@dimen/g_2" app:ya_eats_subtitle_color="?textMinor" app:ya_eats_title_color="?textMain" app:ya_eats_title_size="16.0sp" />
+                    <ru.yandex.eats.common.ui.views.toggle.SwitchWithSubtitleView android:id="@id/show_bug_button_switch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/g_6" android:layout_marginStart="@dimen/g_2" android:layout_marginEnd="@dimen/g_2" app:ya_eats_subtitle_color="?textMinor" app:ya_eats_title_color="?textMain" app:ya_eats_title_size="16.0sp" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/notification_suggestion_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                        <ru.yandex.eda_design.views.button.EatsControlButton android:enabled="true" android:id="@id/turn_on_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_notification_turn_on_button_title" android:layout_marginHorizontal="16.0dip" app:controlForm="squircle" app:controlSize="M" app:controlStyle="main" />
+                        <TextView android:textSize="12.0sp" android:textColor="?error" android:gravity="center_horizontal" android:id="@id/turn_on_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:foreground="?selectableItemBackground" android:layout_marginHorizontal="16.0dip" style="@style/TextAppearance.YSText.Body2.Normal.Light" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include android:id="@id/loader_layout" layout="@layout/ya_eats_profile_view_loader" />
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:gravity="center" android:id="@id/content" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center" android:id="@id/error_text" android:padding="@dimen/x_closing_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/deeplink_no_credit_card" android:drawableTop="@null" android:drawablePadding="@dimen/x_closing_padding" app:robotoFontStyle="light" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/deeplink_card_already_added_done" app:component_button_size="L" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoFrameLayout>

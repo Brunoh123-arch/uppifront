@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.widget.AnimatedCircularHoleFogView android:id="@id/search_animated_fog" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.taxi.order.search.ui.search.SearchViews android:id="@id/search_animation_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/long_search_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yandex.go.design.view.GoFrameLayout>

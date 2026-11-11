@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_scooters_float_button_with_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space" android:paddingVertical="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center_vertical" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" android:layout_marginEnd="6.0dip" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:robotoFontStyle="medium" />
+</com.yandex.go.design.view.GoLinearLayout>

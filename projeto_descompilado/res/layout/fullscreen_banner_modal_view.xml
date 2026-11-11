@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/banner_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.media3.ui.PlayerView android:id="@id/banner_player_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:resize_mode="zoom" app:surface_type="texture_view" />
+    <androidx.viewpager.widget.ViewPager android:id="@id/banner_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    <ru.yandex.taxi.design.ToolbarComponent android:id="@id/banner_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_no_background="true" app:component_title_gravity="center_horizontal" app:component_toolbar_navigation_icon="@drawable/banner_hamburger" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/overlapping_modal_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yandex.go.design.view.GoFrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_frame_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/clarify_point_map_hint" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_height" app:component_no_background="true" app:component_title="@string/route_selector_map_hint" app:component_title_gravity="center_horizontal" app:component_title_size="@dimen/component_text_size_body" app:component_title_typeface="medium" />
+    <ru.yandex.taxi.design.bubble.BubbleComponent android:layout_gravity="bottom|center" android:id="@id/clarify_point_map_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.ShimmeringRobotoTextView android:textSize="@dimen/component_text_size_caption" android:gravity="center" android:id="@id/clarify_point_map_bubble_text" android:padding="@dimen/go_design_s_space" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ru.yandex.taxi.design.bubble.BubbleComponent>
+</FrameLayout>

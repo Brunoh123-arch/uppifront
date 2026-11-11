@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="40.0dip" android:width="1804.0dip" android:viewportWidth="1804.0" android:viewportHeight="40.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$plus_sdk_taxi_loading_anim_car_shadow__0" android:pathData="M0.8,1h1802.4v79h-1802.4z" />
+</vector>

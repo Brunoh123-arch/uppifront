@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="start|center|top" android:id="@id/back_float_btn" android:background="@drawable/ic_arrow_left" android:focusable="true" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="20.0dip" android:contentDescription="@string/common_back" android:layout_marginStart="16.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center|top" android:id="@id/title_icon_shimmer" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="42.0dip" app:barCornerRadius="32.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center|top" android:id="@id/title_shimmer" android:layout_width="143.0dip" android:layout_height="26.0dip" android:layout_marginTop="167.0dip" app:barCornerRadius="18.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center_horizontal" android:id="@id/subtitle_shimmer" android:layout_width="243.0dip" android:layout_height="12.0dip" android:layout_marginTop="201.0dip" app:barCornerRadius="7.0dip" />
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/buttons_shimmer_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="238.0dip" android:layout_marginHorizontal="12.0dip">
+        <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="start" android:id="@id/call_emergency_shimmer" android:layout_width="115.0dip" android:layout_height="56.0dip" app:barCornerRadius="16.0dip" />
+        <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center_horizontal" android:id="@id/open_support_shimmer" android:layout_width="115.0dip" android:layout_height="56.0dip" app:barCornerRadius="16.0dip" />
+        <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="end" android:id="@id/share_route_shimmer" android:layout_width="115.0dip" android:layout_height="56.0dip" app:barCornerRadius="16.0dip" />
+    </FrameLayout>
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center|top" android:id="@id/first_section_shimmer" android:layout_width="fill_parent" android:layout_height="181.0dip" android:layout_marginTop="322.0dip" android:layout_marginHorizontal="12.0dip" app:barCornerRadius="20.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center|top" android:id="@id/second_section_shimmer" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="519.0dip" android:layout_marginHorizontal="12.0dip" app:barCornerRadius="20.0dip" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginHorizontal="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoView android:id="@id/root_for_replace" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/frame_layout_pickup_point" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+</com.yandex.go.design.view.GoFrameLayout>

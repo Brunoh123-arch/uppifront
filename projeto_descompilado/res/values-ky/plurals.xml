@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d секунд алдыга түрдүрүү</item>
+        <item quantity="one">%d секунд алдыга түрдүрүү</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d секунд артка түрдүрүү</item>
+        <item quantity="one">%d секунд артка түрдүрүү</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">күн</item>
+        <item quantity="one">күн</item>
+        <item quantity="few">күн</item>
+        <item quantity="many">күн</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">саат</item>
+        <item quantity="one">саат</item>
+        <item quantity="few">саат</item>
+        <item quantity="many">саат</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d жаңы билдирме</item>
+        <item quantity="one">%d жаңы билдирме</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Акыркы %1$d санды</item>
+        <item quantity="zero">Акыркы %1$d санды</item>
+        <item quantity="one">Акыркы %1$d санды</item>
+        <item quantity="few">Акыркы %1$d санды</item>
+        <item quantity="many">Акыркы %1$d санды</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Азыр сизге %1$s номеринен телефон
+чалуу келет. Номердин акыркы %2$d санын киргизиңиз"</item>
+        <item quantity="zero">"Азыр сизге %1$s номеринен телефон
+чалуу келет. Номердин акыркы %2$d санын киргизиңиз"</item>
+        <item quantity="one">"Азыр сизге %1$s номеринен телефон
+чалуу келет. Номердин акыркы %2$d санын киргизиңиз"</item>
+        <item quantity="few">"Азыр сизге %1$s номеринен телефон
+чалуу келет. Номердин акыркы %2$d санын киргизиңиз"</item>
+        <item quantity="many">"Азыр сизге %1$s номеринен телефон
+чалуу келет. Номердин акыркы %2$d санын киргизиңиз"</item>
+    </plurals>
+</resources>

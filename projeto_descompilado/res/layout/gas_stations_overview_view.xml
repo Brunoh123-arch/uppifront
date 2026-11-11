@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:background="?bgMain" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/gas_stations_overview_content_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="30.0sp" android:textColor="?textMain" android:layout_gravity="start|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_m_space" app:robotoFontStyle="bold" />
+        <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="start|center" android:id="@id/title_shimmer" android:visibility="gone" android:layout_width="126.0dip" android:layout_height="30.0dip" android:layout_marginStart="@dimen/go_design_m_space" app:barCornerRadius="16.0dip" />
+        <com.yandex.go.design.view.GoImageView android:layout_gravity="end|center" android:id="@id/filters_button" android:background="@drawable/bg_round_16dp_minor" android:padding="14.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="@dimen/go_design_s_space" android:src="@drawable/ic_settings_fill_20dp" android:layout_marginEnd="@dimen/go_design_m_space" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/no_results_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMinor" android:gravity="center" android:layout_gravity="center" android:id="@id/no_results_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="@dimen/go_design_m_space" app:robotoFontStyle="medium" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/buttons_container" android:padding="@dimen/go_design_s_space" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:id="@id/minor_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMinor" app:component_button_accent="true" app:component_button_size="L" app:component_title_color="?textOnControlMinor" />
+            <Space android:layout_width="4.0dip" android:layout_height="0.0dip" />
+            <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_body" android:layout_gravity="bottom" android:id="@id/main_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMain" app:component_button_accent="true" app:component_button_size="L" app:component_title_color="?textOnControl" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/gas_station_cards_rv" android:layout_width="fill_parent" android:layout_height="139.0dip" android:layout_marginVertical="4.0dip" />
+    <ru.yandex.taxi.widget.DotsIndicatorView android:layout_gravity="center" android:id="@id/dots_indicator" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="24.0dip" app:dotIconColor="?textMinor" app:dotsCount="3" app:selectedDotIconColor="?textMain" />
+</com.yandex.go.design.view.GoLinearLayout>

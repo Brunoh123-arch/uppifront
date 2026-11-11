@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/confirm_card_toolbar_stub" android:layout="@layout/confirm_card_toolbar" android:layout_width="fill_parent" android:layout_height="64.0dip" />
+    <ru.yandex.taxi.widget.RobotoTextView android:id="@id/explanation" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="8.0dip" android:text="@string/verify_payment_random_amt_description" android:layout_marginStart="@dimen/menu_entry_text_horizontal_padding" android:layout_marginEnd="@dimen/menu_entry_text_horizontal_padding" style="@style/RandomAmountExplanationText" />
+    <ru.yandex.taxi.widget.RobotoEditText android:textSize="17.0sp" android:gravity="bottom" android:id="@id/random_amount" android:focusable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" style="@style/menu_entry_regular_padded_text" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/verify_payment_random_amt_how_to_find_sum" android:layout_marginStart="@dimen/menu_entry_text_horizontal_padding" android:layout_marginEnd="@dimen/menu_entry_text_horizontal_padding" />
+    <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="2.0" />
+    <com.yandex.go.payments.cards.ui.CardNumberPadView android:id="@id/number_pad" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+</LinearLayout>

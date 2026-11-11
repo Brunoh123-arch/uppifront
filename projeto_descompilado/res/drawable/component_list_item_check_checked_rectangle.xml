@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <size android:height="32.0dip" android:width="32.0dip" />
+            <corners android:radius="@dimen/list_item_check_rectangle_corner_radius" />
+            <solid android:color="?controlMain" />
+        </shape>
+    </item>
+    <item>
+        <vector android:height="32.0dip" android:width="32.0dip" android:viewportWidth="32.0" android:viewportHeight="32.0">
+            <path android:fillColor="?textOnControl" android:pathData="M14.165,19.181L23.23,10.116L25,11.886L14.165,22.721L8,16.555L9.77,14.785L14.165,19.181Z" android:fillAlpha="1.0" />
+        </vector>
+    </item>
+</layer-list>

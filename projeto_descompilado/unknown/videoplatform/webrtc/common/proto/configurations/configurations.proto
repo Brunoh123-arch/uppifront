@@ -1,0 +1,222 @@
+syntax = "proto3";
+
+package videoplatform.speakerroom.common.configurations;
+
+option go_package = "a.yandex-team.ru/videoplatform/webrtc/common/proto/configurations;configurations";
+option swift_prefix="Goloom";
+option java_multiple_files = true;
+option java_package = "ru.yandex.goloom.lib.model.configurations";
+
+/*
+Deprecated simulcast configuration
+Use VideoLayersConfiguration instead
+ */
+message VideoEncoderConfig{
+    option deprecated = true;
+    message VideoEncoderLayerLimitation{
+        bool active = 1;
+        optional int32 max_bitrate = 2;
+        optional int32 max_framerate = 3;
+        optional double scale_resolution_down_by = 4;
+        optional string scalability_mode = 5;
+    }
+    VideoEncoderLayerLimitation low = 1;
+    VideoEncoderLayerLimitation med = 2;
+    VideoEncoderLayerLimitation hi = 3;
+}
+
+/*
+Available codecs configuration
+*/
+message CodecsConfiguration {
+    configurations.VideoCodecConfiguration vp8 = 1;
+    configurations.VideoCodecConfiguration h264 = 2;
+    configurations.VideoCodecConfiguration vp9 = 3;
+}
+
+enum AudioCodec {
+    OPUS14 = 0;
+    OPUS15 = 1;
+}
+
+/*
+Configuration for one simulcast layer. For compatability reasons the layer can be limited only by bitrate,
+fps or scale.
+ */
+message LayerConfig {
+    oneof ParamOneOf {
+        /*
+        Bitrate in bps
+        deprecated - Use max_bitrate
+         */
+        int32 bitrate = 1 [deprecated = true];
+        /*
+        Framerate
+        deprecated - Use max_framerate
+         */
+        int32 fps = 2 [deprecated = true];
+        /*
+        Multiplayer to scale down by. Base resolution will divided with the number buy libwebrtc encoder
+        deprecated - Use scale_resolution_down_by
+         */
+        double scale = 3 [deprecated = true];
+    }
+    optional string scalability_mode = 4;
+    optional uint32 start_bitrate = 5;
+    optional uint32 max_bitrate = 6;
+    optional uint32 max_framerate = 7;
+    optional double scale_resolution_down_by = 8;
+}
+
+message VideoOneLayerConfig {
+    LayerConfig low = 1;
+    uint32 start_bitrate = 2;
+}
+
+message VideoTwoLayersConfig {
+    LayerConfig low = 1;
+    LayerConfig med = 2;
+    uint32 start_bitrate = 3;
+}
+
+message VideoThreeLayersConfig {
+    LayerConfig low = 1;
+    LayerConfig med = 2;
+    LayerConfig hi = 3;
+    uint32 start_bitrate = 4;
+}
+
+message VideoFourLayersConfig {
+    LayerConfig low = 1;
+    LayerConfig med = 2;
+    LayerConfig hi = 3;
+    LayerConfig ultra = 4;
+    uint32 start_bitrate = 5;
+}
+
+/*
+Simulcast configuration
+ */
+message VideoLayersConfiguration {
+    /*
+    Simulcast settings for base resolution lower than 320p
+     */
+    VideoOneLayerConfig l1 = 1;
+    /*
+    Simulcast settings for base resolution lower than 720p but higher than 320p
+     */
+    VideoTwoLayersConfig l2 = 2;
+    /*
+    Simulcast settings for base resolution lower than 1080p but higher than 720p
+     */
+    VideoThreeLayersConfig l3 = 3;
+    /*
+    Simulcast settings for base resolution higher than 1080p
+     */
+    VideoFourLayersConfig l4 = 4;
+}
+
+enum HardwareEncoderMode {
+    HARDWARE_ENCODER_MODE_DISABLED = 0; // hardware encoder is not allowed
+    HARDWARE_ENCODER_MODE_ENABLED = 1; // hardware encoder is allowed
+}
+
+enum VideoCodec {
+    VP8 = 0;
+    H264 = 1;
+    VP9 = 2;
+}
+
+enum SimulcastMode {
+    // No simulcast
+    DISABLED = 0;
+    // Hardcoded layers
+    STATIC = 1;
+}
+
+/*
+Specific video codec configuration
+*/
+message VideoCodecConfiguration {
+    VideoLayersConfiguration layers_config = 1;
+    HardwareEncoderMode hardware_encoder_mode = 2;
+    optional SimulcastMode simulcast_mode = 3;
+    optional VideoCodec codec = 4;
+}
+
+message FourKSharingConfiguration {
+    // https://w3c.github.io/mst-content-hint/#dom-mediastreamtrack-contenthint
+    string default_content_hint = 1;
+    uint32 min_bitrate = 2;
+    uint32 max_bitrate = 3;
+    uint32 min_framerate = 4;
+    uint32 max_framerate = 5;
+    optional VideoCodec codec = 9;
+    optional string scalability_mode = 10;
+
+    // Data channel options
+    oneof Retransmits {
+        uint32 max_retransmits = 6;
+        uint32 max_packet_life_time_ms = 7;
+    }
+    uint32 buffered_amount_low_threshold = 8; // In bytes
+}
+
+enum TelecomMode {
+  TELECOM_MODE_DISABLED = 0;
+  TELECOM_MODE_ENABLED = 1;
+}
+
+message TelecomConfiguration {
+  TelecomMode telecom_mode = 1;
+}
+
+message VadConfig {
+    option deprecated = true;
+    float probability_threshold = 1; // [0.0; 1.0]
+    int32 debounce_time_ms = 2;
+    int32 activate_sample_size = 3;
+    int32 deactivate_sample_size = 4;
+}
+
+message RTCConfiguration{
+    message IceServers{
+        repeated string urls = 1;
+        string credential = 2;
+        string username = 3;
+    }
+    repeated IceServers ice_servers = 1;
+    optional string ice_transport_policy = 2; // "all" | "relay"
+    optional int32 ice_candidate_pool_size = 3;
+    optional string bundle_policy = 4; // "balanced" | "max-bundle" | "max-compat"
+    optional string rtcpMuxPolicy = 5; // "require"
+}
+
+message SoundProcessingConfiguration {
+    message DFConfiguration {
+        double max_snr_for_erb = 1;
+        double max_snr_for_df = 2;
+        double max_snr_for_zero_output = 3;
+        double min_chunk_power = 4;
+        double min_high_freq_chunk_rms = 5;
+        string model_version = 6; // v3 | v4
+    }
+
+    DFConfiguration df_configuration = 1;
+}
+
+message PingPongConfiguration {
+    uint32 ping_interval = 1;
+    uint32 ack_timeout = 2;
+}
+
+message TelemetryConfiguration {
+    uint32 sending_interval = 1;
+    optional uint32 events_sending_interval = 2;
+}
+
+message Configurations {
+    repeated VideoCodecConfiguration video_codec_configuration = 1;
+    repeated FourKSharingConfiguration four_k_sharing_configuration = 2;
+    repeated TelecomConfiguration telecom_configuration = 3;
+}

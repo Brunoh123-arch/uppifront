@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/ya_eats_search_container" android:background="@drawable/ya_eats_background_search_navigation_container" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="0.0dip" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ya_eats_back_button" android:background="@drawable/ya_eats_background_search_navigation_v1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:minWidth="48.0dip" android:minHeight="48.0dip" android:contentDescription="@string/common_back" app:srcCompat="@drawable/ic_arrow_back_24" />
+    <FrameLayout android:id="@id/ya_eats_search_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <ru.yandex.eats.common.ui.views.search.NoMarginSearchView android:id="@id/ya_eats_searchView" android:background="@drawable/ya_eats_background_search_navigation_v1" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:paddingStart="44.0dip" app:iconifiedByDefault="false" />
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/ya_eats_magnifying_glass" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" app:srcCompat="@drawable/ic_search_24" />
+    </FrameLayout>
+</LinearLayout>

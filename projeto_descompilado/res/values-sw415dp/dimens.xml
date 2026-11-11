@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="superapp_main_adaptive_horizontal_inset">32.0dip</dimen>
+</resources>

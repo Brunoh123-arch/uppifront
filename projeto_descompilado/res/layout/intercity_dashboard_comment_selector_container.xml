@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/section_header_height" android:layout_marginHorizontal="@dimen/component_medium_margin" android:paddingHorizontal="@dimen/content_horizontal_padding">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/section_header_text_size" android:textColor="?textMinor" android:id="@id/comment_banner_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="1" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/horizontal_center_guide" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:robotoFontStyle="medium" />
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/horizontal_center_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" app:layout_constraintStart_toStartOf="parent" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/section_header_text_size" android:textColor="?textMain" android:ellipsize="end" android:gravity="center|right" android:id="@id/comment_banner_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:lines="2" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/horizontal_center_guide" app:layout_constraintTop_toTopOf="parent" app:robotoFontStyle="medium" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

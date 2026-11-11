@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/ya_eats_catalog_widgets_places_map_pin_address_icon_container" android:background="?bgMain" android:layout_width="22.0dip" android:layout_height="22.0dip" android:importantForAccessibility="noHideDescendants">
+        <View android:id="@id/ya_eats_catalog_widgets_places_map_pin_address_icon_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/ya_eats_catalog_widgets_places_map_pin_address_icon" android:layout_width="14.0dip" android:layout_height="14.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@null" />
+        <View android:id="@id/ya_eats_catalog_widgets_places_map_pin_address_icon_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ru.yandex.eda_design.common.OutlineTextView android:layout_gravity="center" android:id="@id/ya_eats_catalog_widgets_places_map_pin_address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:emojiCompatEnabled="false" />
+</merge>

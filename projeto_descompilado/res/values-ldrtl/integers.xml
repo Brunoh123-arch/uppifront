@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rtl_support_angle_for_image_mirrored">180</integer>
+</resources>

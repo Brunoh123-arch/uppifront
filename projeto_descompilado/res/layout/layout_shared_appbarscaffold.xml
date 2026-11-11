@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/appbar_coordinator_layout" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/scrollable_background_content" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.yandex.go.flex.common.scaffolds.appbarscaffold.shadow.AppBarShadowView android:layout_gravity="start|center|top" android:id="@id/appbar_shadow" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.0" />
+    <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentScrim="@null" app:layout_scrollFlags="noScroll" app:statusBarScrim="@null" app:titleEnabled="false">
+            <com.yandex.go.design.view.GoFrameLayout android:id="@id/top_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_collapseMode="none" />
+            <com.yandex.passport.internal.widget.NotTouchableToolbar android:id="@id/toolbar_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="0.0dip" app:contentInsetEnd="0.0dip" app:contentInsetStart="0.0dip" app:contentInsetStartWithNavigation="0.0dip" app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="bottom|center" android:id="@id/bottom_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

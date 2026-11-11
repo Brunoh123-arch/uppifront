@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center_vertical" android:id="@id/first_badge_container" android:background="@drawable/ride_card_driver_badge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="?textMain" android:ellipsize="end" android:id="@id/first_badge_text" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFeatureSettings="pnum, lnum" android:paddingHorizontal="5.0dip" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <com.yandex.go.design.view.GoFrameLayout android:layout_gravity="center_vertical" android:id="@id/hidden_badges_container" android:background="@drawable/ride_card_driver_badge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="-2.0dip" android:backgroundTint="?bgMain">
+        <com.yandex.go.design.view.GoFrameLayout android:id="@id/hidden_badges_background" android:background="@drawable/ride_card_driver_badge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/hidden_badges_text" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFeatureSettings="pnum, lnum" android:paddingHorizontal="5.0dip" />
+        </com.yandex.go.design.view.GoFrameLayout>
+    </com.yandex.go.design.view.GoFrameLayout>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/conditions_item" android:background="@drawable/bg_main_ripple" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+    <ru.yandex.taxi.plus.design.view.CashbackGradientButton android:id="@id/subscribe_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:foreground="@drawable/bg_transparent_ripple" android:layout_below="@id/conditions_item" android:textAlignment="center" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" app:component_button_rounded_corners_radius="@dimen/go_design_m_space" app:component_subtitle_gravity="center_horizontal" app:component_subtitle_text_color="?textMinor" app:component_title_gravity="center_horizontal" app:component_title_text_color="@color/white" app:robotoFontStyle="medium" style="@style/OrderButtonStyle" />
+</merge>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/day_selector_card" android:background="@drawable/round_section_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+        <com.yandex.go.due_timetable.presentation.widget.day_selector.DaySelectorView android:layout_gravity="top" android:id="@id/day_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dip" />
+    </FrameLayout>
+    <View android:id="@id/divider" android:background="?cardDivider" android:layout_width="fill_parent" android:layout_height="6.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/due_timetable_card" android:background="@drawable/round_section_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/price_content" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip" android:layout_marginHorizontal="@dimen/go_design_m_space">
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/price_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_subtitle" android:textColor="?textMain" android:id="@id/price_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:includeFontPadding="false" app:robotoFontStyle="medium" />
+        </LinearLayout>
+        <ru.yandex.taxi.widget.due_timetable.DueTimetableView android:id="@id/due_timetable" android:layout_width="fill_parent" android:layout_height="160.0dip" android:layout_marginVertical="@dimen/go_design_s_space" />
+    </LinearLayout>
+</LinearLayout>

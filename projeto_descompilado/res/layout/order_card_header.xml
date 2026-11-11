@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="72.0dip" app:component_lead_image_padding="0.0dip" app:component_navigation_icon="@drawable/ic_chevron_next_circle" app:component_no_background="true" app:component_subtitle_ellipsize_mode="end" app:component_subtitle_gravity="start" app:component_subtitle_max_lines="3" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title_ellipsize_mode="end" app:component_title_gravity="start" app:component_title_max_lines="2" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="medium" app:component_title_with_navigation="true" app:component_trail_image_padding="0.0dip" />
+    <ru.yandex.taxi.design.RatingBarComponent android:layout_gravity="start" android:id="@id/rating_bar" android:visibility="gone" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="32.0dip" app:contentDescriptions="@array/rating_view_titles" app:starHeight="32.0dip" app:starPadding="0.0dip" app:starWidth="32.0dip" />
+    <ru.yandex.taxi.widget.SearchProgressBar android:layout_gravity="bottom" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_m_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center|left" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="@dimen/go_design_s_space" app:barCornerRadius="12.0dip" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="16.0dip" android:layout_marginEnd="32.0dip" app:barCornerRadius="8.0dip" />
+</LinearLayout>

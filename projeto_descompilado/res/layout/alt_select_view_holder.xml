@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:gravity="center_vertical" android:orientation="vertical" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="224.0dip" android:minWidth="72.0dip" android:minHeight="72.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/snippets" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/distance" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed">
+        <com.yandex.go.design.view.GoImageView android:id="@id/event" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginEnd="4.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:id="@id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/snippets" />
+</com.yandex.go.design.view.GoConstraintLayout>

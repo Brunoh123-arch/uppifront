@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.transfer_requirement.ui.flight_input.FlightNumberInputComponent android:id="@id/number_info_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionDone" app:component_divider_focused_state_margin_left="56.0dip" app:component_divider_focused_state_margin_right="16.0dip" app:component_divider_margin_left="56.0dip" app:component_divider_margin_right="16.0dip" app:component_input_clear_enable="false" app:component_input_divider="false" app:component_input_focused_divider_color="?textMain" app:component_input_max_lines="1" app:component_input_type="text" app:component_input_unfocused_divider_color="?textMinor" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/flight_info_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:layout_marginStart="56.0dip" />
+</merge>

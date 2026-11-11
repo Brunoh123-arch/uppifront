@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">%d soniya oldinga</item>
+        <item quantity="one">%d soniya oldinga</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">%d soniya orqaga</item>
+        <item quantity="one">%d soniya orqaga</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">kun</item>
+        <item quantity="one">kun</item>
+        <item quantity="few">kun</item>
+        <item quantity="many">kun</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">soat</item>
+        <item quantity="one">soat</item>
+        <item quantity="few">soat</item>
+        <item quantity="many">soat</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d ta yangi bildirishnoma</item>
+        <item quantity="one">%d ta yangi bildirishnoma</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Oxirgi %1$d ta raqam</item>
+        <item quantity="zero">Oxirgi %1$d ta raqam</item>
+        <item quantity="one">Oxirgi %1$d ta raqam</item>
+        <item quantity="few">Oxirgi %1$d ta raqam</item>
+        <item quantity="many">Oxirgi %1$d ta raqam</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Hozir sizga
+%1$s raqamidan qo‘ng‘iroq keladi. Raqamning oxirgi %2$d ta raqamini kiriting"</item>
+        <item quantity="zero">"Hozir sizga
+%1$s raqamidan qo‘ng‘iroq keladi. Raqamning oxirgi %2$d ta raqamini kiriting"</item>
+        <item quantity="one">"Hozir sizga
+%1$s raqamidan qo‘ng‘iroq keladi. Raqamning oxirgi %2$d ta raqamini kiriting"</item>
+        <item quantity="few">"Hozir sizga
+%1$s raqamidan qo‘ng‘iroq keladi. Raqamning oxirgi %2$d ta raqamini kiriting"</item>
+        <item quantity="many">"Hozir sizga
+%1$s raqamidan qo‘ng‘iroq keladi. Raqamning oxirgi %2$d ta raqamini kiriting"</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/dialog_content" android:background="@drawable/source_point_warning_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:textStyle="bold" android:textColor="?textMain" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginHorizontal="16.0dip" app:robotoFontStyle="regular" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <ru.yandex.taxi.design.ButtonComponent android:textColor="?textOnControl" android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_got_it" app:component_button_accent="true" app:component_button_rounded_corners="true" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</com.yandex.go.design.view.GoLinearLayout>

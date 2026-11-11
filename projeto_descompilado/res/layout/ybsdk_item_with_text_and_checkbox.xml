@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/last_day_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/checkbox_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ybsdk_auto_topup_bottom_sheet_choose_date_last_day" android:layout_weight="1.0" style="@style/Widget.YB.Text.Body2" />
+    <com.ybsdk.widgets.common.checkbox.CheckBoxView android:layout_gravity="center_vertical" android:id="@id/checkbox" android:layout_width="26.0dip" android:layout_height="26.0dip" android:importantForAccessibility="no" app:ybsdk_colorType="dark" />
+</LinearLayout>

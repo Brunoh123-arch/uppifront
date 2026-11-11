@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/source_on_map_buttons_trail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/address_on_map_buttons_trail_max_width" android:paddingStart="@dimen/go_design_s_space" android:paddingEnd="@dimen/go_design_s_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ButtonComponent android:textSize="13.0dip" android:layout_gravity="center_vertical" android:id="@id/source_on_map_accept_trail_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="2.0dip" app:component_background_color="?controlMinor" app:component_button_size="XS" app:component_title_color="?textOnControlMinor" />
+    <ru.yandex.taxi.design.ButtonComponent android:textSize="13.0dip" android:layout_gravity="center_vertical" android:id="@id/source_on_map_decline_trail_button" android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_button_size="XS" app:component_title_color="?textOnControlMinor" />
+</LinearLayout>

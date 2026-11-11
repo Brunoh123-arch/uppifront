@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/top_buttons_rv" android:background="@color/transparent" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/go_design_m_space" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/remaining_buttons_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

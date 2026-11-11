@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/ya_eats_appbar" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expanded="true" app:liftOnScroll="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/ya_eats_flex_toolbar" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent" android:outlineProvider="none" app:collapseIcon="@drawable/ic_arrow_back_24" app:title="" app:titleTextAppearance="@style/YaEatsToolbarTitle" app:titleTextColor="?textMain" />
+</com.google.android.material.appbar.AppBarLayout>

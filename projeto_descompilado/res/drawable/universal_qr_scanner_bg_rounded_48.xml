@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <ripple android:color="@color/black_alpha10">
+            <item>
+                <shape android:tint="@color/black_alpha50" android:shape="oval" />
+            </item>
+        </ripple>
+    </item>
+    <item android:state_selected="true">
+        <ripple android:color="@color/black_alpha10">
+            <item>
+                <shape android:tint="@color/component_white" android:shape="oval" />
+            </item>
+        </ripple>
+    </item>
+</selector>

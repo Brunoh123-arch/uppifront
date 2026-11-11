@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="289.0dip" android:width="289.0dip" android:viewportWidth="289.0" android:viewportHeight="289.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$plus_sdk_taxi_loading_anim_wheel_front__0" android:pathData="M144.56,144.5m-143.89,0a143.89,143.89 0,1 1,287.79 0a143.89,143.89 0,1 1,-287.79 0" />
+    <path android:fillColor="@drawable/$plus_sdk_taxi_loading_anim_wheel_front__1" android:pathData="M144.56,144.5m-143.89,0a143.89,143.89 0,1 1,287.79 0a143.89,143.89 0,1 1,-287.79 0" android:fillAlpha="0.8" />
+    <path android:fillColor="@drawable/$plus_sdk_taxi_loading_anim_wheel_front__2" android:pathData="M144.56,144.5m-134.85,0a134.85,134.85 0,1 1,269.7 0a134.85,134.85 0,1 1,-269.7 0" />
+    <path android:fillColor="@drawable/$plus_sdk_taxi_loading_anim_wheel_front__3" android:pathData="M144.56,144.5m-98.42,0a98.42,98.42 0,1 1,196.84 0a98.42,98.42 0,1 1,-196.84 0" />
+    <path android:fillColor="#00000000" android:pathData="M144.56,144.5m-90.44,0a90.44,90.44 0,1 1,180.87 0a90.44,90.44 0,1 1,-180.87 0" android:strokeColor="#ff7a8084" android:strokeWidth="2.0" />
+    <path android:fillColor="#00000000" android:pathData="M144.56,144.5m-86.28,0a86.28,86.28 0,1 1,172.55 0a86.28,86.28 0,1 1,-172.55 0" android:strokeColor="#ff7a8084" android:strokeWidth="2.0" />
+    <path android:fillColor="#00000000" android:pathData="M184.85,156.05L212.91,168.02A4.23,4.23 68.1,0 1,215.13 173.56L215.13,173.56A4.23,4.23 68.1,0 1,209.59 175.79L181.54,163.82A4.23,4.23 68.1,0 1,179.31 158.28L179.31,158.28A4.23,4.23 68.1,0 1,184.85 156.05z" android:strokeColor="#ff7a8084" android:strokeWidth="1.0" />
+</vector>

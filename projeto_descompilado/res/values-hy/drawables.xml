@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="eats_logo">@drawable/eats_logo_en</item>
+    <item type="drawable" name="eats_logo_no_spiral">@drawable/eats_logo_no_spiral_en</item>
+</resources>

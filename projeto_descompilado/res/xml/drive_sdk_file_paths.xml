@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="media-internal" path="." />
+    <external-path name="images" path="Pictures/Yandex.Drive" />
+    <external-path name="videos" path="Movies/Yandex.Drive" />
+    <external-cache-path name="cache" path="media" />
+    <cache-path name="cache-internal" path="media" />
+</paths>

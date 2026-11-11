@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatTextView android:gravity="center" android:background="@drawable/ybsdk_autotopup_regular_frequency_base_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip" android:paddingVertical="11.0dip" style="@style/Widget.YB.Text.Body3"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

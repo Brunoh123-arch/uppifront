@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?ybColor_background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.ybsdk.feature.divkit.api.ui.YbDivView android:id="@id/divView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <FrameLayout android:id="@id/passportProgress" android:background="?ybColor_background_primary" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:layout_width="@dimen/ybsdk_progress_indicator_size" android:layout_height="@dimen/ybsdk_progress_indicator_size" android:indeterminate="true" app:indicatorColor="?ybColor_button_primaryNormal" app:indicatorSize="@dimen/ybsdk_progress_indicator_size" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" app:trackThickness="@dimen/ybsdk_progress_indicator_thickness" />
+    </FrameLayout>
+    <com.ybsdk.feature.divkit.api.ui.skeletons.DivSkeletonsView android:id="@id/shimmerDivKit" android:background="?ybColor_background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/errorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

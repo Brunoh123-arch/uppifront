@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space">
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="218.0dip" android:layout_height="32.0dip" android:layout_marginTop="64.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="273.0dip" android:layout_height="16.0dip" android:layout_marginTop="13.0dip" app:ybsdk_cornerRadius="6.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="164.0dip" android:layout_height="16.0dip" android:layout_marginTop="4.0dip" app:ybsdk_cornerRadius="6.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="170.0dip" android:layout_height="24.0dip" android:layout_marginTop="32.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="16.0dip" app:ybsdk_cornerRadius="20.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="20.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="fill_parent" android:layout_height="72.0dip" android:layout_marginTop="8.0dip" app:ybsdk_cornerRadius="20.0dip" />
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="170.0dip" android:layout_height="24.0dip" android:layout_marginTop="32.0dip" app:ybsdk_cornerRadius="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:ybsdk_cornerRadius="20.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:ybsdk_cornerRadius="20.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="108.0dip" android:layout_marginTop="16.0dip">
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="8.0dip" app:ybsdk_cornerRadius="20.0dip" />
+            <com.ybsdk.widgets.common.SkeletonView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:ybsdk_cornerRadius="20.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>

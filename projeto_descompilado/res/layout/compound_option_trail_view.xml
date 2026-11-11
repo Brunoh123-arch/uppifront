@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.BadgeView android:layout_gravity="center_vertical" android:id="@id/badge_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginStart="10.0dip" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/option_navigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="@dimen/go_design_m_space" app:srcCompat="@drawable/chevron_next" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_vertical" android:id="@id/option_remove" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/common_remove" android:paddingStart="13.0dip" android:paddingEnd="@dimen/go_design_m_space" app:srcCompat="@drawable/ic_cross_14dp" />
+</merge>

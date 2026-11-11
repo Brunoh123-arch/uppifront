@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="18.0dip" android:paddingBottom="12.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.plus.badge.CashbackAmountView android:id="@id/cashback_view" android:layout_width="wrap_content" android:layout_height="26.0dip" android:paddingStart="@dimen/go_design_s_space" android:paddingEnd="@dimen/go_design_s_space" app:bounceOffset="@dimen/cashback_menu_oval_bounce_offset" app:cashbackTextColor="@color/component_white" app:cashbackTextSize="@dimen/component_text_size_body" app:gradientOvalHeight="24.0dip" app:ovalHeight="@dimen/cashback_menu_oval_height" app:stackOffset="@dimen/cashback_menu_ovals_distance" />
+</FrameLayout>

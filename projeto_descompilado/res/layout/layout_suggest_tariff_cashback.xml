@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="@color/cashback_text_color" android:layout_gravity="center_vertical" android:id="@id/cashback_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFeatureSettings="@string/go_default_font_settings" />
+        <ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout android:layout_gravity="center_vertical" android:id="@id/gradient_icon_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="1.5dip">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/cashback_icon" android:layout_width="wrap_content" android:layout_height="@dimen/trail_cashback_icon_size" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_plus_glyph_badge_small" />
+        </ru.yandex.taxi.plus.design.view.ShaderClipFrameLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+</merge>

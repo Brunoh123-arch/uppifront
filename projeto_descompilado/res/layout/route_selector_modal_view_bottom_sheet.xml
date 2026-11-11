@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/route_selector_content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/component_source_address_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_height" app:component_divider_position="bottom" app:component_divider_type="margin" app:component_subtitle_text_color="?textMain" />
+    <View android:id="@id/component_address_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/go_design_s_space" android:layout_marginStart="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_s_space" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/done_frame" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="6.0dip">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_component" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common_done" android:layout_weight="1.0" android:layout_marginHorizontal="2.0dip" style="@style/OrderButtonStyle" />
+        <com.yandex.go.design.view.GoImageButton android:id="@id/save_button" android:background="@drawable/bg_round_16dp_minor" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="@dimen/go_design_m_space" android:src="@drawable/ic_bookmark_fill" android:tint="?textOnControlMinor" android:layout_marginHorizontal="2.0dip" />
+    </LinearLayout>
+</LinearLayout>

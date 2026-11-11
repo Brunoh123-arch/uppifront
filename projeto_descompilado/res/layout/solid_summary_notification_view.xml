@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/notification_content_item" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_ellipsize_mode="end" app:component_subtitle_text_color="?textMain" app:component_title_ellipsize_mode="end" app:component_title_text_color="?textMain" />
+    <ru.yandex.taxi.design.LoadingComponent android:id="@id/notification_loading_item" android:background="?bgFloating" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

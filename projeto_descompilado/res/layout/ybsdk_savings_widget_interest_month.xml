@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:background="@drawable/ybsdk_savings_widget_interest_month_background" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="110.0dip" android:minHeight="@dimen/ybsdk_savings_account_interest_month_height" android:paddingHorizontal="12.0dip" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Widget.YB.Text.Caption1.Regular" />
+    <com.ybsdk.core.design.spoiler.SpoilerTextView android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" app:ybsdk_spoiler_height="24.0dip" app:ybsdk_spoiler_width="68.0dip" style="@style/Widget.YB.Text.Title2" />
+</androidx.appcompat.widget.LinearLayoutCompat>

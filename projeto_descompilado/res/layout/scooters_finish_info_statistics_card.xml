@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/header_list_item_component" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:importantForAccessibility="no" app:component_subtitle_size="@dimen/component_text_size_caption" app:component_subtitle_text_color="?textMain" app:component_subtitle_typeface="regular" app:component_title="@string/scooters_finish_info_statistics_card_title" app:component_title_size="@dimen/component_text_size_subtitle" app:component_title_typeface="medium" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:id="@id/map_shimmering_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="100.0dip" android:layout_marginHorizontal="@dimen/go_design_m_space" app:barCornerRadius="12.0dip" />
+    <com.yandex.go.design.view.GoImageView android:id="@id/map_image_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:scaleType="centerCrop" android:minHeight="100.0dip" android:contentDescription="@string/scooters_finish_info_statistics_card_a11y_map_with_route" android:layout_marginHorizontal="@dimen/go_design_m_space" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/statistics_items_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:nestedScrollingEnabled="false" />
+</merge>

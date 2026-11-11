@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_12dp_bottom_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BottomModalContentHolder" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ru.yandex.taxi.design.ListTitleComponent android:id="@id/cost_centers_required_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="@string/cost_centers_required_title" />
+        <ru.yandex.taxi.design.ListTextComponent android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cost_center_required_text_space" app:component_text="@string/cost_centers_required_text" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/change_payment_method" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cost_centers_change_payment" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/open_cost_center_change" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cost_centers_show_select" />
+        </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    </LinearLayout>
+</merge>

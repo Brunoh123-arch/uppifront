@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ToolbarComponent android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" app:component_show_navigation_button="false" app:component_title="@string/order_for_other_dialog_title" app:component_title_gravity="center_horizontal" app:component_toolbar_background_accent_enabled="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="17.0sp" android:textColor="?textMinor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/order_for_other_dialog_description" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="36.0dip">
+        <ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout android:orientation="vertical" android:id="@id/yourself" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="88.5dip">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@id/account_avatar" android:padding="2.0dip" android:clickable="false" android:layout_width="@dimen/who_ride_avatar_size" android:layout_height="@dimen/who_ride_avatar_size" android:elevation="2.0dip" app:srcCompat="@null" style="@style/clickable_item.otw_button" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="12.0sp" android:textColor="?textMinor" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:minWidth="88.5dip" android:text="@string/order_for_other_dialog_choose_yourself" />
+        </ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout>
+        <Space android:layout_width="12.0dip" android:layout_height="0.0dip" />
+        <ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout android:orientation="vertical" android:id="@id/another_person" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:padding="2.0dip" android:clickable="false" android:layout_width="@dimen/who_ride_avatar_size" android:layout_height="@dimen/who_ride_avatar_size" android:elevation="2.0dip" app:srcCompat="@drawable/ic_passenger_add" style="@style/clickable_item.otw_button" />
+            <ru.yandex.taxi.widget.RobotoTextView android:textSize="12.0sp" android:textColor="?textMinor" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/order_for_other_dialog_choose_another" />
+        </ru.yandex.taxi.widget.accessibility.AccessibilityButtonLinearLayout>
+    </LinearLayout>
+</LinearLayout>

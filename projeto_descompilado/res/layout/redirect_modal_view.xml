@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/content" android:background="@drawable/bg_round_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/redirect_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/go_design_m_space" android:layout_marginStart="@dimen/go_design_m_space" android:layout_marginEnd="@dimen/go_design_m_space" />
+</com.yandex.go.design.view.GoLinearLayout>

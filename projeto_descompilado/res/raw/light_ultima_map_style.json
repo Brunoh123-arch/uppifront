@@ -1,0 +1,860 @@
+{
+  "map_style": [
+    {
+      "types": "polyline",
+      "stylers": {
+        "scale": 0.35,
+        "lightness": 0.5
+      },
+      "elements": "geometry"
+    },
+    {
+      "tags": {
+        "any": [
+          "admin",
+          "urban_area",
+          "poi",
+          "land",
+          "structure"
+        ]
+      },
+      "types": "polygon",
+      "stylers": {
+        "color": "FDFCF9"
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "transit"
+        ]
+      },
+      "types": [
+        "polygon"
+      ],
+      "stylers": {
+        "color": "FEFEFD"
+      }
+    },
+    {
+      "tags": {
+        "any": [
+          "vegetation",
+          "park"
+        ]
+      },
+      "types": "polygon",
+      "stylers": {
+        "color": "#E6F5EB"
+      }
+    },
+    {
+      "tags": {
+        "any": [
+          "landscape"
+        ],
+        "none": [
+          "land",
+          "landcover",
+          "urban_area"
+        ]
+      },
+      "types": "polygon",
+      "stylers": {
+        "color": "E6F5EB"
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "water"
+        ]
+      },
+      "types": [
+        "polygon",
+        "polyline"
+      ],
+      "stylers": {
+        "color": "E1ECF5"
+      }
+    },
+    {
+      "tags": {
+        "any": [
+          "building",
+          "fence"
+        ]
+      },
+      "types": "polygon",
+      "stylers": [
+        {
+          "color": "EBEDF0"
+        },
+        {
+          "zoom": [
+            15,
+            16
+          ],
+          "color": "EDF0F260"
+        },
+        {
+          "zoom": [
+            16,
+            17
+          ],
+          "color": "EDF0F290"
+        },
+        {
+          "zoom": [
+            17,
+            18
+          ],
+          "color": "EBEDF0"
+        }
+      ]
+    },
+    {
+      "tags": {
+        "any": [
+          "country"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "9BA4B3",
+        "scale": 0.8
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "region"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "ACB2BF",
+        "scale": 0.2
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "admin"
+        ],
+        "none": [
+          "country",
+          "region"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "ACB2BF",
+        "scale": 0.1
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road"
+        ],
+        "none": [
+          "path",
+          "crosswalk"
+        ]
+      },
+      "types": "polyline",
+      "stylers": [
+        {
+          "color": "ffffff",
+          "scale": 0.9
+        },
+        {
+          "zoom": [
+            5,
+            9
+          ],
+          "color": "D0D3D6"
+        },
+        {
+          "zoom": [
+            9,
+            10
+          ],
+          "color": "#D7DBDC"
+        },
+        {
+          "zoom": [
+            10,
+            12
+          ],
+          "color": "DDE0E1"
+        },
+        {
+          "zoom": [
+            12,
+            13
+          ],
+          "color": "E7E8E8"
+        },
+        {
+          "zoom": [
+            13,
+            14
+          ],
+          "color": "ECEDEA"
+        }
+      ],
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_3",
+          "road_4"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "zoom": [
+          8,
+          10
+        ],
+        "color": "D7DBDC",
+        "scale": 0.5
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_5"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "zoom": [
+          10,
+          11
+        ],
+        "color": "E1E4E8",
+        "scale": 0.8
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_6"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "zoom": [
+          11,
+          12
+        ],
+        "color": "E1E4E8",
+        "scale": 0.8
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_7",
+          "road_limited",
+          "road_unclassified"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "zoom": [
+          13
+        ],
+        "color": "E1E4E8",
+        "scale": 0.8
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road"
+        ]
+      },
+      "types": "polyline",
+      "stylers": [
+        {
+          "color": "D0D3D6",
+          "scale": 0.9
+        },
+        {
+          "zoom": [
+            8,
+            11
+          ],
+          "color": "D0D3D6",
+          "scale": 0.8
+        }
+      ],
+      "elements": "geometry.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "path"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "hue": "DCDEE0",
+        "scale": 0.5,
+        "lightness": 0.2,
+        "saturation": 1
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "crosswalk"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "DCDEE0",
+        "scale": 0.5,
+        "lightness": 0.2
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "path"
+        ],
+        "none": [
+          "structure"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "00000000",
+        "scale": 0.5
+      },
+      "elements": "geometry.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "poi"
+        ],
+        "none": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "lightness": 0.4,
+          "saturation": -1
+        },
+        {
+          "zoom": [
+            0,
+            17
+          ],
+          "visibility": "off"
+        }
+      ],
+      "elements": "label.icon"
+    },
+    {
+      "tags": {
+        "any": [
+          "poi"
+        ],
+        "none": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "lightness": 0.4,
+          "saturation": -1
+        },
+        {
+          "zoom": [
+            0,
+            17
+          ],
+          "visibility": "off"
+        }
+      ],
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "poi"
+        ],
+        "none": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "color": "ffffff40"
+        },
+        {
+          "zoom": [
+            0,
+            17
+          ],
+          "visibility": "off"
+        }
+      ],
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "hue": "B0D2B7",
+        "lightness": 0.5,
+        "saturation": -0.5
+      },
+      "elements": "label.icon"
+    },
+    {
+      "tags": {
+        "any": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "hue": "A1C4AA",
+        "lightness": 0.5,
+        "saturation": -0.5
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "park"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "ffffff40"
+      },
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "all": [
+          "road"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "scale": 0.9,
+        "lightness": 0.2,
+        "saturation": -1
+      },
+      "elements": "label.icon"
+    },
+    {
+      "tags": {
+        "all": [
+          "road"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "scale": 0.9
+      },
+      "elements": "label.text"
+    },
+    {
+      "tags": {
+        "any": [
+          "entrance"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "scale": 1.05,
+        "lightness": 0.2,
+        "saturation": -1
+      }
+    },
+    {
+      "tags": {
+        "all": "transit_schema"
+      },
+      "types": "polyline",
+      "stylers": {
+        "visibility": "off"
+      }
+    },
+    {
+      "tags": {
+        "all": [
+          "transit_line"
+        ]
+      },
+      "types": "polyline",
+      "stylers": [
+        {
+          "hue": "#7E8D9E",
+          "scale": 0.8,
+          "lightness": 0.35
+        },
+        {
+          "zoom": [
+            0,
+            11
+          ],
+          "visibility": "off"
+        }
+      ]
+    },
+    {
+      "tags": {
+        "any": [
+          "transit"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "lightness": 0.1,
+          "saturation": -1
+        }
+      ],
+      "elements": "label"
+    },
+    {
+      "tags": {
+        "any": [
+          "transit_stop"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "hue": "464E5C",
+          "scale": 1.2,
+          "saturation": -0.85
+        },
+        {
+          "zoom": [
+            0,
+            17
+          ],
+          "scale": 1.3
+        }
+      ],
+      "elements": "label.icon"
+    },
+    {
+      "tags": {
+        "any": [
+          "country"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "939aa5",
+        "scale": 0.85
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "region"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "BCBEC4",
+        "scale": 0.85
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "locality"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "45505E",
+        "scale": 0.9
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "admin"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "a4a09600"
+      },
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "locality"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "scale": 0.9,
+        "lightness": 0.2
+      },
+      "elements": "label.icon"
+    },
+    {
+      "tags": {
+        "any": [
+          "district"
+        ]
+      },
+      "types": "point",
+      "stylers": [
+        {
+          "color": "A1AAB3",
+          "scale": 0.9
+        },
+        {
+          "zoom": [
+            14,
+            20
+          ],
+          "visibility": "off"
+        }
+      ],
+      "elements": "label.text"
+    },
+    {
+      "tags": {
+        "any": [
+          "district"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "A1AAB300"
+      },
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "water"
+        ]
+      },
+      "types": [
+        "point",
+        "polyline"
+      ],
+      "stylers": {
+        "color": "91A1B3",
+        "scale": 0.9
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road",
+          "road_1",
+          "road_2"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "717375",
+        "scale": 0.8
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_3",
+          "road_4"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "scale": 0.88
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road_5",
+          "road_6",
+          "road_7",
+          "road_limited",
+          "road_unclassified",
+          "road_minor",
+          "path",
+          "crosswalk",
+          "road_construction"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "scale": 0.95
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "road"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "ffffff"
+      },
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "address"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "BEC2C8"
+      },
+      "elements": "label.text.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "address"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "color": "CECABB00"
+      },
+      "elements": "label.text.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "admin",
+          "landscape",
+          "traffic_light",
+          "structure"
+        ],
+        "none": [
+          "country",
+          "region",
+          "locality",
+          "district",
+          "address",
+          "entrance"
+        ]
+      },
+      "types": "point",
+      "stylers": {
+        "visibility": "off"
+      }
+    },
+    {
+      "tags": {
+        "any": [
+          "is_tunnel"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "f7f9fa"
+      },
+      "elements": "geometry.fill"
+    },
+    {
+      "tags": {
+        "any": [
+          "is_tunnel"
+        ]
+      },
+      "types": "polyline",
+      "stylers": {
+        "color": "D0D3D6"
+      },
+      "elements": "geometry.outline"
+    },
+    {
+      "tags": {
+        "any": [
+          "road",
+          "is_tunnel"
+        ]
+      },
+      "types": "polyline",
+      "stylers": [
+        {
+          "color": "D0D3D6",
+          "scale": 1
+        },
+        {
+          "zoom": [
+            1,
+            16
+          ],
+          "visibility": "off"
+        }
+      ],
+      "elements": "geometry.fill.pattern"
+    }
+  ],
+  "name": "ultima",
+  "theme": "light",
+  "route_traffic_style": {
+    "stroke_width": 3,
+    "outline_color": "ffffff",
+    "outline_width": 2,
+    "gradient_length": 5,
+    "jam_style_colors": {
+      "free": "00CA50",
+      "hard": "F5523A",
+      "light": "FCB900",
+      "blocked": "302E27",
+      "unknown": "D2D0CC",
+      "very_hard": "CC2D32"
+    },
+    "inner_outline_enabled": false
+  }
+}

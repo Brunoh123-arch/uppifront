@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/random_amt_toolbar" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="18.0sp" android:textColor="?textMain" android:gravity="center" android:id="@id/confirm_card_toolbar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/verify_payment_random_amt_title" app:robotoFontStyle="bold" />
+    <ru.yandex.taxi.widget.BackButton style="@style/back_button" />
+</FrameLayout>

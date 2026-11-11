@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.AnimatedRoundedCornersImageView android:id="@id/shortcut_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="7.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" app:cornerRadius="@dimen/shortcuts_corners_round" app:rounded_corners_mode="with_scale_fix" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/shortcuts_navigation_list_item_height" app:component_no_background="true" app:layout_constraintTop_toTopOf="parent" />
+    <include layout="@layout/shortcut_labels_anchor" />
+</com.yandex.go.design.view.GoFrameLayout>

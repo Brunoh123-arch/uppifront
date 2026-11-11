@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="146.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.airbnb.epoxy.EpoxyRecyclerView android:id="@id/recycler" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <ru.yandex.eda_design.common.Loader android:layout_gravity="center" android:id="@id/loader_initial" android:layout_width="@dimen/address_picker_loader_size" android:layout_height="@dimen/address_picker_loader_size" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/delivery_options_container" android:background="@drawable/ya_eats_delivery_options_container_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="24.0dip" android:clipToOutline="true">
+        <include android:id="@id/delivery_time_picker" layout="@layout/ya_eats_item_address_time_picker_delivery_time_v2" />
+        <ru.yandex.eda_design.views.button.EatsControlButton android:id="@id/change_address_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/addresses_picker_change_address" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:backgroundTint="?bgMain" app:controlForm="squircle" app:controlSize="L" app:controlStyle="minor" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</FrameLayout>

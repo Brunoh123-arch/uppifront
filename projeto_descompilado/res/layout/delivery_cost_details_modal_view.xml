@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:outlineProvider="background" app:layout_behavior="ru.yandex.taxi.coordinator.AnchorBottomSheetBehavior">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</merge>

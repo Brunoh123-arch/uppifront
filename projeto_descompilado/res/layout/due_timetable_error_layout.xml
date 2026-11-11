@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="350.0dip" android:paddingHorizontal="@dimen/go_design_m_space"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMinor" android:layout_gravity="center" android:id="@id/error_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" app:robotoFontStyle="medium" />
+</FrameLayout>

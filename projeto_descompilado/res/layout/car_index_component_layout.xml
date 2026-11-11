@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/car_index_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.carplates.ui.CarIndexComponent android:id="@id/car_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" android:maxLines="1" android:lines="1" android:singleLine="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextViewCarNumber" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/car_tariff_image" android:layout_width="@dimen/car_width" android:layout_height="@dimen/car_height" android:layout_marginBottom="@dimen/go_design_m_space" android:scaleType="fitEnd" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/car_index" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/combo_companion_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitEnd" android:adjustViewBounds="true" android:translationX="16.0dip" android:translationY="-12.0dip" app:layout_constraintEnd_toStartOf="@id/car_tariff_image" app:layout_constraintTop_toBottomOf="@id/car_index" app:srcCompat="@null" />
+</merge>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/chat_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/chat_surface" android:background="@drawable/bg_chat_surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/chat_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:id="@id/chat_skeleton" layout="@layout/layout_quark_ai_assistant_skeleton" />
+        <include android:id="@id/chat_error" layout="@layout/layout_quark_ai_assistant_error" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/header" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <com.yandex.go.design.view.GoImageView android:layout_gravity="start|center" android:id="@id/back_button" android:layout_width="56.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_arrow_left" android:paddingHorizontal="@dimen/go_design_m_space" />
+        <ru.yandex.taxi.widget.ShimmeringBar android:layout_gravity="center" android:id="@id/title_skeleton" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16.0dip" android:maxWidth="183.0dip" android:layout_marginHorizontal="96.0dip" app:barCornerRadius="8.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:textColor="?textMain" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:letterSpacing="-0.005" android:layout_marginHorizontal="96.0dip" app:lineHeight="17.0sp" app:robotoFontStyle="medium" />
+        <com.yandex.go.design.view.GoLinearLayout android:layout_gravity="end|center" android:id="@id/trail" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.yandex.go.design.view.GoImageView android:id="@id/chat_history_button" android:layout_width="56.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_chat_history" android:paddingHorizontal="@dimen/go_design_m_space" />
+            <com.yandex.go.design.view.GoImageView android:id="@id/new_chat_button" android:layout_width="56.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_new_chat" android:paddingHorizontal="@dimen/go_design_m_space" />
+        </com.yandex.go.design.view.GoLinearLayout>
+    </com.yandex.go.design.view.GoFrameLayout>
+</com.yandex.go.design.view.GoFrameLayout>

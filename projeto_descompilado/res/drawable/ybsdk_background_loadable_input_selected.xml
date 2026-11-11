@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/ybsdk_loadable_input_background_radius" />
+    <stroke android:width="@dimen/ybsdk_loadable_input_stroke_width_selected" android:color="?ybColor_textIcon_primary" />
+    <solid android:color="?ybColor_fill_default_100" />
+</shape>

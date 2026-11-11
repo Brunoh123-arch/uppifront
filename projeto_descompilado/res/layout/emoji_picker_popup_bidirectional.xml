@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@id/emoji_picker_popup_bidirectional_icon" android:background="@drawable/ripple_image_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:src="@drawable/swap_horiz_vd_theme_24" android:contentDescription="@string/emoji_bidirectional_switcher_content_desc" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

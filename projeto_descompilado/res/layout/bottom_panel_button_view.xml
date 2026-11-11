@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:id="@id/button_icon" android:visibility="gone" android:layout_width="@dimen/places_card_bottom_panel_button_icon_size" android:layout_height="@dimen/places_card_bottom_panel_button_icon_size" />
+    <com.yandex.go.places.organization.card.impl.ui.card.flex.v2.bottom_panel.FadeEdgeTextView android:textSize="@dimen/component_text_size_caption" android:ellipsize="end" android:gravity="center" android:id="@id/button_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:lineHeight="@dimen/discovery_map_category_filter_line_height" app:robotoFontStyle="medium" />
+</merge>

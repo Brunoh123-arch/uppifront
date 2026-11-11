@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Перемотати вперед на %d секунди</item>
+        <item quantity="one">Перемотати вперед на %d секунду</item>
+        <item quantity="few">Перемотати вперед на %d секунди</item>
+        <item quantity="many">Перемотати вперед на %d секунд</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Перемотати назад на %d секунди</item>
+        <item quantity="one">Перемотати назад на %d секунду</item>
+        <item quantity="few">Перемотати назад на %d секунди</item>
+        <item quantity="many">Перемотати назад на %d секунд</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">days</item>
+        <item quantity="one">day</item>
+        <item quantity="few">days</item>
+        <item quantity="many">days</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">hours</item>
+        <item quantity="one">hour</item>
+        <item quantity="few">hours</item>
+        <item quantity="many">hours</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d нового сповіщення</item>
+        <item quantity="one">%d нове сповіщення</item>
+        <item quantity="few">%d нові сповіщення</item>
+        <item quantity="many">%d нових сповіщень</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Останні %1$d цифри</item>
+        <item quantity="zero">Останні %1$d цифр</item>
+        <item quantity="one">Останню %1$d цифру</item>
+        <item quantity="few">Останні %1$d цифри</item>
+        <item quantity="many">Останні %1$d цифр</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"Зараз до вас надійде дзвінок з номера
+%1$s. Введіть останні %2$d цифри номера"</item>
+        <item quantity="zero">"Зараз до вас надійде дзвінок з номера
+%1$s. Введіть останні %2$d цифр номера"</item>
+        <item quantity="one">"Зараз до вас надійде дзвінок з номера
+%1$s. Введіть останню %2$d цифру номера"</item>
+        <item quantity="few">"Зараз до вас надійде дзвінок з номера
+%1$s. Введіть останні %2$d цифри номера"</item>
+        <item quantity="many">"Зараз до вас надійде дзвінок з номера
+%1$s. Введіть останні %2$d цифр номера"</item>
+    </plurals>
+</resources>

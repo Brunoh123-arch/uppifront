@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ybsdk_buttons_group_view_vertical_margin">12.0dip</dimen>
+    <dimen name="ybsdk_caption_block_height">180.0dip</dimen>
+    <dimen name="ybsdk_central_button_horizontal_margin">104.0dip</dimen>
+    <dimen name="ybsdk_cornerradius_tip_background">16.0dip</dimen>
+    <dimen name="ybsdk_dashboard_buttons_top_margin">13.0dip</dimen>
+    <dimen name="ybsdk_dashboard_collapsed_balance_margin">40.0dip</dimen>
+    <dimen name="ybsdk_dashboard_collapsed_subtitle_margin">34.0dip</dimen>
+    <dimen name="ybsdk_item_transaction_error_button_margin_top">20.0dip</dimen>
+    <dimen name="ybsdk_item_transaction_padding_horizontal">24.0dip</dimen>
+    <dimen name="ybsdk_lineheight_numbers4">44.0sp</dimen>
+    <dimen name="ybsdk_margin_transfer_auto_topup_offer_bot">16.0dip</dimen>
+    <dimen name="ybsdk_margin_transfer_message_top">12.0dip</dimen>
+    <dimen name="ybsdk_margin_transfer_title_top">20.0dip</dimen>
+    <dimen name="ybsdk_merchant_offers_banner_height">464.0dip</dimen>
+    <dimen name="ybsdk_merchant_offers_shimmer_title_top_margin">264.0dip</dimen>
+    <dimen name="ybsdk_padding_replenishsuggest_valueend">13.0dip</dimen>
+    <dimen name="ybsdk_padding_replenishsuggest_valuestart">15.0dip</dimen>
+    <dimen name="ybsdk_padding_replenishsuggest_valuevertical">14.0dip</dimen>
+    <dimen name="ybsdk_product_card_items_distance">16.0dip</dimen>
+    <dimen name="ybsdk_screen_dashboard_buttons_margin">16.0dip</dimen>
+    <dimen name="ybsdk_screen_dashboard_padding_horizontal">24.0dip</dimen>
+    <dimen name="ybsdk_screen_footer_space_error_view">24.0dip</dimen>
+    <dimen name="ybsdk_screen_horizontal_space">24.0dip</dimen>
+    <dimen name="ybsdk_textsize_numbers4">40.0sp</dimen>
+    <dimen name="ybsdk_textsize_replenishsuggest_value">18.0sp</dimen>
+    <dimen name="ybsdk_widget_view_big_margin">24.0dip</dimen>
+    <dimen name="ybsdk_widget_view_margin">20.0dip</dimen>
+    <dimen name="ybsdk_widget_view_space_between_texts">8.0dip</dimen>
+</resources>

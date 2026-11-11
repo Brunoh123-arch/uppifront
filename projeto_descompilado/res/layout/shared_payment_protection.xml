@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/shared_payment_protection_content" android:background="@drawable/bg_rounded_12dp_bottom_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/go_design_m_space" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="@dimen/go_design_m_space" app:srcCompat="@drawable/ic_circled_lock" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_title" android:layout_gravity="center" android:id="@id/shared_payment_protection_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/go_design_m_space" />
+    </LinearLayout>
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/shared_payment_protection_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_protection_later" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_protection_link_account" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" app:component_button_accent="true" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</LinearLayout>

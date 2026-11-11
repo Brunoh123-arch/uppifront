@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/ybsdk_settings_title_text_color" android:gravity="start" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" app:layout_constraintBottom_toTopOf="@id/subtitle" app:layout_constraintEnd_toStartOf="@id/iconImageContainer" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" style="@style/Widget.YB.Text.Title1" />
+    <TextView android:textColor="?ybColor_textIcon_secondary" android:gravity="start" android:id="@id/subtitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/ybsdk_transfer_settings_item_subtitle_margin_top" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/title" app:layout_constraintStart_toStartOf="@id/title" app:layout_constraintTop_toBottomOf="@id/title" style="@style/Widget.YB.Text.Body3" />
+    <androidx.cardview.widget.CardView android:id="@id/iconImageContainer" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginVertical="14.0dip" app:cardCornerRadius="12.0dip" app:cardElevation="0.0dip" app:cardPreventCornerOverlap="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/iconImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

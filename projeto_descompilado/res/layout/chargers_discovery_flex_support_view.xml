@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:ellipsize="end" android:id="@id/chargers_discovery_flex_support_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.yandex.go.design.view.GoImageView android:id="@id/chargers_discovery_flex_support_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_chargers_discovery_flex_support" android:scaleType="centerInside" android:importantForAccessibility="no" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMinor" android:id="@id/chargers_discovery_flex_support_bubble" android:background="@drawable/bg_chargers_discovery_flex_support_bubble" android:paddingTop="2.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_s_space" android:paddingEnd="@dimen/go_design_s_space" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:robotoFontStyle="medium" />
+</merge>

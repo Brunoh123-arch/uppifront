@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/menu" android:background="?bgMain" android:paddingTop="36.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/select_card" style="@style/list_item">
+            <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_card" app:tint="?textMain" style="@style/preference_item_icon" />
+            <ru.yandex.taxi.widget.RobotoTextView android:id="@id/select_card_title" android:text="@string/payment_use_for_payment" style="@style/preference_item" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/verify_card" android:visibility="gone" style="@style/list_item">
+            <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_card_verification" app:tint="?textMain" style="@style/preference_item_icon" />
+            <ru.yandex.taxi.widget.RobotoTextView android:text="@string/payment_verify" style="@style/preference_item" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/delete_card" style="@style/list_item">
+            <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_trash_can" app:tint="?textMain" style="@style/preference_item_icon" />
+            <ru.yandex.taxi.widget.RobotoTextView android:text="@string/payment_delete_card" style="@style/preference_item" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/cancel" style="@style/list_item">
+            <androidx.appcompat.widget.AppCompatImageView app:srcCompat="@drawable/ic_close_alpha85" app:tint="?textMain" style="@style/preference_item_icon" />
+            <ru.yandex.taxi.widget.RobotoTextView android:text="@string/common_cancel" style="@style/preference_item" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/card_info" />
+</FrameLayout>

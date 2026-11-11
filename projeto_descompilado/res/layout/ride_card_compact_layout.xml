@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoFrameLayout android:id="@id/content_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:layout_gravity="end|center|top" android:id="@id/badge_stub" android:layout="@layout/ride_card_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_s_space" android:layout_marginEnd="@dimen/go_design_m_space" android:translationZ="100.0dip" android:paddingHorizontal="@dimen/go_design_s_space" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_items" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.yandex.go.design.view.GoFrameLayout>

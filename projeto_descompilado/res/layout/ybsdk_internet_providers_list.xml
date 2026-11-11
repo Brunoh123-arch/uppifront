@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/internetPaymentsToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" app:ybsdk_closeIconVisible="true" />
+    <com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout android:id="@id/internetPaymentsToolbarSkeleton" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/internetPaymentsToolbar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/internetPaymentsToolbar">
+        <com.ybsdk.widgets.common.SkeletonView android:layout_width="116.0dip" android:layout_height="20.0dip" />
+    </com.ybsdk.widgets.common.shimmer.ShimmerFrameLayout>
+    <com.ybsdk.widgets.common.LoadableInput android:id="@id/internetPaymentsInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintTop_toBottomOf="@id/internetPaymentsToolbar" app:ybsdk_inputLabel="@string/ybsdk_transfer_internet_payments_providers_search_title" style="@style/YbSdk.Widget.WidgetsCommon.LoadableInput.WithBackground" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/internetPaymentsRecycler" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/internetPaymentsInput" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/internetPaymentsErrorView" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/internetPaymentsToolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

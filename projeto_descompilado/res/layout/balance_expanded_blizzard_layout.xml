@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_body" android:ellipsize="end" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/blizzard_widget_content_max_with" android:maxLines="2" app:lineHeight="17.0dip" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.design.ButtonComponent android:textSize="@dimen/component_text_size_caption" android:ellipsize="end" android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxWidth="@dimen/blizzard_widget_content_max_with" android:maxLines="1" app:component_button_accent="true" app:component_button_rounded_corners_radius="10.0dip" app:component_button_size="XS" app:lineHeight="14.0dip" />
+</LinearLayout>

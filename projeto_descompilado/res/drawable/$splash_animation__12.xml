@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:ordering="together"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <objectAnimator android:interpolator="@drawable/$splash_animation__13" android:duration="617" android:startOffset="50" android:propertyName="translateXY" android:pathData="M 458.729,822.627C 458.729,822.627 -634,676 -114.271,638.627" android:propertyXName="translateX" android:propertyYName="translateY" />
+</set>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/shared_payment_invitation_content" android:background="@drawable/bg_rounded_12dp_bottom_modal_view" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/shared_payment_invitation_title" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_lead_image="@drawable/ic_payment_shared_family" />
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/shared_payment_invitation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_divider_position="bottom" app:component_divider_type="normal" />
+    <ru.yandex.taxi.design.ListItemSwitchComponent android:id="@id/shared_payment_invitation_payment_switch" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title="Оплачивать поездки семейным аккаунтом" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:background="@color/component_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_invitation_done" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_background_color="@color/component_accent_color" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</LinearLayout>

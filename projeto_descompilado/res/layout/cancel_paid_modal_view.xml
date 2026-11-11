@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/cancel_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.ListTextComponent android:id="@id/cancel_message" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ru.yandex.taxi.design.AutoDividerComponentList android:id="@id/cancel_allowed_actions" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="margin" app:component_top_divider_type="margin" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/go_design_s_space" android:paddingBottom="@dimen/go_design_m_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/go_design_m_space" android:paddingEnd="@dimen/go_design_m_space">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/do_not_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="2.0dip" app:component_background_color="?controlMinor" app:component_button_outline_width="0.0dip" app:component_title_color="?textOnControlMinor" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/cancel" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_weight="1.0" android:layout_marginStart="2.0dip" app:component_subtitle_gravity="center_horizontal" app:component_title_gravity="center_horizontal" app:component_vertical_padding="0.0dip" />
+    </LinearLayout>
+</LinearLayout>

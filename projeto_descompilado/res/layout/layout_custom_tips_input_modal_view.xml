@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListTitleComponent android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_title_typeface="bold" style="@style/ListTitleComponent" />
+    <ru.yandex.taxi.design.AnimatedListItemInputComponent android:id="@id/tips_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:component_divider_margin_left="@dimen/go_design_m_space" app:component_divider_margin_right="@dimen/go_design_m_space" app:component_input_clear_enable="false" app:component_input_focused_divider_color="?textMain" app:component_input_type="number" app:component_with_input_title="false" app:imeOptions="actionDone" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/confirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" android:layout_marginHorizontal="@dimen/go_design_s_space" android:layout_marginVertical="@dimen/go_design_s_space" app:component_button_accent="true" />
+</com.yandex.go.design.view.GoLinearLayout>

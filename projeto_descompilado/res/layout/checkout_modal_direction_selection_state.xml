@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:id="@id/direction_selection_state_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/direction_bus_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.yandex.go.design.view.GoView android:background="?line" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginHorizontal="16.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:textColor="?textMain" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginVertical="11.5dip" android:paddingHorizontal="16.0dip" app:robotoFontStyle="bold" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/first_direction" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+        <ru.yandex.taxi.design.ListItemComponent android:id="@id/second_direction" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+        <Space android:layout_width="fill_parent" android:layout_height="12.0dip" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_rounded_12dp_bottom_modal_view" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BottomModalContentHolder">
+        <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/header_component" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_rounded_background="@color/transparent" app:component_title_size="32.0sp" />
+        <ru.yandex.taxi.design.ListTextComponent android:id="@id/text_component" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/negative_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/positive_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+    </LinearLayout>
+</merge>

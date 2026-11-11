@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="start" android:id="@id/menu_host" android:layout_height="fill_parent" style="@style/main_menu_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/menu_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" style="@style/main_menu_width" />
+</FrameLayout>

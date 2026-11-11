@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginBottom="@dimen/go_design_s_space" android:src="@drawable/ic_dialog_error" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="24.0sp" android:textColor="?textMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/detailed_price.unable_to_load_modal_header" android:layout_marginHorizontal="6.0dip" app:robotoFontStyle="bold" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="?textMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/detailed_price.unable_to_load_modal_description" android:layout_marginHorizontal="6.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

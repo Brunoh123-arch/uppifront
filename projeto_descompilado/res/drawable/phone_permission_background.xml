@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/permission_phone_border_crop">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="@dimen/permission_phone_corner_radius" android:topRightRadius="@dimen/permission_phone_corner_radius" />
+            <stroke android:width="@dimen/permission_phone_border_size" android:color="@color/component_gray_100" />
+        </shape>
+    </item>
+</layer-list>

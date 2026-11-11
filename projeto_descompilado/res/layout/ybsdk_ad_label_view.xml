@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="@dimen/ybsdk_ad_label_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?ybColor_textIcon_secondary" android:gravity="center_vertical" android:id="@id/adLabelText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginStart="4.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/adLabelIcon" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_goneMarginEnd="4.0dip" style="@style/Widget.YB.Text.Caption3.Medium" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/adLabelIcon" android:layout_width="@dimen/ybsdk_ad_label_icon_size" android:layout_height="@dimen/ybsdk_ad_label_icon_size" android:scaleType="fitCenter" android:tint="?ybColor_textIcon_secondary" android:layout_marginEnd="2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/adLabelText" app:layout_constraintTop_toTopOf="parent" />
+</merge>

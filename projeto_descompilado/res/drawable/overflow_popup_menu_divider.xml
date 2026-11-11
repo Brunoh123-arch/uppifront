@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:drawable="@color/theme_default_day_line" android:insetLeft="@dimen/size_16" android:insetRight="@dimen/size_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

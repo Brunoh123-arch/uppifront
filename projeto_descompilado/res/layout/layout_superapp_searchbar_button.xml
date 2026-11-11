@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:id="@id/searchbar_button_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <com.yandex.go.design.view.GoImageView android:id="@id/searchbar_button_rotatable_image" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:importantForAccessibility="no" />
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/searchbar_button_lottie" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

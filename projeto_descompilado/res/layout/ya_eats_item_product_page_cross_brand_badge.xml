@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ya_eats_product_page_cross_brand_badge_container" android:paddingTop="1.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="0.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ya_eats_product_page_cross_brand_badge_image_badge" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/ya_eats_ic_star_active_yes" android:contentDescription="@null" />
+    <TextView android:textSize="11.0sp" android:textColor="?textMinor" android:ellipsize="end" android:id="@id/ya_eats_product_page_cross_brand_badge_text_badge" android:background="@drawable/ya_eats_background_product_page_badge" android:paddingLeft="8.0dip" android:paddingTop="2.0dip" android:paddingRight="8.0dip" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lines="1" android:textAlignment="center" style="@style/TextAppearance.YSText.Caption2.Tight.Medium" />
+</LinearLayout>

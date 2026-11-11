@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListItemSwitchComponent android:id="@id/delivery_switch_requirement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:component_no_background="true" />
+    <ru.yandex.taxi.design.ListItemComponent android:id="@id/delivery_default_requirement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" app:component_no_background="true" />
+</FrameLayout>

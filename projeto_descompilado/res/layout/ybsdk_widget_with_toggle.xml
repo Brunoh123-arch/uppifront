@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/ybsdk_stadium_button_widget_with_toggle_background" android:paddingBottom="@dimen/ybsdk_stadium_button_height" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/autoTopupWidgetText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="1.0" android:importantForAccessibility="no" android:paddingStart="22.0dip" android:paddingVertical="20.0dip" style="@style/Widget.YB.Text.Caption1.Regular" />
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center" android:id="@id/autoTopupWidgetSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:importantForAccessibility="no" android:paddingStart="8.0dip" android:paddingEnd="22.0dip" android:paddingVertical="20.0dip" />
+</LinearLayout>

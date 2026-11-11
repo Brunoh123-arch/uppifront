@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.ListHeaderComponent android:id="@id/altpin_card_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:component_auto_min_height="true" app:component_title_max_lines="3" app:component_vertical_padding="0.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/altpin_card_items" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <com.yandex.go.design.view.GoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/BottomEdgeButtonMarginStyle">
+        <ViewStub android:id="@id/altpin_decline_button" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0" />
+        <Space android:layout_width="4.0dip" android:layout_height="0.0dip" />
+        <ViewStub android:id="@id/altpin_confirm_button" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="1.0" />
+    </com.yandex.go.design.view.GoLinearLayout>
+</com.yandex.go.design.view.GoLinearLayout>

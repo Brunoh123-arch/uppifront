@@ -1,0 +1,364 @@
+syntax = "proto3";
+
+package videoplatform.speakerroom.common.telemetry;
+
+option go_package = "a.yandex-team.ru/videoplatform/webrtc/common/proto/telemetry;telemetry";
+option swift_prefix = "Goloom";
+option java_multiple_files = true;
+option java_package = "ru.yandex.goloom.lib.model.telemetry";
+
+// Device specific events
+message DeviceInfo {
+    string device_id = 1;
+    string kind = 2; // audioinput, videoinput, audiooutput
+    string label = 3;
+    string group = 4;
+    optional string constraints = 5; // Requested resolution e.g. Serialized JSON
+}
+
+message SelectDeviceEvent {
+    DeviceInfo device_info = 1;
+}
+
+message ApplyDevicesRequestedEvent {
+    bool audio_status = 1;
+    bool video_status = 2;
+    repeated DeviceInfo selected_devices = 3;
+}
+
+enum ApplyDevicesReason {
+    APPLY_DEVICES_REASON_USER_REQUEST = 0;
+    APPLY_DEVICES_REASON_DEFAULT_DEVICE_CHANGED = 1;
+    APPLY_DEVICES_REASON_AUDIO_STATUS_CHANGED = 2;
+    APPLY_DEVICES_REASON_VIDEO_STATUS_CHANGED = 3;
+    // Devices might be stopped by user with system dialog or when permissions are revoked
+    APPLY_DEVICES_REASON_AUDIO_DEVICE_STOPPED = 4;
+    APPLY_DEVICES_REASON_VIDEO_DEVICE_STOPPED = 5;
+    APPLY_DEVICES_REASON_AUDIO_PROCESSING_CHANGED = 6;
+    APPLY_DEVICES_REASON_VIDEO_PROCESSING_CHANGED = 7;
+    APPLY_DEVICES_REASON_GSM_CALL_STARTED = 8;
+    APPLY_DEVICES_REASON_PUBLICATION_ERROR = 9; // Error occurs while Publisher transceivers assigning
+}
+
+message ApplyDevicesStartedEvent {
+    optional string requested_event_id = 1;
+    repeated DeviceInfo selected_devices = 2;
+    bool audio_status = 3;
+    bool video_status = 4;
+    ApplyDevicesReason reason = 5;
+}
+
+message ApplyDevicesFailedEvent {
+    optional string requested_event_id = 1;
+    optional string started_event_id = 2;
+    repeated DeviceInfo selected_devices = 3;
+    repeated DeviceInfo active_devices = 4; // For the case when after current attempt we still have active devices from the previous iteration
+    bool audio_status = 5;
+    bool video_status = 6;
+    string error = 7;
+}
+
+message ApplyDevicesFinishedEvent {
+    optional string requested_event_id = 1;
+    string started_event_id = 2;
+    repeated DeviceInfo selected_devices = 3;
+    repeated DeviceInfo applied_devices = 4; // Applied in current request
+    repeated DeviceInfo active_devices = 5;
+    bool audio_status = 6;
+    bool video_status = 7;
+}
+
+message ApplyDevicesEvent {
+    option deprecated = true; // Use ApplyDevicesStartedEvent instead
+    repeated DeviceInfo devices_info = 1;
+    bool send_audio = 2;
+    bool send_video = 3;
+}
+
+message UpdatedCurrentDevicesEvent {
+    option deprecated = true; //Use ApplyDevicesFinishedEvent instead
+    repeated DeviceInfo devices_info = 1; // Active devices at event moment
+    bool send_audio = 2;
+    bool send_video = 3;
+}
+
+// Sharing specific events
+
+message SharingRequestedEvent {
+    map<string, string> options = 1;
+}
+
+message SharingStartedEvent {
+    string requested_event_id = 1;
+    map<string, string> options = 2;
+}
+
+message SharingFailedEvent {
+    string requested_event_id = 1;
+    optional string started_event_id = 2;
+    map<string, string> options = 3;
+    string error = 4;
+}
+
+message SharingStoppedEvent {
+  string started_event_id = 1;
+  map<string, string> options = 2;
+}
+
+// PC media transports configurations
+
+// https://w3c.github.io/webrtc-pc/#rtcrtpencodingparameters
+message RTCRtpEncodingParameters {
+    optional string rid = 1;
+    optional bool active = 2;
+    optional uint32 max_bitrate = 3;
+    optional double max_framerate = 4;
+    optional string network_priority = 5; // https://www.w3.org/TR/webrtc-priority/#dom-rtcrtpencodingparameters-networkpriority
+    optional string priority = 6; // https://www.w3.org/TR/webrtc-priority/#dom-rtcrtpencodingparameters-priority
+    optional double scale_resolution_down_by = 7;
+}
+
+// RTCRtpCodecCapability extends [RTCRtpCodec](https://w3c.github.io/webrtc-pc/#rtcrtpcodec) as is
+message RTCRtpCodecCapability {
+    string mime_type = 1;
+    uint32 clock_rate = 2;
+    optional uint32 channels = 3;
+    optional string sdp_fmtp_line = 4;
+}
+
+message PublisherMediaTransportConfiguration {
+    oneof transport {
+        string transceiver_mid = 1;
+        string dc_label = 2;
+    }
+    string media_track_kind = 3; // TODO: replace type with enum MediaTrackKind
+    string track_label = 4;
+    repeated RTCRtpEncodingParameters encoding_parameters = 5;
+    repeated RTCRtpCodecCapability codecs_preferences = 6;
+}
+
+message PublisherConfigurationEvent {
+    repeated PublisherMediaTransportConfiguration publisher_transceivers_configurations = 1;
+}
+
+// Reconnects
+
+enum PcKind {
+    PC_KIND_PUBLISHER = 0;
+    PC_KIND_SUBSCRIBER = 1;
+}
+
+enum PcReconnectReason {
+    PC_RECONNECT_REASON_ICE_FAILED = 0;
+    PC_RECONNECT_REASON_SIGNALING_RECONNECTED = 1;
+    PC_RECONNECT_REASON_NEGOTIATION_FAILED = 2;
+}
+
+message PcReconnectStartedEvent {
+    PcKind pc_kind = 1;
+    uint32 pc_seq = 2;
+    PcReconnectReason reason = 3;
+    uint32 attempt = 4; // Should be reset to zero after reconnection is successful
+}
+
+message PcReconnectFailedEvent {
+    string started_event_id = 1;
+    PcKind pc_kind = 2;
+    uint32 pc_seq = 3;
+    string reconnect_reason = 4; // Same as PcReconnectStartedEvent.reason
+    uint32 reconnect_attempt = 5;
+    string error = 6;
+}
+
+message PcReconnectFinishedEvent {
+    string started_event_id = 1;
+    PcKind pc_kind = 2;
+    uint32 pc_seq = 3;
+    string reconnect_reason = 4; // Same as PcReconnectStartedEvent.reason
+    uint32 reconnect_attempt = 5;
+    string error = 6;
+}
+
+enum SignalingTransport {
+    SIGNALING_TRANSPORT_WS = 0;
+    SIGNALING_TRANSPORT_WHIP = 1;
+}
+
+message SignalingReconnectStartedEvent {
+    SignalingTransport signaling_transport = 1;
+    uint32 close_code = 2;
+}
+
+message SignalingReconnectFailedEvent {
+    string started_event_id = 1;
+    SignalingTransport signaling_transport = 2;
+    uint32 close_code = 3;
+    string error = 4;
+}
+
+message SignalingReconnectFinishedEvent {
+    string started_event_id = 1;
+    SignalingTransport signaling_transport = 2;
+    uint32 close_code = 3;
+    string reconnect_reason = 4;
+}
+
+// Processing
+
+enum MediaProcessingStartStopReason {
+    MEDIA_PROCESSING_START_STOP_REASON_ERROR = 0;
+    MEDIA_PROCESSING_START_STOP_REASON_PERFORMANCE = 1;
+    MEDIA_PROCESSING_START_STOP_REASON_USER_REQUEST = 2;
+}
+
+message VideoProcessingRequestedEvent {
+    map<string, string> options = 1; // Options specified by hosting app
+}
+
+message VideoProcessingStartedEvent {
+    string requested_event_id = 1;
+    optional string media_source_id = 2; // Source id from https://www.w3.org/TR/webrtc-stats/#dom-rtcmediasourcestats
+    string processor_name = 3; // noop for disabling
+    string processor_version = 4;
+    map<string, string> options = 5;
+    map<string, string> processor_options = 6; // Processor-specific options
+}
+
+message VideoProcessingFailedEvent {
+    string started_event_id = 1;
+    string processor_name = 2;
+    string processor_version = 3;
+    map<string, string> options = 4;
+    map<string, string> processor_options = 5;
+    string error = 6;
+}
+
+message VideoProcessingStoppedEvent {
+    string started_event_id = 1;
+    string processor_name = 2;
+    string processor_version = 3;
+    map<string, string> options = 4;
+    map<string, string> processor_options = 5;
+    MediaProcessingStartStopReason reason = 6;
+}
+
+message SoundProcessingRequestedEvent {
+    map<string, string> options = 2;
+}
+
+message SoundProcessingStartedEvent {
+    string requested_event_id = 1;
+    optional string media_source_id = 2; // Source id from https://www.w3.org/TR/webrtc-stats/#dom-rtcmediasourcestats
+    string processor_name = 3; // noop for disabling
+    string processor_version = 4;
+    map<string, string> options = 5;
+    map<string, string> processor_options = 6;
+    MediaProcessingStartStopReason reason = 7;
+}
+
+message SoundProcessingFailedEvent {
+    string started_event_id = 1;
+    string processor_name = 2;
+    string processor_version = 3;
+    map<string, string> options = 4;
+    map<string, string> processor_options = 5;
+    string error = 6;
+}
+
+message SoundProcessingStoppedEvent {
+    string started_event_id = 1;
+    string processor_name = 2;
+    string processor_version = 3;
+    map<string, string> options = 4;
+    map<string, string> processor_options = 5;
+    MediaProcessingStartStopReason reason = 6;
+}
+
+// Slots video rendering
+
+// // Should we send every particular slot update (mid, first_frame_at)?
+// message SlotReceivedEvent {
+//     uint32 slot_position = 1; // Index in slots array
+//     string participant_id = 2; // What about self-view?
+//     optional string media_track_kind = 3; // TODO: replace type with enum MediaTrackKind. `null` when no media is expected
+//     optional string mid = 4; // Might be empty event if media is expected but server has not sent it yet
+//     optional double first_frame_at = 5;
+//     // slot_spec?
+//     // video_size?
+// }
+
+message EventTelemetry {
+    double timestamp = 1;
+    /*
+    select-device for SelectDeviceEvent
+    apply-devices for ApplyDevicesEvent
+    apply-devices-requested for ApplyDevicesRequestedEvent
+    apply-devices-started for ApplyDevicesStartedEvent
+    apply-devices-failed for ApplyDevicesFailedEvent
+    apply-devices-finished for ApplyDevicesFinishedEvent
+    updated-current-devices for UpdatedCurrentDevicesEvent
+
+    sharing-requested for SharingRequestedEvent
+    sharing-started for SharingStartedEvent
+    sharing-failed for SharingFailedEvent
+    sharing-stopped for SharingStoppedEvent
+
+    publisher-configuration for PublisherConfigurationEvent
+
+    pc-reconnected-started for PcReconnectStartedEvent
+    pc-reconnected-failed for PcReconnectFailedEvent
+    pc-reconnected-finished for PcReconnectFinishedEvent
+
+    signaling-reconnect-started for SignalingReconnectStartedEvent
+    signaling-reconnect-failed for SignalingReconnectFailedEvent
+    signaling-reconnect-finished for SignalingReconnectFinishedEvent
+
+    video-processing-requested for VideoProcessingRequestedEvent
+    video-processing-started for VideoProcessingStartedEvent
+    video-processing-failed for VideoProcessingFailedEvent
+    video-processing-stopped for VideoProcessingStoppedEvent
+
+    sound-processing-requested for SoundProcessingRequestedEvent
+    sound-processing-started for SoundProcessingStartedEvent
+    sound-processing-failed for SoundProcessingFailedEvent
+    sound-processing-stopped for SoundProcessingStoppedEvent
+    */
+    string type = 2;
+    string id = 3;
+
+    oneof Event {
+        SelectDeviceEvent select_device = 4;
+        ApplyDevicesEvent apply_devices = 5 [deprecated = true]; // Use apply_devices_started instead
+        UpdatedCurrentDevicesEvent updated_current_devices = 6 [deprecated = true]; // Use apply_devices_finished instead
+
+        ApplyDevicesRequestedEvent apply_devices_requested = 7;
+        ApplyDevicesStartedEvent apply_devices_started = 8;
+        ApplyDevicesFailedEvent apply_devices_failed = 9;
+        ApplyDevicesFinishedEvent apply_devices_finished = 10;
+
+        SharingRequestedEvent sharing_requested = 11;
+        SharingStartedEvent sharing_started = 12;
+        SharingFailedEvent sharing_failed = 13;
+        SharingStoppedEvent sharing_stopped = 14;
+
+        PublisherConfigurationEvent publisher_configuration = 15;
+
+        PcReconnectStartedEvent pc_reconnected_started = 16;
+        PcReconnectFailedEvent pc_reconnected_failed = 17;
+        PcReconnectFinishedEvent pc_reconnected_finished = 18;
+
+        SignalingReconnectStartedEvent signaling_reconnect_started = 19;
+        SignalingReconnectFailedEvent signaling_reconnect_failed = 20;
+        SignalingReconnectFinishedEvent signaling_reconnect_finished = 21;
+
+        VideoProcessingRequestedEvent video_processing_requested = 22;
+        VideoProcessingStartedEvent video_processing_started = 23;
+        VideoProcessingFailedEvent video_processing_failed = 24;
+        VideoProcessingStoppedEvent video_processing_stopped = 25;
+
+        SoundProcessingRequestedEvent sound_processing_requested = 26;
+        SoundProcessingStartedEvent sound_processing_started = 27;
+        SoundProcessingFailedEvent sound_processing_failed = 28;
+        SoundProcessingStoppedEvent sound_processing_stopped = 29;
+    }
+}

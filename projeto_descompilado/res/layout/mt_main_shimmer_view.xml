@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/icon" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_margin="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:placeholder_shimmering="true" app:placeholder_type="oval" />
+    <ru.yandex.taxi.widget.PlaceholderView android:id="@id/first_bar" android:layout_width="180.0dip" android:layout_height="16.0dip" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="@id/icon" app:layout_constraintStart_toEndOf="@id/icon" app:layout_constraintTop_toTopOf="@id/icon" app:placeholder_shimmering="true" app:placeholder_type="rounded_line" />
+    <ru.yandex.taxi.widget.ShimmeringBar android:id="@id/where_to" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="@dimen/go_design_s_space" android:backgroundTint="?controlMinor" android:layout_marginHorizontal="@dimen/go_design_m_space" app:barCornerRadius="@dimen/go_design_m_space" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/icon" />
+</com.yandex.go.design.view.GoConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/checkout_stops_selector_loading_state" />
+    <include layout="@layout/checkout_stops_selector_success_state" />
+    <include layout="@layout/checkout_stops_selector_error_state" />
+</com.yandex.go.design.view.GoLinearLayout>

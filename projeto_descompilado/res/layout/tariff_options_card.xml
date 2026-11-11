@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tariff_card_content" android:background="?bgMain" android:paddingBottom="@dimen/solid_summary_order_button_block_height" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="yes" />
+    <View android:id="@id/top_card_fade" android:layout_width="fill_parent" android:layout_height="0.0dip" android:importantForAccessibility="no" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/tariff_card_bottom_container_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no" />
+    <com.yandex.go.design.view.GoLinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+        <com.yandex.go.tariffcard.ui.view.TariffCardScrollButtonView android:layout_gravity="bottom|center" android:id="@id/scroll_button" android:layout_width="wrap_content" android:layout_height="@dimen/requirement_scroll_button_height" android:layout_marginBottom="8.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tariff_card_order_button_container" android:background="@drawable/tariff_card_bottom_container_background" android:paddingTop="@dimen/go_design_s_space" android:paddingBottom="@dimen/go_design_m_space" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+            <com.yandex.go.payments.design.composite.CompositePaymentIconsView android:id="@id/tariff_options_card_payment_icon" android:background="@drawable/bg_transparent_ripple" android:layout_width="72.0dip" android:layout_height="56.0dip" android:accessibilityTraversalAfter="@id/tariff_card_content" app:titleVisible="true" />
+            <ru.yandex.taxi.design.button.OrderButtonComponent android:id="@id/tariff_options_card_order_button" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_weight="1.0" />
+            <com.yandex.go.design.view.GoImageView android:id="@id/tariff_options_card_footer_collapse_icon" android:background="@drawable/bg_transparent_ripple" android:visibility="gone" android:layout_width="72.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_chevron_down" android:scaleType="center" android:contentDescription="@string/summary_order_button_collapse_content_description" />
+            <Space android:id="@id/tariff_options_card_footer_collapse_icon_disabled_space" android:layout_width="@dimen/go_design_s_space" android:layout_height="0.0dip" />
+        </LinearLayout>
+    </com.yandex.go.design.view.GoLinearLayout>
+    <ru.yandex.taxi.design.FloatButtonIconComponent android:id="@id/tariff_options_card_header_collapse_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-24.0dip" android:contentDescription="@string/summary_order_button_collapse_content_description" android:layout_marginStart="-12.0dip" android:accessibilityTraversalBefore="@id/tariff_card_content" />
+    <FrameLayout android:id="@id/bubble_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+</merge>

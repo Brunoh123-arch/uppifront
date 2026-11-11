@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.yandex.taxi.widget.ToolbarModalView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/shared_payment_currency_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ru.yandex.taxi.design.ListTextComponent android:id="@id/shared_payment_currency_details" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/shared_payment_currency_options" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+                <LinearLayout android:orientation="vertical" android:id="@id/shared_payment_currency_loader" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ru.yandex.taxi.design.LoadingComponent android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+        <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/shared_payment_currency_scroll_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/shared_payment_settings_scroll_view" />
+        <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:id="@id/shared_payment_currency_select_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_currency_select" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+        <FrameLayout android:id="@id/shared_payment_currency_controls_blocker" android:background="@color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</ru.yandex.taxi.widget.ToolbarModalView>

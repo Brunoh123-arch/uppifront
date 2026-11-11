@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.design.FloatingTitleToolbarComponent android:id="@id/safety_center_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_enable_image_hiding="true" app:component_title_image="@drawable/ic_contacts_24" app:component_title_image_background="@drawable/accent_circle" app:component_title_image_size="48.0dip" app:component_toolbar_item_title="@string/favorites_remove_address" app:component_tracked_view="@id/safety_center_scroll_view" />
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/safety_center_scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="60.0dip" android:layout_marginBottom="64.0dip" android:minHeight="360.0dip" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.progress.CircularProgressBar android:layout_gravity="center" android:id="@id/safety_center_progress_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:id="@id/safety_center_content" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ru.yandex.taxi.design.ListTextComponent android:id="@id/safety_center_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <ru.yandex.taxi.design.AutoDividerComponentList android:orientation="vertical" android:id="@id/safety_center_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_bottom_divider_type="normal" app:component_middle_divider_type="normal" />
+                <ru.yandex.taxi.design.ListItemComponent android:id="@id/safety_center_add_contact" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_image="@drawable/ic_add_black" />
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                <ru.yandex.taxi.design.ListTextComponent android:id="@id/safety_center_share_description" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/scroll_indicator_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="64.0dip" app:scroll_view_id="@id/safety_center_scroll_view" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/safety_center_bottom_add_contact" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_margin="4.0dip" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/safety_center_share" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_margin="4.0dip" />
+</FrameLayout>

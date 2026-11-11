@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="16.0sp" android:textColor="?textMain" android:layout_gravity="center" android:id="@id/comment_input_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/scooters_enter_comment_feedback_title" app:robotoFontStyle="medium" />
+    <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/comment_input" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:importantForAccessibility="yes" app:component_divider_position="top" app:component_divider_type="margin" app:component_input_clear_enable="false" />
+    <ru.yandex.taxi.design.ButtonComponent android:id="@id/done_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/common_done" android:layout_marginHorizontal="8.0dip" app:component_background_color="?controlMain" />
+</com.yandex.go.design.view.GoLinearLayout>

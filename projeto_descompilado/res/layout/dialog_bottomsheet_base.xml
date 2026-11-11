@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/touch_outside" android:background="?fog" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/navigation_button_surrogate_view" android:layout_width="@dimen/bottom_dialog_back_navigation_button_width" android:layout_height="?actionBarSize" />
+        <FrameLayout android:layout_gravity="center|top" android:id="@id/design_bottom_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="ru.yandex.eats.ui.fragments.bottomsheet.behavior.BlockDragBottomSheetBehavior">
+            <ru.yandex.eda_design.views.rounded_corners.RoundCornersView android:id="@id/dialog_root" android:background="@drawable/background_bottom_dialog" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/bottom_dialog_content_top_margin" android:minHeight="@dimen/bottom_dialog_min_height" app:rcv_topLeftRadius="@dimen/bottom_dialog_corner_radii" app:rcv_topRightRadius="@dimen/bottom_dialog_corner_radii" />
+            <View android:layout_gravity="center_horizontal" android:id="@id/pin_clickable_area" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_dialog_pin_clickable_area_height" />
+            <View android:layout_gravity="center_horizontal" android:id="@id/pin_view" android:background="@drawable/background_dialog_pin" android:layout_width="@dimen/bottom_dialog_pin_width" android:layout_height="@dimen/bottom_dialog_pin_height" android:layout_marginTop="@dimen/bottom_dialog_pin_top_margin" />
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/additional_view_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

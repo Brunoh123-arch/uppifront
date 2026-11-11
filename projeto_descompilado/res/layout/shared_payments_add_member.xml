@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:id="@id/shared_payment_member_add_scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.AutoDividerComponentList android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_middle_divider_type="normal">
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/shared_payment_member_add_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_max_lines="1" />
+            <ru.yandex.taxi.design.ListItemInputComponent android:id="@id/shared_payment_member_add_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_input_type="phone" app:component_max_lines="1" />
+            <ru.yandex.taxi.design.ListItemComponent android:id="@id/shared_payment_member_add_open_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_trail_mode="navigation" />
+        </ru.yandex.taxi.design.AutoDividerComponentList>
+    </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+    <ru.yandex.taxi.widget.scroll.ShadowScrollIndicator android:layout_gravity="bottom" android:id="@id/shared_payment_member_add_scroll_indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" app:scroll_view_id="@id/shared_payment_member_add_scroll_view" />
+    <ru.yandex.taxi.widget.BottomEdgeButtonLayout android:layout_gravity="bottom" android:id="@id/shared_payment_member_add_button_container" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/shared_payment_member_add_confirm_button" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </ru.yandex.taxi.widget.BottomEdgeButtonLayout>
+</LinearLayout>

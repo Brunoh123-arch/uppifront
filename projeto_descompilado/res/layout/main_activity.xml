@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yandex.go.design.view.GoFrameLayout android:id="@id/content_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.drawerlayout.widget.DrawerLayout android:id="@id/drawerLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/vertical_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/state_bar_host" layout="@layout/state_bar" />
+                <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <include android:id="@id/map_layout" layout="@layout/map_layout" />
+                    <ImageView android:id="@id/background" android:background="?bgMain" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
+                    <ViewStub android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <include layout="@layout/fragment_host" />
+                </FrameLayout>
+            </LinearLayout>
+            <ViewStub android:id="@id/onboarding_overlay" android:tag="onboarding_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <include layout="@layout/menu_host" />
+        </androidx.drawerlayout.widget.DrawerLayout>
+        <ru.yandex.taxi.design.NotificationStackComponent android:id="@id/notification_stack_component" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapse_button_text="@string/notifications_collapse" />
+        <ru.yandex.taxi.design.NotificationStackComponent android:id="@id/non_autohidable_notification_stack_component" android:layout_width="fill_parent" android:layout_height="fill_parent" app:collapse_button_text="@string/notifications_collapse" />
+    </com.yandex.go.design.view.GoFrameLayout>
+    <FrameLayout android:id="@id/top_fullscreen_modal_views_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/yb_screen_stub" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/top_modal_views_container" />
+    <FrameLayout android:id="@id/banners_container" android:tag="banners_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/agreement_view_stub" android:layout="@layout/agreement_container" android:inflatedId="@id/agreement_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/splash_view_stub" android:fitsSystemWindows="true" android:layout="@layout/splash_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.widget.InsetsAwareFrameLayout android:id="@id/splash_view_overlay" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/messenger_preloaded_layout" />
+</merge>

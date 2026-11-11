@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:columnCount="3" app:orientation="horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginBottom="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginBottom="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginBottom="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginTop="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginTop="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+    <ru.yandex.eats.common.ui.views.shimmer.ShimmeringBar android:layout_width="0.0dip" android:layout_height="240.0dip" android:layout_marginTop="4.0dip" android:layout_marginHorizontal="4.0dip" app:layout_columnWeight="1.0" app:ya_eats_corner_radius="24.0dip" />
+</androidx.gridlayout.widget.GridLayout>

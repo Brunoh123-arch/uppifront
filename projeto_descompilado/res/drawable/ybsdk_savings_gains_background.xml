@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="?ybColor_fill_color7_400" />
+    <corners android:radius="@dimen/ybsdk_widget_view_corner_radius" />
+</shape>

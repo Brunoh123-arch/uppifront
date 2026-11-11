@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_shuttle_seats">
+        <item quantity="other">@string/shuttle_seats_other</item>
+        <item quantity="one">@string/shuttle_seats_one</item>
+        <item quantity="two">@string/shuttle_seats_two</item>
+        <item quantity="few">@string/shuttle_seats_few</item>
+        <item quantity="many">@string/shuttle_seats_many</item>
+    </plurals>
+    <plurals name="active_orders_counter_content_description">
+        <item quantity="one">@string/active_orders_counter_one_content_description</item>
+        <item quantity="two">@string/active_orders_counter_two_content_description</item>
+        <item quantity="few">@string/active_orders_counter_few_content_description</item>
+        <item quantity="many">@string/active_orders_counter_many_content_description</item>
+    </plurals>
+    <plurals name="add_credit_card_incorrect_amt">
+        <item quantity="other">@string/add_credit_card_incorrect_amt_other</item>
+        <item quantity="zero">@string/add_credit_card_incorrect_amt_zero</item>
+        <item quantity="one">@string/add_credit_card_incorrect_amt_one</item>
+        <item quantity="two">@string/add_credit_card_incorrect_amt_two</item>
+        <item quantity="few">@string/add_credit_card_incorrect_amt_few</item>
+        <item quantity="many">@string/add_credit_card_incorrect_amt_many</item>
+    </plurals>
+    <plurals name="biletic_date_format_days">
+        <item quantity="other">@string/biletic_date_format_days_many</item>
+        <item quantity="zero">@string/biletic_date_format_days_many</item>
+        <item quantity="one">@string/biletic_date_format_days_one</item>
+        <item quantity="two">@string/biletic_date_format_days_some</item>
+        <item quantity="few">@string/biletic_date_format_days_some</item>
+        <item quantity="many">@string/biletic_date_format_days_many</item>
+    </plurals>
+    <plurals name="biletic_date_format_hours">
+        <item quantity="other">@string/biletic_date_format_hours_many</item>
+        <item quantity="zero">@string/biletic_date_format_hours_many</item>
+        <item quantity="one">@string/biletic_date_format_hours_one</item>
+        <item quantity="two">@string/biletic_date_format_hours_some</item>
+        <item quantity="few">@string/biletic_date_format_hours_some</item>
+        <item quantity="many">@string/biletic_date_format_hours_many</item>
+    </plurals>
+    <plurals name="date_format_days_left">
+        <item quantity="other">@string/date_format_days_left_other</item>
+        <item quantity="zero">@string/date_format_days_left_zero</item>
+        <item quantity="one">@string/date_format_days_left_one</item>
+        <item quantity="two">@string/date_format_days_left_two</item>
+        <item quantity="few">@string/date_format_days_left_few</item>
+        <item quantity="many">@string/date_format_days_left_many</item>
+    </plurals>
+    <plurals name="date_format_hours_left">
+        <item quantity="other">@string/date_format_hours_left_other</item>
+        <item quantity="zero">@string/date_format_hours_left_zero</item>
+        <item quantity="one">@string/date_format_hours_left_one</item>
+        <item quantity="two">@string/date_format_hours_left_two</item>
+        <item quantity="few">@string/date_format_hours_left_few</item>
+        <item quantity="many">@string/date_format_hours_left_many</item>
+    </plurals>
+    <plurals name="date_format_in_days">
+        <item quantity="other">@string/date_format_in_days_other</item>
+        <item quantity="zero">@string/date_format_in_days_zero</item>
+        <item quantity="one">@string/date_format_in_days_one</item>
+        <item quantity="two">@string/date_format_in_days_two</item>
+        <item quantity="few">@string/date_format_in_days_few</item>
+        <item quantity="many">@string/date_format_in_days_many</item>
+    </plurals>
+    <plurals name="date_format_in_hours">
+        <item quantity="other">@string/date_format_in_hours_other</item>
+        <item quantity="zero">@string/date_format_in_hours_zero</item>
+        <item quantity="one">@string/date_format_in_hours_one</item>
+        <item quantity="two">@string/date_format_in_hours_two</item>
+        <item quantity="few">@string/date_format_in_hours_few</item>
+        <item quantity="many">@string/date_format_in_hours_many</item>
+    </plurals>
+    <plurals name="date_format_in_minutes">
+        <item quantity="other">@string/date_format_in_minutes_other</item>
+        <item quantity="zero">@string/date_format_in_minutes_zero</item>
+        <item quantity="one">@string/date_format_in_minutes_one</item>
+        <item quantity="two">@string/date_format_in_minutes_two</item>
+        <item quantity="few">@string/date_format_in_minutes_few</item>
+        <item quantity="many">@string/date_format_in_minutes_many</item>
+    </plurals>
+    <plurals name="date_format_in_seconds">
+        <item quantity="other">@string/date_format_in_seconds_other</item>
+        <item quantity="zero">@string/date_format_in_seconds_zero</item>
+        <item quantity="one">@string/date_format_in_seconds_one</item>
+        <item quantity="two">@string/date_format_in_seconds_two</item>
+        <item quantity="few">@string/date_format_in_seconds_few</item>
+        <item quantity="many">@string/date_format_in_seconds_many</item>
+    </plurals>
+    <plurals name="date_format_minutes_left">
+        <item quantity="other">@string/date_format_minutes_left_other</item>
+        <item quantity="zero">@string/date_format_minutes_left_zero</item>
+        <item quantity="one">@string/date_format_minutes_left_one</item>
+        <item quantity="two">@string/date_format_minutes_left_two</item>
+        <item quantity="few">@string/date_format_minutes_left_few</item>
+        <item quantity="many">@string/date_format_minutes_left_many</item>
+    </plurals>
+    <plurals name="date_format_minutes_left_shortcut">
+        <item quantity="other">@string/date_format_minutes_left_shortcut_other</item>
+        <item quantity="zero">@string/date_format_minutes_left_shortcut_zero</item>
+        <item quantity="one">@string/date_format_minutes_left_shortcut_one</item>
+        <item quantity="two">@string/date_format_minutes_left_shortcut_two</item>
+        <item quantity="few">@string/date_format_minutes_left_shortcut_few</item>
+        <item quantity="many">@string/date_format_minutes_left_shortcut_many</item>
+    </plurals>
+    <plurals name="discovery_cluster_extra_places">
+        <item quantity="other">@string/discovery_cluster_extra_places_other</item>
+        <item quantity="one">@string/discovery_cluster_extra_places_one</item>
+        <item quantity="two">@string/discovery_cluster_extra_places_two</item>
+        <item quantity="few">@string/discovery_cluster_extra_places_few</item>
+        <item quantity="many">@string/discovery_cluster_extra_places_many</item>
+    </plurals>
+    <plurals name="due_additional">
+        <item quantity="other">@string/additional_due_other</item>
+        <item quantity="zero">@string/additional_due_zero</item>
+        <item quantity="one">@string/additional_due_one</item>
+        <item quantity="two">@string/additional_due_two</item>
+        <item quantity="few">@string/additional_due_few</item>
+        <item quantity="many">@string/additional_due_many</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="other">Fast forward %d seconds</item>
+        <item quantity="one">Fast forward %d second</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="other">Rewind %d seconds</item>
+        <item quantity="one">Rewind %d second</item>
+    </plurals>
+    <plurals name="favorite_bottomsheet_selected_button_text">
+        <item quantity="other">@string/favorite_category_plurals_bottomsheet_selected_button_text_many</item>
+        <item quantity="zero">@string/favorite_category_plurals_bottomsheet_selected_button_text_many</item>
+        <item quantity="one">@string/favorite_category_plurals_bottomsheet_selected_button_text_one</item>
+        <item quantity="two">@string/favorite_category_plurals_bottomsheet_selected_button_text_few</item>
+        <item quantity="few">@string/favorite_category_plurals_bottomsheet_selected_button_text_few</item>
+        <item quantity="many">@string/favorite_category_plurals_bottomsheet_selected_button_text_many</item>
+    </plurals>
+    <plurals name="favorite_bottomsheet_unselected_button_text">
+        <item quantity="other">@string/favorite_category_plurals_bottomsheet_unselected_button_text_many</item>
+        <item quantity="zero">@string/favorite_category_plurals_bottomsheet_unselected_button_text_many</item>
+        <item quantity="one">@string/favorite_category_plurals_bottomsheet_unselected_button_text_one</item>
+        <item quantity="two">@string/favorite_category_plurals_bottomsheet_unselected_button_text_few</item>
+        <item quantity="few">@string/favorite_category_plurals_bottomsheet_unselected_button_text_few</item>
+        <item quantity="many">@string/favorite_category_plurals_bottomsheet_unselected_button_text_many</item>
+    </plurals>
+    <plurals name="mass_transit_route_numbers_plurals">
+        <item quantity="other">@string/mass_transit_route_numbers_many</item>
+        <item quantity="zero">@string/mass_transit_route_numbers_one</item>
+        <item quantity="one">@string/mass_transit_route_numbers_one</item>
+        <item quantity="two">@string/mass_transit_route_numbers_many</item>
+        <item quantity="few">@string/mass_transit_route_numbers_many</item>
+        <item quantity="many">@string/mass_transit_route_numbers_many</item>
+    </plurals>
+    <plurals name="mass_transit_route_stops">
+        <item quantity="other">@string/mass_transit_stop_other</item>
+        <item quantity="zero">@string/mass_transit_stop_zero</item>
+        <item quantity="one">@string/mass_transit_stop_one</item>
+        <item quantity="two">@string/mass_transit_stop_two</item>
+        <item quantity="few">@string/mass_transit_stop_few</item>
+        <item quantity="many">@string/mass_transit_stop_many</item>
+    </plurals>
+    <plurals name="mt_date_format_in_minutes">
+        <item quantity="other">%d minutes</item>
+        <item quantity="one">%d minute</item>
+    </plurals>
+    <plurals name="mt_date_format_in_seconds">
+        <item quantity="other">%d seconds</item>
+        <item quantity="one">%d second</item>
+    </plurals>
+    <plurals name="mt_route_details_v2_transfers_count">
+        <item quantity="other">@string/mt_route_details_v2_transfer_other</item>
+        <item quantity="one">@string/mt_route_details_v2_transfer_one</item>
+        <item quantity="two">@string/mt_route_details_v2_transfer_two</item>
+        <item quantity="few">@string/mt_route_details_v2_transfer_few</item>
+        <item quantity="many">@string/mt_route_details_v2_transfer_many</item>
+    </plurals>
+    <plurals name="mt_sdk_format_days">
+        <item quantity="other">days</item>
+        <item quantity="one">day</item>
+    </plurals>
+    <plurals name="mt_sdk_format_hours">
+        <item quantity="other">hours</item>
+        <item quantity="one">hour</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d new notifications</item>
+        <item quantity="one">%d new notification</item>
+    </plurals>
+    <plurals name="navigator_stations_plurals">
+        <item quantity="other">@string/navigator_stations_other</item>
+        <item quantity="zero">@string/navigator_stations_zero</item>
+        <item quantity="one">@string/navigator_stations_one</item>
+        <item quantity="two">@string/navigator_stations_two</item>
+        <item quantity="few">@string/navigator_stations_few</item>
+        <item quantity="many">@string/navigator_stations_many</item>
+    </plurals>
+    <plurals name="overdraft_non_paid_orders">
+        <item quantity="other">@string/overdraft_non_paid_orders_other</item>
+        <item quantity="zero">@string/overdraft_non_paid_orders_zero</item>
+        <item quantity="one">@string/overdraft_non_paid_orders_one</item>
+        <item quantity="two">@string/overdraft_non_paid_orders_two</item>
+        <item quantity="few">@string/overdraft_non_paid_orders_few</item>
+        <item quantity="many">@string/overdraft_non_paid_orders_many</item>
+    </plurals>
+    <plurals name="passport_call_code_placeholder">
+        <item quantity="other">Last %1$d digits</item>
+        <item quantity="zero">Last %1$d digits</item>
+        <item quantity="one">Last %1$d digit</item>
+        <item quantity="few">Last %1$d digits</item>
+        <item quantity="many">Last %1$d digits</item>
+    </plurals>
+    <plurals name="passport_reg_call_message">
+        <item quantity="other">"You will now receive a call from
+%1$s. Enter the last %2$d digits of this number."</item>
+        <item quantity="zero">"You will now receive a call from
+%1$s. Enter the last %2$d digits of this number."</item>
+        <item quantity="one">"You will now receive a call from
+%1$s. Enter the last %2$d digit of this number."</item>
+        <item quantity="few">"You will now receive a call from
+%1$s. Enter the last %2$d digits of this number."</item>
+        <item quantity="many">"You will now receive a call from
+%1$s. Enter the last %2$d digits of this number."</item>
+    </plurals>
+    <plurals name="plurals_multiorder_tab_places_amount">
+        <item quantity="other">@string/plurals_multiorder_tab_places_amount_many</item>
+        <item quantity="zero">@string/plurals_multiorder_tab_places_amount_many</item>
+        <item quantity="one">@string/plurals_multiorder_tab_places_amount_one</item>
+        <item quantity="two">@string/plurals_multiorder_tab_places_amount_few</item>
+        <item quantity="few">@string/plurals_multiorder_tab_places_amount_few</item>
+        <item quantity="many">@string/plurals_multiorder_tab_places_amount_many</item>
+    </plurals>
+    <plurals name="plus_sdk_family_subtitle_plurals">
+        <item quantity="other">@string/plus_sdk_plural_key_other</item>
+        <item quantity="zero">@string/plus_sdk_plural_key_zero</item>
+        <item quantity="one">@string/plus_sdk_plural_key_one</item>
+        <item quantity="two">@string/plus_sdk_plural_key_two</item>
+        <item quantity="few">@string/plus_sdk_plural_key_few</item>
+        <item quantity="many">@string/plus_sdk_plural_key_many</item>
+    </plurals>
+    <plurals name="referral_rides">
+        <item quantity="other">@string/referral_rides_other</item>
+        <item quantity="zero">@string/referral_rides_zero</item>
+        <item quantity="one">@string/referral_rides_one</item>
+        <item quantity="two">@string/referral_rides_two</item>
+        <item quantity="few">@string/referral_rides_few</item>
+        <item quantity="many">@string/referral_rides_many</item>
+    </plurals>
+    <plurals name="rida_bids_drivers">
+        <item quantity="other">@string/rida_bids_drivers_other</item>
+        <item quantity="zero">@string/rida_bids_drivers_zero</item>
+        <item quantity="one">@string/rida_bids_drivers_one</item>
+        <item quantity="two">@string/rida_bids_drivers_two</item>
+        <item quantity="few">@string/rida_bids_drivers_few</item>
+        <item quantity="many">@string/rida_bids_drivers_many</item>
+    </plurals>
+    <plurals name="rida_bids_have_seen_your_offer">
+        <item quantity="other">@string/rida_bids_have_seen_your_offer_other</item>
+        <item quantity="zero">@string/rida_bids_have_seen_your_offer_zero</item>
+        <item quantity="one">@string/rida_bids_have_seen_your_offer_one</item>
+        <item quantity="two">@string/rida_bids_have_seen_your_offer_two</item>
+        <item quantity="few">@string/rida_bids_have_seen_your_offer_few</item>
+        <item quantity="many">@string/rida_bids_have_seen_your_offer_many</item>
+    </plurals>
+    <plurals name="route_stops">
+        <item quantity="other">@string/stop_other</item>
+        <item quantity="zero">@string/stop_zero</item>
+        <item quantity="one">@string/stop_one</item>
+        <item quantity="two">@string/stop_two</item>
+        <item quantity="few">@string/stop_few</item>
+        <item quantity="many">@string/stop_many</item>
+    </plurals>
+    <plurals name="scooters_time_route_to_parking">
+        <item quantity="other">@string/scooters_time_route_to_parking_other</item>
+        <item quantity="zero">@string/scooters_time_route_to_parking_zero</item>
+        <item quantity="one">@string/scooters_time_route_to_parking_one</item>
+        <item quantity="two">@string/scooters_time_route_to_parking_two</item>
+        <item quantity="few">@string/scooters_time_route_to_parking_few</item>
+        <item quantity="many">@string/scooters_time_route_to_parking_many</item>
+    </plurals>
+    <plurals name="summary_accessibility_seats">
+        <item quantity="other">@string/summary_accessibility_seats_number_other</item>
+        <item quantity="one">@string/summary_accessibility_seats_number_one</item>
+        <item quantity="two">@string/summary_accessibility_seats_number_two</item>
+        <item quantity="few">@string/summary_accessibility_seats_number_few</item>
+        <item quantity="many">@string/summary_accessibility_seats_number_many</item>
+    </plurals>
+    <plurals name="summary_accessibility_tariff_plus_amount">
+        <item quantity="other">@string/summary_accessibility_tariff_plus_amount_other</item>
+        <item quantity="zero">@string/summary_accessibility_tariff_plus_amount_zero</item>
+        <item quantity="one">@string/summary_accessibility_tariff_plus_amount_one</item>
+        <item quantity="two">@string/summary_accessibility_tariff_plus_amount_two</item>
+        <item quantity="few">@string/summary_accessibility_tariff_plus_amount_few</item>
+        <item quantity="many">@string/summary_accessibility_tariff_plus_amount_many</item>
+    </plurals>
+    <plurals name="summary_route_stops">
+        <item quantity="other">@string/summary_stop_other</item>
+        <item quantity="zero">@string/summary_stop_zero</item>
+        <item quantity="one">@string/summary_stop_one</item>
+        <item quantity="two">@string/summary_stop_two</item>
+        <item quantity="few">@string/summary_stop_few</item>
+        <item quantity="many">@string/summary_stop_many</item>
+    </plurals>
+    <plurals name="summary_unavailable_requirements">
+        <item quantity="other">@string/summary_unavailable_requirements_other</item>
+        <item quantity="zero">@string/summary_unavailable_requirements_zero</item>
+        <item quantity="one">@string/summary_unavailable_requirements_one</item>
+        <item quantity="two">@string/summary_unavailable_requirements_two</item>
+        <item quantity="few">@string/summary_unavailable_requirements_few</item>
+        <item quantity="many">@string/summary_unavailable_requirements_many</item>
+    </plurals>
+    <plurals name="taxi_estimated_time_to_arrival">
+        <item quantity="other">@string/taxi_estimated_time_to_arrival_many</item>
+        <item quantity="zero">@string/taxi_estimated_time_to_arrival_none</item>
+        <item quantity="one">@string/taxi_estimated_time_to_arrival_one</item>
+        <item quantity="two">@string/taxi_estimated_time_to_arrival_some</item>
+        <item quantity="few">@string/taxi_estimated_time_to_arrival_some</item>
+        <item quantity="many">@string/taxi_estimated_time_to_arrival_many</item>
+    </plurals>
+    <plurals name="template_local_plural_base">
+        <item quantity="other">@string/template_plural_other_placeholder</item>
+        <item quantity="zero">@string/template_plural_zero_placeholder</item>
+        <item quantity="one">@string/template_plural_one_placeholder</item>
+        <item quantity="two">@string/template_plural_two_placeholder</item>
+        <item quantity="few">@string/template_plural_few_placeholder</item>
+        <item quantity="many">@string/template_plural_many_placeholder</item>
+    </plurals>
+    <plurals name="texts_evaluator_remaining_texts_hint">
+        <item quantity="other">@string/texts_evaluator_remaining_texts_hint_many</item>
+        <item quantity="zero">@string/texts_evaluator_remaining_texts_hint_many</item>
+        <item quantity="one">@string/texts_evaluator_remaining_texts_hint_one</item>
+        <item quantity="two">@string/texts_evaluator_remaining_texts_hint_few</item>
+        <item quantity="few">@string/texts_evaluator_remaining_texts_hint_few</item>
+        <item quantity="many">@string/texts_evaluator_remaining_texts_hint_many</item>
+    </plurals>
+    <plurals name="tickets">
+        <item quantity="other">@string/other_tickets</item>
+        <item quantity="one">@string/one_ticket</item>
+        <item quantity="two">@string/two_tickets</item>
+        <item quantity="few">@string/few_tickets</item>
+        <item quantity="many">@string/many_tickets</item>
+    </plurals>
+    <plurals name="trusted_contacts_members_limit_template">
+        <item quantity="other">@string/trusted_contacts_members_limit_other</item>
+        <item quantity="zero">@string/trusted_contacts_members_limit_zero</item>
+        <item quantity="one">@string/trusted_contacts_members_limit_one</item>
+        <item quantity="two">@string/trusted_contacts_members_limit_two</item>
+        <item quantity="few">@string/trusted_contacts_members_limit_few</item>
+        <item quantity="many">@string/trusted_contacts_members_limit_many</item>
+    </plurals>
+    <plurals name="walking_navigation_finish_steps">
+        <item quantity="other">@string/walking_navigation_finish_steps_other</item>
+        <item quantity="one">@string/walking_navigation_finish_steps_one</item>
+        <item quantity="two">@string/walking_navigation_finish_steps_two</item>
+        <item quantity="few">@string/walking_navigation_finish_steps_few</item>
+        <item quantity="many">@string/walking_navigation_finish_steps_many</item>
+    </plurals>
+    <plurals name="walking_navigation_steps">
+        <item quantity="other">@string/walking_navigation_steps_other</item>
+        <item quantity="one">@string/walking_navigation_steps_one</item>
+        <item quantity="two">@string/walking_navigation_steps_two</item>
+        <item quantity="few">@string/walking_navigation_steps_few</item>
+        <item quantity="many">@string/walking_navigation_steps_many</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_days">
+        <item quantity="other">каждые %1$d дней</item>
+        <item quantity="zero">каждые %1$d дней</item>
+        <item quantity="one">каждый %1$d день</item>
+        <item quantity="two">каждые %1$d дня</item>
+        <item quantity="few">каждые %1$d дня</item>
+        <item quantity="many">каждые %1$d дней</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_hours">
+        <item quantity="other">каждые %1$d часов</item>
+        <item quantity="zero">каждые %1$d часов</item>
+        <item quantity="one">каждый %1$d час</item>
+        <item quantity="two">каждые %1$d часа</item>
+        <item quantity="few">каждые %1$d часа</item>
+        <item quantity="many">каждые %1$d часов</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_minutes">
+        <item quantity="other">каждые %1$d минут</item>
+        <item quantity="zero">каждые %1$d минут</item>
+        <item quantity="one">каждую %1$d минуту</item>
+        <item quantity="two">каждые %1$d минуты</item>
+        <item quantity="few">каждые %1$d минуты</item>
+        <item quantity="many">каждые %1$d минут</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_months">
+        <item quantity="other">каждые %1$d месяцев</item>
+        <item quantity="zero">каждые %1$d месяцев</item>
+        <item quantity="one">каждый %1$d месяц</item>
+        <item quantity="two">каждые %1$d месяца</item>
+        <item quantity="few">каждые %1$d месяца</item>
+        <item quantity="many">каждые %1$d месяцев</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_payments">
+        <item quantity="other">%1$d платежа</item>
+        <item quantity="one">%1$d платёж</item>
+        <item quantity="few">%1$d платежа</item>
+        <item quantity="many">%1$d платежей</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_weeks">
+        <item quantity="other">каждые %1$d недель</item>
+        <item quantity="zero">каждые %1$d недель</item>
+        <item quantity="one">каждую %1$d неделю</item>
+        <item quantity="two">каждые %1$d недели</item>
+        <item quantity="few">каждые %1$d недели</item>
+        <item quantity="many">каждые %1$d недель</item>
+    </plurals>
+    <plurals name="ya_eats_checkout_split_years">
+        <item quantity="other">каждые %1$d лет</item>
+        <item quantity="zero">каждые %1$d лет</item>
+        <item quantity="one">каждый %1$d год</item>
+        <item quantity="two">каждые %1$d года</item>
+        <item quantity="few">каждые %1$d года</item>
+        <item quantity="many">каждые %1$d лет</item>
+    </plurals>
+    <plurals name="ya_eats_hours">
+        <item quantity="other">@string/plurals_hour_other</item>
+        <item quantity="zero">@string/plurals_hour_zero</item>
+        <item quantity="one">@string/plurals_hour_one</item>
+        <item quantity="two">@string/plurals_hour_two</item>
+        <item quantity="few">@string/plurals_hour_few</item>
+        <item quantity="many">@string/plurals_hour_many</item>
+    </plurals>
+    <plurals name="ya_eats_minutes">
+        <item quantity="other">@string/plurals_minute_other</item>
+        <item quantity="zero">@string/plurals_minute_zero</item>
+        <item quantity="one">@string/plurals_minute_one</item>
+        <item quantity="two">@string/plurals_minute_two</item>
+        <item quantity="few">@string/plurals_minute_few</item>
+        <item quantity="many">@string/plurals_minute_many</item>
+    </plurals>
+    <plurals name="ya_eats_restaurant_cart_dishes_count">
+        <item quantity="other">@string/plurals_cart_dishes_count_many</item>
+        <item quantity="zero">@string/plurals_cart_dishes_count_many</item>
+        <item quantity="one">@string/plurals_cart_dishes_count_one</item>
+        <item quantity="two">@string/plurals_cart_dishes_count_few</item>
+        <item quantity="few">@string/plurals_cart_dishes_count_few</item>
+        <item quantity="many">@string/plurals_cart_dishes_count_many</item>
+    </plurals>
+    <plurals name="ya_eats_restaurant_menu_promo_quantity_restriction_snackbar_title">
+        <item quantity="other">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_many</item>
+        <item quantity="zero">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_many</item>
+        <item quantity="one">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_one</item>
+        <item quantity="two">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_few</item>
+        <item quantity="few">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_few</item>
+        <item quantity="many">@string/restaurant_menu_promo_quantity_restriction_snackbar_title_many</item>
+    </plurals>
+    <plurals name="ya_eats_retail_cart_goods_count">
+        <item quantity="other">@string/plurals_cart_goods_count_many</item>
+        <item quantity="zero">@string/plurals_cart_goods_count_many</item>
+        <item quantity="one">@string/plurals_cart_goods_count_one</item>
+        <item quantity="two">@string/plurals_cart_goods_count_few</item>
+        <item quantity="few">@string/plurals_cart_goods_count_few</item>
+        <item quantity="many">@string/plurals_cart_goods_count_many</item>
+    </plurals>
+    <plurals name="ya_eats_retail_search_goods_count">
+        <item quantity="other">@string/plurals_search_goods_count_many</item>
+        <item quantity="zero">@string/plurals_search_goods_count_many</item>
+        <item quantity="one">@string/plurals_search_goods_count_one</item>
+        <item quantity="two">@string/plurals_search_goods_count_few</item>
+        <item quantity="few">@string/plurals_search_goods_count_few</item>
+        <item quantity="many">@string/plurals_search_goods_count_many</item>
+    </plurals>
+    <plurals name="ya_eats_seconds">
+        <item quantity="other">@string/plurals_second_other</item>
+        <item quantity="zero">@string/plurals_second_zero</item>
+        <item quantity="one">@string/plurals_second_one</item>
+        <item quantity="two">@string/plurals_second_two</item>
+        <item quantity="few">@string/plurals_second_few</item>
+        <item quantity="many">@string/plurals_second_many</item>
+    </plurals>
+    <plurals name="ybsdk_cashback_select_categories_description_plurals">
+        <item quantity="other">Где чаще платите? Выберите %d категории с повышенным кешбэком</item>
+        <item quantity="zero">Где чаще платите? Выберите %d категорий с повышенным кешбэком</item>
+        <item quantity="one">Выберите ещё %d категорию</item>
+        <item quantity="few">Где чаще платите? Выберите %d категории с повышенным кешбэком</item>
+        <item quantity="many">Где чаще платите? Выберите %d категорий с повышенным кешбэком</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_circular_progress">
+        <item quantity="other">Progress percentage %d</item>
+        <item quantity="zero">Progress percentage %d</item>
+        <item quantity="one">Progress percentage %d</item>
+        <item quantity="few">Progress percentage %d</item>
+        <item quantity="many">Progress percentage %d</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_kopeck_amount">
+        <item quantity="other">%d kopecks</item>
+        <item quantity="zero">%d kopecks</item>
+        <item quantity="one">%d kopeck</item>
+        <item quantity="few">%d kopecks</item>
+        <item quantity="many">%d kopecks</item>
+    </plurals>
+    <plurals name="ybsdk_common_design_accessibility_ruble_amount">
+        <item quantity="other">%d rubles</item>
+        <item quantity="zero">%d rubles</item>
+        <item quantity="one">%d ruble</item>
+        <item quantity="few">%d rubles</item>
+        <item quantity="many">%d rubles</item>
+    </plurals>
+    <plurals name="ybsdk_common_seconds">
+        <item quantity="other">seconds</item>
+        <item quantity="zero">seconds</item>
+        <item quantity="one">second</item>
+        <item quantity="few">seconds</item>
+        <item quantity="many">seconds</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_accessibility_kopeck_amount">
+        <item quantity="other">%d kopecks</item>
+        <item quantity="zero">%d kopecks</item>
+        <item quantity="one">%d kopeck</item>
+        <item quantity="few">%d kopecks</item>
+        <item quantity="many">%d kopecks</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_accessibility_ruble_amount">
+        <item quantity="other">%d rubles</item>
+        <item quantity="zero">%d rubles</item>
+        <item quantity="one">%d ruble</item>
+        <item quantity="few">%d rubles</item>
+        <item quantity="many">%d rubles</item>
+    </plurals>
+    <plurals name="ybsdk_dashboard_plus_points">
+        <item quantity="other">bonus points</item>
+        <item quantity="zero">bonus points</item>
+        <item quantity="one">bonus point</item>
+        <item quantity="few">bonus points</item>
+        <item quantity="many">bonus points</item>
+    </plurals>
+    <plurals name="ybsdk_pin_enter_pin_attempts_remaining">
+        <item quantity="other">Wrong. %d attempts left</item>
+        <item quantity="zero">Wrong. %d attempts left</item>
+        <item quantity="one">Wrong. %d attempt left</item>
+        <item quantity="few">Wrong. %d attempts left</item>
+        <item quantity="many">Wrong. %d attempts left</item>
+    </plurals>
+    <plurals name="ybsdk_pin_pin_indicator_accessibility_announcer">
+        <item quantity="other">%d characters out of 4 entered</item>
+        <item quantity="zero">%d characters out of 4 entered</item>
+        <item quantity="one">%d character out of 4 entered</item>
+        <item quantity="few">%d characters out of 4 entered</item>
+        <item quantity="many">%d characters out of 4 entered</item>
+    </plurals>
+    <plurals name="ybsdk_sms_code_confirmation_seconds">
+        <item quantity="other">seconds</item>
+        <item quantity="zero">seconds</item>
+        <item quantity="one">second</item>
+        <item quantity="few">seconds</item>
+        <item quantity="many">seconds</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_accessibility_kopeck_amount">
+        <item quantity="other">%d kopecks</item>
+        <item quantity="zero">%d kopecks</item>
+        <item quantity="one">%d kopeck</item>
+        <item quantity="few">%d kopecks</item>
+        <item quantity="many">%d kopecks</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_accessibility_ruble_amount">
+        <item quantity="other">%d rubles</item>
+        <item quantity="zero">%d rubles</item>
+        <item quantity="one">%d ruble</item>
+        <item quantity="few">%d rubles</item>
+        <item quantity="many">%d rubles</item>
+    </plurals>
+    <plurals name="ybsdk_transactions_plus_points">
+        <item quantity="other">bonus points</item>
+        <item quantity="zero">bonus points</item>
+        <item quantity="one">bonus point</item>
+        <item quantity="few">bonus points</item>
+        <item quantity="many">bonus points</item>
+    </plurals>
+    <plurals name="ybsdk_uprid_birthdate_tip_title">
+        <item quantity="other">You must be at least %d years old</item>
+        <item quantity="zero">You must be at least %d years old</item>
+        <item quantity="one">You must be at least %d years old</item>
+        <item quantity="few">You must be at least %d years old</item>
+        <item quantity="many">You must be at least %d years old</item>
+    </plurals>
+</resources>

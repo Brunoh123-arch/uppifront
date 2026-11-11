@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yandex.go.design.view.GoLinearLayout android:orientation="vertical" android:layout_width="104.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:minHeight="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yandex.go.design.view.GoImageView android:layout_gravity="center_horizontal" android:id="@id/icon" android:layout_width="52.0dip" android:layout_height="52.0dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption" android:textColor="?textMain" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:maxLines="2" android:fontFeatureSettings="@string/go_default_font_settings" android:layout_marginHorizontal="8.0dip" />
+    <ru.yandex.taxi.widget.RobotoTextView android:textSize="@dimen/component_text_size_caption_secondary" android:textColor="?error" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/not_available" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/requirements_carousel_unavailable_for_tariff" android:maxLines="2" android:fontFeatureSettings="@string/go_default_font_settings" android:layout_marginHorizontal="8.0dip" />
+    <Space android:id="@id/compensation_space" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ru.yandex.taxi.summary.requirements.list.carousel.view.CarouselButton android:id="@id/button" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="6.0dip" android:layout_marginHorizontal="6.0dip" />
+</com.yandex.go.design.view.GoLinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/debug_settings_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_view_header" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/uniproxyUrlHeaderTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/uniproxy_field_name" android:layout_weight="1.0" />
+        <EditText android:id="@id/uniproxyUrlEditText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/uniproxy_field_hint" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/vinsUrlHeaderTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/vins_field_name" android:layout_weight="1.0" />
+        <EditText android:id="@id/vinsUrlEditText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/vins_field_hint" android:layout_weight="3.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/experimentsHeaderTextView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/experiments_name" android:layout_weight="1.0" />
+        <EditText android:id="@id/experimentsEditText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/experiments_hint" android:layout_weight="3.0" />
+    </LinearLayout>
+    <Button android:id="@id/setValuesButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/apply_button_text" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <ru.yandex.taxi.widget.RobotoTextView android:id="@id/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:figmaLook="true" />
+        <com.yandex.go.superapp.plate_number.PlateNumberDividerView android:id="@id/plate_divider_view" android:background="?line" android:visibility="gone" android:layout_width="0.5dip" android:layout_height="fill_parent" android:layout_marginHorizontal="4.0dip" />
+        <ru.yandex.taxi.widget.RobotoTextView android:layout_gravity="center_horizontal" android:id="@id/secondary_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" app:figmaLook="true" />
+    </LinearLayout>
+</merge>

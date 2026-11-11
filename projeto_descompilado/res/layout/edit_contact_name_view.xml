@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/trusted_contacts_xxxl_space" android:fillViewport="true">
+        <ru.yandex.taxi.design.AnimatedListItemInputComponent android:id="@id/name_input" android:paddingBottom="@dimen/go_design_s_space" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:imeOptions="actionDone" app:component_divider_margin_left="@dimen/go_design_m_space" app:component_divider_margin_right="@dimen/go_design_m_space" app:component_input_divider="true" app:component_input_focused_divider_color="?textMain" app:component_input_max_lines="100" app:component_input_unfocused_divider_color="?line" />
+    </androidx.core.widget.NestedScrollView>
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/go_design_s_space" android:minWidth="@dimen/button_component_size_L" app:component_background_color="?controlMain" app:component_button_accent="true" app:component_button_size="L" app:component_title_color="?textOnControl" />
+</FrameLayout>

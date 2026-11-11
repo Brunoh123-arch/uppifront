@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/confirm_button_height" android:layout_marginBottom="@dimen/confirm_button_height" layout="@layout/add_card_status_layout" />
+    <include android:id="@id/spinner_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/confirm_button_height" android:layout_marginBottom="@dimen/confirm_button_height" layout="@layout/progress_status" />
+    <ViewStub android:id="@id/random_amount_stub" android:layout="@layout/confirm_card_random_amount" android:inflatedId="@id/random_amount_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/confirm_card_cvn_stub" android:layout="@layout/confirm_card_cvn_layout" android:inflatedId="@id/confirm_card_cvn_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ru.yandex.taxi.design.ButtonComponent android:layout_gravity="bottom" android:id="@id/done" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_done" app:component_button_accent="true" style="@style/BottomEdgeButtonMarginStyle" />
+</merge>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<splits>
+    <module name="">
+        <language>
+            <entry key="ar" split="" />
+            <entry key="en" split="" />
+            <entry key="es" split="" />
+            <entry key="et" split="" />
+            <entry key="fi" split="" />
+            <entry key="fr" split="" />
+            <entry key="hy" split="" />
+            <entry key="iw" split="" />
+            <entry key="ka" split="" />
+            <entry key="kk" split="" />
+            <entry key="ky" split="" />
+            <entry key="lt" split="" />
+            <entry key="lv" split="" />
+            <entry key="nb" split="" />
+            <entry key="pt" split="" />
+            <entry key="ro" split="" />
+            <entry key="ru" split="" />
+            <entry key="sr" split="" />
+            <entry key="tg" split="" />
+            <entry key="tr" split="" />
+            <entry key="uk" split="" />
+            <entry key="uz" split="" />
+            <entry key="zh" split="" />
+        </language>
+    </module>
+</splits>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="assume_strong_biometrics_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <string-array name="category_names">
+        <item>@string/emoji_category_emotions</item>
+        <item>@string/emoji_category_people</item>
+        <item>@string/emoji_category_animals_nature</item>
+        <item>@string/emoji_category_food_drink</item>
+        <item>@string/emoji_category_travel_places</item>
+        <item>@string/emoji_category_activity</item>
+        <item>@string/emoji_category_objects</item>
+        <item>@string/emoji_category_symbols</item>
+        <item>@string/emoji_category_flags</item>
+    </string-array>
+    <array name="crypto_fingerprint_fallback_prefixes" />
+    <string-array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </string-array>
+    <string-array name="delay_showing_prompt_models">
+        <item>Pixel 4</item>
+        <item>Pixel 4 XL</item>
+    </string-array>
+    <array name="emoji_by_category_raw_resources">
+        <item>@raw/emoji_category_emotions</item>
+        <item>@raw/emoji_category_people</item>
+        <item>@raw/emoji_category_animals_nature</item>
+        <item>@raw/emoji_category_food_drink</item>
+        <item>@raw/emoji_category_travel_places</item>
+        <item>@raw/emoji_category_activity</item>
+        <item>@raw/emoji_category_objects</item>
+        <item>@raw/emoji_category_symbols</item>
+        <item>@raw/emoji_category_flags</item>
+    </array>
+    <array name="emoji_by_category_raw_resources_gender_inclusive">
+        <item>@raw/emoji_category_emotions</item>
+        <item>@raw/emoji_category_people_gender_inclusive</item>
+        <item>@raw/emoji_category_animals_nature</item>
+        <item>@raw/emoji_category_food_drink</item>
+        <item>@raw/emoji_category_travel_places</item>
+        <item>@raw/emoji_category_activity</item>
+        <item>@raw/emoji_category_objects</item>
+        <item>@raw/emoji_category_symbols</item>
+        <item>@raw/emoji_category_flags</item>
+    </array>
+    <array name="emoji_categories_icons">
+        <item>@drawable/gm_filled_emoji_emotions_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_people_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_nature_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_food_beverage_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_transportation_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_events_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_objects_vd_theme_24</item>
+        <item>@drawable/gm_filled_emoji_symbols_vd_theme_24</item>
+        <item>@drawable/gm_filled_flag_vd_theme_24</item>
+    </array>
+    <string-array name="exo_controls_playback_speeds">
+        <item>0.25x</item>
+        <item>0.5x</item>
+        <item>0.75x</item>
+        <item>Normal</item>
+        <item>1.25x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+    <string-array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-A50</item>
+        <item>SM-G973</item>
+        <item>SM-G975</item>
+        <item>SM-G977</item>
+        <item>SM-G770</item>
+        <item>SM-N970</item>
+        <item>SM-N971</item>
+        <item>SM-N975</item>
+        <item>SM-N976</item>
+        <item>SM-N770</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SC-01M</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SCV45</item>
+    </string-array>
+    <string-array name="passport_trusted_application_fingerprints">
+        <item>com.edadeal.android:Ucyt+WfG7scFrG9ix/DZjXnG3IJ9xqlHqcHBWZfJRC0=</item>
+        <item>ru.kinopoisk:bmQ8wpHeuihpnDrkPvnJoa7NZi0UUtd473a2MH7txIU=</item>
+    </string-array>
+    <array name="pay_sdk_confetti_colors">
+        <item>#ff4b4f90</item>
+        <item>#ffe9c046</item>
+        <item>#ffdb3c5d</item>
+        <item>#ff81a4b1</item>
+        <item>#ffdcd044</item>
+        <item>#ff66498c</item>
+    </array>
+    <string-array name="rating_view_titles">
+        <item>@string/rating_1</item>
+        <item>@string/rating_2</item>
+        <item>@string/rating_3</item>
+        <item>@string/rating_4</item>
+        <item>@string/rating_5</item>
+    </string-array>
+    <string-array name="root_public_keys_production">
+        <item>0sx2TVceeyZsk8fV9CLR5BVfoZ1CGPXQ8k/Jxm2hK30=|2036-07-21</item>
+        <item>xtaTesPkFlI4LXPEJhXnBvMIAOuRc2zavri8/xGSXiU=|2036-07-21</item>
+    </string-array>
+    <string-array name="root_public_keys_sandbox">
+        <item>0sx2TVceeyZsk8fV9CLR5BVfoZ1CGPXQ8k/Jxm2hK30=|2036-07-21</item>
+        <item>xtaTesPkFlI4LXPEJhXnBvMIAOuRc2zavri8/xGSXiU=|2036-07-21</item>
+    </string-array>
+    <string-array name="root_public_keys_testing">
+        <item>+Eo6AsiVAv8QGF1FzcLN0/d3qfEbGW5yJoBF1HCj19o=|2036-03-30</item>
+        <item>I0wmCWNG8+GMM+iCEyaZ44Z0y9q0hfrsAJOOQHWnBgI=|2036-07-18</item>
+        <item>rsTvfREd00FG1mHu3883HB4qg9ozltrFOui1yj0+5Iw=|2036-06-06</item>
+    </string-array>
+    <array name="ui_preview_base_package_names" />
+    <array name="ybsdk_plus_colors_array">
+        <item>@color/ybsdk_color_text_icons_plus_text_1</item>
+        <item>@color/ybsdk_color_text_icons_plus_text_2</item>
+    </array>
+</resources>

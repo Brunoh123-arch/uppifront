@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ru.yandex.taxi.design.ToolbarComponent android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" layout="@layout/web_view_default_error" />
+    <ru.yandex.taxi.widget.progress.CircularProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+    <ru.yandex.taxi.widget.RobotoTextView android:id="@id/infoText" android:visibility="gone" android:layout_centerInParent="true" style="@style/address_name_title" />
+    <FrameLayout android:id="@id/share_container" android:background="@color/component_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignParentBottom="true">
+        <ru.yandex.taxi.design.ButtonComponent android:id="@id/share" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:text="@string/referral_share_button" />
+    </FrameLayout>
+    <ImageView android:id="@id/share_shadow" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_above="@id/share_container" />
+    <ru.yandex.taxi.web.WebContentView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_container" android:layout_below="@id/toolbar" />
+</RelativeLayout>

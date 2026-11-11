@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ybsdk.widgets.common.ToolbarView android:id="@id/budgetChargesSearchToolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" />
+    <com.ybsdk.widgets.common.LoadableInput android:id="@id/budgetChargesSearchInput" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintTop_toBottomOf="@id/budgetChargesSearchToolbar" style="@style/YbSdk.Widget.WidgetsCommon.LoadableInput.WithBackground" />
+    <com.ybsdk.widgets.common.keyboard.NumberKeyboardView android:id="@id/budgetChargesSearchKeyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/budgetChargesSearchButton" />
+    <com.ybsdk.widgets.common.YbButtonView android:id="@id/budgetChargesSearchButton" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="@dimen/ybsdk_screen_horizontal_space" app:layout_constraintBottom_toBottomOf="parent" style="@style/YbSdk.Widget.WidgetsCommon.YbButtonView.Primary.L" />
+    <com.ybsdk.feature.divkit.api.ui.skeletons.DivSkeletonsView android:id="@id/budgetChargesSearchDivSkeletons" android:background="?ybColor_background_primary" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ybsdk.widgets.common.ErrorView android:id="@id/budgetChargesSearchErrorView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.eda_design.views.button.EatsControlButton android:id="@id/main_button" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ru.yandex.eda_design.common.Loader android:id="@id/loader" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" app:layout_constraintBottom_toBottomOf="@id/main_button" app:layout_constraintEnd_toEndOf="@id/main_button" app:layout_constraintStart_toStartOf="@id/main_button" app:layout_constraintTop_toTopOf="@id/main_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

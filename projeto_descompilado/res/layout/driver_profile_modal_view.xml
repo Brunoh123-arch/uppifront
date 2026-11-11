@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ru.yandex.taxi.widget.RoundedCornersFrameLayout android:layout_gravity="bottom" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:leftTopCornerRadius="@dimen/driver_profile_corner_radius" app:rightTopCornerRadius="@dimen/driver_profile_corner_radius" app:useScaleFix="false">
+        <FrameLayout android:id="@id/content_background" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced android:layout_gravity="bottom" android:id="@id/driver_profile_scroll_view" android:background="?bgMain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:fillViewport="true">
+                <LinearLayout android:orientation="vertical" android:paddingBottom="76.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:importantForAccessibility="no">
+                        <FrameLayout android:id="@id/driver_profile_photo_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.yandex.go.taxi.order.driver.profile.view.aspectratio.AspectRatioImageView android:id="@id/driver_profile_photo_placeholder" android:background="?bgMinor" android:layout_width="fill_parent" android:layout_height="wrap_content" app:imageViewAspectRatio="0.66" />
+                            <com.yandex.go.taxi.order.driver.profile.view.aspectratio.AspectRatioImageView android:id="@id/driver_profile_photo_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:alpha="0.0" app:imageViewAspectRatio="0.66" />
+                        </FrameLayout>
+                        <ImageView android:layout_gravity="center_horizontal" android:id="@id/driver_profile_avatar_view" android:visibility="gone" android:layout_width="144.0dip" android:layout_height="144.0dip" android:layout_marginTop="40.0dip" android:scaleType="center" android:contentDescription="@null" android:alpha="0.0" />
+                    </FrameLayout>
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_profile_short_name" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_gravity="center_horizontal" app:component_title_gravity="center_horizontal" app:component_title_size="@dimen/component_text_size_title" app:component_title_typeface="bold" />
+                    <com.yandex.go.taxi.order.driver.profile.view.fact.DriverFactsComponent android:id="@id/driver_profile_driver_facts" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_profile_achievement_title" android:background="?bgMinor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="1.0dip" app:component_title="@string/driver_profile_compliments" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="@color/component_gray_400" app:component_title_typeface="medium" app:component_vertical_padding="6.0dip" />
+                    <ViewStub android:id="@id/driver_profile_achievement_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/go_design_m_space" />
+                    <ru.yandex.taxi.design.ListGroupHeaderComponent android:id="@id/driver_profile_panel" android:layout_width="fill_parent" android:layout_height="24.0dip" android:importantForAccessibility="no" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/driver_profile_info_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/list_item_component_divider" android:showDividers="middle">
+                        <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_profile_full_name" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_profile_car_info" android:layout_width="fill_parent" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title="@string/driver_profile_car" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" />
+                        <ru.yandex.taxi.design.ListItemComponent android:id="@id/driver_profile_park_info" android:layout_width="wrap_content" android:layout_height="wrap_content" app:component_subtitle_size="@dimen/component_text_size_body" app:component_subtitle_text_color="?textMain" app:component_title="@string/driver_profile_partner" app:component_title_size="@dimen/component_text_size_caption" app:component_title_text_color="?textMinor" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ru.yandex.taxi.widget.scroll.NestedScrollViewAdvanced>
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/driver_profile_bottom_close_button_container" android:background="?bgMain" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false" android:paddingStart="4.0dip" android:paddingEnd="4.0dip">
+                <ru.yandex.taxi.design.ButtonComponent android:id="@id/driver_profile_bottom_close_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common_close" app:component_background_color="?controlMinor" app:component_title_color="?textOnControlMinor" />
+            </FrameLayout>
+        </FrameLayout>
+    </ru.yandex.taxi.widget.RoundedCornersFrameLayout>
+</merge>
